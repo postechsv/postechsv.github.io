@@ -1,5 +1,5 @@
 ---
-layout: research
+layout: researchpage
 title: "SMT-Based Model Checking for Signal Temporal Logic"
 intro: "This research focuses on modeling cyber-physical systems (CPS) that rely on virtual synchrony for coordination and timing accuracy. The goal is to improve the reliability of CPS in critical applications such as aerospace or automotive systems, where precision and safety are paramount."
 authors: Jia Lee, Geunyeol Yu, Kyungmin Bae
