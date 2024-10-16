@@ -1,0 +1,70 @@
+# Basic
+name: "Software Verification Lab"
+title: "Software Verification Lab at POSTECH"
+description: "Software Verification Lab"
+
+# URL
+url: https://nooskuyh.github.io
+baseurl:
+#baseurl:            "" #For Root Domain
+permalink: /:year/:month/:day/:title.html
+
+# Markdown
+markdown: kramdown
+
+# Highlighter
+highlighter: rouge
+
+# Navigation
+nav:
+  # - name:           "home"
+  #   href:           "/"
+  # - name: "news"
+  #   href: "/news"
+  - name: "publications"
+    href: "/publications"
+  - name: "members"
+    href: "/members"
+  - name: "research"
+    href: "/research"
+
+  #   - name:           "abstracts"
+  #     href:           "/abstracts"
+
+# Sass
+sass:
+  style: :compressed
+
+# Scopes
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "members"
+    values:
+      layout: "profile"
+
+collections:
+  members:
+    output: true
+    permalink: /members/:title/index.html
+  research:
+    output: true
+  researchtopics:
+    output: true
+    permalink: /research/:title.html
+  pubpage:
+    output: true
+    permalink: /pubpage/:title.html
+
+  home:
+    output: true

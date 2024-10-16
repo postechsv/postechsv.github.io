@@ -1,0 +1,14 @@
+- slug: conference
+  name: Conference
+
+- slug: journal
+  name: Journal
+
+- slug: book
+  name: Book
+
+- slug: domestic
+  name: Domestic
+
+- slug: dissertation
+  name: Dissertation

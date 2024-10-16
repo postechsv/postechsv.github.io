@@ -1,0 +1,82 @@
+# - name: "This could be you !"
+#  photo: rock.jpg
+#  info: See <a href="http://www.allanlab.org/vacancies">openings</a> for more info
+#  email: milan.allan@gmail.com
+#  number_educ: 0
+#  education1:
+#  education2:
+#  education3:
+#  education4:
+
+- name: Jaeseo Lee
+  photo: jslee.jpg
+  info: Ph.D. Student
+  email: sean96@postech.ac.kr
+  # page: https://gyyu.github.io 
+  additional: ""
+  number_educ: 0
+
+- name: Geunyeol Yu
+  photo: gyyu.jpg
+  info: Ph.D. Student
+  email: rgyen@postech.ac.kr
+  page: https://rgyen.github.io
+  additional: ""
+  number_educ: 0
+
+- name: Jueun Yeon
+  photo: jeyeon.jpg
+  info: Ph.D. Student
+  email: jeyeon@postech.ac.kr
+  # page: https://gyyu.github.io 
+  additional: ""
+  number_educ: 0
+
+- name: Jia Lee
+  photo: jialee.jpg
+  info: Ph.D. Student
+  email: cee5539@postech.ac.kr
+  # page: https://gyyu.github.io 
+  additional: ""
+  number_educ: 0
+
+- name: Jaehun Lee
+  photo: jhlee.jpg
+  info: Ph.D. Student
+  email: thkighie1224@postech.ac.kr
+  github: https://github.com/gsojc234
+  page: https://gsojc234.github.io/
+  additional: ""
+  number_educ: 0
+
+- name: Seunghyun Chae
+  photo: shchae.jpg
+  info: Ph.D. Student
+  email: shchae7@postech.ac.kr
+  page: https://shchae7.github.io/
+  additional: ""
+  number_educ: 0
+
+- name: Byoungho Son
+  photo: bhson.jpg
+  info: Ph.D. Student
+  email: byhoson@postech.ac.kr
+  page: https://byhoson.github.io
+  additional: ""
+  number_educ: 0
+
+- name: Kyunwoo Kim
+  photo: kwkim.jpg
+  info: Ph.D. Student
+  email: kkw423@postech.ac.kr
+  # page: https://gyyu.github.io 
+  additional: ""
+  number_educ: 0
+
+- name: Hyuksoon Jang
+  photo: hsjang.jpg
+  info: M.S Student
+  email: hyuksoon@postech.ac.kr
+  # page: https://gyyu.github.io 
+  additional: ""
+  number_educ: 0

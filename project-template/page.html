@@ -1,0 +1,212 @@
+<head>
+    <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,600"
+  />
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic"
+    rel="stylesheet"
+    type="text/css"
+  />
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://fonts.googleapis.com/css?family=Roboto"
+  />
+  <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+  />
+  <link
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+    crossorigin="anonymous"
+  />
+
+  <script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+
+  <!-- <script src="//code.jquery.com/jquery-1.12.0.min.js"></script> -->
+  <!-- <link href="./css/zoom.css" rel="stylesheet" />
+  <script src="./js/zoom.js"></script>
+  <script src="./js/transition.js"></script> -->
+
+  <link rel="stylesheet" href="./style.scss" />
+  <link rel="stylesheet" href="./research.scss" />
+  <!-- favicon -->
+  <link
+    rel="apple-touch-icon-precomposed"
+    href="./images/logo/apple-touch-icon-precomposed.png"
+  />
+  <link
+    rel="apple-touch-icon-precomposed"
+    sizes="72x72"
+    href="./images/logo/apple-touch-icon-72x72-precomposed.png"
+  />
+  <link
+    rel="apple-touch-icon-precomposed"
+    sizes="114x114"
+    href="./images/logo/apple-touch-icon-114x114-precomposed.png"
+  />
+  <link
+    rel="apple-touch-icon-precomposed"
+    sizes="144x144"
+    href="./images/logo/apple-touch-icon-144x144-precomposed.png"
+  />
+</head>
+<div class="row" id="author-row" style="margin: 0px auto; max-width: 628px;">
+    <div class="col-md-12 text-center" style="display: table; margin:0 auto">
+        <table class="author-table" id="author-table">
+            <tbody><tr>
+                <td>
+                    <a style="text-decoration:none" href="https://scholar.harvard.edu/dorverbin/home">
+                      Jueun Yeon
+                    </a>
+                    <br>POSTECH
+                </td>
+                <td>
+                    <a style="text-decoration:none" href="https://phogzone.com/">
+                      Seunghyun Chae
+                    </a>
+                    <br>POSTECH
+                </td>
+                <td>
+                    <a style="text-decoration:none" href="http://bmild.github.io/">
+                     Kyungmin Bae
+                    </a>
+                    <br>POSTECH
+                </td>
+            </tr>
+        </tbody></table>
+    </div>
+</div>
+
+<div class="fuck">HI</div>
+
+<div class="row">
+<div class="col-sm-6 col-sm-offset-3 text-center">
+    <ul class="nav nav-pills nav-justified material">
+        <li>
+            <a href="https://arxiv.org/abs/2112.03907">
+            <img src="./images/research/paper_image.jpg" >
+                <h4><strong>Paper</strong></h4>
+            </a>
+        </li>
+        <li>
+            <a href="https://youtu.be/qrdRH9irAlk">
+            <img src="./images/research/youtube_icon.png" >
+                <h4><strong>Video</strong></h4>
+            </a>
+        </li>
+        <li>
+            <a href="https://storage.googleapis.com/gresearch/refraw360/ref.zip" target="_blank">
+            <img src="./images/research/database_icon.png" >
+                <h4><strong>Experiment Dataset</strong></h4>
+            </a>
+        </li>
+        <li>
+            <a href="https://github.com/google-research/multinerf" target="_blank">
+            <img src="./images/research/github.png" >
+                <h4><strong>Code</strong></h4>
+            </a>
+        </li>
+    </ul>
+</div>
+</div>
+
+
+
+### Abstract
+{: .rpost-subject}
+
+Deep learning has performed well in many areas. However, deep learning is vulnerable to errors such as adversarial examples. Therefore, much research exists on ensuring the safety and robustness of deep neural networks. Since deep neural networks are large in scale and the activation functions are non-linear, linear approximation methods for such activation functions are proposed and widely used for verification. In this research, we propose a new technique, called layered abstraction, for non-linear activation functions, such as ReLU and Tanh, and the verification algorithm based on that. We have implemented our method by extending the existing SMT-based methods. The experimental evaluation showed that our tool performs better than an existing tool.
+{: .text-justify}
+
+---
+
+### Main Problem
+{: .rpost-subject}
+
+<div class="text-center" style="margin: auto;">
+<img src="./images/respic/nn-dnn.png" width="50%" alt="overview of the architecture">
+</div>
+
+A major factor in neural network verification is the presence of activation functions like ReLU(Rectified Linear Unit), Sigmoid, and Tanh that provides non-linearity to the DNN, with such non-linear nature making the problem NP-hard. One such solution to this is linear approximation (i.e. abstraction), which simplifies the verification problem, making the problem more manageable for large-scale neural networks. Various abstraction techniques has been proposed, each with their own trade-offs between precision and performance with
+- Increasing performance, leading to shorter verification time but increases the possibilities of spurious counterexamples (false positives)
+- Increasing precision, leading to less wrong answers but increases the computation cost.
+
+---
+### Contributions
+
+<div class="text-center">
+<img src="./images/respic/nn-abstraction.png" width="65%" alt="layered abstraction technique for Sigmoid">
+</div>
+
+To mitigate above trade-offs, we propose a new abstraction technique called layered abstraction technique. The hierarchical technique provides a tiers (i.e. levels) of abstractions each with different degrees of precision and performance.
+1. Level 1: highest precision & lowest performance
+2. Level 2: mid precision & mid performance
+3. Level 3: lowest performance & highest precision
+
+Then during the verification process, we apply the abstraction with the highest level first, and gradually apply lower levels of abstraction every time a spurious counterexample is encounted.
+{: .text-justify}
+
+{% highlight javascript %}
+function sayHello(name) {
+if (!name) {
+  console.log('Hello World');
+} else {
+  console.log(`Hello ${name}`);
+}  
+}  
+{% endhighlight %}
+---
+
+### Experimental results
+{: .rpost-subject}
+
+In this page we will show two experimental results to demonstrate the capabilities of our approach. One, by comparing our approach against Reluplex on verifying AcasXu neural networks in terms of verification time. And, two by verifying AcasXu neural networks with Tanh activation functions, previously unverifiable.
+{: .text-justify}
+
+##### 1. Properties Verified
+
+<div class="text-center">
+<img src="./images/respic/nn-prop.png" width="80%" alt="properties verified">
+</div>
+
+##### 2. Comparison against Reluplex
+
+<div class="text-center">
+<img src="./images/respic/nn-expr-relu.png" width="80%" alt="comparison against reluplex">
+</div>
+
+##### 3. Verification of Tanh NN
+
+<div class="text-center">
+<img src="./images/respic/nn-expr-tanh.png" width="80%" alt="verification of tanh nn">
+</div>
+
+
+### Citation1
+
+<div class="form-group col-md-10 col-md-offset-1">
+                  <textarea id="bibtex" class="form-control" readonly="" style="display: none;">"@article{ART002895757,
+author={연주은 and 채승현 and 배경민},
+title={심층 신경망의 효과적인 정형 검증을 위한 계층별 요약 기법1},
+journal={정보과학회논문지},
+issn={2383-630X},
+year={2022},
+volume={49},
+number={11},
+pages={958-971},
+doi={https://doi.org/10.5626/JOK.2022.49.11.958}
+}"</textarea><div class="CodeMirror cm-s-default CodeMirror-wrap"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 20px; left: 391.95px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" style="position: absolute; padding: 0px; width: 1000px; height: 1em; outline: none;" tabindex="0"></textarea></div><div class="CodeMirror-vscrollbar" cm-not-content="true"><div style="min-width: 1px; height: 0px;"></div></div><div class="CodeMirror-hscrollbar" cm-not-content="true"><div style="height: 100%; min-height: 1px; width: 0px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: -12px; border-right-width: 18px; min-height: 136px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines"><div style="position: relative; outline: none;"><div class="CodeMirror-measure">AخA</div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors" style=""><div class="CodeMirror-cursor" style="left: 391.95px; top: 16px; height: 16px;">&nbsp;</div></div><div class="CodeMirror-code" style=""><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">@article{verbin2022refnerf,</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp;  title={{Ref-NeRF}: Structured View-Dependent Appearance for</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Neural Radiance Fields},</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp;  author={Dor Verbin and Peter Hedman and Ben Mildenhall and</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  Todd Zickler and Jonathan T. Barron and Pratul P. Srinivasan},</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp;  journal={CVPR},</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"> &nbsp;  year={2022}</span></pre><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;">}</span></pre></div></div></div></div></div><div style="position: absolute; height: 18px; width: 1px; top: 136px;"></div><div class="CodeMirror-gutters" style="display: none; height: 154px;"></div></div></div>
+              </div>
+
+
+
+For more details, refer
+1. J. Yeon, S. Chae, and K. Bae, Layered Abstraction Technique for Effective Formal Verification of Deep Neural Networks, Journal of KIISE, Vol. 49, No. 11, Nov 2022 [[paper](https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE11158124)]
+2. J. Yeon, S. Chae, and K. Bae, Layered Abstraction for Formally Verifying Deep Neural Networks, Korea Software Congress (KSC), Dec 20-22, 2021 [[paper](https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE11035647)]
+{: .text-justify}

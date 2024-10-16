@@ -1,0 +1,35 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header page-scroll">
+      <button
+        type="button"
+        class="navbar-toggle"
+        data-toggle="collapse"
+        data-target="#bs-example-navbar-collapse-1"
+      >
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <!-- lab logo -->
+      <a class="navbar-brand page-scroll" href="/"></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <ul class="nav navbar-nav navbar-right fixed-bottom">
+          <li><a class="name" href="/" style="color: #6184a6">HOME</a></li>
+
+          {% for nav in site.nav %}
+          <li><a class="name" href="{{ nav.href }}">{{ nav.name }}</a></li>
+          {% endfor %}
+        </ul>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container-fluid -->
+</nav>
