@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MSYNC</title>
+    <link href="style.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="container-lg px-3 my-5 markdown-body">
+
+      <h1>MSYNC: A Generalized Formal Design Pattern for Virtually Synchronous Multirate Cyber-Physical Systems</h1>
+      <p>This web page contains resources for our paper “MSYNC: A Generalized Formal Design Pattern for Virtually Synchronous Multirate Cyber-Physical Systems” by Kyungmin Bae and Peter C. &Oumllveczky.</p> 
+      
+      <h2 id="case-studies">Maude Models and Analysis Commands</h2> 
+
+      <p>
+          The file <a href="model.zip">model.zip</a> contains the complete Maude source code for the airplane control system example in the paper.
+
+          The archive file contains the following Maude files to run the experiments:
+
+          <ul>
+                  <li> <code>airplane-sync-simul.maude</code> : randomized simulations to measure information loss due to input/output cutoff numbers; </li>
+                  <li> <code>airplane-sync-mc.maude</code> : model checking to verify two requirements of the <em>synchronous</em> model; and </li>
+                  <li> <code>airplane-async-reach.maude</code> : model checking of the <em>asynchronous</em> model  </li>
+          </ul>
+
+          You can run these files using Maude 3.0 (or later), available <a href="http://maude.cs.illinois.edu/">here</a>. 
+
+	</p>
+      
+
+    </div>
+  </body>
+</html>
+
+

@@ -65,6 +65,5 @@ collections:
   pubpage:
     output: true
     permalink: /pubpage/:title.html
-
   home:
     output: true

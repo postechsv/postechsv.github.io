@@ -1,0 +1,98 @@
+body{
+    margin:1em auto;
+}
+
+#mypic {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
+    margin: 0.5rem;
+}
+
+#contact dt {
+  display: inline-block;
+  min-width: 50px;
+
+  margin: 0;
+}
+
+#contact dd {
+  display: inline;
+  margin: 0;
+}
+
+#contact dt:after {
+    content: ":";
+}
+
+#contact dd:after {
+  display: block;
+  content: '';
+}
+
+#top-menu {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.sticky.is-stuck {
+    border-bottom: 2px solid #121212; 
+}
+
+.sticky-mag {
+  background-color: #f2f2f2;
+}
+
+.sticky-mag li {
+  color: #999999;
+  font-weight: normal;
+}
+
+.sticky-mag li a {
+  color: #999999;
+  text-decoration: none;
+}
+
+.sticky-mag li a:hover {
+  color: #737373; 
+}
+
+.sticky-mag li a.active  {
+  font-weight: bold;
+  color: #4F4F4F;
+}
+
+.sticky-mag li a.active:hover {
+      color: #000000;
+}
+
+#papers .title {
+    font-weight: bold;
+}
+
+#papers .title:after {
+    content: ".\A";
+    white-space:pre;
+}
+#papers .author:after {
+    content: ".\A";
+    white-space:pre;
+}
+#papers .ref:after {
+    content: ",";
+}
+
+.no-js .menu-container {
+  display: none;
+}
+
+@media screen and (min-width: 40em) {
+  .no-js .menu-container {
+    display: block;
+  }
+
+  .no-js .title-bar {
+    display: none;
+  }
+}

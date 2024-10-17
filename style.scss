@@ -688,9 +688,11 @@ tbody tr:nth-child(odd) th {
   text-transform: uppercase;
   font-weight: 400;
   font-size: 120%;
+
 }
 
 .navbar-nav > ul > li > a {
+  margin-left: 15px;
   padding-top: 25px;
 }
 
@@ -735,6 +737,10 @@ tbody tr:nth-child(odd) th {
 
   .student {
     width: 51%;
+  }
+
+  .main-margin{
+    margin-top: 25px;
   }
 }
 
