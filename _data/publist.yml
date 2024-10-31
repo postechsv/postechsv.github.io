@@ -6,7 +6,7 @@
   year: 2024
   tag: journal
   link:
-    url: https://dl.acm.org/doi/abs/10.1145/3563822.3568016
+    url: https://doi.org/10.1016/j.scico.2024.103097
     display:
   highlight: 0
 
@@ -16,6 +16,7 @@
   venue: Science of Computer Programming
   year: 2024
   tag: journal
+  link: https://doi.org/10.1016/j.scico.2023.103074
 
 - title: "Modeling and Formal Analysis of Virtually Synchronous Cyber-Physical Systems in AADL"
   authors: Jaehun Lee, Kyungmin Bae, Peter Olveczky, Sharon Kim, and Minseok Kang
@@ -28,12 +29,14 @@
   venue: International Symposium on Formal Methods (FM)
   year: 2024
   tag: conference
+  link: https://dl.acm.org/doi/abs/10.1007/978-3-031-71162-6_22
 
 - title: "Formal Specification of Trusted Execution Environment APIs"
   authors: Geunyeol Yu, Seunghyun Chae, Kyungmin Bae, and Sungkun Moon
   venue: International Conference on Fundamental Approaches to Software Engineering (FASE)
   year: 2024
   tag: conference
+  link: https://dl.acm.org/doi/abs/10.1007/978-3-031-57259-3_5
 
 - title: "Symbolic Analysis and Parameter Synthesis for Time Petri Nets Using Maude and SMT Solving"
   authors: Jaime Arias, Kyungmin Bae, Carlos Olarte, Peter Ölveczky, Laure Petrucci, and Fredrik Romming
