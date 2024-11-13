@@ -10,7 +10,7 @@
     
 <div class="col-md-4">
 <a href="{{ proj.url }}">
-<img src="/images/respic/{{ proj.img-url }}" alt="" style="height: 100%; margin: 0 0 0rem; filter: drop-shadow(3px 3px 2px gray);;"></a>
+<img src="/images/respic/{{ proj.img-url }}" alt="" style="margin: 0 0 0rem; filter: drop-shadow(3px 3px 2px gray);;"></a>
 </div>
 <div class="col-md-8">
     <p>{{ proj.intro }}</p>
