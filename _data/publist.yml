@@ -141,6 +141,19 @@
   highlight: 0
   tag: journal
 
+- title: "Formal Specification and Analysis of PLC and OSEK/VDX OS using Maude"
+  authors: Sangki Ki
+  venue: MS Dissertation, Department of Computer Science, POSTECH
+  year: 2022
+  image: 
+  description: 
+  link:
+    url: http://www.dcollection.net/handler/postech/200000632060
+    display: 
+  highlight: 0
+  tag: dissertation
+
+
 # 2021
 
 - title: Efficient SMT-Based Model Checking for Signal Temporal Logic
@@ -205,6 +218,18 @@
   highlight: 0
   tag: domestic
 
+- title: "Formal Verification of Deep Neural Networks using Structural Properties"
+  authors: Moonhyeon Chung
+  venue: MS Dissertation, Department of Computer Science, POSTECH
+  year: 2021
+  image: 
+  description: 
+  link:
+    url: http://www.dcollection.net/handler/postech/200000506246
+    display: 
+  highlight: 0
+  tag: dissertation
+
 # 2020
 
 - title: "Maude-SE: a Tight Integration of Maude and SMT Solvers"
@@ -254,6 +279,19 @@
     display: 
   highlight: 0
   tag: domestic
+
+- title: "HybridSynchAADL: Modeling and Formal Analysis of Virtually Synchronous Cyber-Physical Systems in AADL"
+  authors: Sharon Kim
+  venue: MS Dissertation, Department of Computer Science, POSTECH
+  year: 2020
+  image: 
+  description: 
+  link:
+    url: http://www.dcollection.net/handler/postech/200000287492
+    display: 
+  highlight: 0
+  tag: dissertation
+
 
 # 2019
 
