@@ -32,14 +32,6 @@
   additional: ""
   number_educ: 0
 
-- name: Jia Lee
-  photo: jialee.jpg
-  info: Ph.D. Student
-  email: cee5539@postech.ac.kr
-  # page: https://gyyu.github.io 
-  additional: ""
-  number_educ: 0
-
 - name: Jaehun Lee
   photo: jhlee.jpg
   info: Ph.D. Student
@@ -78,5 +70,13 @@
   info: M.S Student
   email: hyuksoon@postech.ac.kr
   page: https://nooskuyh.github.io 
+  additional: ""
+  number_educ: 0
+
+- name: Kang Hyeyoon
+  photo: hykang.jpg
+  info: Ph.D. Student
+  email: hyoonk@postech.ac.kr
+  # page: 
   additional: ""
   number_educ: 0
