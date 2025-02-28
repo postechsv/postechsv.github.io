@@ -1,4 +1,15 @@
 # 2024
+- title: "Model Checking of Signal Temporal Logic"
+  authors: Jia Lee
+  venue: Ph.D Dissertation, Department of Computer Science, POSTECH
+  year: 2025
+  image: 
+  description: 
+  link:
+    url: 
+    display: 
+  highlight: 0
+  tag: dissertation
 
 - title: "Narrowing and Heuristic Search for Symbolic Reachability Analysis of Concurrent Object-Oriented Systems"
   authors: Byeongjee Kang and Kyungmin Bae
@@ -154,6 +165,30 @@
   tag: dissertation
 
 
+- title: "Abstractions for Verifying DNN"
+  authors: Jueun Yeon
+  venue: MS Dissertation, Department of Computer Science, POSTECH
+  year: 2022
+  image: 
+  description: 
+  link:
+    url: http://www.dcollection.net/handler/postech/200000632492
+    display: 
+  highlight: 0
+  tag: dissertation
+
+- title: "Extending the HybridSynchAADL Modeling Language and Tool"
+  authors: Jaehun Lee
+  venue: MS Dissertation, Department of Computer Science, POSTECH
+  year: 2022
+  image: 
+  description: 
+  link:
+    url: http://www.dcollection.net/handler/postech/200000600467
+    display: 
+  highlight: 0
+  tag: dissertation
+
 # 2021
 
 - title: Efficient SMT-Based Model Checking for Signal Temporal Logic
@@ -229,6 +264,8 @@
     display: 
   highlight: 0
   tag: dissertation
+
+
 
 # 2020
 
