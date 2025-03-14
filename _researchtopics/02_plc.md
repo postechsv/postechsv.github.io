@@ -3,7 +3,7 @@ layout: researchpage
 title: "Semantics and Analysis of PLC System"
 intro: "This research focuses on defining the behavior of the whole PLC behavior including the PLC ST, multitask, external environment, and communication features."
 img-url: "plc.jpg"
-date: 2024-10-06
+date: 2021-10-06
 
 ---
 
