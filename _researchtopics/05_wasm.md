@@ -14,13 +14,22 @@ WebAssembly (WASM) is a binary standard designed to execute high-performance pro
 However, the unique characteristics of the WASM language can give rise to security vulnerabilities that are not typically present in native languages. Although various verification techniques such as fuzzing, symbolic execution, and formal verification have been employed to analyze WASM programs, challenges remain—especially regarding properties related to concurrency and parallelism. In this study, we propose a model checking approach for WASM programs that leverages the Maude framework based on rewriting logic, specifically targeting these challenging security properties.
 
 
-## Challenge
-### WASM-DSL TO MAUDE
-WASM-DSL is a domain-specific language introduced in previous research to specify the semantic structure of WASM. While implementing the semantic structure of WASM directly within the Maude framework is necessary for model checking, leveraging the semantic specifications defined in WASM-DSL allows for the automatic generation of corresponding Maude specifications. To this end, we have formulated a set of transformation rules that map the syntax and semantics of the DSL directly into Maude. Based on these rules, we are developing an automated conversion tool, WASM2MAUDE.
+## Research Goal
+<img src="{{site.baseurl}}/images/respic/wasmc/fig1.png" width="50%">
+This research is dedicated to formalizing the semantic structure of WebAssembly by employing a rewriting logic-based Maude language framework grounded in the official WebAssembly specification. By developing a precise Maude model, the project establishes a robust foundation for executing WebAssembly programs and systematically exploring their state spaces, thereby enabling rigorous analysis of program behavior and underlying computational semantics.
+<img src="{{site.baseurl}}/images/respic/wasmc/fig2.png" width="50%">
+Building upon the constructed Maude model, the work further focuses on verifying the security properties of WebAssembly programs. To achieve this, an efficient model checking algorithm tailored specifically for WebAssembly is proposed and implemented. Advanced techniques such as partial order reduction are incorporated to mitigate challenges like state space explosion during the verification process, ensuring both scalability and accuracy in the model checking endeavors.
 
-### State Explosion Problem
-Complex software systems often exhibit highly intricate execution processes, which can lead to the state explosion problem. To mitigate this issue, it is essential to employ state reduction techniques—such as partial order reduction—that effectively decrease the size of the state space and minimize search times. In our study, we develop a state reduction strategy tailored to the specific characteristics of WASM, thereby enabling the efficient verification of its security properties.
+## WASM2MAUDE
+<img src="{{site.baseurl}}/images/respic/wasmc/fig3.png" width="50%">
+WASM2MAUDE builds on the formal language WASM-DSL, which transforms the informal descriptions of the official WebAssembly specification into a precise and formal representation. This formalization facilitates the automatic generation of critical tools, including documentation renderers, interpreters, and testing frameworks, thus ensuring that the evolving specification is consistently and accurately represented across various applications.
 
+In this work, the structure and semantics of WASM-DSL are thoroughly analyzed to derive transformation rules that map its constructs to corresponding elements in the Maude language. The developed tool automates this conversion process, enabling seamless updates in response to changes in the WebAssembly specification. Consequently, model checking of WebAssembly programs written in the latest syntax becomes an immediate and efficient process, reflecting the current state of the standard.
+
+## Experiment
+### Execution WASM Program
+<img src="{{site.baseurl}}/images/respic/wasmc/fig4.png" width="50%">
+Leveraging the formal Maude specification of WebAssembly, we executed elementary WASM programs to rigorously simulate their operational semantics through a rewriting logic framework that faithfully reproduces each computational step and validates the underlying semantic rules, while concurrently performing an extensive exploration of the state space to investigate the reachability of various program configurations, thereby confirming the correctness of execution semantics and identifying potential security vulnerabilities and anomalous behaviors that provide critical insights for advancing model checking techniques and enhancing formal verification methods for WebAssembly programs.
 
 ## Reference
 To be added.
