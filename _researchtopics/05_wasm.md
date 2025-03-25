@@ -2,7 +2,7 @@
 layout: researchpage
 title: "Webassembly Program Model Checking"
 intro: "WebAssembly (WASM) is a binary standard designed to execute high-performance programs on web browsers. Various verification techniques have been applied to WASM programs. In this study, we propose a model checking technique for WebAssembly programs using a rewriting logic-based Maude framework, aimed at verifying security properties related to concurrency and parallelism that have been challenging for existing methods."
-img-url: "wasm.png"
+img-url: "/wasmc/wasm.png"
 date: 2024-10-05
 ---
 
