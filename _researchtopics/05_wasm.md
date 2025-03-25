@@ -7,7 +7,7 @@ date: 2024-10-05
 ---
 
 ## Introduction
-<img src="{{site.baseurl}}/images/respic/wasm.png" width="100%">
+<img src="{{site.baseurl}}/images/respic/wasmc/wasm.png" width="100%">
 
 WebAssembly (WASM) is a binary standard designed to execute high-performance programs on web browsers. WASM supports compilation from a variety of programming languages commonly used in commercial software development—such as C/C++, Python, and Rust—thereby enabling near-native performance within the browser environment. This capability has led to its widespread adoption in commercial applications ranging from advanced design tools like Figma and Photoshop to smart contract-related software.
 
