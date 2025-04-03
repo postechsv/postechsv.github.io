@@ -4,7 +4,7 @@ title: "Software Verification Lab at POSTECH"
 description: "Software Verification Lab"
 
 # URL
-url: https://sv.postech.ac.kr
+url: https://postechsv.github.io
 baseurl:
 #baseurl:            "" #For Root Domain
 permalink: /:year/:month/:day/:title.html
