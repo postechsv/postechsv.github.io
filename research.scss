@@ -745,7 +745,7 @@ img {
 // fix menu bar spacing for mobile
 @media (max-width: 62em) {
   .navbar-brand {
-    width: 50%;
+    content: url("/images/logo/logo_mobile.png");
   }
 
   .navbar-nav > li > a {
