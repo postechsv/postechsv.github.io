@@ -23,8 +23,8 @@
 {% endfor %}
 <!-- <h4>Last updated: {{ proj.date | date: "%F" }}</h4> -->
 
-
-<button class="btn btn-link p-0 text-right" type="button"
+<hr class="dot">
+<button class="btn btn-primary p-0 text-right" type="button"
                 data-toggle="collapse"
                 data-target="#hidden-projects"
                 aria-expanded="false"
