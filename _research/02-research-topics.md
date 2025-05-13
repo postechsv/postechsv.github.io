@@ -4,7 +4,7 @@
 <h3>Research Projects</h3>
 
 {% for proj in site.researchtopics %}
-{% unless proj.hidden == false %}
+{% if proj.hidden == false %}
 <div class="row" style="margin-left:0; margin-right:0">
     <a href="{{ proj.url }}"><h4>{{ proj.title }}</h4> </a>
     
@@ -19,7 +19,7 @@
 {% unless forloop.last %}
 <hr class="dot">
 {% endunless %}
-{% endunless %}
+{% endif %}
 {% endfor %}
 <!-- <h4>Last updated: {{ proj.date | date: "%F" }}</h4> -->
 
@@ -34,7 +34,7 @@
 
 <div class="collapse" id="hidden-projects">
 {% for proj in site.researchtopics %}
-{% unless proj.hidden %}
+{% if proj.hidden %}
 <div class="row" style="margin-left:0; margin-right:0">
     <a href="{{ proj.url }}"><h4>{{ proj.title }}</h4> </a>
     
@@ -49,6 +49,6 @@
 {% unless forloop.last %}
 <hr class="dot">
 {% endunless %}
-{% endunless %}
+{% endif %}
 {% endfor %}
 </div>
