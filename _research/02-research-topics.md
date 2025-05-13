@@ -1,7 +1,7 @@
 ---
 ---   
 
-<h3>On-going research</h3>
+<h3>Ongoing research</h3>
 
 {% for proj in site.researchtopics %}
 {% if proj.hidden == false %}
@@ -24,13 +24,15 @@
 <!-- <h4>Last updated: {{ proj.date | date: "%F" }}</h4> -->
 
 <hr class="dot">
-<button class="btn btn-primary p-0 text-right" type="button"
-                data-toggle="collapse"
-                data-target="#hidden-projects"
-                aria-expanded="false"
-                aria-controls="hidden-projects">
-    More…
-</button>
+<div class="text-right">
+    <button class="btn btn-primary p-0" type="button"
+            data-toggle="collapse"
+            data-target="#hidden-projects"
+            aria-expanded="false"
+            aria-controls="hidden-projects">
+        More…
+    </button>
+</div>
 
 <div class="collapse" id="hidden-projects">
 {% for proj in site.researchtopics %}
