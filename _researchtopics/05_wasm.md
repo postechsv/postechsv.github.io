@@ -31,11 +31,11 @@ In this work, the structure and semantics of WASM-DSL are thoroughly analyzed to
 <img src="{{site.baseurl}}/images/respic/wasmc/fig4.png" width="50%">
 Leveraging the formal Maude specification of WebAssembly, we executed elementary WASM programs to rigorously simulate their operational semantics through a rewriting logic framework that faithfully reproduces each computational step and validates the underlying semantic rules, while concurrently performing an extensive exploration of the state space to investigate the reachability of various program configurations, thereby confirming the correctness of execution semantics and identifying potential security vulnerabilities and anomalous behaviors that provide critical insights for advancing model checking techniques and enhancing formal verification methods for WebAssembly programs.
 
-## Reference
+<!-- ## Reference
 To be added.
 
 ## Examples
-To be added
+To be added -->
 
 ## Members / Contact
 Hyuksoon Jang <a src="hyuksoon@postech.ac.kr">hyuksoon (at) postech.ac.kr</a>
