@@ -5,7 +5,7 @@ intro: "This research focuses on modeling cyber-physical systems (CPS) that rely
 authors: Jia Lee, Geunyeol Yu, Kyungmin Bae
 img-url: "stlmc-arch.jpg"
 use_math: true
-date: 2022-12-23
+date: 2024-01-01
 katex: True
 hidden: false
 ---
