@@ -24,12 +24,12 @@
 <!-- <h4>Last updated: {{ proj.date | date: "%F" }}</h4> -->
 
 
-<button class="btn btn-link p-0" type="button"
-        data-toggle="collapse"
-        data-target="#hidden-projects"
-        aria-expanded="false"
-        aria-controls="hidden-projects">
-  More…
+<button class="btn btn-link p-0 text-right" type="button"
+                data-toggle="collapse"
+                data-target="#hidden-projects"
+                aria-expanded="false"
+                aria-controls="hidden-projects">
+    More…
 </button>
 
 <div class="collapse" id="hidden-projects">
