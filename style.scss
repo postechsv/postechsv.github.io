@@ -725,7 +725,9 @@ tbody tr:nth-child(odd) th {
 
 // fix menu bar spacing for mobile
 @media (max-width: 62em) {
-
+  .navbar-brand {
+    content: url("/images/logo/logo_mobile.png");
+  }
   .col {
      width: 51%;
   }
