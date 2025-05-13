@@ -4,7 +4,7 @@
 <h3>Research Projects</h3>
 
 {% for proj in site.researchtopics %}
-{% unless proj.hidden %}
+{% unless proj.hidden == False %}
 <div class="row" style="margin-left:0; margin-right:0">
     <a href="{{ proj.url }}"><h4>{{ proj.title }}</h4> </a>
     
@@ -34,7 +34,7 @@
 
 <div class="collapse" id="hidden-projects">
 {% for proj in site.researchtopics %}
-{% unless proj.hidden == "True" %}
+{% unless proj.hidden == True %}
 <div class="row" style="margin-left:0; margin-right:0">
     <a href="{{ proj.url }}"><h4>{{ proj.title }}</h4> </a>
     
