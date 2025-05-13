@@ -7,7 +7,7 @@ img-url: "stlmc-arch.jpg"
 use_math: true
 date: 2022-12-23
 katex: True
-hidden: False
+hidden: false
 ---
 
 ### Abstract

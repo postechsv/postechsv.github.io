@@ -5,7 +5,7 @@ intro: "This project leverages reinforcement learning to automatically learn sea
 intro-temp: "Accelerating model checking through reinforcement learning-based heuristic learning"
 img-url: "/reusable/reusable.png"
 date: 2024-10-01
-hidden: False
+hidden: false
 ---
 
 ## Introduction
