@@ -88,6 +88,7 @@ layout: members
 <div style="margin-bottom: 20px;"></div>
 
 ### Former Members
+- Jia Lee:        PHD, December 2024 (now in Hyundai Rotem)
 - Sangki Kim:     MS, August 2022
 - Moonhyeon Jung: MS, February 2021
 - Sharon Kim:     MS, February 2020 (now in HD KSOE)
