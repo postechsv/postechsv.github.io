@@ -39,13 +39,13 @@ We demonstrate the effectiveness and feasibility of our formal model using MQT-T
 
 We analyze several security requirements under two threat models: an out-of-memory threat and a message modification threat. By expressing security requirements as linear temporal logic (LTL) formulas and applying Maude's built-in model checking method, we identify several security vulnerabilities. Below are (1) the LTL properties for MQT-TZ and (2) the model checking results, with red highlighting property P2 and P3 violations indicating possible vulnerabilities. By analyzing the violations, we have discovered that TA can panic during the message re-encryption and that when insufficient memory is detected, the TA finalizes the re-encryption with an error and returns a re-encrypted message containing (dummy) data. 
 
-<img src="{{site.baseurl}}/images/respic/tee/ltl-prop.png" width="100%">
+<img src="{{site.baseurl}}/images/respic/tee/ltl-prop.png" width="75%">
 
-<img src="{{site.baseurl}}/images/respic/tee/before-patch-results.png" width="100%">
+<img src="{{site.baseurl}}/images/respic/tee/before-patch-results.png" width="75%">
 
 We implement code-level patches and confirm their integrity by performing the LTL model checking again. Below are (1) the proposed patches and (2) the model checking results showing that P2 and P3 are no longer violated.
 
-<img src="{{site.baseurl}}/images/respic/tee/after-patch-results.png" width="100%">
+<img src="{{site.baseurl}}/images/respic/tee/after-patch-results.png" width="75%">
 
 
 ### Members
