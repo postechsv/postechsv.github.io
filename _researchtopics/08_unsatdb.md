@@ -17,7 +17,7 @@ Our research proposes to address this challenge by presenting a framework that l
 ### Under-utilized BaB information for Incremental Verification
 **BaB Technique** The BaB technique works by (1) abstracting all non-linear activation functions within the network, and (2) iteratively creating simpler sub-problems (referred to as configurations) by refining one activation function at a time. For each configuration, it checks whether a counterexample (i.e. a valid input that causes an unintended output) exists. Configurations that are found to contain no counterexample are denoted as "UNSAT" configurations.
 
-<img src="{{site.baseurl}}/images/respic/unsatdb/bab.png" width="50%">
+<img src="{{site.baseurl}}/images/respic/unsatdb/bab.png" width="75%">
 
 **Point of Under-utilization** Using "UNSAT" configuration, whether the BaB process (of refinement) needs to continue for an arbitrary configuration can be determined without expensive computation and prematurely. This can be done by simply computing the intersection between the two configurations, as the intersections do not need to be explored any further in the BaB process.
 
