@@ -1,6 +1,6 @@
 ---
 layout: researchpage
-title: "Utilizatino of UNSAT Configuration for Efficient Incremental Neural Network Verification"
+title: "Utilization of UNSAT Configuration for Efficient Incremental Neural Network Verification"
 intro: "In this research, we aim to develop a framework that leverages \"UNSAT\" information from previous BaB-based verification processes to improve the integration of the Branch-and-Bound technique with incremental verification, which allows for SOTA BaB-based verifiers to support incremental verification with minimal modifications"
 intro-temp: "..."
 img-url: "/unsatdb/framework.png"
