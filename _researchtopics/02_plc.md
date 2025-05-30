@@ -45,7 +45,7 @@ The following cells are added or modified to the cells originally proposed. (1) 
 <img src="{{site.baseurl}}/images/respic/cell3.jpg" width="80%">
 
 To resolve state explosion, we propose 'time-abstraction' and 'partial order reduction' techniques. The main idea of time-abstraction is to express time abstractly with a time interval that represents an infinite number of time points. We have adopted the classic ample set based partial order reduction approach to our system. The graph below shows the time comparison of state space exploration time before and after time abstraction. The points at 3600 represent timeout. 
-<img src="{{site.baseurl}}/images/respic/g1.jpg" width=50%>
+<img src="{{site.baseurl}}/images/respic/g1.jpg" width="50%">
 
 
 ## Ongoing Work
