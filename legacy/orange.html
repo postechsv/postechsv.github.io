@@ -2,22 +2,42 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sword Upgrade 3</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!---- Start screen ---->
+  <!-- ──────────────── Start screen ──────────────── -->
   <section id="start-screen" class="screen">
-    <h1>Sword Upgrade 3</h1>
+    <h1>Sword Upgrade&nbsp;3</h1>
     <button id="btn-start">Start</button>
   </section>
 
-  <!---- Game screen (initially hidden) ---->
+  <!-- ──────────────── Game screen ──────────────── -->
   <section id="game-screen" class="screen hidden">
+    <!-- status bar -->
+    <div class="status">
+      <span id="gold">Gold 0</span>
+      <span id="tickets">Tickets 0</span>
+    </div>
+
+    <!-- current weapon -->
     <h2 id="weapon-name"></h2>
-    <button id="btn-enhance">Enhance</button>
+
+    <!-- main buttons -->
+    <div class="btn-row">
+      <button id="btn-enhance">Enhance (50 %)</button>
+      <button id="btn-sell">Sell</button>
+    </div>
+
+    <!-- log output -->
     <p id="log"></p>
+
+    <!-- shop -->
+    <h3>Shop</h3>
+    <button id="btn-buy">Buy Protection Ticket – 100 g</button>
+
+    <!-- restart -->
     <button id="btn-restart" class="hidden">Restart</button>
   </section>
 
