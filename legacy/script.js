@@ -38,7 +38,7 @@ const weapons = [
 /* ─────────────────────────────── CONFIG ─────────────────────────────── */
 const MAX_LEVEL = 100;                // 0-based index: 0 … 99
 const TICKET_PRICE = 100;             // gold
-const SAVE_CHANCE = 0.01;             // 1 %
+const SAVE_CHANCE = 0.50;             // 50 %
 
 /* ─────────────────────────────── STATE ─────────────────────────────── */
 let level   = 0;   // current sword tier (0 == Sword Lv. 1)
@@ -63,7 +63,7 @@ const btnRestart = d("btn-restart");
 
 /* ───────────────────────────── UTILITIES ───────────────────────────── */
 const weaponStr = lv => weapons[lv];
-const sellValue  = lv => (lv + 1) * 20;   // simple linear formula
+const sellValue  = lv => (lv) * 20;   // simple linear formula
 
 function updateHUD () {
   weaponName.textContent = weaponStr(level);
