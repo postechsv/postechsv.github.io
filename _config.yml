@@ -8,6 +8,7 @@ url: https://sv.postech.ac.kr
 baseurl:
 #baseurl:            "" #For Root Domain
 permalink: /:year/:month/:day/:title.html
+permalink: /:year/:month/:day/:title.html
 
 # Markdown
 markdown: kramdown
@@ -27,7 +28,6 @@ nav:
     href: "/members"
   - name: "research"
     href: "/research"
-
   #   - name:           "abstracts"
   #     href:           "/abstracts"
 

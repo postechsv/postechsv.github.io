@@ -1,10 +1,13 @@
 ---
----   
+layout: page
+sitemap: false
+permalink: /topics/
+---
 
-<h3>Ongoing research</h3>
+<h3>Research Topics</h3>
 
 {% for proj in site.researchtopics %}
-{% if proj.hidden == false %}
+
 <div class="row" style="margin-left:0; margin-right:0">
     <a href="{{ proj.url }}"><h4>{{ proj.title }}</h4> </a>
     
@@ -19,15 +22,6 @@
 {% unless forloop.last %}
 <hr class="dot">
 {% endunless %}
-{% endif %}
 {% endfor %}
-<div class="text-right">
-    <button class="btn btn-primary p-0" type="button"
-            data-toggle="collapse"
-            data-target="#hidden-projects"
-            aria-expanded="false"
-            aria-controls="hidden-projects"
-            href="{{ proj.url }}">
-        More…
-    </button>
-</div>
+
+<br>
