@@ -27,7 +27,7 @@
             data-target="#hidden-projects"
             aria-expanded="false"
             aria-controls="hidden-projects"
-            href="{{ site.baseurl }}/topics">
+            onclick="location.href='{{ site.baseurl }}/topics'">
         More…
     </button>
 </div>
