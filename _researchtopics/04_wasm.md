@@ -26,10 +26,20 @@ WASM2MAUDE builds on the formal language WASM-DSL, which transforms the informal
 
 In this work, the structure and semantics of WASM-DSL are thoroughly analyzed to derive transformation rules that map its constructs to corresponding elements in the Maude language. The developed tool automates this conversion process, enabling seamless updates in response to changes in the WebAssembly specification. Consequently, model checking of WebAssembly programs written in the latest syntax becomes an immediate and efficient process, reflecting the current state of the standard.
 
+## IL2MAUDE
+IL2MAUDE ingests the formally stated Intermediate Language (IL)—a DSL already distilled from WebAssembly—and parses its grammars and deduction rules.
+It then automatically generates one-to-one Maude sorts, operators, and conditional rewrite rules, preserving typing judgments and evaluation contexts.
+Because the mapping is machine-synthesized, any evolution of the IL spec transparently yields a fresh, executable Maude module, guaranteeing continuous alignment between theory and runnable code.
+
 ## Experiment
 ### Execution WASM Program
 <img src="{{site.baseurl}}/images/respic/wasmc/fig4.png" width="50%">
 Leveraging the formal Maude specification of WebAssembly, we executed elementary WASM programs to rigorously simulate their operational semantics through a rewriting logic framework that faithfully reproduces each computational step and validates the underlying semantic rules, while concurrently performing an extensive exploration of the state space to investigate the reachability of various program configurations, thereby confirming the correctness of execution semantics and identifying potential security vulnerabilities and anomalous behaviors that provide critical insights for advancing model checking techniques and enhancing formal verification methods for WebAssembly programs.
+
+### WASM Model Checking
+Leveraging the Maude specification produced by WASM2MAUDE, the model-checking phase encodes WebAssembly program executions as rewrite-logic transition systems and applies Maude’s on-the-fly LTL model checker to exhaustively explore reachable configurations.
+Safety properties such as memory-isolation, type-safety, and function-call integrity are expressed in temporal logic, while counter-examples are returned as concrete execution traces that pinpoint the precise sequence of instructions leading to a violation.
+Because the verification back-end is regenerated whenever the official WebAssembly spec evolves, the analysis remains sound with respect to the latest opcode set and semantics, offering push-button assurance for real-world WASM binaries compiled from C, Rust, or any other source language.
 
 <!-- ## Reference
 To be added.
