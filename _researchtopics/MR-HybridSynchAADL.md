@@ -3,7 +3,7 @@ layout: researchpage
 title: "MH-SynchAADL"
 intro: "We define the MH-SynchAADL modeling language and verification tool for hierarchical multirate CPSs with advanced control programs, continuous behaviors, and imprecise local clocks." 
 intro-temp: "This research aims at modeling and verification of multirate CPSs written in AADL modeling language"
-img-url: "reusable.png"
+img-url: "/jh/cps.png"
 date: 2025-07-24
 hidden: false
 ---
@@ -131,7 +131,7 @@ The time frame of the environment is *shifted to the left* from the global time 
 4. $E$ receives $C_n$'s command $\alpha_n$ at time $t_n^a$ (and may change its continuous dynamics), where $t_n^a - t_n^0$ denotes the actuating time.
 
 <center>
-<img src="{{site.baseurl}}/images/respic/mr-hsynchaadl/interaction.png" alt="A MH-SynchAADL model" width="50%"/>
+<img src="{{site.baseurl}}/images/respic/jh/interaction.png" alt="A MH-SynchAADL model" width="50%"/>
 </center>
 
 
@@ -140,7 +140,7 @@ The time frame of the environment is *shifted to the left* from the global time 
 MH-SynchAADL seamlessly integrates modeling and formal analysis into OSATE. The tool can statically check the syntactic constraints of MH-SynchAADL. The tool’s property specification language can specify invariant and reachability properties. The tool synthesizes the corresponding Maude model from a MH-SynchAADL model and invokes Maude with SMT solving to perform various formal analyses, including randomized simulation (using the concrete semantics), symbolic reachability analysis (using the symbolic semantics), and portfolio analysis (running both methods in parallel with multithreading). The tool is available at https://hybridsynchaadl.github.io.
 
 <center>
-<img src="{{site.baseurl}}/images/respic/mr-hsynchaadl/tool.png" alt="Virtually Synchronous CPSs" width="50%"/>
+<img src="{{site.baseurl}}/images/respic/jh/tool.png" alt="Virtually Synchronous CPSs" width="50%"/>
 </center>
 
 
@@ -154,7 +154,7 @@ We perform the design and analysis of a collection of drones for packet
 delivery using MH-SynchAADL. Each drone contains two controllers operating at diﬀerent periods, and diﬀerent drones can have diﬀerent periods. We use the combination of symbolic and concrete semantics to analyze overall system behavior and to verify individual controller logic. 
 
 <center>
-<img src="{{site.baseurl}}/images/respic/mr-hsynchaadl/system_description.png" alt="Packet Delivery Systems" width="50%"/>
+<img src="{{site.baseurl}}/images/respic/jh/system_description.png" alt="Packet Delivery Systems" width="50%"/>
 </center>
 
 The below figure illustrates the control logic of the mission and flight controller, where double circles indicate complete states. 
@@ -162,7 +162,7 @@ In the mission control logic, the state *choose_action* determin drone's behavio
 In the flight control logic, it calculates a new velocity or determin drone's state based on the *goal* and commands from the mission controller.
 
 <center>
-<img src="{{site.baseurl}}/images/respic/mr-hsynchaadl/control_logic.png" alt="Control Logic" width="50%"/>
+<img src="{{site.baseurl}}/images/respic/jh/control_logic.png" alt="Control Logic" width="50%"/>
 </center>
 
 ### 1. Randomized Simulation

@@ -3,7 +3,7 @@ layout: researchpage
 title: "TLS Model-based Testing using Maude"
 intro: "We use model-based testing approach to test TLS libraries using Maude. By using Maude, we can generate more various and complicated test scenario automatically. We build an automated tool to test several TLS libraries." 
 intro-temp: "This research aims at automatic testing for TLS libraries"
-img-url: "reusable.png"
+img-url: "/jh/model-based-testing.png"
 date: 2025-07-24
 hidden: false
 ---

@@ -2,20 +2,20 @@
 layout: researchpage
 title: "Model Checking of Infinite-State Systems using Symbolic Abstraction and Reduction"
 intro: "This research extends the Logical Model Checker (LMC) to verify a broader class of infinite-state systems by introducing a novel framework for constraint-based symbolic analysis and sound state-space reduction."
-img-url: "lmc-arch.png"
+img-url: "/lmc/lmc-arch.png"
 hidden: true
 ---
 
 # Model Checking of Infinite-State Systems
 
-<img src="{{site.baseurl}}/images/respic/lmc-arch.png" width="100%">
+<img src="{{site.baseurl}}/images/respic/lmc/lmc-arch.png" width="100%">
 <p align="center">Figure 1: High-level architecture of the pattern-based Logical Model Checker (LMC).</p>
 
 ## Introduction
 
 Formal verification aims to mathematically prove the correctness of a system against a given specification. Model checking is a powerful automated technique for this, but it traditionally struggles with **infinite-state systems**—systems where the number of possible states is unbounded, such as systems with counters, timers, or dynamic process creation. In these cases, exhaustively exploring every state is impossible.
 
-<img src="{{site.baseurl}}/images/respic/lmc-smc.png" width="100%">
+<img src="{{site.baseurl}}/images/respic/lmc/lmc-smc.png" width="100%">
 <p align="center">Figure 2: The core idea of infinite-state model checking is to symbolically summarize an infinite number of concrete states into a finite number of abstract patterns.</p>
 
 To address this challenge, our research focuses on **pattern-based symbolic model checking**. This approach represents infinite sets of concrete states using a finite number of symbolic *patterns*. Our work extends the **Logical Model Checker (LMC)**, a tool based on a symbolic model checking algorithm that uses **Narrowing** and **Folding** to analyze system behavior. LMC can verify critical temporal properties expressed in Linear Temporal Logic (LTL).
@@ -44,7 +44,7 @@ Even with symbolic methods, the abstract state space can still be too large or c
 
 The core challenge is ensuring that these user-provided rules are **sound**—that is, the simplified system must be behaviorally equivalent to the original. The theoretical foundation for this soundness guarantee is **Bisimulation**.
 
-<img src="{{site.baseurl}}/images/respic/lmc-bisim.png" width="100%">
+<img src="{{site.baseurl}}/images/respic/lmc/lmc-bisim.png" width="100%">
 <p align="center">Figure 3: The Principle of Bisimulation. A reduction is sound if for every transition in the original system (from p to p'), there is a corresponding transition in the reduced system (from q to q') such that the resulting states (p' and q') are still related.</p>
 
 A reduction rule is considered sound if the reduced system maintains a bisimulation relation with the original system. This guarantees that any property verified on the smaller, simpler system also holds true for the original, complex one. This allows a user to leverage domain-specific knowledge to simplify the verification problem without compromising correctness.
@@ -55,7 +55,7 @@ A reduction rule is considered sound if the reduced system maintains a bisimulat
 
 A critical component of our framework is the ability to automatically verify that a reduction rule supplied by a user is indeed sound. Manually proving bisimulation is tedious and error-prone. Therefore, we are developing an algorithm to automate this soundness check.
 
-<img src="{{site.baseurl}}/images/respic/lmc-simplify.png" width="100%">
+<img src="{{site.baseurl}}/images/respic/lmc/lmc-simplify.png" width="100%">
 <p align="center">Figure 4: The automated workflow for verifying and applying user-defined reduction rules.</p>
 
 Our proposed algorithm works as follows:
