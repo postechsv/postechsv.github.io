@@ -6,6 +6,7 @@ intro-temp: "This research aims at modeling and verification of multirate CPSs w
 img-url: "/jh/cps.png"
 date: 2025-07-24
 hidden: false
+katex : true 
 ---
 
 ## Introduction
