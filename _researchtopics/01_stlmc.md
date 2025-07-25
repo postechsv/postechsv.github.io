@@ -7,7 +7,7 @@ img-url: "stlmc-arch3.svg"
 use_math: false
 date: 2024-01-01
 katex: True
-hidden: false
+hidden: true
 ---
 
 ### Introduction

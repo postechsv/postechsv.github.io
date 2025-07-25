@@ -7,7 +7,7 @@ img-url: "maude-se-arch.svg"
 use_math: false
 date: 2025-05-23
 katex: True
-hidden: false
+hidden: true
 ---
 
 ### Introduction
