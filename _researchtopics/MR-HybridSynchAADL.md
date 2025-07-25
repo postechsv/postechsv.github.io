@@ -209,7 +209,7 @@ We evaluates the MH-SynchAADL tool by addressing the following questions
 We first compare our symbolic reachability anlaysis method with four reachability analysis tools for hybrid automata: HyComp, SpaceEx, Flow*, and dReach. For these tools, we have "encoded" the *synchronous designs* of the MH-SynchAADL models as networks of hybrid automata. Each component is modeled as a hybrid automaton with threee modes, where the behavior of a controller is encoded as a single transition.
 
 <center>
-<img src="{{site.baseurl}}/images/respic/mr-hsynchaadl/table1.png" alt="A MH-SynchAADL model" width="50%"/>
+<img src="{{site.baseurl}}/images/respic/jh/table1.png" alt="A MH-SynchAADL model" width="50%"/>
 </center>
 
 We evaluate the power of MH-SynchAADL for analyzing invariant properties.
@@ -218,7 +218,7 @@ sampling and actuating times using three analysis functions. We use different ti
 analysis results with varying time bounds. 
 
 <center>
-<img src="{{site.baseurl}}/images/respic/mr-hsynchaadl/table2.png" alt="A MH-SynchAADL model" width="50%"/>
+<img src="{{site.baseurl}}/images/respic/jh/table2.png" alt="A MH-SynchAADL model" width="50%"/>
 </center>
 
 We have performed symbolic analysis to generate all reachable symbolic states up to given bounds,
@@ -227,7 +227,7 @@ the number of calls to the SMT solver, and the number of reachable symbolic stat
 a timeout of 3 hours.
 
 <center>
-<img src="{{site.baseurl}}/images/respic/mr-hsynchaadl/table3.png" alt="A MH-SynchAADL model" width="50%"/>
+<img src="{{site.baseurl}}/images/respic/jh/table3.png" alt="A MH-SynchAADL model" width="50%"/>
 </center>
 
 
