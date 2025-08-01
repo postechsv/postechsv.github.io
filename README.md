@@ -50,14 +50,14 @@ git push origin --delete yourname
 
 - `faculty.yml`  
   : 교수의 인적 사항을 저장. 현재는 홈페이지에 아이콘 형태로만 출력됨.
-- `news.yml`  
-  : 뉴스 페이지의 내용을 저장. 날짜순으로 자동 정렬됨.
-- `publist.yml`  
+- `news.yml`  (/news)
+  : 뉴스 페이지의 내용을 저장. 날짜순으로 자동 정렬됨. 메인 페이지에는 최신 8개만 출력.
+- `publist.yml`  (/publications)
   : 출판 논문 리스트. 연도 및 파일 내 작성 순서에 따라 정렬됨.
 - `students.yml`  
   : 학생의 인적 사항 저장 (LinkedIn, GitHub, 홈페이지 아이콘 유무).
 
-## 📁 _home
+## 📁 _home (/)
 메인 페이지에 들어갈 섹션별 내용을 정의합니다.  
 각 섹션은 `[XX-XXXX.md]` 형식의 Markdown 파일로 구성됩니다.
 
@@ -65,19 +65,19 @@ git push origin --delete yourname
 - `05-news.md`  
 - … (추가 섹션 작성 가능)
 
-## 📁 _research
+## 📁 _research (/research)
 리서치 페이지 구성용 디렉토리. `_home`과 동일한 방식으로 Markdown 파일을 구성합니다.
 
 - `01-introduce.md`  
 - `02-research-topics.md`  
 - `04-video.md`
 
-## 📁 _researchtopics
+## 📁 _researchtopics (/research/*)
 리서치 페이지 내 `research-topics` 섹션에 포함될 개별 연구 주제 항목을 저장합니다.  
 새로운 문서를 작성하고 싶은 경우 00-SAMPLE.md 파일을 복사하여 사용합니다.
 
 - `00_sample.md`  
 - `...` (기타 연구 주제 파일)
 
-## 📄 members.md
+## 📄 members.md (/members)
 교수 및 학생 구성원 정보를 표시하는 단일 페이지.
