@@ -17,7 +17,7 @@ Our research proposes to address this challenge by presenting a framework that l
 ### Problem
 The BaB technique used in most SOTA non-incremental verifiers works by (1) abstracting all non-linear activation functions within the network, and (2) iteratively creating simpler sub-problems (referred from now on as configurations) by refining one activation function at a time. For each configuration, it checks whether a counterexample (i.e. a valid input that causes an unintended output) exists. Configurations that are found to contain no counterexample are denoted as "UNSAT" configurations. Below is a figure showing part of the process of iterative refinement and counterexample checking (i.e. the BaB process).
 
-<img src="{{site.baseurl}}/images/respic/unsatdb/bab.png" width="75%">
+<img src="{{ site.research_imgs }}/unsatdb/bab.png" width="75%">
 
 Research has been done to utilize information generated from the above BaB process, such as the order in which activation functions are refined. However, <u>valuable information still exists that could further accelerate the incremental verification, which is currently not being used at all</u>.
 
@@ -26,7 +26,7 @@ Research has been done to utilize information generated from the above BaB proce
 ### Contribution
 The above-mentioned UNSAT configuration can be used to (prematurely) determine whether the BaB process needs to continue for an arbitrary configuration, without expensive computation. This can be done by simply computing the intersection between the two configurations, as the intersections do not need to be explored any further. 
 
-<img src="{{site.baseurl}}/images/respic/unsatdb/intersection.png" width="50%">
+<img src="{{ site.research_imgs }}/unsatdb/intersection.png" width="50%">
 
 Based on this insight, we aim to explore the following directions:
 1. Developing a formal definition for the generalization of UNSAT configurations, a method that transforms them into an efficient representation suitable for application (referred from now on as UNSAT information).
@@ -38,7 +38,7 @@ Based on this insight, we aim to explore the following directions:
 ### Framework
 Below is a diagram of the overall design of our proposed framework, along with a brief explanation of each component. The components are grouped based on the phase in which they participate: either the information gathering phase (during the "previous" BaB processes) or the information utilization phase (during the "current" BaB processes).
 
-<img src="{{site.baseurl}}/images/respic/unsatdb/framework.png" width="75%">
+<img src="{{ site.research_imgs }}/unsatdb/framework.png" width="75%">
 
 **Information Gathering Phase**
 - Generalization of UNSAT configuration: UNSAT configurations in their raw form are quite unwieldy and inefficient to deal with. Therefore, a "generalization" process to extract the core of what made it UNSAT is essential. Corresponds to (1) in the figure above.

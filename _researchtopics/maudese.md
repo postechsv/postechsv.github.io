@@ -3,7 +3,7 @@ layout: researchpage
 title: "A Framework for Maude-SMT Integration"
 intro: "This research focuses on extending rewriting modulo SMT to support efficient and customizable symbolic analysis of infinite-state systems. The goal is to overcome the limitations of the existing Maude-SMT interface by enabling satisfying assignment generation, formula simplification, folding-based state-space reduction, and broader theory support including uninterpreted functions."
 authors: Geunyeol Yu, Kyungmin Bae
-img-url: "maude-se-arch.svg"
+img-url: "/maude-se/maude-se-arch.svg"
 use_math: false
 date: 2025-05-23
 katex: True
@@ -25,7 +25,7 @@ We present a new SMT extension of Maude, called Maude-SE, which extends the exis
 {: .text-justify}
 
 <figure id="fig-maude-se" style="text-align: center; margin: 2em 0;">
-  <img src="{{site.baseurl}}/images/respic/maude-se-arch.svg" width="95%" alt="The architecture of Maude-SE.">
+  <img src="{{ site.research_imgs }}/maude-se/maude-se-arch.svg" width="95%" alt="The architecture of Maude-SE.">
   <figcaption style="margin-top: 0.5em; font-size: 1.1em;">
     <strong>Figure 1.</strong> The architecture of Maude-SE.
   </figcaption>
@@ -69,7 +69,7 @@ We demonstrate the flexibility of our interface with a case study on connecting 
 {: .text-justify}
 
 <figure style="text-align: center; margin: 2em 0;">
-  <img src="{{site.baseurl}}/images/respic/maude-se-case-study1.svg" width="70%">
+  <img src="{{ site.research_imgs }}/maude-se/maude-se-case-study1.svg" width="70%">
 </figure>
 
 
@@ -80,7 +80,7 @@ and `_u_sort` store Maude's sort information for translation.
 {: .text-justify}
 
 <figure style="text-align: center; margin: 2em 0;">
-  <img src="{{site.baseurl}}/images/respic/maude-se-case-study2.svg" width="70%">
+  <img src="{{ site.research_imgs }}/maude-se/maude-se-case-study2.svg" width="70%">
 </figure>
 
 The `dag2term` function recursively builds a Z3 data structure from a Maude
@@ -90,7 +90,7 @@ which contains the theory name and sorts of each uninterpreted function symbol.
 {: .text-justify}
 
 <figure style="text-align: center; margin: 2em 0;">
-  <img src="{{site.baseurl}}/images/respic/maude-se-case-study3.svg" width="70%">
+  <img src="{{ site.research_imgs }}/maude-se/maude-se-case-study3.svg" width="70%">
 </figure>
 
 The `term2dag` function converts a Z3 data structure representing an SMT
@@ -98,7 +98,7 @@ formula into a Maude term. We use the `parseTerm` function from the maude Python
 {: .text-justify}
 
 <figure style="text-align: center; margin: 2em 0;">
-  <img src="{{site.baseurl}}/images/respic/maude-se-case-study4.svg" width="70%">
+  <img src="{{ site.research_imgs }}/maude-se/maude-se-case-study4.svg" width="70%">
 </figure>
 
 **Customizing CmdAdapter.** The following shows three variations of the `mkConst`
@@ -108,7 +108,7 @@ equality check to remove subformulas that are subsumed by context.
 {: .text-justify}
 
 <figure style="text-align: center; margin: 2em 0;">
-  <img src="{{site.baseurl}}/images/respic/maude-se-case-study5.svg" width="70%">
+  <img src="{{ site.research_imgs }}/maude-se/maude-se-case-study5.svg" width="70%">
 </figure>
 
 The following shows two variants of the `checkSat` function implemented
@@ -117,7 +117,7 @@ applies Gaussian elimination before checking the satisfiability of a formula.
 {: .text-justify}
 
 <figure style="text-align: center; margin: 2em 0;">
-  <img src="{{site.baseurl}}/images/respic/maude-se-case-study6.svg" width="70%">
+  <img src="{{ site.research_imgs }}/maude-se/maude-se-case-study6.svg" width="70%">
 </figure>
 
 ---

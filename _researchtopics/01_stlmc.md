@@ -3,7 +3,7 @@ layout: researchpage
 title: "SMT-Based Model Checking for Signal Temporal Logic"
 intro: "This research focuses on developing a formal foundation and verification technique for signal temporal logic (STL), which specifies properties of continuous signals in hybrid systems. The goal is to enable robust bounded model checking of general STL properties, with correctness guarantees up to given bounds."
 authors: Geunyeol Yu, Jia Lee, Kyungmin Bae
-img-url: "stlmc-arch3.svg"
+img-url: "/stlmc/stlmc-arch3.svg"
 use_math: false
 date: 2024-01-01
 katex: True
@@ -65,7 +65,7 @@ denotes the size of the SMT encoding &#936; (in thousands). For the model checki
   <figcaption style="margin-bottom: 0.5em; font-size: 1.1em;">
     <strong>Table 1.</strong> Experimental results for robust STL model checking.
   </figcaption>
-  <img src="{{site.baseurl}}/images/respic/stlmc-exp1.svg" width="95%" alt="Experimental results for robust STL model checking.">
+  <img src="{{ site.research_imgs }}/stlmc/stlmc-exp1.svg" width="95%" alt="Experimental results for robust STL model checking.">
 </figure>
 
 **Comparison with reachability analysis tools.** We compare the performance of STLmc in verifying invariant properties against four hybrid automata reachability analysis tools: HyComp, SpaceEx, Flow*, and dReach. For each model, we consider a true invariant property so that reachability analysis explores all possible behaviors up to given bounds. We measure the execution times (in seconds) for analyzing the invariant properties up to a given bound with a timeout of 60 minutes. Since each tool has a diﬀerent notion of bounds, we use the number of discrete jumps 𝑁 and the maximum time horizon 𝜏 as the common bound parameters, which are "encoded" in the models if needed. We use the same settings for the discrete bound 𝑁 and time horizon 𝜏 as in the previous experiment. 
@@ -78,7 +78,7 @@ The experimental results are summarized in Table 2, with execution times in seco
   <figcaption style="margin-bottom: 0.5em; font-size: 1.1em;">
     <strong>Table 2.</strong> Execution time for analyzing invariant properties (in seconds).
   </figcaption>
-  <img src="{{site.baseurl}}/images/respic/stlmc-exp2.svg" width="70%" alt="Execution time for analyzing invariant properties (in seconds).">
+  <img src="{{ site.research_imgs }}/stlmc/stlmc-exp2.svg" width="70%" alt="Execution time for analyzing invariant properties (in seconds).">
 </figure>
 
 ---

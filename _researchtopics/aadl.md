@@ -3,7 +3,7 @@ layout: researchpage
 title: "MH-SynchAADL"
 intro: "We define the MH-SynchAADL modeling language and verification tool for hierarchical multirate CPSs with advanced control programs, continuous behaviors, and imprecise local clocks." 
 intro-temp: "This research aims at modeling and verification of multirate CPSs written in AADL modeling language"
-img-url: "/jh/cps.png"
+img-url: "/aadl/cps.png"
 date: 2025-07-24
 hidden: false
 katex : true 
@@ -132,7 +132,7 @@ The time frame of the environment is *shifted to the left* from the global time 
 4. $E$ receives $C_n$'s command $\alpha_n$ at time $t_n^a$ (and may change its continuous dynamics), where $t_n^a - t_n^0$ denotes the actuating time.
 
 <center>
-<img src="{{site.baseurl}}/images/respic/jh/interaction.png" alt="A MH-SynchAADL model" width="50%"/>
+<img src="{{ site.research_imgs }}/aadl/interaction.png" alt="A MH-SynchAADL model" width="50%"/>
 </center>
 
 
@@ -141,7 +141,7 @@ The time frame of the environment is *shifted to the left* from the global time 
 MH-SynchAADL seamlessly integrates modeling and formal analysis into OSATE. The tool can statically check the syntactic constraints of MH-SynchAADL. The tool’s property specification language can specify invariant and reachability properties. The tool synthesizes the corresponding Maude model from a MH-SynchAADL model and invokes Maude with SMT solving to perform various formal analyses, including randomized simulation (using the concrete semantics), symbolic reachability analysis (using the symbolic semantics), and portfolio analysis (running both methods in parallel with multithreading). The tool is available at https://hybridsynchaadl.github.io.
 
 <center>
-<img src="{{site.baseurl}}/images/respic/jh/tool.png" alt="Virtually Synchronous CPSs" width="50%"/>
+<img src="{{ site.research_imgs }}/aadl/tool.png" alt="Virtually Synchronous CPSs" width="50%"/>
 </center>
 
 
@@ -155,7 +155,7 @@ We perform the design and analysis of a collection of drones for packet
 delivery using MH-SynchAADL. Each drone contains two controllers operating at diﬀerent periods, and diﬀerent drones can have diﬀerent periods. We use the combination of symbolic and concrete semantics to analyze overall system behavior and to verify individual controller logic. 
 
 <center>
-<img src="{{site.baseurl}}/images/respic/jh/system_description.png" alt="Packet Delivery Systems" width="50%"/>
+<img src="{{ site.research_imgs }}/aadl/system_description.png" alt="Packet Delivery Systems" width="50%"/>
 </center>
 
 The below figure illustrates the control logic of the mission and flight controller, where double circles indicate complete states. 
@@ -163,7 +163,7 @@ In the mission control logic, the state *choose_action* determin drone's behavio
 In the flight control logic, it calculates a new velocity or determin drone's state based on the *goal* and commands from the mission controller.
 
 <center>
-<img src="{{site.baseurl}}/images/respic/jh/control_logic.png" alt="Control Logic" width="50%"/>
+<img src="{{ site.research_imgs }}/aadl/control_logic.png" alt="Control Logic" width="50%"/>
 </center>
 
 ### 1. Randomized Simulation
@@ -210,7 +210,7 @@ We evaluates the MH-SynchAADL tool by addressing the following questions
 We first compare our symbolic reachability anlaysis method with four reachability analysis tools for hybrid automata: HyComp, SpaceEx, Flow*, and dReach. For these tools, we have "encoded" the *synchronous designs* of the MH-SynchAADL models as networks of hybrid automata. Each component is modeled as a hybrid automaton with threee modes, where the behavior of a controller is encoded as a single transition.
 
 <center>
-<img src="{{site.baseurl}}/images/respic/jh/table1.png" alt="A MH-SynchAADL model" width="50%"/>
+<img src="{{ site.research_imgs }}/aadl/table1.png" alt="A MH-SynchAADL model" width="50%"/>
 </center>
 
 We evaluate the power of MH-SynchAADL for analyzing invariant properties.
@@ -219,7 +219,7 @@ sampling and actuating times using three analysis functions. We use different ti
 analysis results with varying time bounds. 
 
 <center>
-<img src="{{site.baseurl}}/images/respic/jh/table2.png" alt="A MH-SynchAADL model" width="50%"/>
+<img src="{{ site.research_imgs }}/aadl/table2.png" alt="A MH-SynchAADL model" width="50%"/>
 </center>
 
 We have performed symbolic analysis to generate all reachable symbolic states up to given bounds,
@@ -228,7 +228,7 @@ the number of calls to the SMT solver, and the number of reachable symbolic stat
 a timeout of 3 hours.
 
 <center>
-<img src="{{site.baseurl}}/images/respic/jh/table3.png" alt="A MH-SynchAADL model" width="50%"/>
+<img src="{{ site.research_imgs }}/aadl/table3.png" alt="A MH-SynchAADL model" width="50%"/>
 </center>
 
 
