@@ -25,7 +25,6 @@ cd postechsv.github.io
 git checkout -b yourname
 ```
 
----
 
 ## 2. Make Changes and Push
 
@@ -37,8 +36,6 @@ git commit -m "Awesome change"
 git push origin yourname
 ```
 
----
-
 ## 3. Submit a Pull Request on GitHub
 
 Open GitHub and create a **Pull Request** from your branch.  
@@ -47,8 +44,6 @@ Once submitted, just wait for approval 👍
 <img width="800" height="136" alt="image" src="https://github.com/user-attachments/assets/e4779023-79c2-4420-9539-64cf35c69554" />
 
 <img width="800" height="400" alt="image" src="https://github.com/user-attachments/assets/6784431a-b675-434b-a849-70eb875f2ee9" />
-
----
 
 ## 4. Clean Up After Merge
 
@@ -59,7 +54,7 @@ git branch -D yourname
 git push origin --delete yourname
 ```
 
-
+---
 # Homepage Structure
 
 ## 📁 _data
