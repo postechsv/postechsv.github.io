@@ -61,13 +61,13 @@ git push origin --delete yourname
 홈페이지에서 사용하는 다양한 데이터 파일들을 저장합니다.
 
 - `faculty.yml`  
-  : 교수의 인적 사항을 저장. 현재는 홈페이지에 아이콘 형태로만 출력됨.
+  : 교수의 인적 사항을 저장.
 - `news.yml`  (/news)
   : 뉴스 페이지의 내용을 저장. 날짜순으로 자동 정렬됨. 메인 페이지에는 최신 8개만 출력.
 - `publist.yml`  (/publications)
   : 출판 논문 리스트. 연도 및 파일 내 작성 순서에 따라 정렬됨.
 - `students.yml`  
-  : 학생의 인적 사항 저장 (LinkedIn, GitHub, 홈페이지 아이콘 유무).
+  : 학생의 인적 사항 저장 및 LinkedIn, GitHub, 홈페이지 아이콘 유무.
 
 ## 📁 _home (/)
 메인 페이지에 들어갈 섹션별 내용을 정의합니다.  
