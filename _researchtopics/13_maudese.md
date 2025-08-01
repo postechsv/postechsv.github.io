@@ -4,9 +4,6 @@ title: "A Framework for Maude-SMT Integration"
 intro: "This research focuses on extending rewriting modulo SMT to support efficient and customizable symbolic analysis of infinite-state systems. The goal is to overcome the limitations of the existing Maude-SMT interface by enabling satisfying assignment generation, formula simplification, folding-based state-space reduction, and broader theory support including uninterpreted functions."
 authors: Geunyeol Yu, Kyungmin Bae
 img-url: "/maude-se/maude-se-arch.svg"
-use_math: false
-date: 2025-05-23
-katex: True
 hidden: true
 ---
 
