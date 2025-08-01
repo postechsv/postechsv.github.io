@@ -73,7 +73,8 @@ git push origin --delete yourname
 - `04-video.md`
 
 ## 📁 _researchtopics
-리서치 페이지 내 `research-topics` 섹션에 포함될 개별 연구 주제 항목을 저장합니다. 새로운 문서를 작성하고 싶은 경우 00-SAMPLE.md 파일을 복사하여 사용합니다.
+리서치 페이지 내 `research-topics` 섹션에 포함될 개별 연구 주제 항목을 저장합니다. 
+  새로운 문서를 작성하고 싶은 경우 00-SAMPLE.md 파일을 복사하여 사용합니다.
 
 - `00_sample.md`  
 - `...` (기타 연구 주제 파일)
