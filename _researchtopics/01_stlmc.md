@@ -2,11 +2,7 @@
 layout: researchpage
 title: "SMT-Based Model Checking for Signal Temporal Logic"
 intro: "This research focuses on developing a formal foundation and verification technique for signal temporal logic (STL), which specifies properties of continuous signals in hybrid systems. The goal is to enable robust bounded model checking of general STL properties, with correctness guarantees up to given bounds."
-authors: Geunyeol Yu, Jia Lee, Kyungmin Bae
 img-url: "/stlmc/stlmc-arch3.svg"
-use_math: false
-date: 2024-01-01
-katex: True
 hidden: false
 ---
 

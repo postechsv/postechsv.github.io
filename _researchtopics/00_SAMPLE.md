@@ -1,15 +1,16 @@
+<!--  <<<<<<<<REMOVE
 ---
 layout: researchpage
 title: "Formal Specification of Trusted Execution Environment APIs"
 intro: "This research focuses on presenting a formal specifcation of TEE APIs by leveraging Maude, to support formal analysis and verification of TEE applications."
-intro-temp: "..."
 img-url: "/tee/tee-ree.png"
 hidden: false
 ---
+--->   <<<<<<<<REMOVE
+# Please uncomment the section above!
+
 
 ### Introduction
-Trusted execution environments (TEEs) have emerged as a key technology in the cybersecurity domain. A TEE provides an isolated environment in which sensitive computations can be executed securely. Trusted applications running in TEEs are developed using standardized APIs that many hardware platforms for TEE adhere to. However, formal models tailored to standard TEE APIs—required for rigorous verification—are not well developed.
-
 <img src="{{ site.research_imgs }}/tee/tee-example.png" width="75%">
 
 Our research addresses this challenge by leveraging a very expressive modeling language, called Maude, which supports powerful object-oriented specification to present a comprehensive formal model of TEE APIs that is explicitly designed for the formal analysis of TEE applications.
@@ -39,18 +40,12 @@ The Cryptographic Operations APIs' behavior is modeled as rewrite rules, which d
 
 ---
 
-### Case Study on Formal Analysis of MQT-TZ
-We demonstrate the effectiveness and feasibility of our formal model using MQT-TZ, an open-source TEE application that secures MQTT, a topic-based publish-subscribe IoT protocol. For formal analysis, we model MQT-TZ's entities (brokers, publishers, and subscribers) as Maude objects and specify the protocol's overall behavior, including data collection, communication between clients, and broker-side processing as rewrite rules.
+### Math
+\begin{equation}
+\int_{0}^{\infty} e^{-x^2}\,dx \;=\; \frac{\sqrt{\pi}}{2}.
+\end{equation}
 
-We analyze several security requirements under two threat models: an out-of-memory threat and a message modification threat. By expressing security requirements as linear temporal logic (LTL) formulas and applying Maude's built-in model checking method, we identify several security vulnerabilities. Below are (1) the LTL properties for MQT-TZ and (2) the model checking results, with red highlighting property P2 and P3 violations indicating possible vulnerabilities. By analyzing the violations, we have discovered that TA can panic during the message re-encryption and that when insufficient memory is detected, the TA finalizes the re-encryption with an error and returns a re-encrypted message containing (dummy) data. 
-
-<img src="{{ site.research_imgs }}/tee/ltl-prop.png" width="75%">
-
-<img src="{{ site.research_imgs }}/tee/before-patch-results.png" width="75%">
-
-We implement code-level patches and confirm their integrity by performing the LTL model checking again. Below are (1) the proposed patches and (2) the model checking results showing that P2 and P3 are no longer violated.
-
-<img src="{{ site.research_imgs }}/tee/after-patch-results.png" width="75%">
+$\sum{0}^{100}$
 
 ---
 
