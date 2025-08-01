@@ -1,8 +1,9 @@
-## Run the page locally using Jekyll
-First, install ruby [here](https://www.ruby-lang.org/en/documentation/installation/).  
+# 🚀 Run the Page Locally Using Jekyll
 
-To run it locally, follow instruction [here](https://jekyllrb.com/) to install Jekyll or use command below.  
-Then run `jekyll serve` to see in `localhost:4000`. Here is a brief install guidelines.  
+First, install Ruby by following the instructions [here](https://www.ruby-lang.org/en/documentation/installation/).
+
+To run the site locally, you can follow the official Jekyll setup guide [here](https://jekyllrb.com/),  
+or simply use the commands below:
 
 ```bash
 sudo gem install jekyll
@@ -10,34 +11,50 @@ sudo gem install rouge
 jekyll serve
 ```
 
+Once started, open your browser and go to `http://localhost:4000` to view the site.
 
-## Update Workflow
-### Clone and checkout
-```
+---
+
+# 🔄 Update Workflow
+
+## 1. Clone the Repository and Create a New Branch
+
+```bash
 git clone https://github.com/postechsv/postechsv.github.io
 cd postechsv.github.io
 git checkout -b yourname
 ```
 
-### Work and push
-😊... edit code ...
+---
 
-```
+## 2. Make Changes and Push
+
+😊 ...make your awesome edits...
+
+```bash
 git add .
 git commit -m "Awesome change"
 git push origin yourname
 ```
 
-### Submit PR on GitHub
+---
+
+## 3. Submit a Pull Request on GitHub
+
+Open GitHub and create a **Pull Request** from your branch.  
+Once submitted, just wait for approval 👍
+
 <img width="800" height="136" alt="image" src="https://github.com/user-attachments/assets/e4779023-79c2-4420-9539-64cf35c69554" />
 
 <img width="800" height="400" alt="image" src="https://github.com/user-attachments/assets/6784431a-b675-434b-a849-70eb875f2ee9" />
 
-Once you're done, just wait for approval👍.
+---
 
+## 4. Clean Up After Merge
 
-### Delete after merge
-```
+Once your PR is merged, you can delete your working branch locally and remotely:
+
+```bash
 git branch -D yourname
 git push origin --delete yourname
 ```
