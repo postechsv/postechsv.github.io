@@ -1,4 +1,4 @@
-<!--  <<<<<<<<REMOVE
+<!--  <<<<<<<< REMOVE
 ---
 layout: researchpage
 title: "Formal Specification of Trusted Execution Environment APIs"
@@ -6,7 +6,8 @@ intro: "This research focuses on presenting a formal specifcation of TEE APIs by
 img-url: "/tee/tee-ree.png"
 hidden: false
 ---
---->   <<<<<<<<REMOVE
+--->   <<<<<<<< REMOVE
+
 # Please uncomment the section above!
 
 
