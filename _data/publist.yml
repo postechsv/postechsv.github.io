@@ -14,12 +14,12 @@
   tag: conference #workshop
   link: 
 
-- title: "Symbolic Analysis and Parameter Synthesis for Networks of Parametric Timed Automata with Global Variables Using Maude and SMT Solving"
+- title: "SMT-based robust model checking for signal temporal logic"
   authors: Jia Lee, Geunyeol Yu, and Kyungmin Bae
   venue: Science of Computer Programming
   year: 2025
   tag: journal
-  link: https://doi.org/10.1016/j.scico.2023.103074
+  link: https://doi.org/10.1016/j.scico.2025.103332
 
 - title: "Model Checking of Signal Temporal Logic"
   authors: Jia Lee
