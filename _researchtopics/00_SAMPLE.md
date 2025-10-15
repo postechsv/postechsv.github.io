@@ -4,7 +4,7 @@ layout: researchpage
 title: "Formal Specification of Trusted Execution Environment APIs"
 intro: "This research focuses on presenting a formal specifcation of TEE APIs by leveraging Maude, to support formal analysis and verification of TEE applications."
 img-url: "/tee/tee-ree.png"
-hidden: false
+hidden: true
 ---
 --->   <<<<<<<< REMOVE
 
