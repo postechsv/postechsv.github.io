@@ -2,9 +2,8 @@
 layout: researchpage
 title: "RL-based Heuristics Learning for Model Checking"
 intro: "This project leverages reinforcement learning to automatically learn search heuristics that improve the efficiency of model checking by guiding the exploration toward error states."
-intro-temp: "Accelerating model checking through reinforcement learning-based heuristic learning"
 img-url: "/reusable/reusable.png"
-hidden: false
+hidden: True
 ---
 
 ## Introduction

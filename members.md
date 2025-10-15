@@ -52,7 +52,7 @@ layout: members
 </div>
 <hr />
 
-### Students
+### Graduate Students
 
 <div style="margin-bottom: 20px;" class='container'>
 <div class="row" style="flex-wrap: wrap; display: flex;">

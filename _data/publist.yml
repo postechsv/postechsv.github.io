@@ -1,4 +1,26 @@
-# 2024
+# 2025
+
+- title: "Formal Analysis of Networked PLC Controllers Interacting with Physical Environments"
+  authors: Jaeseo Lee and Kyungmin Bae
+  venue: Static Analysis Symposium (SAS)
+  year: 2025
+  tag: conference
+  link: 
+
+- title: "Semantics and formal analysis of Lingua Franca CPS specifications in rewriting logic"
+  authors: Mircea Marin, Peter Olveczky, Mario Reja, Mikheil Rukhaia, and Kyungmin Bae
+  venue: Marjan Festschrift at FSEN
+  year: 2025
+  tag: conference #workshop
+  link: 
+
+- title: "SMT-based robust model checking for signal temporal logic"
+  authors: Jia Lee, Geunyeol Yu, and Kyungmin Bae
+  venue: Science of Computer Programming
+  year: 2025
+  tag: journal
+  link: https://doi.org/10.1016/j.scico.2025.103332
+
 - title: "Model Checking of Signal Temporal Logic"
   authors: Jia Lee
   venue: Ph.D Dissertation, Department of Computer Science, POSTECH
@@ -6,21 +28,38 @@
   image: 
   description: 
   link:
-    url: 
-    display: 
-  highlight: 0
   tag: dissertation
+
+
+# 2024
+
+- title: "Verifying Invariants by Deductive Model Checking"
+  authors: Kyungmin Bae, Santiago Escobar, Raúl López-Rueda, José Meseguer, and Julia Sapiña
+  venue: International Workshop on Rewriting Logic and its Applications (WRLA)
+  year: 2024
+  tag: conference #workshop
+  link: 
+
+- title: "Rigorous Model Engineering of Hierarchical Multirate CPSs in MR-HybridSynchAADL"
+  authors: Jaehun Lee, Kyungmin Bae and Peter Olveczky
+  venue: International Symposium on Leveraging Applications of Formal Methods (ISoLA)
+  year: 2024
+  tag: conference
+  link: 
+
+- title: "A Flexible Framework for Integrating Maude and SMT Solvers Using Python"
+  authors: Geunyeol Yu and Kyungmin Bae
+  venue: SInternational Workshop on Rewriting Logic and its Applications (WRLA)
+  year: 2024
+  tag: conference #workshop
+  link:
 
 - title: "Narrowing and Heuristic Search for Symbolic Reachability Analysis of Concurrent Object-Oriented Systems"
   authors: Byeongjee Kang and Kyungmin Bae
   venue: Science of Computer Programming
   year: 2024
   tag: journal
-  link:
-    url: https://doi.org/10.1016/j.scico.2024.103097
-    display:
-  highlight: 0
-
+  link: https://doi.org/10.1016/j.scico.2024.103097
 
 - title: "Symbolic Analysis and Parameter Synthesis for Networks of Parametric Timed Automata with Global Variables Using Maude and SMT Solving"
   authors: Jaime Arias, Kyungmin Bae, Carlos Olarte, Peter Csaba Olveczky, Laure Petrucci, and Fredrik Romming
@@ -43,6 +82,9 @@
   tag: conference
   link: https://dl.acm.org/doi/abs/10.1007/978-3-031-57259-3_5
 
+
+# 2023
+
 - title: "Symbolic Analysis and Parameter Synthesis for Time Petri Nets Using Maude and SMT Solving"
   authors: Jaime Arias, Kyungmin Bae, Carlos Olarte, Peter Ölveczky, Laure Petrucci, and Fredrik Romming
   venue: International Conference on Application and Theory of Petri Nets and Concurrency (Petri Nets)
@@ -55,7 +97,6 @@
   year: 2023
   tag: conference
 
-
 - title: "Formal Model Engineering of Synchronous CPS Designs in AADL"
   authors: Kyungmin Bae and Peter Olveczky
   venue: "2nd ADEPT Workshop: AADL by its Practitioners (ADEPT)"
@@ -66,7 +107,7 @@
   authors: Jaime Arias, Kyungmin Bae, Carlos Olarte, Peter Ölveczky, Laure Petrucci, Fredrik Rømming
   venue: ACM SIGPLAN International Workshop on Formal Techniques for Safety-Critical Systems (FTSCS)
   year: 2022
-  tag: conference
+  tag: conference #workshop
 
 - title: "Symbolic Reachability Analysis of Distributed Systems Using Narrowing and Heuristic Search"
   authors: Byeongjee Kang and Kyungmin Bae
@@ -94,9 +135,7 @@
   venue: Proceedings of the 8th ACM SIGPLAN International Workshop on Formal Techniques for Safety-Critical Systems (FTSCS)
   year: 2022
   month: 11
-  link:
-    url: https://dl.acm.org/doi/abs/10.1145/3563822.3568016
-    display:
+  link: https://dl.acm.org/doi/abs/10.1145/3563822.3568016
   highlight: 0
   tag: conference
   
@@ -107,8 +146,6 @@
   image: 
   description: 
   link:
-    url: 
-    display: 
   highlight: 0
   tag: domestic
 
@@ -119,9 +156,7 @@
   month:
   image: 
   description: 
-  link:
-    url: https://link.springer.com/chapter/10.1007/978-3-031-19759-8_4
-    display: 
+  link: https://link.springer.com/chapter/10.1007/978-3-031-19759-8_4
   highlight: 0
   tag: conference
 
@@ -133,23 +168,14 @@
   month: 8
   image: 
   description: 
-  link:
-    url: https://link.springer.com/chapter/10.1007/978-3-031-13185-1_26
-    display: 
-  highlight: 0
+  link: https://link.springer.com/chapter/10.1007/978-3-031-13185-1_26
   tag: conference
 
 - title: Modeling and formal analysis of virtually synchronous cyber-physical systems in AADL
   authors: Jaehun Lee, Kyungmin Bae, Peter Olveczky, Sharon Kim, and Minseok Kang
   venue: Software Tools for Technology Transfer (STTT)
   year: 2022
-  month: 7
-  image: 
-  description: 
-  link:
-    url: https://link.springer.com/article/10.1007/s10009-022-00665-z
-    display: 
-  highlight: 0
+  link: https://link.springer.com/article/10.1007/s10009-022-00665-z
   tag: journal
 
 - title: "Formal Specification and Analysis of PLC and OSEK/VDX OS using Maude"
@@ -158,10 +184,7 @@
   year: 2022
   image: 
   description: 
-  link:
-    url: http://www.dcollection.net/handler/postech/200000632060
-    display: 
-  highlight: 0
+  link: http://www.dcollection.net/handler/postech/200000632060
   tag: dissertation
 
 
@@ -171,10 +194,7 @@
   year: 2022
   image: 
   description: 
-  link:
-    url: http://www.dcollection.net/handler/postech/200000632492
-    display: 
-  highlight: 0
+  link: http://www.dcollection.net/handler/postech/200000632492
   tag: dissertation
 
 - title: "Extending the HybridSynchAADL Modeling Language and Tool"
@@ -183,10 +203,7 @@
   year: 2022
   image: 
   description: 
-  link:
-    url: http://www.dcollection.net/handler/postech/200000600467
-    display: 
-  highlight: 0
+  link: http://www.dcollection.net/handler/postech/200000600467
   tag: dissertation
 
 # 2021
@@ -198,9 +215,7 @@
   month: 8
   image: 
   description: 
-  link:
-    url: https://ieeexplore.ieee.org/document/9678719
-    display: 
+  link: https://ieeexplore.ieee.org/document/9678719
   highlight: 0
   tag: conference
 
@@ -210,9 +225,7 @@
   year: 2021
   image: 
   description: 
-  link:
-    url: https://dl.acm.org/doi/10.1145/3477036
-    display: 
+  link: https://dl.acm.org/doi/10.1145/3477036
   highlight: 0
   tag: conference
 
@@ -222,9 +235,7 @@
   year: 2021
   image: 
   description: 
-  link:
-    url: https://link.springer.com/chapter/10.1007/978-3-030-81685-8_23
-    display: 
+  link: https://link.springer.com/chapter/10.1007/978-3-030-81685-8_23
   highlight: 0
   tag: conference
 
@@ -236,8 +247,6 @@
   image: 
   description: 
   link:
-    url: 
-    display: 
   highlight: 0
   tag: domestic
 
@@ -248,8 +257,6 @@
   image: 
   description: 
   link:
-    url: 
-    display: 
   highlight: 0
   tag: domestic
 
@@ -259,9 +266,7 @@
   year: 2021
   image: 
   description: 
-  link:
-    url: http://www.dcollection.net/handler/postech/200000506246
-    display: 
+  link: http://www.dcollection.net/handler/postech/200000506246
   highlight: 0
   tag: dissertation
 
@@ -276,7 +281,6 @@
   image: 
   description: 
   link:
-    url: 
     display: 
   highlight: 0
   tag: conference
@@ -288,8 +292,6 @@
   image: 
   description: 
   link:
-    url: 
-    display: 
   highlight: 0
   tag: book
 
@@ -300,7 +302,6 @@
   image: 
   description: 
   link:
-    url: 
     display: 
   highlight: 0
   tag: domestic
@@ -312,7 +313,6 @@
   image: 
   description: 
   link:
-    url: 
     display: 
   highlight: 0
   tag: domestic
@@ -323,9 +323,7 @@
   year: 2020
   image: 
   description: 
-  link:
-    url: http://www.dcollection.net/handler/postech/200000287492
-    display: 
+  link: http://www.dcollection.net/handler/postech/200000287492
   highlight: 0
   tag: dissertation
 
@@ -338,10 +336,7 @@
   year: 2019
   image: 
   description: 
-  link:
-    url: https://dl.acm.org/doi/10.1145/3290364
-    display: 
-  highlight: 0
+  link: https://dl.acm.org/doi/10.1145/3290364
   tag: conference
 
 - title: "Symbolic State Space Reduction with Guarded Terms for Rewriting Modulo SMT"
@@ -351,7 +346,6 @@
   image: 
   description: 
   link:
-    url: 
     display: 
   highlight: 0
   tag: journal
@@ -363,8 +357,6 @@
   image: 
   description: 
   link:
-    url: 
-    display: 
   highlight: 0
   tag: domestic
 
@@ -375,8 +367,6 @@
   image: 
   description: 
   link:
-    url: 
-    display: 
   highlight: 0
   tag: domestic
 
@@ -389,8 +379,6 @@
   image: 
   description: 
   link:
-    url: 
-    display: 
   highlight: 0
   tag: book
 
@@ -403,7 +391,6 @@
   image: 
   description: 
   link:
-    url: 
     display: 
   highlight: 0
   tag: conference
@@ -415,7 +402,6 @@
   image: 
   description: 
   link:
-    url: 
     display: 
   highlight: 0
   tag: conference
@@ -429,7 +415,6 @@
   image: 
   description: 
   link:
-    url: 
     display: 
   highlight: 0
   tag: conference
@@ -441,7 +426,6 @@
   image: 
   description: 
   link:
-    url: 
     display: 
   highlight: 0
   tag: conference
@@ -453,7 +437,6 @@
   image: 
   description: 
   link:
-    url: 
     display: 
   highlight: 0
   tag: conference
@@ -465,7 +448,6 @@
   image: 
   description: 
   link:
-    url: 
     display: 
   highlight: 0
   tag: conference
@@ -479,7 +461,6 @@
   image: 
   description: 
   link:
-    url: 
     display: 
   highlight: 0
   tag: journal
@@ -491,7 +472,6 @@
   image: 
   description: 
   link:
-    url: 
     display: 
   highlight: 0
   tag: journal
@@ -503,7 +483,6 @@
   image: 
   description: 
   link:
-    url: 
     display: 
   highlight: 0
   tag: conference
@@ -515,9 +494,7 @@
   month: 8
   image: 
   description: 
-  link:
-    url: https://link.springer.com/chapter/10.1007/978-3-319-23165-5_5
-    display: 
+  link: https://link.springer.com/chapter/10.1007/978-3-319-23165-5_5
   highlight: 0
   tag: conference
 
@@ -530,7 +507,6 @@
   image: 
   description: 
   link:
-    url: 
     display: 
   highlight: 0
   tag: conference
@@ -542,7 +518,6 @@
   image: 
   description: 
   link:
-    url: 
     display: 
   highlight: 0
   tag: conference
@@ -554,7 +529,6 @@
   image: 
   description: 
   link:
-    url: 
     display: 
   highlight: 0
   tag: journal
@@ -566,7 +540,6 @@
   image: 
   description: 
   link:
-    url: 
     display: 
   highlight: 0
   tag: conference
@@ -578,7 +551,6 @@
   image: 
   description: 
   link:
-    url: 
     display: 
   highlight: 0
   tag: dissertation
@@ -592,7 +564,6 @@
   image: 
   description: 
   link:
-    url: 
     display: 
   highlight: 0
   tag: conference
@@ -606,7 +577,6 @@
   image: 
   description: 
   link:
-    url: 
     display: 
   highlight: 0
   tag: conference
@@ -618,7 +588,6 @@
   image: 
   description: 
   link:
-    url: 
     display: 
   highlight: 0
   tag: conference
@@ -630,7 +599,6 @@
   image: 
   description: 
   link:
-    url: 
     display: 
   highlight: 0
   tag: journal
@@ -642,7 +610,6 @@
   image: 
   description: 
   link:
-    url: 
     display: 
   highlight: 0
   tag: conference
@@ -654,7 +621,6 @@
   image: 
   description: 
   link:
-    url: 
     display: 
   highlight: 0
   tag: conference
@@ -668,7 +634,6 @@
   image: 
   description: 
   link:
-    url: 
     display: 
   highlight: 0
   tag: conference
@@ -680,7 +645,6 @@
   image: 
   description: 
   link:
-    url: 
     display: 
   highlight: 0
   tag: conference
@@ -694,7 +658,6 @@
   image: 
   description: 
   link:
-    url: 
     display: 
   highlight: 0
   tag: conference
@@ -706,7 +669,6 @@
   image: 
   description: 
   link:
-    url: 
     display: 
   highlight: 0
   tag: conference
@@ -720,7 +682,6 @@
   image: 
   description: 
   link:
-    url: 
     display: 
   highlight: 0
   tag: conference
@@ -734,7 +695,6 @@
   image: 
   description: 
   link:
-    url: 
     display: 
   highlight: 0
   tag: conference

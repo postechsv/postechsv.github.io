@@ -9,9 +9,11 @@ baseurl:
 #baseurl:            "" #For Root Domain
 permalink: /:year/:month/:day/:title.html
 permalink: /:year/:month/:day/:title.html
+research_imgs: "/images/research"
 
 # Markdown
 markdown: kramdown
+
 
 # Highlighter
 highlighter: rouge
