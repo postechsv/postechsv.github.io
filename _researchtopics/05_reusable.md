@@ -12,32 +12,32 @@ Model checking is a powerful search technique used to verify system properties a
 
 - **Heuristic Learning**
 
-We train a Q-function ( Q(s, a) ) to estimate the expected cumulative reward for taking an action a in a given state s. For example, the reward function gives 1 for bug states and 0 otherwise. The learned Q-function represents how likely a pair of state and action will lead to safety violation.
+  We train a Q-function ( Q(s, a) ) to estimate the expected cumulative reward for taking an action a in a given state s. For example, the reward function gives 1 for bug states and 0 otherwise. The learned Q-function represents how likely a pair of state and action will lead to safety violation.
 
 - **Heuristic Search**
 
-The learned heuristic is integrated into the model checking process by prioritizing state exploration based on the Q-function ( Q(s, a) ). Instead of performing an exhaustive search, the model checker focuses on states with higher estimated rewards, thereby accelerating error detection.
+  The learned heuristic is integrated into the model checking process by prioritizing state exploration based on the Q-function ( Q(s, a) ). Instead of performing an exhaustive search, the model checker focuses on states with higher estimated rewards, thereby accelerating error detection.
 
 ## Taming State-Space Explosion
 
 - **Predicate Abstraction for State-Space Explosion**
 
-To address the challenge of state-space explosion, we incorporate predicate abstraction that identifies multiple states with the same boolean features. This abstraction gives a Markov Decision Process(MDP) to which RL is applied. The MDP consists of less number of states than the original system. reduces the complexity of the search space and enables the learned heuristics to generalize from smaller models to larger, more complex systems.
+  To address the challenge of state-space explosion, we incorporate predicate abstraction that identifies multiple states with the same boolean features. This abstraction gives a Markov Decision Process(MDP) to which RL is applied. The MDP consists of less number of states than the original system. reduces the complexity of the search space and enables the learned heuristics to generalize from smaller models to larger, more complex systems.
 
 ## Preliminary Experiment
 
 **Set-up**
-- The one-third-rule (OTR) model is a consensus model parameterized by the number of nodes n and the vote threshold k
-0 Large n and large k/n lead to a large state space
-- Training is performed with Q-learning on an OTR(2/3) model
-Each Q-table entry corresponds to a predicate abstracted state (e.g., 4 predicates yield 2⁴ = 16 states)
-- A heuristic search is then executed against the concrete model and the abstract model of OTR, respectively
-- timeout = 24 hours
+  - The one-third-rule (OTR) model is a consensus model parameterized by the number of nodes n and the vote threshold k
+  0 Large n and large k/n lead to a large state space
+  - Training is performed with Q-learning on an OTR(2/3) model
+  Each Q-table entry corresponds to a predicate abstracted state (e.g., 4 predicates yield 2⁴ = 16 states)
+  - A heuristic search is then executed against the concrete model and the abstract model of OTR, respectively
+  - timeout = 24 hours
 
 **Result**
-- **Baseline (BFS):** A simple breadth-first search approach fails for all configurations, resulting in a timeout.
-- **RL with Predicate Abstraction (PA):** Applying reinforcement learning (RL) directly to the predicate abstracted system yields successful results for some configurations (OTR(3/5) and OTR(3/6)), while timing out for others.
-- **RL with Predicate Abstraction Abstraction (PA2):** Incorporating another layer of abstraction over predicate abstraction further improves performance across all configurations. (See On-going Work below)
+  - **Baseline (BFS):** A simple breadth-first search approach fails for all configurations, resulting in a timeout.
+  - **RL with Predicate Abstraction (PA):** Applying reinforcement learning (RL) directly to the predicate abstracted system yields successful results for some configurations (OTR(3/5) and OTR(3/6)), while timing out for others.
+  - **RL with Predicate Abstraction Abstraction (PA2):** Incorporating another layer of abstraction over predicate abstraction further improves performance across all configurations. (See On-going Work below)
 
 | OTR Configuration | Baseline (BFS) | RL w/ PA | RL with PA<sup>2</sup> |
 |-------------------|----------------|----------------|---------------------|
@@ -51,36 +51,35 @@ Each Q-table entry corresponds to a predicate abstracted state (e.g., 4 predicat
 
 - **Collecting More Benchmarks**
 
-We are currently collecting more benchmarks to improve our empirical experiments. We plan to include: Filter algorithm, QLOCK algorithm, Bakery algorithm, etc. All these models run on N processes, which can exploit primary error traces for small N.
+  We are currently collecting more benchmarks to improve our empirical experiments. We plan to include: Filter algorithm, QLOCK algorithm, Bakery algorithm, etc. All these models run on N processes, which can exploit primary error traces for small N.
 
 - **Predicate Abstraction Abstraction for Curse of Dimensionality**
 
-Note that predicate abstraction with n predicates gives 2n MDP states. Hence when n is large, predicate abstraction faces a curse of dimensionality, where the learning becomes intractable due to high-dimensional state representations. To tackle this, we furthur abstract the abstraction domain of MDP states by giving partial-orders to the boolean feature vectors. For example, the abstract states 1111 and 1110 are abstracted to 111T, thereby generalizing the heuristics to similar states.
+  Note that predicate abstraction with n predicates gives 2n MDP states. Hence when n is large, predicate abstraction faces a curse of dimensionality, where the learning becomes intractable due to high-dimensional state representations. To tackle this, we furthur abstract the abstraction domain of MDP states by giving partial-orders to the boolean feature vectors. For example, the abstract states 1111 and 1110 are abstracted to 111T, thereby generalizing the heuristics to similar states.
 
 
 - **Oracle-guided Warm Start**
 
-We recently added a simple yet effective “oracle” phase before training.
-The idea is to seed the Q-table with actions that already appear in a counter-example trace generated by any model-checking run on a small instance.
-During this warm start the learner replays the trace a few times, just updating Q-values—no exploration yet.
+  We recently added a simple yet effective “oracle” phase before training.
+  The idea is to seed the Q-table with actions that already appear in a counter-example trace generated by any model-checking run on a small instance.
+  During this warm start the learner replays the trace a few times, just updating Q-values—no exploration yet.
 
-- **Motivation** – RL from scratch wastes time exploring obviously bad branches. A short oracle phase points the agent toward the parts of the graph that actually lead to a violation.
-
-- **What we measure** – (i) number of filled Q-table entries after training, (ii) wall-clock training time.
-
-- **Current snapshot** *(Filter protocol)*  
-  - with 3 processes, warm start grows the table from 4 to 16 entries in the same 1.3 s it takes a cold run to reach only 16 by chance;
-  - with 5 processes and 10 000 episodes, cold RL still keeps an empty table, while warm RL reaches 14 entries and shortens the guided search by an order of magnitude.
+  - **Motivation** – RL from scratch wastes time exploring obviously bad branches. A short oracle phase points the agent toward the parts of the graph that actually lead to a violation.
+  - **What we measure** – (i) number of filled Q-table entries after training, (ii) wall-clock training time.
+  - **Current snapshot** *(Filter protocol)*  
+    - with 3 processes, warm start grows the table from 4 to 16 entries in the same 1.3 s it takes a cold run to reach only 16 by chance;
+    - with 5 processes and 10 000 episodes, cold RL still keeps an empty table, while warm RL reaches 14 entries and shortens the guided search by an order of magnitude.
 
 - **Extending to DQN**
 
-While our previous experiments used a tabular Q-learning framework on abstract state spaces, current work extends this idea to Deep Q-Networks (DQN) to enhance scalability and generalization. The motivation is to replace explicit Q-tables—which quickly become infeasible as the number of abstract states grows—with a neural approximation capable of learning from high-dimensional representations.
+  While our previous experiments used a tabular Q-learning framework on abstract state spaces, current work extends this idea to Deep Q-Networks (DQN) to enhance scalability and generalization. The motivation is to replace explicit Q-tables—which quickly become infeasible as the number of abstract states grows—with a neural approximation capable of learning from high-dimensional representations.
 
-In this approach, the neural network approximates the Q-function Q(s, a) using vectorized encodings of predicate-abstracted states. Unlike Q-tables that memorize each pair of states and actions, DQN can generalize from limited training samples and predict heuristic values for unseen states. This enables the learned heuristic to be transferable to larger or slightly modified models of the same protocol family.
+  In this approach, the neural network approximates the Q-function Q(s, a) using vectorized encodings of predicate-abstracted states. Unlike Q-tables that memorize each pair of states and actions, DQN can generalize from limited training samples and predict heuristic values for unseen states. This enables the learned heuristic to be transferable to larger or slightly modified models of the same protocol family.
 
-The ultimate goal is to establish a unified RL-based heuristic learning framework that remains effective even under large-scale model configurations where traditional Q-learning becomes intractable.
+  The ultimate goal is to establish a unified RL-based heuristic learning framework that remains effective even under large-scale model configurations where traditional Q-learning becomes intractable.
 
 ## Contact
 
 Hyeyoon Kang <a href="mailto:hyoonk@postech.ac.kr">hyoonk (at) postech.ac.kr</a>
+
 Byoungho Son <a href="mailto:byhoson@postech.ac.kr">byhoson (at) postech.ac.kr</a>
