@@ -34,16 +34,17 @@ Because the mapping is machine-synthesized, any evolution of the IL spec transpa
 ## Wasm Application Model Checking
 <img src="{{ site.research_imgs }}/wasmc/application.png" width="100%">
 
-Leveraging the Maude specification produced by WASM2MAUDE, the model-checking phase encodes WebAssembly program executions as rewrite-logic transition systems and applies Maude’s on-the-fly LTL model checker to exhaustively explore reachable configurations.
-
-Safety properties such as memory-isolation, and function-call integrity are expressed in temporal logic, while counter-examples are returned as concrete execution traces that pinpoint the precise sequence of instructions leading to a violation.
+The next step is to verify the distributed properties of Wasm modules. Because the core Wasm semantics lacks system-level definitions, we must first implement system call functionality at the Maude level. This approach also allows us to simulate multiple concurrent workers, enabling us to formally verify distributed Wasm applications.
 
 
 ## Experiment
 ### Execution WASM Program
-<img src="{{ site.research_imgs }}/wasmc/fig4.png" width="50%">
-Leveraging the formal Maude specification of WebAssembly, we executed elementary WASM programs to rigorously simulate their operational semantics through a rewriting logic framework that faithfully reproduces each computational step and validates the underlying semantic rules, while concurrently performing an extensive exploration of the state space to investigate the reachability of various program configurations, thereby confirming the correctness of execution semantics and identifying potential security vulnerabilities and anomalous behaviors that provide critical insights for advancing model checking techniques and enhancing formal verification methods for WebAssembly programs.
+<img src="{{ site.research_imgs }}/wasmc/fig4.png" width="40%">
+Leveraging the formal Maude specification of WebAssembly, we executed elementary WASM programs to rigorously simulate their operational semantics through a rewriting logic framework that faithfully reproduces each computational step and validates the underlying semantic rules, while concurrently performing an extensive exploration of the state space to investigate the reachability of various program configurations. 
 
+### LTL Model Checking Example
+<img src="{{ site.research_imgs }}/wasmc/ex-mc.png" width="50%">
+Once we finished testing the Wasm module, we moved on to model checking it. For this Fibonacci example, we set up an atomic proposition to verify the module's states. We wanted to confirm the property that "whenever the Wasm program finishes, the result is a correct Fibonacci number." To do this, we built the LTL property you see in the picture. Then, using Maude's model-check command, we successfully verified this liveness property for our simple Wasm program.
 
 
 <!-- ## Reference
