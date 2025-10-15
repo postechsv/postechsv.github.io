@@ -18,14 +18,24 @@ Our research combines Maude-based formal modeling with model-based testing (MBT)
 TLS establishes an encrypted and authenticated channel between a client and a server through a handshake process that negotiates cryptographic parameters. Libraries such as OpenSSL and WolfSSL implement TLS based on specifications like RFC 5246 (TLS 1.2) and RFC 8446 (TLS 1.3). Many vulnerabilities are caused by deviations from these specifications, making rigorous testing essential.
 
 <center>
-<img src="{{ site.research_imgs }}/tls/tls_protocol.png" alt="TLS Protocols" width="50%"/>
+<img src="{{ site.research_imgs }}/tls/tls_protocol.png" alt="TLS Protocols" width="30%"/>
 </center>
+
+## Existing Works
+### Formal Verification on TLS Specifications
+There has been a great deal of work conducted in the complementary analysis spheres pertinent to TLS 1.3.
+There is a work offering a symbolic model and accompanying analysis of draft 10 of the TLS 1.3 specification, using the Tamarin prover. The ProVerif models on draft 18 presented by Bhargavan et al include most TLS 1.3 modes, and cover rich threat models by considering downgrade attacks (both with weak crypto and downgrade to TSL 1.2). However they do not consider all modes, as they do not consider the post-handhsake client authentication mode. Their analysis did not uncover the potential mismatch between clienet and server view.
+
+
+### Testing TLS implementations
+Some prior work extended the stateful fuzzing approach and use input/output Finite State Machines (FSM) as a behavioral abstraction of the PUT and use *differential fuzzing* to detect potential bugs or manually inspect the inferred FSM. They are tailored to capture bypass authentication attacks or other violations of the intended state machine flows. Since the FSM is not specifically designed for security, the security policy violations detected by FSM-based techniques are not necessarily security attacks and require manual inspection, those techniques thus also inherit the detection problem.
+
 
 ## Model-based Testing
 Model-based testing (MBT) is a software testing methodology where a formal or abstract model of the system’s behavior is used to automatically generate test cases. In this approach, a model describes the system in terms of states, transitions, and input/output actions, reflecting its expected behavior and requirements. Test cases are systematically derived by exploring different paths through the model, ensuring broad coverage of possible system behaviors. Since the model is closely tied to the system’s specifications, MBT provides strong traceability to requirements and helps validate both functional and security properties. Moreover, MBT enables high levels of automation, as the test generation and execution processes can be driven entirely by the model without extensive manual effort.
 
 <center>
-<img src="{{ site.research_imgs }}/tls/model-based-testing.png" alt="TLS Protocols" width="50%"/>
+<img src="{{ site.research_imgs }}/tls/model-based-testing.png" alt="TLS Protocols" width="30%"/>
 </center>
 
 
@@ -70,19 +80,59 @@ For example, RFC 8446 says
 "The single cipher suite selected by the server from the list in ClientHello.cipher_suites. A client which receives a cipher suite that was not offered MUST abort The handshake with an “illegal_parameter” alert."
 We generate the following test scenario:
 
+### Example 1: Send change-cipher-spec before sending client-key-exchange 
 ```
-…
-var v0 := recv(client);
-…
-var v1 := buildSH(tls-13, TLS_ECDHE_ECDSA..., …);
-var v2 := change(v1,cipher_suite,TLS_DHE_DSA...);
-send(client, v2);
-var v3 := recv(client);
-assert(v3.Desc == illegal_parameter);
+
+connect(SI);
+var v0 := clienthello(TLS12, ECDHE_ECDSA_WITH_AES_128_CCM, random(CI,0), noSessionId, no-compression, no-extension)
+send(SI, v0);
+var v1 := recv(SI);
+assert(v1.handshakeType == server-hello);
+assert(v1.version == v0.version);
+...
+var v2 := recv(SI);
+assert(v2.handshakeType == certificate);
+...
+var v3 := recv(SI);
+assert(v3.handshakeType == server-key-exchange);
+...
+var v4 := recv(SI);
+assert(v4.handshakeType == server-hello-done);
+...
+var v5 := changeCiperSpec();
+send(v5,SI);
+
+var v6 := recv(SI);
+assert(v6.contentType == alert);
+assert(v6.alertLevel == fatal);
+assert(v6.alertDesc == handshake-failure);
+close(SI);
 ```
+
+### Example 2: Send server-finished after sending server-hello
+```
+connect(CI);
+var v0 := recv(CI);
+assert(CI.handshakeType == client-hello);
+...
+var v1 := serverHello(v0.TLS, v0.cipherSuite, random(SI,0), sessionId(SI,1), no-compression,no-extension);
+send(v1, CI);
+var v2 := serverfinished(ms(0), hash(v0));
+send(v2, CI);
+var v3 := recv(CI);
+assert(v3.contentType == alert);
+assert(v3.alertLevel == fatal);
+assert(v3.alertDesc == handshake-failure);
+close(CI);
+```
+
 
 ## Scenario Execution
 TLS-Attacker Library: We use the TLS-Attacker framework to execute the generated test scenarios. TLS-Attacker allows flexible message construction and dynamic modification during the handshake process. The scenarios derived from Maude are translated into TLS-Attacker scripts, which interact with real TLS libraries (e.g., OpenSSL) to verify compliance with protocol requirements.
+
+<center>
+<img src="{{ site.research_imgs }}/tls/execution.png" alt="TLS Protocols" width="30%"/>
+</center>
 
 ## Contact
 Jaehun Lee <a src="thkighie1224@postech.ac.kr">thkighie1224 (at) postech.ac.kr</a>
