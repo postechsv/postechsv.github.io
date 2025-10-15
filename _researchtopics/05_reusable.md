@@ -7,39 +7,37 @@ hidden: True
 ---
 
 ## Introduction
-Model checking is a powerful graph search technique used to verify system properties and detect bugs. However, as the complexity of a system increases, the state space grows exponentially, rendering exhaustive search methods impractical. Our research addresses this challenge by using reinforcement learning to learn effective search heuristics. This approach is inspired by directed model checking, where heuristics are given, not learned.
+Model checking is a powerful search technique used to verify system properties and detect bugs. However, as the complexity of a system increases, the state space grows exponentially, making exhaustive search methods impractical. Our research addresses this challenge by using reinforcement learning to learn effective search heuristics. This approach is inspired by directed model checking, where heuristics are given by the user, not learned. We aim to design a RL-based framework to automatically learn the score function that prioritizes the search, thereby accelerating the verification procedure. In this work we consider falsification of safety properties.
 
-## Framework and Methodology
-Our framework is built on reinforcement learning, specifically employing Q-learning to learn and refine search heuristics for model checking.
 
-- **Learning Search Heuristics with Q-Learning:**  
-  We train a Q-function \( Q(s, a) \) to estimate the expected reward for taking an action a in a given state s. The training process involves:
-  - **Data Collection:**  
-    Simulating model checking on smaller, manageable models to gather state transitions and observe which actions lead to error states.
-  - **Reward Function Design:**  
-    Designing a reward scheme where reaching an error state is assigned a high reward, while non-critical transitions receive lower or zero rewards. This reward structure incentivizes the discovery of errors.
-  - **Policy Learning:**  
-    Optimizing the Q-function so that it approximates the optimal policy. From the learned Q-values, we derive a value function \( V: \text{State} \rightarrow \mathbb{R} \) that is used to rank states according to their potential to lead to an error.
+- **Heuristic Learning**
 
-- **Generalization via Abstraction:**  
-  To address the challenge of state-space explosion, we incorporate abstraction techniques by grouping similar states. This abstraction reduces the complexity of the search space and enables the learned heuristics to generalize from smaller models to larger, more complex systems.
+We train a Q-function ( Q(s, a) ) to estimate the expected cumulative reward for taking an action a in a given state s. For example, the reward function gives 1 for bug states and 0 otherwise. The learned Q-function represents how likely a pair of state and action will lead to safety violation.
 
-- **Integration with Model Checking:**  
-  The learned heuristic is integrated into the model checking process by prioritizing state exploration based on the value function \( V(s) \). Instead of performing an exhaustive search, the model checker focuses on states with higher estimated rewards, thereby accelerating error detection.
+- **Heuristic Search**
+
+The learned heuristic is integrated into the model checking process by prioritizing state exploration based on the Q-function ( Q(s, a) ). Instead of performing an exhaustive search, the model checker focuses on states with higher estimated rewards, thereby accelerating error detection.
+
+## Taming State-Space Explosion
+
+- **Predicate Abstraction for State-Space Explosion**
+
+To address the challenge of state-space explosion, we incorporate predicate abstraction that identifies multiple states with the same boolean features. This abstraction gives a Markov Decision Process(MDP) to which RL is applied. The MDP consists of less number of states than the original system. reduces the complexity of the search space and enables the learned heuristics to generalize from smaller models to larger, more complex systems.
 
 ## Preliminary Experiment
 
-**Setup:**
-- The experiment uses the one-third rule (OTR) configuration with various k/n settings, where k is the threshold and n is the number of nodes.
-- Training is performed with Q-learning on an OTR(2/3) model.  
-  Each Q-table entry corresponds to a predicate abstracted state (e.g., 4 predicates yield 2⁴ = 16 states).
-- A heuristic search is then executed against the concrete model and the abstract model of OTR, respectively.  
+**Set-up**
+- The one-third-rule (OTR) model is a consensus model parameterized by the number of nodes n and the vote threshold k
+0 Large n and large k/n lead to a large state space
+- Training is performed with Q-learning on an OTR(2/3) model
+Each Q-table entry corresponds to a predicate abstracted state (e.g., 4 predicates yield 2⁴ = 16 states)
+- A heuristic search is then executed against the concrete model and the abstract model of OTR, respectively
 - timeout = 24 hours
 
-**Results Summary:**
-- **Baseline (BFS):** A simple depth-first search (BFS) approach fails for all configurations, resulting in a timeout.
-- **RL with Predicate Abstraction:** Applying reinforcement learning (RL) directly to the predicate abstracted system yields successful results for some configurations (OTR(3/5) and OTR(3/6)), while timing out for others.
-- **RL with Predicate Abstraction<sup>2</sup>:** Incorporating more abstraction over the predicate abstracted states further improves performance across all configurations.
+**Result**
+- **Baseline (BFS):** A simple breadth-first search approach fails for all configurations, resulting in a timeout.
+- **RL with Predicate Abstraction (PA):** Applying reinforcement learning (RL) directly to the predicate abstracted system yields successful results for some configurations (OTR(3/5) and OTR(3/6)), while timing out for others.
+- **RL with Predicate Abstraction Abstraction (PA2):** Incorporating another layer of abstraction over predicate abstraction further improves performance across all configurations. (See On-going Work below)
 
 | OTR Configuration | Baseline (BFS) | RL w/ PA | RL with PA<sup>2</sup> |
 |-------------------|----------------|----------------|---------------------|
@@ -49,23 +47,40 @@ Our framework is built on reinforcement learning, specifically employing Q-learn
 | OTR(4/7)          | Timeout        | Timeout        | 38092               |
 
 
-## Future Work
-Future research will focus on:
-- **Extending to Temporal Logic:**  
-  Developing reward functions that can encode temporal logic properties, thus addressing not only reachability (safety) but also liveness requirements.
-- **Refining Abstraction Techniques:**  
-  Enhancing state abstraction methods to improve the generalization capabilities of the learned heuristics.
-- **Broadening Evaluation:**  
-  Testing the reinforcement learning approach on a wider variety of models to better understand its effectiveness and limitations in different contexts.
+## On-going Work
 
-## References
-To be added.
+- **Collecting More Benchmarks**
 
-## Examples
-To be added.
+We are currently collecting more benchmarks to improve our empirical experiments. We plan to include: Filter algorithm, QLOCK algorithm, Bakery algorithm, etc. All these models run on N processes, which can exploit primary error traces for small N.
+
+- **Predicate Abstraction Abstraction for Curse of Dimensionality**
+
+Note that predicate abstraction with n predicates gives 2n MDP states. Hence when n is large, predicate abstraction faces a curse of dimensionality, where the learning becomes intractable due to high-dimensional state representations. To tackle this, we furthur abstract the abstraction domain of MDP states by giving partial-orders to the boolean feature vectors. For example, the abstract states 1111 and 1110 are abstracted to 111T, thereby generalizing the heuristics to similar states.
+
+
+- **Oracle-guided Warm Start**
+
+We recently added a simple yet effective “oracle” phase before training.
+The idea is to seed the Q-table with actions that already appear in a counter-example trace generated by any model-checking run on a small instance.
+During this warm start the learner replays the trace a few times, just updating Q-values—no exploration yet.
+
+- **Motivation** – RL from scratch wastes time exploring obviously bad branches. A short oracle phase points the agent toward the parts of the graph that actually lead to a violation.
+
+- **What we measure** – (i) number of filled Q-table entries after training, (ii) wall-clock training time.
+
+- **Current snapshot** *(Filter protocol)*  
+  - with 3 processes, warm start grows the table from 4 to 16 entries in the same 1.3 s it takes a cold run to reach only 16 by chance;
+  - with 5 processes and 10 000 episodes, cold RL still keeps an empty table, while warm RL reaches 14 entries and shortens the guided search by an order of magnitude.
+
+- **Extending to DQN**
+
+While our previous experiments used a tabular Q-learning framework on abstract state spaces, current work extends this idea to Deep Q-Networks (DQN) to enhance scalability and generalization. The motivation is to replace explicit Q-tables—which quickly become infeasible as the number of abstract states grows—with a neural approximation capable of learning from high-dimensional representations.
+
+In this approach, the neural network approximates the Q-function Q(s, a) using vectorized encodings of predicate-abstracted states. Unlike Q-tables that memorize each pair of states and actions, DQN can generalize from limited training samples and predict heuristic values for unseen states. This enables the learned heuristic to be transferable to larger or slightly modified models of the same protocol family.
+
+The ultimate goal is to establish a unified RL-based heuristic learning framework that remains effective even under large-scale model configurations where traditional Q-learning becomes intractable.
 
 ## Contact
-Byoungho Son <a href="mailto:byhoson@postech.ac.kr">byhoson (at) postech.ac.kr</a>
 
----
-Last modified: 2024/10/5 02:40:42 (Byoungho Son)
+Hyeyoon Kang <a href="mailto:hyoonk@postech.ac.kr">hyoonk (at) postech.ac.kr</a>
+Byoungho Son <a href="mailto:byhoson@postech.ac.kr">byhoson (at) postech.ac.kr</a>
