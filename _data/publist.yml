@@ -281,7 +281,6 @@
   image: 
   description: 
   link:
-    display: 
   highlight: 0
   tag: conference
 
@@ -302,7 +301,6 @@
   image: 
   description: 
   link:
-    display: 
   highlight: 0
   tag: domestic
 
@@ -313,7 +311,6 @@
   image: 
   description: 
   link:
-    display: 
   highlight: 0
   tag: domestic
 
@@ -346,7 +343,6 @@
   image: 
   description: 
   link:
-    display: 
   highlight: 0
   tag: journal
 
@@ -391,7 +387,6 @@
   image: 
   description: 
   link:
-    display: 
   highlight: 0
   tag: conference
 
@@ -402,7 +397,6 @@
   image: 
   description: 
   link:
-    display: 
   highlight: 0
   tag: conference
 
@@ -415,7 +409,6 @@
   image: 
   description: 
   link:
-    display: 
   highlight: 0
   tag: conference
 
@@ -426,7 +419,6 @@
   image: 
   description: 
   link:
-    display: 
   highlight: 0
   tag: conference
 
@@ -437,7 +429,6 @@
   image: 
   description: 
   link:
-    display: 
   highlight: 0
   tag: conference
 
@@ -448,7 +439,6 @@
   image: 
   description: 
   link:
-    display: 
   highlight: 0
   tag: conference
 
@@ -461,7 +451,6 @@
   image: 
   description: 
   link:
-    display: 
   highlight: 0
   tag: journal
 
@@ -472,7 +461,6 @@
   image: 
   description: 
   link:
-    display: 
   highlight: 0
   tag: journal
 
@@ -483,7 +471,6 @@
   image: 
   description: 
   link:
-    display: 
   highlight: 0
   tag: conference
 
@@ -507,7 +494,6 @@
   image: 
   description: 
   link:
-    display: 
   highlight: 0
   tag: conference
 
@@ -518,7 +504,6 @@
   image: 
   description: 
   link:
-    display: 
   highlight: 0
   tag: conference
 
@@ -529,7 +514,6 @@
   image: 
   description: 
   link:
-    display: 
   highlight: 0
   tag: journal
 
@@ -540,7 +524,6 @@
   image: 
   description: 
   link:
-    display: 
   highlight: 0
   tag: conference
 
@@ -551,7 +534,6 @@
   image: 
   description: 
   link:
-    display: 
   highlight: 0
   tag: dissertation
 
@@ -564,7 +546,6 @@
   image: 
   description: 
   link:
-    display: 
   highlight: 0
   tag: conference
 
@@ -577,7 +558,6 @@
   image: 
   description: 
   link:
-    display: 
   highlight: 0
   tag: conference
 
@@ -588,7 +568,6 @@
   image: 
   description: 
   link:
-    display: 
   highlight: 0
   tag: conference
 
@@ -599,7 +578,6 @@
   image: 
   description: 
   link:
-    display: 
   highlight: 0
   tag: journal
 
@@ -610,7 +588,6 @@
   image: 
   description: 
   link:
-    display: 
   highlight: 0
   tag: conference
 
@@ -621,7 +598,6 @@
   image: 
   description: 
   link:
-    display: 
   highlight: 0
   tag: conference
 
@@ -634,7 +610,6 @@
   image: 
   description: 
   link:
-    display: 
   highlight: 0
   tag: conference
 
@@ -645,7 +620,6 @@
   image: 
   description: 
   link:
-    display: 
   highlight: 0
   tag: conference
 
@@ -658,7 +632,6 @@
   image: 
   description: 
   link:
-    display: 
   highlight: 0
   tag: conference
 
@@ -669,7 +642,6 @@
   image: 
   description: 
   link:
-    display: 
   highlight: 0
   tag: conference
 
@@ -682,7 +654,6 @@
   image: 
   description: 
   link:
-    display: 
   highlight: 0
   tag: conference
 
@@ -695,6 +666,5 @@
   image: 
   description: 
   link:
-    display: 
   highlight: 0
   tag: conference
