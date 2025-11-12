@@ -1,10 +1,13 @@
-# 2025
-- title: "A Formal Executable Semantics of PROMELA."
+# 2026
+
+- title: "A Formal Executable Semantics of PROMELA"
   authors: Byoungho Son and Kyungmin Bae
   venue: International Conference on Verification, Model Checking, and Abstract Interpretation (VMCAI) (to appear)
-  year: 2025
+  year: 2026
   tag: conference
   link: 
+
+# 2025
 
 - title: "Modeling and Analyzing Real-Time Systems in Rewriting Logic"
   authors: K Bae, C Olarte, PC Ölveczky
