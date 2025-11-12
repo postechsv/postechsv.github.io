@@ -5,7 +5,7 @@ intro: "This project defines formal semantics of Promela using the K-Framework, 
 intro-temp: "This project defines formal semantics of Promela using the K-Framework, with a support for deductive verification"
 img-url: "/promela/overview.png"
 date: 2024-10-01
-hidden: true
+hidden: false
 ---
 
 ## Introduction
