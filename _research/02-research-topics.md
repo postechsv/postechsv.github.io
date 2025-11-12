@@ -1,7 +1,7 @@
 ---
 ---   
 
-<h3>Ongoing research</h3>
+<h3>Current Research</h3>
 
 {% for proj in site.researchtopics %}
 {% if proj.hidden == false %}
