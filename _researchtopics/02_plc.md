@@ -1,6 +1,6 @@
 ---
 layout: researchpage
-title: "Semantics and Analysis of PLC System"
+title: "Formal Semantics and Analysis of PLC Systems"
 intro: "This research focuses on defining the behavior of the whole PLC behavior including the PLC ST, multitask, external environment, and communication features."
 img-url: "/plc/plc.jpg"
 hidden: false
@@ -16,23 +16,23 @@ This research aims to develop a unified and realistic formal semantics that capt
 
 ## Semantics of PLC ST
 
-We defined K semantics of PLC ST. K is a rewriting-based framework for defining the semantic of programming languages. In K, program states are specified as multisets of nested cells, called configurations. Each cell represents a component of the program state, such as environments and stores. The cell structure for PLC ST is shown below.
+We define K semantics of PLC ST. K is a rewriting-based framework for defining the semantics of programming languages. In K, program states are specified as multisets of nested cells, called configurations. Each cell represents a component of the program state, such as environments and stores. The cell structure for PLC ST is shown below.
 <img src="{{ site.research_imgs }}/plc/cell1.jpg" width="80%">
 
-PLCs exhibit cyclic bevior where a 'scan cycle' consists of input, execution and output stages. During the input stage, it reads values from sensors (e.g. temperature, water level) and store it to the program variables. Based on these values, the programs are executed in the execution stage. Finally, the output varaibles' values are reflected in the actuators (e.g. motor speed, pump switch). We formalized this cyclic behavior and integrated it to LTL model checking analysis procedure, whereas formal studies focus on the single execution of PLC programs.
+PLCs exhibit cyclic behavior where a 'scan cycle' consists of input, execution, and output stages. During the input stage, it reads values from sensors (e.g., temperature, water level) and stores them in the program variables. Based on these values, the programs are executed in the execution stage. Finally, the output variables' values are reflected in the actuators (e.g., motor speed, pump switch). We formalize this cyclic behavior and integrate it into the LTL model checking analysis procedure, whereas formal studies focus on the single execution of PLC programs.
 
 <img src="{{ site.research_imgs }}/plc/scancycle.jpg" width="70%">
 
-Another important distinction previous work is we do not assume a specific input values. At this point, we do not know what values can be read from the environment, we virtually assume that 'any' values of a specified range can be read. This neccesitates the need for a symbolic semantics with SMT variables as program values. To include these behaviors in our semantics, we extend the cell structures with the following cells.
+Another important distinction from previous work is that we do not assume specific input values. At this point, we do not know what values can be read from the environment; we virtually assume that 'any' values of a specified range can be read. This necessitates the need for a symbolic semantics with SMT variables as program values. To include these behaviors in our semantics, we extend the cell structures with the following cells.
 <img src="{{ site.research_imgs }}/plc/cell2.jpg" width="80%">
 
 
 ## Bounded Symbolic Model Checking and STbmc Tool
 
-We employ rewriting modulo SMT to symbolically examine LTL properties of ST programs concerning sequences of inputs and outputs. A model checking problem is encoded into reachability to an error state. LTL properties are 'flatten' to a propositional formula over the input and output stream elements. The following shows a Maude's search command to verify the LTL property φ.
+We employ rewriting modulo SMT to symbolically examine LTL properties of ST programs concerning sequences of inputs and outputs. A model checking problem is encoded into reachability to an error state. LTL properties are 'flatten' to a propositional formula over the input and output stream elements. The following shows a Maude search command to verify the LTL property φ.
 <img src="{{ site.research_imgs }}/plc/search.jpg" width="80%">
 
-We devoped 'stbmc' tool that takes PLC programs and specification file and perform model checking. The following shows the specification file format and the command line output of the tool. If the given LTL proeprty holds, 'test succeeded' is printed. If not, it shows a counterexample.
+We develop 'stbmc' tool that takes PLC programs and specification files and performs model checking. The following shows the specification file format and the command line output of the tool. If the given LTL property holds, 'test succeeded' is printed. If not, it shows a counterexample.
 <img src="{{ site.research_imgs }}/plc/stbmc.jpg" width="80%">
 
 
@@ -49,17 +49,20 @@ To resolve state explosion, we propose 'time-abstraction' and 'partial order red
 <img src="{{ site.research_imgs }}/plc/g1.jpg" width="50%">
 
 
-## Ongoing Work
+## Physical Dynamics and Communication of PLCs
 Existing formal verification techniques focus on individual PLC programs in isolation, often neglecting interactions with physical environments and network communication between controllers. We present a unified formal framework that integrates discrete PLC semantics, networked communication, and continuous physical behaviors. 
 <img src="{{ site.research_imgs }}/plc/environment.jpg" width="60%">
 
-The environment interact with the programs by sensing and actuation at the beginning of every scan cycle. The environmental state, such as temperature, and switch position, is included in each PLCs attributes. We define 'tick' rule that rules the time evolution of the system, which update the environmental states.
+The environment interacts with the programs by sensing and actuation at the beginning of every scan cycle. The environmental state, such as temperature and switch position, is included in each PLC's attributes. We define 'tick' rule that rules the time evolution of the system, which updates the environmental states.
  
 <img src="{{ site.research_imgs }}/plc/env.jpg" width="80%">
 
-PLC supports several function blocks that conduct inter-PLC communication, which includes 'CONNECT' for connection establishment, 'USEND' for asynchronous sending data, and 'URCV' for asynchronous receiving data. The behavior of each communicating function blocks are implemented in PLC ST format, with special communication functions defined in rewrite ruels.
+PLC supports several function blocks that conduct inter-PLC communication, which includes 'CONNECT' for connection establishment, 'USEND' for asynchronous sending data, and 'URCV' for asynchronous receiving data. The behavior of each communicating function block is implemented in PLC ST format, with special communication functions defined in rewrite rules.
 
-Using this integrated semantics, we can verify properties of well-defined networked industrial control system such as chemical plants with water tanks, railed vehicle controllers, and so on.
+Using this integrated semantics, we can verify properties of well-defined networked industrial control systems such as chemical plants with water tanks, railed vehicle controllers, and so on.
+
+## Ongoing Work
+This ongoing work is motivated by the observation that multitask PLC semantics and the semantics for physical dynamics and inter-controller communication are largely orthogonal. Our goal is to develop a unified semantics that incorporates both preemptive multitasking and cyber-physical interaction within a single framework. As part of this effort, we are conducting a case study involving PLC-controlled vehicles that must avoid collisions while navigating toward designated destinations.
 
 
 ## Contact
@@ -68,7 +71,7 @@ Using this integrated semantics, we can verify properties of well-defined networ
 ## References
 
 The following items show the publication from this project:
-
-*   [Bounded Model Checking of PLC ST Programs using Rewriting Modulo SMT](https://dl.acm.org/doi/10.1145/3563822.3568016), Jaeseo Lee, Sangki Kim, Kyungmin Bae, FTSCS'12, 2022
-*   [Formal Semantics and Analysis of Multitask PLC ST Programs with Preemption](https://link.springer.com/chapter/10.1007/978-3-031-71162-6_22), Jaeseo Lee, Kyungmin Bae, FM'09, 2024
+* [Formal Analysis of Networked PLC Controllers Interacting with Physical Environments](https://dl.acm.org/doi/10.1007/978-3-032-07106-4_14), Jaeseo Lee, Kyungmin Bae, SAS, 2025
+* [Formal Semantics and Analysis of Multitask PLC ST Programs with Preemption](https://link.springer.com/chapter/10.1007/978-3-031-71162-6_22), Jaeseo Lee, Kyungmin Bae, FM, 2024
+* [Bounded Model Checking of PLC ST Programs using Rewriting Modulo SMT](https://dl.acm.org/doi/10.1145/3563822.3568016), Jaeseo Lee, Sangki Kim, Kyungmin Bae, FTSCS, 2022
 
