@@ -5,6 +5,7 @@ intro: "This project leverages reinforcement learning to automatically learn sea
 img-url: "/reusable/reusable.png"
 hidden: True
 ---
+<img src="{{site.baseurl}}/images/research/reusable/reusable.png" width="80%"/>
 
 ### Introduction
 Model checking is a powerful search technique used to verify system properties and detect bugs. However, as the complexity of a system increases, the state space grows exponentially, making exhaustive search methods impractical. Our research addresses this challenge by using reinforcement learning to learn effective search heuristics. This approach is inspired by directed model checking, where heuristics are given by the user, not learned. We aim to design a RL-based framework to automatically learn the score function that prioritizes the search, thereby accelerating the verification procedure. In this work we consider falsification of safety properties.
@@ -81,4 +82,5 @@ Predicate abstraction is applied to group multiple states that share the same bo
 ### Contact
 
 Hyeyoon Kang <a href="mailto:hyoonk@postech.ac.kr">hyoonk (at) postech.ac.kr</a>
+
 Byoungho Son <a href="mailto:byhoson@postech.ac.kr">byhoson (at) postech.ac.kr</a>
