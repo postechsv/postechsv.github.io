@@ -91,12 +91,13 @@ The K Framework's deductive verifier is able to automatically discharge this mai
 <img src="{{site.baseurl}}/images/research/promela/bakery-k.png" width="50%"/>
 
 ## Reference
-1. <span id="ref-1">Byoungho Son, Kyungmin Bae, <em>A Formal Executable Semantics of PROMELA</em> (draft)
+Byoungho Son, Kyungmin Bae. <em>A Formal Executable Semantics of PROMELA.</em> VMCAI 2026. (to appear)
 
-
+## Artifact
+https://doi.org/10.5281/zenodo.17183744
 
 ## Contact
 Byoungho Son <a href="mailto:byhoson@postech.ac.kr">byhoson (at) postech.ac.kr</a>
 
 ---
-Last modified: 2025/10/15 02:40:42 (Byoungho Son)
+Last modified: 2025/11/16 02:40:42 (Byoungho Son)
