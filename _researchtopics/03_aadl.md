@@ -1,7 +1,7 @@
 ---
 layout: researchpage
-title: "MH-SynchAADL"
-intro: "We define the MH-SynchAADL modeling language and verification tool for hierarchical multirate CPSs with advanced control programs, continuous behaviors, and imprecise local clocks." 
+title: "MR-HybridSynchAADL: Formal Modeling and Analysis of Multirate CPSs"
+intro: "We define the MR-HybridSynchAADL modeling language and verification tool for hierarchical multirate CPSs with advanced control programs, continuous behaviors, and imprecise local clocks." 
 img-url: "/aadl/cps.png"
 hidden: false
 ---

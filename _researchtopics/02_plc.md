@@ -9,7 +9,9 @@ hidden: false
 ## Introduction
 <img src="{{ site.research_imgs }}/plc/plc.jpg" width="100%">
 
-A programmable logic controller (PLC) is commonly used in industrial control systems, and Structured Text (ST) serves as an imperative programming language for developing PLC software. Given the safety-critical nature of PLC applications, it is essential to formally verify PLC programs. There are challenges in defining the semantics of PLCs. First, it must capture the real-time interaction with the external environment. PLCs also support multitask feature where high-priority tasks may preempt low-priority tasks. In this project, we aim to build a formal semantics of PLC that are realistic and integrative.
+Programmable Logic Controllers (PLCs) are widely used in industrial control systems to interface with physical environments through sensors and actuators. Given their role in safety-critical domains, the correctness of PLC software is crucial, and formal verification becomes essential. However, the behavior of a complete PLC system involves several complex components: cyclic execution of Structured Text (ST) programs, real-time interaction with physical environments, task preemption under multitasking settings, and communication between networked controllers. 
+
+This research aims to develop a unified and realistic formal semantics that captures the complete behavior of PLC systems. Our approach covers the formalization of the ST programming language, support for symbolic and bounded model checking, semantics for preemptive multitasking with state space reduction, and integration of continuous environment dynamics and networked communication. Through executable semantics, tool support, and scalable verification techniques, our framework offers a foundation for analyzing real-world PLC systems in industrial settings.
 
 
 ## Semantics of PLC ST
