@@ -1,4 +1,21 @@
+# 2026
+
+- title: "A Formal Executable Semantics of PROMELA"
+  authors: Byoungho Son and Kyungmin Bae
+  venue: International Conference on Verification, Model Checking, and Abstract Interpretation (VMCAI) (to appear)
+  year: 2026
+  tag: conference
+  link: 
+
 # 2025
+
+- title: "Modeling and Analyzing Real-Time Systems in Rewriting Logic"
+  authors: K Bae, C Olarte, PC Ölveczky
+  venue: Gul Agha Festschrift Symposium
+  year: 2025
+  tag: conference
+  link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RfWIHGsAAAAJ&sortby=pubdate&citation_for_view=RfWIHGsAAAAJ:RGFaLdJalmkC
+
 
 - title: "Formal Analysis of Networked PLC Controllers Interacting with Physical Environments"
   authors: Jaeseo Lee and Kyungmin Bae
@@ -54,6 +71,14 @@
   tag: conference #workshop
   link:
 
+- title: "A rewriting-logic-with-SMT-based formal analysis and parameter synthesis framework for parametric time Petri nets"
+  authors: Jaime Arias, Kyungmin Bae, Carlos Olarte, Peter Ölveczky, Laure Petrucci, and Fredrik Romming
+  venue: Fundamenta Informaticae 192, Issue 3-4
+  year: 2024
+  tag: journal
+  link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RfWIHGsAAAAJ&sortby=pubdate&citation_for_view=RfWIHGsAAAAJ:4JMBOYKVnBMC
+
+
 - title: "Narrowing and Heuristic Search for Symbolic Reachability Analysis of Concurrent Object-Oriented Systems"
   authors: Byeongjee Kang and Kyungmin Bae
   venue: Science of Computer Programming
@@ -84,6 +109,12 @@
 
 
 # 2023
+- title: "Formal Model Engineering of Synchronous CPS Designs in AADL"
+  authors: Kyungmin Bae and Peter Olveczky
+  venue: "2nd ADEPT workshop: AADL by its practitioners (ADEPT)"
+  year: 2023
+  tag: conference
+  link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RfWIHGsAAAAJ&sortby=pubdate&citation_for_view=RfWIHGsAAAAJ:blknAaTinKkC
 
 - title: "Symbolic Analysis and Parameter Synthesis for Time Petri Nets Using Maude and SMT Solving"
   authors: Jaime Arias, Kyungmin Bae, Carlos Olarte, Peter Ölveczky, Laure Petrucci, and Fredrik Romming
@@ -102,6 +133,9 @@
   venue: "2nd ADEPT Workshop: AADL by its Practitioners (ADEPT)"
   year: 2023
   tag: conference
+
+
+# 2022
 
 - title: "Rewriting Logic Semantics and Symbolic Analysis for Parametric Timed Automata"
   authors: Jaime Arias, Kyungmin Bae, Carlos Olarte, Peter Ölveczky, Laure Petrucci, Fredrik Rømming
