@@ -1,32 +1,32 @@
 - date: 2025-11-05 
-details: "Our paper “A Formal Executable Semantics of PROMELA” was accepted to <b>VMCAI 2026</b>."
+  details: "Our paper “A Formal Executable Semantics of PROMELA” was accepted to <b>VMCAI 2026</b>."
 
 - date: 2025-07-10 
   details: "Our paper “Formal Analysis of Networked PLC Controllers Interacting with Physical Environments” was accepted to <b>SAS 2025</b>."
 
 - date: 2025-02-17 
-details: "Hyeyoon joined our lab."
+  details: "Hyeyoon joined our lab."
 
 - date: 2024-09-02 
-details: "Our lab received SW STAR Lab Funding from the Ministry of Science and ICT."
+  details: "Our lab received SW STAR Lab Funding from the Ministry of Science and ICT."
 
 - date: 2024-08-01 
-details: "Our paper “Formal Semantics and Analysis of Multitask PLC ST Programs with Preemption” was accepted to FM 2024."
+  details: "Our paper “Formal Semantics and Analysis of Multitask PLC ST Programs with Preemption” was accepted to FM 2024."
 
 - date: 2024-09-01 
-details: "Geunyeol and Byoungho were awarded Research Subsidies for Ph.D. Candidates by the National Research Foundation of Korea."
+  details: "Geunyeol and Byoungho were awarded Research Subsidies for Ph.D. Candidates by the National Research Foundation of Korea."
 
 - date: 2024-07-01 
-details: "Hyuksoon was awarded Research Subsidies for M.S. Candidates by the National Research Foundation of Korea."
+  details: "Hyuksoon was awarded Research Subsidies for M.S. Candidates by the National Research Foundation of Korea."
 
 - date: 2024-05-01 
-details: "Geunyeol won the Best Paper/Presentation Award at WRLA 2024."
+  details: "Geunyeol won the Best Paper/Presentation Award at WRLA 2024."
 
 - date: 2024-03-01 
-details: "Our paper “A Flexible Framework for Integrating Maude and SMT Solvers Using Python” was accepted to WRLA 2024."
+  details: "Our paper “A Flexible Framework for Integrating Maude and SMT Solvers Using Python” was accepted to WRLA 2024."
 
 - date: 2024-01-01 
-details: "Kyunwoo joined our lab."
+  details: "Kyunwoo joined our lab."
 
 - date: 2022-12-01 
   details: "Our paper “Bounded Model Checking of PLC ST Programs using Rewriting Modulo SMT” was accepted to FTSCS 2022."
