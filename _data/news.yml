@@ -1,70 +1,92 @@
-- date: 2025-11-05 
-  details: "Our paper “A Formal Executable Semantics of PROMELA” was accepted to <b>VMCAI 2026</b>."
+- date: 2026-02-11
+  details: "Our paper “Efficient Verification of Lingua Franca Programs” has been accepted to TACAS 2026."
 
-- date: 2025-07-10 
-  details: "Our paper “Formal Analysis of Networked PLC Controllers Interacting with Physical Environments” was accepted to <b>SAS 2025</b>."
+- date: 2026-01-20
+  details: "Our paper “RL-based Heuristic Learning for Model Checking” has been accepted to KCSE 2026."
 
-- date: 2025-02-17 
-  details: "Hyeyoon joined our lab."
+- date: 2026-01-12
+  details: "Byoungho received the Distinguished Paper Award at VMCAI 2026. Congratulations!"
 
-- date: 2024-09-02 
+- date: 2025-11-05
+  details: "Our paper “A Formal Executable Semantics of PROMELA” has been accepted to VMCAI 2026."
+
+- date: 2025-07-10
+  details: "Our paper “Formal Analysis of Networked PLC Controllers Interacting with Physical Environments” has been accepted to SAS 2025."
+
+- date: 2025-02-17
+  details: "Hyeyoon joined our lab. Welcome!"
+
+- date: 2024-09-02
   details: "Our lab received SW STAR Lab Funding from the Ministry of Science and ICT."
 
-- date: 2024-08-01 
-  details: "Our paper “Formal Semantics and Analysis of Multitask PLC ST Programs with Preemption” was accepted to FM 2024."
+- date: 2024-09-01
+  details: "Geunyeol and Byoungho received Research Subsidies for Ph.D. Candidates from the National Research Foundation of Korea."
 
-- date: 2024-09-01 
-  details: "Geunyeol and Byoungho were awarded Research Subsidies for Ph.D. Candidates by the National Research Foundation of Korea."
+- date: 2024-07-01
+  details: "Hyuksoon received Research Subsidies for M.S. Candidates from the National Research Foundation of Korea."
 
-- date: 2024-07-01 
-  details: "Hyuksoon was awarded Research Subsidies for M.S. Candidates by the National Research Foundation of Korea."
+- date: 2024-06-01
+  details: "Our paper “Formal Semantics and Analysis of Multitask PLC ST Programs with Preemption” has been accepted to FM 2024."
 
-- date: 2024-05-01 
-  details: "Geunyeol won the Best Paper/Presentation Award at WRLA 2024."
+- date: 2024-06-01
+  details: "Our paper “Rigorous Model Engineering of Multirate CPSs in Multirate HybridSynchAADL” has been accepted to ISOLA 2024."
 
-- date: 2024-03-01 
-  details: "Our paper “A Flexible Framework for Integrating Maude and SMT Solvers Using Python” was accepted to WRLA 2024."
+- date: 2024-05-01
+  details: "Geunyeol won the Best Paper/Presentation Award at WRLA 2024. Congratulations!"
 
-- date: 2024-01-01 
-  details: "Kyunwoo joined our lab."
+- date: 2024-05-01
+  details: "Our paper “Formal Specification and Model Checking of TLS Software Security Requirements using Maude” has been accepted to the KIISE Journal."
 
-- date: 2022-12-01 
-  details: "Our paper “Bounded Model Checking of PLC ST Programs using Rewriting Modulo SMT” was accepted to FTSCS 2022."
-- date: 2023-08-31 
-  details: "Hyuksoon joined our lab."
-- date: 2022-07-01 
-  details: "Byoungho joined our lab."
-- date: 2021-12-01 
-  details: "Our paper “Layered Abstraction for Formally Verifying Deep Neural Networks” was accepted to KSC 2021."
-- date: 2020-02-01 
-  details: "Jueun Yeon joined our lab."
-- date: 2024-06-01 
-  details: "Our paper “Rigorous Model Engineering of Multirate CPSs in Multirate HybridSynchAADL” was accepted to ISOLA 2024."
-- date: 2024-05-01 
-  details: "Our paper “Formal Specification and Model Checking of TLS Software Security Requirements using Maude” was accepted in the KIISE Journal."
-- date: 2024-02-01 
-  details: "Our paper “Formal Semantics and Analysis of Multitask PLC ST Programs with Preemption” was accepted to FM 2024."
-- date: 2023-12-01 
-  details: "Our paper “Formal Specification of Trusted Execution Environment APIs” was accepted to FASE 2024."
-- date: 2021-12-01 
-  details: "Our paper “Layered Abstraction Technique for Effective Formal Verification of Deep Neural Networks” was accepted to KIISE 2021."
-- date: 2021-12-01 
-  details: "Jueun received the KSC 2021 Outstanding Paper Award."
-- date: 2023-06-01 
-  details: "Jueun received the KIISE Journal Outstanding Paper Award."
-- date: 2023-12-01 
-  details: "Jueun received the KIISE Society Outstanding Paper Award."
-- date: 2022-12-01 
-  details: "Our paper “Modeling and Formal Analysis of Virtually Synchronous Cyber-Physical Systems in AADL” was accepted in STTT."
-- date: 2022-11-01 
-  details: "Our paper “An Extension of HybridSynchAADL and Its Application to Collaborating Autonomous UAVs” was accepted at ISOLA 2022."
-- date: 2022-05-01 
-  details: "Our paper “STLmc: Robust STL Model Checking of Hybrid Systems using SMT” was accepted to CAV 2022."
-- date: 2021-11-01 
-  details: "Our paper “Efficient SMT-Based Model Checking for Signal Temporal Logic” was accepted to ASE 2021."
-- date: 2020-03-01 
-  details: "Our paper “Maude-SE: A Tight Integration of Maude and SMT Solvers” was accepted to WRLA 2020."
-- date: 2019-03-01 
-  details: "Geunyeol and Jaehun joined our lab."
-- date: 2021-07-01 
-  details: "Seunghyun joined our lab."
+- date: 2024-03-01
+  details: "Our paper “A Flexible Framework for Integrating Maude and SMT Solvers Using Python” has been accepted to WRLA 2024."
+
+- date: 2024-01-01
+  details: "Kyunwoo joined our lab. Welcome!"
+
+- date: 2023-12-01
+  details: "Our paper “Formal Specification of Trusted Execution Environment APIs” has been accepted to FASE 2024."
+
+- date: 2023-12-01
+  details: "Jueun received the KIISE Society Outstanding Paper Award. Congratulations!"
+
+- date: 2023-08-31
+  details: "Hyuksoon joined our lab. Welcome!"
+
+- date: 2023-06-01
+  details: "Jueun received the KIISE Journal Outstanding Paper Award. Congratulations!"
+
+- date: 2022-12-01
+  details: "Our paper “Bounded Model Checking of PLC ST Programs using Rewriting Modulo SMT” has been accepted to FTSCS 2022."
+
+- date: 2022-11-01
+  details: "Our paper “An Extension of HybridSynchAADL and Its Application to Collaborating Autonomous UAVs” has been accepted to ISOLA 2022."
+
+- date: 2022-07-01
+  details: "Byoungho joined our lab. Welcome!"
+
+- date: 2022-05-01
+  details: "Our paper “STLmc: Robust STL Model Checking of Hybrid Systems using SMT” has been accepted to CAV 2022."
+
+- date: 2021-12-01
+  details: "Our paper “Layered Abstraction for Formally Verifying Deep Neural Networks” has been accepted to KSC 2021."
+
+- date: 2021-12-01
+  details: "Our paper “Layered Abstraction Technique for Effective Formal Verification of Deep Neural Networks” has been accepted to KIISE 2021."
+
+- date: 2021-12-01
+  details: "Jueun received the KSC 2021 Outstanding Paper Award. Congratulations!"
+
+- date: 2021-11-01
+  details: "Our paper “Efficient SMT-Based Model Checking for Signal Temporal Logic” has been accepted to ASE 2021."
+
+- date: 2021-07-01
+  details: "Seunghyun joined our lab. Welcome!"
+
+- date: 2020-03-01
+  details: "Our paper “Maude-SE: A Tight Integration of Maude and SMT Solvers” has been accepted to WRLA 2020."
+
+- date: 2020-02-01
+  details: "Jueun joined our lab. Welcome!"
+
+- date: 2019-03-01
+  details: "Geunyeol and Jaehun joined our lab. Welcome!"

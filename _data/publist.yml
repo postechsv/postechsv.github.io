@@ -1,35 +1,56 @@
 # 2026
 
-- title: "A Formal Executable Semantics of PROMELA"
-  authors: Byoungho Son and Kyungmin Bae
-  venue: International Conference on Verification, Model Checking, and Abstract Interpretation (VMCAI) (to appear)
+- title: "Efficient Verification of Lingua Franca Programs"
+  authors: Peter Olveczky, Mario Reja, Mikheil Rukhaia, Kyungmin Bae, and Mircea Marin
+  venue: International Conference on Tools and Algorithms for the Construction and Analysis of Systems (TACAS) (to appear)
   year: 2026
   tag: conference
-  link: 
+  link:
+  
+- title: "모델체킹을 위한 강화학습 기반 휴리스틱 학습"
+  authors: 강혜윤, 손병호, 배경민
+  venue: 한국소프트웨어공학학술대회 논문집
+  year: 2026
+  tag: domestic
+  link: https://kcse.sigsoft.or.kr/2026/files/KCSE-2026-proceedings.pdf#page=210
+
+- title: "A Formal Executable Semantics of PROMELA"
+  authors: Byoungho Son and Kyungmin Bae
+  venue: International Conference on Verification, Model Checking, and Abstract Interpretation (VMCAI)
+  year: 2026
+  tag: conference
+  link: https://link.springer.com/chapter/10.1007/978-3-032-15700-3_16
+
 
 # 2025
 
-- title: "Modeling and Analyzing Real-Time Systems in Rewriting Logic"
-  authors: K Bae, C Olarte, PC Ölveczky
-  venue: Gul Agha Festschrift Symposium
+- title: "MR-HybridSynchAADL: formal modeling and analysis of multirate CPSs with advanced control programs and continuous dynamics"
+  authors: Jaehun Lee, Kyungmin Bae, and Peter Ölveczky
+  venue: Software Tools for Technology Transfer (STTT)
   year: 2025
-  tag: conference
-  link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RfWIHGsAAAAJ&sortby=pubdate&citation_for_view=RfWIHGsAAAAJ:RGFaLdJalmkC
+  tag: journal
+  link: https://link.springer.com/article/10.1007/s10009-025-00831-z
 
+- title: "DM-Check: Verifying invariants of concurrent systems by deductive model checking"
+  authors: Kyungmin Bae, Santiago Escobar, Raúl López-Rueda, José Meseguer, and Julia Sapiña
+  venue: Journal of Logical and Algebraic Methods in Programming 149: 101107
+  year: 2025
+  tag: journal
+  link: https://link.springer.com/article/10.1007/s10009-025-00831-z
 
 - title: "Formal Analysis of Networked PLC Controllers Interacting with Physical Environments"
   authors: Jaeseo Lee and Kyungmin Bae
   venue: Static Analysis Symposium (SAS)
   year: 2025
   tag: conference
-  link: 
+  link: https://link.springer.com/chapter/10.1007/978-3-032-07106-4_14
 
-- title: "Semantics and formal analysis of Lingua Franca CPS specifications in rewriting logic"
-  authors: Mircea Marin, Peter Olveczky, Mario Reja, Mikheil Rukhaia, and Kyungmin Bae
-  venue: Marjan Festschrift at FSEN
+- title: "Modeling and Analyzing Real-Time Systems in Rewriting Logic"
+  authors: Kyungmin Bae, Carlos Olarte, and Peter Ölveczky
+  venue: Gul Agha Festschrift Symposium
   year: 2025
   tag: conference #workshop
-  link: 
+  link: https://link.springer.com/chapter/10.1007/978-3-032-05291-9_21
 
 - title: "SMT-based robust model checking for signal temporal logic"
   authors: Jia Lee, Geunyeol Yu, and Kyungmin Bae
@@ -37,90 +58,89 @@
   year: 2025
   tag: journal
   link: https://doi.org/10.1016/j.scico.2025.103332
+  
+- title: "Semantics and formal analysis of Lingua Franca CPS specifications in rewriting logic"
+  authors: Mircea Marin, Peter Olveczky, Mario Reja, Mikheil Rukhaia, and Kyungmin Bae
+  venue: Marjan Festschrift at FSEN
+  year: 2025
+  tag: conference #workshop
+  link: https://link.springer.com/chapter/10.1007/978-3-031-85134-6_4
 
 - title: "Model Checking of Signal Temporal Logic"
   authors: Jia Lee
   venue: Ph.D Dissertation, Department of Computer Science, POSTECH
   year: 2025
-  image: 
-  description: 
-  link:
   tag: dissertation
+  link: http://www.dcollection.net/handler/postech/200000859272
 
 
 # 2024
-
-- title: "Verifying Invariants by Deductive Model Checking"
-  authors: Kyungmin Bae, Santiago Escobar, Raúl López-Rueda, José Meseguer, and Julia Sapiña
-  venue: International Workshop on Rewriting Logic and its Applications (WRLA)
-  year: 2024
-  tag: conference #workshop
-  link: 
 
 - title: "Rigorous Model Engineering of Hierarchical Multirate CPSs in MR-HybridSynchAADL"
   authors: Jaehun Lee, Kyungmin Bae and Peter Olveczky
   venue: International Symposium on Leveraging Applications of Formal Methods (ISoLA)
   year: 2024
   tag: conference
-  link: 
-
-- title: "A Flexible Framework for Integrating Maude and SMT Solvers Using Python"
-  authors: Geunyeol Yu and Kyungmin Bae
-  venue: SInternational Workshop on Rewriting Logic and its Applications (WRLA)
-  year: 2024
-  tag: conference #workshop
-  link:
-
+  link: https://link.springer.com/chapter/10.1007/978-3-031-75107-3_15
+  
 - title: "A rewriting-logic-with-SMT-based formal analysis and parameter synthesis framework for parametric time Petri nets"
   authors: Jaime Arias, Kyungmin Bae, Carlos Olarte, Peter Ölveczky, Laure Petrucci, and Fredrik Romming
   venue: Fundamenta Informaticae 192, Issue 3-4
   year: 2024
   tag: journal
-  link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RfWIHGsAAAAJ&sortby=pubdate&citation_for_view=RfWIHGsAAAAJ:4JMBOYKVnBMC
-
-
-- title: "Narrowing and Heuristic Search for Symbolic Reachability Analysis of Concurrent Object-Oriented Systems"
-  authors: Byeongjee Kang and Kyungmin Bae
-  venue: Science of Computer Programming
-  year: 2024
-  tag: journal
-  link: https://doi.org/10.1016/j.scico.2024.103097
-
-- title: "Symbolic Analysis and Parameter Synthesis for Networks of Parametric Timed Automata with Global Variables Using Maude and SMT Solving"
-  authors: Jaime Arias, Kyungmin Bae, Carlos Olarte, Peter Csaba Olveczky, Laure Petrucci, and Fredrik Romming
-  venue: Science of Computer Programming
-  year: 2024
-  tag: journal
-  link: https://doi.org/10.1016/j.scico.2023.103074
+  link: https://journals.sagepub.com/doi/abs/10.3233/FI-242195
 
 - title: "Formal Semantics and Analysis of Multitask PLC ST Programs with Preemption"
   authors: Jaeseo Lee and Kyungmin Bae
   venue: International Symposium on Formal Methods (FM)
   year: 2024
   tag: conference
-  link: https://dl.acm.org/doi/abs/10.1007/978-3-031-71162-6_22
+  link: https://link.springer.com/chapter/10.1007/978-3-031-71162-6_22
+  
+- title: "Narrowing and Heuristic Search for Symbolic Reachability Analysis of Concurrent Object-Oriented Systems"
+  authors: Byeongjee Kang and Kyungmin Bae
+  venue: Science of Computer Programming
+  year: 2024
+  tag: journal
+  link: https://www.sciencedirect.com/science/article/abs/pii/S0167642324000200
 
+- title: "A Flexible Framework for Integrating Maude and SMT Solvers Using Python"
+  authors: Geunyeol Yu and Kyungmin Bae
+  venue: International Workshop on Rewriting Logic and its Applications (WRLA)
+  year: 2024
+  tag: conference #workshop
+  link: https://link.springer.com/chapter/10.1007/978-3-031-65941-6_10
+  
+- title: "Verifying Invariants by Deductive Model Checking"
+  authors: Kyungmin Bae, Santiago Escobar, Raúl López-Rueda, José Meseguer, and Julia Sapiña
+  venue: International Workshop on Rewriting Logic and its Applications (WRLA)
+  year: 2024
+  tag: conference #workshop
+  link: https://link.springer.com/chapter/10.1007/978-3-031-65941-6_1
+  
 - title: "Formal Specification of Trusted Execution Environment APIs"
   authors: Geunyeol Yu, Seunghyun Chae, Kyungmin Bae, and Sungkun Moon
   venue: International Conference on Fundamental Approaches to Software Engineering (FASE)
   year: 2024
   tag: conference
-  link: https://dl.acm.org/doi/abs/10.1007/978-3-031-57259-3_5
+  link: https://link.springer.com/chapter/10.1007/978-3-031-57259-3_5
 
+- title: "Symbolic Analysis and Parameter Synthesis for Networks of Parametric Timed Automata with Global Variables Using Maude and SMT Solving"
+  authors: Jaime Arias, Kyungmin Bae, Carlos Olarte, Peter Csaba Olveczky, Laure Petrucci, and Fredrik Romming
+  venue: Science of Computer Programming 233, 103074
+  year: 2024
+  tag: journal
+  link: https://www.sciencedirect.com/science/article/abs/pii/S0167642323001569
+  
 
 # 2023
+
 - title: "Formal Model Engineering of Synchronous CPS Designs in AADL"
   authors: Kyungmin Bae and Peter Olveczky
   venue: "2nd ADEPT workshop: AADL by its practitioners (ADEPT)"
   year: 2023
   tag: conference
-  link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RfWIHGsAAAAJ&sortby=pubdate&citation_for_view=RfWIHGsAAAAJ:blknAaTinKkC
-
-- title: "Symbolic Analysis and Parameter Synthesis for Time Petri Nets Using Maude and SMT Solving"
-  authors: Jaime Arias, Kyungmin Bae, Carlos Olarte, Peter Ölveczky, Laure Petrucci, and Fredrik Romming
-  venue: International Conference on Application and Theory of Petri Nets and Concurrency (Petri Nets)
-  year: 2023
-  tag: conference
+  link: https://dl.acm.org/doi/abs/10.1145/3706601.3706604
 
 - title: "Formal Model Engineering of Distributed CPSs Using AADL: From Behavioral AADL Models to Multirate Hybrid Synchronous AADL"
   authors: Kyungmin Bae and Peter Olveczky
@@ -128,17 +148,18 @@
   year: 2023
   tag: conference
 
-- title: "Formal Model Engineering of Synchronous CPS Designs in AADL"
-  authors: Kyungmin Bae and Peter Olveczky
-  venue: "2nd ADEPT Workshop: AADL by its Practitioners (ADEPT)"
+- title: "Symbolic Analysis and Parameter Synthesis for Time Petri Nets Using Maude and SMT Solving"
+  authors: Jaime Arias, Kyungmin Bae, Carlos Olarte, Peter Ölveczky, Laure Petrucci, and Fredrik Romming
+  venue: International Conference on Application and Theory of Petri Nets and Concurrency (Petri Nets)
   year: 2023
   tag: conference
-
+  link: https://link.springer.com/chapter/10.1007/978-3-031-33620-1_20
+  
 
 # 2022
 
 - title: "Rewriting Logic Semantics and Symbolic Analysis for Parametric Timed Automata"
-  authors: Jaime Arias, Kyungmin Bae, Carlos Olarte, Peter Ölveczky, Laure Petrucci, Fredrik Rømming
+  authors: Jaime Arias, Kyungmin Bae, Carlos Olarte, Peter Ölveczky, Laure Petrucci, and Fredrik Rømming
   venue: ACM SIGPLAN International Workshop on Formal Techniques for Safety-Critical Systems (FTSCS)
   year: 2022
   tag: conference #workshop
@@ -447,7 +468,7 @@
   tag: conference
 
 - title: "A Hybrid Architecture for Correct-by-Construction Hybrid Planning and Control"
-  authors: Robert P. Goldman, Daniel Bryce, Michael J. S. Pelican, David J. Musliner, Kyungmin Bae
+  authors: Robert P. Goldman, Daniel Bryce, Michael J. S. Pelican, David J. Musliner, and Kyungmin Bae
   venue: International Symposium on NASA Formal Methods (NFM)
   year: 2016
   image: 
@@ -457,7 +478,7 @@
   tag: conference
 
 - title: "A Term Rewriting Approach to Analyze High Level Petri Nets"
-  authors: Xudong He, Reng Zeng, Su Liu, Zhuo Sun, Kyungmin Bae
+  authors: Xudong He, Reng Zeng, Su Liu, Zhuo Sun, and Kyungmin Bae
   venue: International Symposium on Theoretical Aspects of Software Engineering (TASE)
   year: 2016
   image: 
@@ -467,7 +488,7 @@
   tag: conference
 
 - title: "An Architecture for Hybrid Planning and Execution"
-  authors: Robert P. Goldman, Dan Bryce, Michael J. S. Pelican, David J. Musliner, Kyungmin Bae
+  authors: Robert P. Goldman, Dan Bryce, Michael J. S. Pelican, David J. Musliner, and Kyungmin Bae
   venue: AAAI-16 Workshop on Planning for Hybrid Systems
   year: 2016
   image: 

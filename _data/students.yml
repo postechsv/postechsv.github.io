@@ -8,14 +8,6 @@
 #  education3:
 #  education4:
 
-- name: Jaeseo Lee
-  photo: jslee.jpg
-  info: Ph.D. Student
-  email: sean96@postech.ac.kr
-  page: https://exitlight.github.io
-  additional: ""
-  number_educ: 0
-
 - name: Geunyeol Yu
   photo: gyyu.jpg
   info: Ph.D. Student
@@ -62,14 +54,6 @@
   info: Ph.D. Student
   email: kkw423@postech.ac.kr
   # page: https://gyyu.github.io 
-  additional: ""
-  number_educ: 0
-
-- name: Hyuksoon Jang
-  photo: hsjang.jpg
-  info: M.S Student
-  email: hyuksoon@postech.ac.kr
-  page: https://nooskuyh.github.io 
   additional: ""
   number_educ: 0
 
