@@ -5,7 +5,6 @@
   venue: International Conference on Tools and Algorithms for the Construction and Analysis of Systems (TACAS) (to appear)
   year: 2026
   tag: conference
-  link:
   
 - title: "모델체킹을 위한 강화학습 기반 휴리스틱 학습"
   authors: 강혜윤, 손병호, 배경민
@@ -36,7 +35,7 @@
   venue: Journal of Logical and Algebraic Methods in Programming 149
   year: 2025
   tag: journal
-  link: https://link.springer.com/article/10.1007/s10009-025-00831-z
+  link: https://www.sciencedirect.com/science/article/pii/S2352220825000732
 
 - title: "Formal Analysis of Networked PLC Controllers Interacting with Physical Environments"
   authors: Jaeseo Lee and Kyungmin Bae
