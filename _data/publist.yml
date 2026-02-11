@@ -33,7 +33,7 @@
 
 - title: "DM-Check: Verifying invariants of concurrent systems by deductive model checking"
   authors: Kyungmin Bae, Santiago Escobar, Raúl López-Rueda, José Meseguer, and Julia Sapiña
-  venue: Journal of Logical and Algebraic Methods in Programming 149: 101107
+  venue: Journal of Logical and Algebraic Methods in Programming 149
   year: 2025
   tag: journal
   link: https://link.springer.com/article/10.1007/s10009-025-00831-z
