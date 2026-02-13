@@ -156,174 +156,127 @@
   
 
 # 2022
-
-- title: "Rewriting Logic Semantics and Symbolic Analysis for Parametric Timed Automata"
-  authors: Jaime Arias, Kyungmin Bae, Carlos Olarte, Peter Ölveczky, Laure Petrucci, and Fredrik Rømming
-  venue: ACM SIGPLAN International Workshop on Formal Techniques for Safety-Critical Systems (FTSCS)
+  
+- title: "Modeling and formal analysis of virtually synchronous cyber-physical systems in AADL"
+  authors: Jaehun Lee, Kyungmin Bae, Peter Olveczky, Sharon Kim, and Minseok Kang
+  venue: Software Tools for Technology Transfer (STTT)
   year: 2022
-  tag: conference #workshop
-
-- title: "Symbolic Reachability Analysis of Distributed Systems Using Narrowing and Heuristic Search"
-  authors: Byeongjee Kang and Kyungmin Bae
-  venue: ACM SIGPLAN International Workshop on Formal Techniques for Safety-Critical Systems (FTSCS)
-  year: 2022
-  tag: conference
+  tag: journal
+  link: https://link.springer.com/article/10.1007/s10009-022-00665-z
 
 - title: "Bounded Model Checking of PLC ST Programs Using Rewriting Modulo SMT"
   authors: Jaeseo Lee, Sangki Kim, and Kyungmin Bae
   venue: ACM SIGPLAN International Workshop on Formal Techniques for Safety-Critical Systems (FTSCS)
   year: 2022
+  tag: conference #workshop
+  link: https://dl.acm.org/doi/abs/10.1145/3563822.3568016
+  
+- title: "Symbolic Reachability Analysis of Distributed Systems Using Narrowing and Heuristic Search"
+  authors: Byeongjee Kang and Kyungmin Bae
+  venue: ACM SIGPLAN International Workshop on Formal Techniques for Safety-Critical Systems (FTSCS)
+  year: 2022
+  tag: conference #workshop
+  link: https://dl.acm.org/doi/abs/10.1145/3563822.3568017
+  
+- title: "Rewriting Logic Semantics and Symbolic Analysis for Parametric Timed Automata"
+  authors: Jaime Arias, Kyungmin Bae, Carlos Olarte, Peter Ölveczky, Laure Petrucci, and Fredrik Rømming
+  venue: ACM SIGPLAN International Workshop on Formal Techniques for Safety-Critical Systems (FTSCS)
+  year: 2022
+  tag: conference #workshop
+  link: https://dl.acm.org/doi/abs/10.1145/3563822.3569923
+  
+- title: "심층 신경망의 효과적인 정형 검증을 위한 계층별 요약 기법"
+  authors: 연주은, 채승현, 배경민
+  venue: 정보과학회논문지
+  year: 2022
+  tag: domestic
+  link: https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11158124
+
+- title: "An Extension of HybridSynchAADL and Its Application to Collaborating Autonomous UAVs"
+  authors: Jaehun Lee, Kyungmin Bae and Peter Olveczky
+  venue: International Symposium On Leveraging Applications of Formal Methods (ISOLA)
+  year: 2022
   tag: conference
+  link: https://link.springer.com/chapter/10.1007/978-3-031-19759-8_4
+
+- title: "Formal Specification and Analysis of PLC and OSEK/VDX OS using Maude"
+  authors: Sangki Kim
+  venue: MS Dissertation, Department of Computer Science, POSTECH
+  year: 2022
+  tag: dissertation
+  link: http://www.dcollection.net/handler/postech/200000632060
+
+- title: "Abstractions for Verifying DNN"
+  authors: Jueun Yeon
+  venue: MS Dissertation, Department of Computer Science, POSTECH
+  year: 2022  tag: dissertation
+  link: http://www.dcollection.net/handler/postech/200000632492
+  
+- title: "STLmc: Robust STL Model Checking of Hybrid Systems using SMT"
+  authors: Geunyeol Yu, Jia Lee, and Kyungmin Bae
+  venue: International Conference on Computer Aided Verification (CAV)
+  year: 2022
+  tag: conference
+  link: https://link.springer.com/chapter/10.1007/978-3-031-13185-1_26
 
 - title: "Rewriting Logic and Its Applications - 14th International Workshop, WRLA@ETAPS 2022, Munich, Germany, April 2-3, 2022, Revised Selected Papers"
   authors: Kyungmin Bae
   venue: Lecture Notes in Computer Science 13252, Springer
   year: 2022
   tag: book
-
-
-# 2022
-
-- title: "Bounded Model Checking of PLC ST Programs using Rewriting Modulo SMT"
-  authors: Jaeseo Lee, Sangki Kim, and Kyungmin Bae
-  venue: Proceedings of the 8th ACM SIGPLAN International Workshop on Formal Techniques for Safety-Critical Systems (FTSCS)
-  year: 2022
-  month: 11
-  link: https://dl.acm.org/doi/abs/10.1145/3563822.3568016
-  highlight: 0
-  tag: conference
+  link: https://link.springer.com/content/pdf/10.1007/978-3-031-12441-9.pdf
   
-- title: "심층 신경망의 효과적인 정형 검증을 위한 계층별 요약 기법"
-  authors: 연주은, 채승현, 배경민
-  venue: 정보과학회논문지
-  year: 2022
-  image: 
-  description: 
-  link:
-  highlight: 0
-  tag: domestic
-
-- title: "An Extension of HybridSynchAADL and Its Application to Collaborating Autonomous UAVs"
-  authors: Jaehun Lee, Kyungmin Bae, and Peter Csaba Ölveczky
-  venue: International Symposium On Leveraging Applications of Formal Methods, Verification and Validation (ISOLA)
-  year: 2022
-  month:
-  image: 
-  description: 
-  link: https://link.springer.com/chapter/10.1007/978-3-031-19759-8_4
-  highlight: 0
-  tag: conference
-
-
-- title: "STLmc: Robust STL Model Checking of Hybrid Systems using SMT"
-  authors: Geunyeol Yu, Jia Lee, and Kyungmin Bae
-  venue: International Conference on Computer Aided Verification (CAV)
-  year: 2022
-  month: 8
-  image: 
-  description: 
-  link: https://link.springer.com/chapter/10.1007/978-3-031-13185-1_26
-  tag: conference
-
-- title: Modeling and formal analysis of virtually synchronous cyber-physical systems in AADL
-  authors: Jaehun Lee, Kyungmin Bae, Peter Olveczky, Sharon Kim, and Minseok Kang
-  venue: Software Tools for Technology Transfer (STTT)
-  year: 2022
-  link: https://link.springer.com/article/10.1007/s10009-022-00665-z
-  tag: journal
-
-- title: "Formal Specification and Analysis of PLC and OSEK/VDX OS using Maude"
-  authors: Sangki Kim
-  venue: MS Dissertation, Department of Computer Science, POSTECH
-  year: 2022
-  image: 
-  description: 
-  link: http://www.dcollection.net/handler/postech/200000632060
-  tag: dissertation
-
-
-- title: "Abstractions for Verifying DNN"
-  authors: Jueun Yeon
-  venue: MS Dissertation, Department of Computer Science, POSTECH
-  year: 2022
-  image: 
-  description: 
-  link: http://www.dcollection.net/handler/postech/200000632492
-  tag: dissertation
-
 - title: "Extending the HybridSynchAADL Modeling Language and Tool"
   authors: Jaehun Lee
   venue: MS Dissertation, Department of Computer Science, POSTECH
   year: 2022
-  image: 
-  description: 
-  link: http://www.dcollection.net/handler/postech/200000600467
   tag: dissertation
+  link: http://www.dcollection.net/handler/postech/200000600467
+  
 
 # 2021
-
-- title: Efficient SMT-Based Model Checking for Signal Temporal Logic
-  authors: Jia Lee, Geunyeol Yu, and Kyungmin Bae
-  venue: IEEE/ACM International Conference on Automated Software Engineering (ASE)
-  year: 2021
-  month: 8
-  image: 
-  description: 
-  link: https://ieeexplore.ieee.org/document/9678719
-  highlight: 0
-  tag: conference
-
-- title: "MSYNC: A Generalized Formal Design Pattern for Virtually Synchronous Multirate Cyber-Physical Systems"
-  authors: Kyungmin Bae and Peter Olveczky
-  venue: International Conference on Embedded Software (EMSOFT)
-  year: 2021
-  image: 
-  description: 
-  link: https://dl.acm.org/doi/10.1145/3477036
-  highlight: 0
-  tag: conference
-
-- title: "HybridSynchAADL: Modeling and Formal Analysis of Virtually Synchronous CPSs in AADL"
-  authors: Jaehun Lee, Sharon Kim, Kyungmin Bae and Peter Olveczky
-  venue: International Conference on Computer Aided Verification (CAV)
-  year: 2021
-  image: 
-  description: 
-  link: https://link.springer.com/chapter/10.1007/978-3-030-81685-8_23
-  highlight: 0
-  tag: conference
 
 - title: "계층별 요약을 이용한 심층 신경망 정형 검증 기법"
   authors: 연주은, 채승현, 배경민
   venue: 한국정보과학회 학술발표논문집
   year: 2021
-  month: 9
-  image: 
-  description: 
-  link:
-  highlight: 0
   tag: domestic
+  link: https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11035647
+  
+- title: "Efficient SMT-Based Model Checking for Signal Temporal Logic"
+  authors: Jia Lee, Geunyeol Yu, and Kyungmin Bae
+  venue: IEEE/ACM International Conference on Automated Software Engineering (ASE)
+  year: 2021
+  tag: conference
+  link: https://ieeexplore.ieee.org/abstract/document/9678719
+
+- title: "MSYNC: A Generalized Formal Design Pattern for Virtually Synchronous Multirate Cyber-Physical Systems"
+  authors: Kyungmin Bae and Peter Olveczky
+  venue: International Conference on Embedded Software (EMSOFT)
+  year: 2021
+  tag: conference
+  link: https://dl.acm.org/doi/abs/10.1145/3477036
+
+- title: "HybridSynchAADL: Modeling and Formal Analysis of Virtually Synchronous CPSs in AADL"
+  authors: Jaehun Lee, Sharon Kim, Kyungmin Bae and Peter Olveczky
+  venue: International Conference on Computer Aided Verification (CAV)
+  year: 2021
+  tag: conference
+  link: https://link.springer.com/chapter/10.1007/978-3-030-81685-8_23
 
 - title: "구조적 성질을 활용한 심층신경망의 SMT 기반 정형검증 기법"
   authors: 정문현, 배경민
   venue: 정보과학회논문지
   year: 2021
-  image: 
-  description: 
-  link:
-  highlight: 0
   tag: domestic
+  link: https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE10604355
 
 - title: "Formal Verification of Deep Neural Networks using Structural Properties"
   authors: Moonhyeon Chung
   venue: MS Dissertation, Department of Computer Science, POSTECH
   year: 2021
-  image: 
-  description: 
-  link: http://www.dcollection.net/handler/postech/200000506246
-  highlight: 0
   tag: dissertation
-
+  link: http://www.dcollection.net/handler/postech/200000506246
 
 
 # 2020
@@ -332,52 +285,34 @@
   authors: Geunyeol Yu and Kyungmin Bae
   venue: International Workshop on Rewriting Logic and its Applications
   year: 2020
-  image: 
-  description: 
-  link:
-  highlight: 0
   tag: conference
 
 - title: "FormaliSE@ICSE 2020: 8th International Conference on Formal Methods in Software Engineering, Seoul, Republic of Korea, July 13, 2020"
   authors: Kyungmin Bae, Domenico Bianculli, Stefania Gnesi, and Nico Plat
   venue: ACM
   year: 2020
-  image: 
-  description: 
-  link:
-  highlight: 0
   tag: book
 
 - title: "구조적 성질을 활용한 심층신경망의 정형검증 기법"
   authors: 정문현, 배경민
   venue: 한국정보과학회 학술발표논문집
   year: 2020
-  image: 
-  description: 
-  link:
-  highlight: 0
   tag: domestic
 
 - title: "심층신경망의 정형검증 기법 소개"
   authors: 배경민
   venue: 정보과학회지
   year: 2020
-  image: 
-  description: 
-  link:
-  highlight: 0
   tag: domestic
 
 - title: "HybridSynchAADL: Modeling and Formal Analysis of Virtually Synchronous Cyber-Physical Systems in AADL"
   authors: Sharon Kim
   venue: MS Dissertation, Department of Computer Science, POSTECH
   year: 2020
-  image: 
-  description: 
   link: http://www.dcollection.net/handler/postech/200000287492
-  highlight: 0
   tag: dissertation
 
+####################################################################################################
 
 # 2019
 
@@ -385,8 +320,6 @@
   authors: Kyungmin Bae and Jia Lee
   venue: ACM SIGPLAN Symposium on Principles of Programming Languages (POPL)
   year: 2019
-  image: 
-  description: 
   link: https://dl.acm.org/doi/10.1145/3290364
   tag: conference
 
@@ -394,31 +327,20 @@
   authors: Kyungmin Bae and Camilo Rocha
   venue: "Science of Computer Programming 178: 20-42"
   year: 2019
-  image: 
-  description: 
-  link:
-  highlight: 0
   tag: journal
 
 - title: "CPI 보안 강화 코드 변환의 실용적인 동등성 검사 기법"
   authors: 이재서, 최태형, 이규호, 유재관, 배경민
   venue: 정보과학회논문지
   year: 2019
-  image: 
-  description: 
-  link:
-  highlight: 0
   tag: domestic
 
 - title: "Maude를 통한 분산 드론 시스템의 정형 분석"
   authors: 김사론, 배경민
   venue: 한국정보과학회 학술발표논문집
   year: 2019
-  image: 
-  description: 
-  link:
-  highlight: 0
   tag: domestic
+
 
 # 2018
 
@@ -426,11 +348,8 @@
   authors: Kyungmin Bae and Peter Olveczky
   venue: Lecture Notes in Computer Science 11222, Springer
   year: 2018
-  image: 
-  description: 
-  link:
-  highlight: 0
   tag: book
+
 
 # 2017
 
@@ -438,21 +357,14 @@
   authors: Kyungmin Bae and Sicun Gao
   venue: International Conference on Formal Methods in Computer-Aided Design (FMCAD)
   year: 2017
-  image: 
-  description: 
-  link:
-  highlight: 0
   tag: conference
 
 - title: "Guarded Terms for Rewriting modulo SMT"
   authors: Kyungmin Bae and Camilo Rocha
   venue: International Conference on Formal Aspects of Component Software (FACS)
   year: 2017
-  image: 
-  description: 
-  link:
-  highlight: 0
   tag: conference
+
 
 # 2016
 
@@ -460,41 +372,27 @@
   authors: Kyungmin Bae, Peter Olveczky, Soonho Kong, Sicun Gao, and Edmund M. Clarke
   venue: "ACM International Conference on Hybrid Systems: Computation and Control (HSCC)"
   year: 2016
-  image: 
-  description: 
-  link:
-  highlight: 0
   tag: conference
 
 - title: "A Hybrid Architecture for Correct-by-Construction Hybrid Planning and Control"
   authors: Robert P. Goldman, Daniel Bryce, Michael J. S. Pelican, David J. Musliner, and Kyungmin Bae
   venue: International Symposium on NASA Formal Methods (NFM)
   year: 2016
-  image: 
-  description: 
-  link:
-  highlight: 0
   tag: conference
 
 - title: "A Term Rewriting Approach to Analyze High Level Petri Nets"
   authors: Xudong He, Reng Zeng, Su Liu, Zhuo Sun, and Kyungmin Bae
   venue: International Symposium on Theoretical Aspects of Software Engineering (TASE)
   year: 2016
-  image: 
-  description: 
-  link:
-  highlight: 0
   tag: conference
 
 - title: "An Architecture for Hybrid Planning and Execution"
   authors: Robert P. Goldman, Dan Bryce, Michael J. S. Pelican, David J. Musliner, and Kyungmin Bae
   venue: AAAI-16 Workshop on Planning for Hybrid Systems
   year: 2016
-  image: 
-  description: 
-  link:
-  highlight: 0
   tag: conference
+
+####################################################################################################
 
 # 2015
 
@@ -502,42 +400,27 @@
   authors: Kyungmin Bae, Josh Krisiloff, José Meseguer, and Peter Olveczky
   venue: "Science of Computer Programming 103:13-50"
   year: 2015
-  image: 
-  description: 
-  link:
-  highlight: 0
   tag: journal
 
 - title: "Model Checking Linear Temporal Logic of Rewriting Formulas under Localized Fairness"
   authors: Kyungmin Bae, and José Meseguer
   venue: Science of Computer Programming 99
   year: 2015
-  image: 
-  description: 
-  link:
-  highlight: 0
   tag: journal
 
 - title: "SMT Encoding of Hybrid Systems in dReal"
   authors: Kyungmin Bae, Soonho Kong, and Sicun Gao
   venue: International Workshop on Applied veRification for Continuous and Hybrid Systems
   year: 2015
-  image: 
-  description: 
-  link:
-  highlight: 0
   tag: conference
 
 - title: "Hybrid Multirate PALS"
   authors: Kyungmin Bae and Peter C. Olveczky
   venue: Logic, Rewriting, and Concurrency
   year: 2015
-  month: 8
-  image: 
-  description: 
   link: https://link.springer.com/chapter/10.1007/978-3-319-23165-5_5
-  highlight: 0
   tag: conference
+
 
 # 2014
 
@@ -545,51 +428,32 @@
   authors: Kyungmin Bae and José Meseguer
   venue: Joint International Conference on Rewriting and Typed Lambda Calculi (RTA-TLCA)
   year: 2014
-  image: 
-  description: 
-  link:
-  highlight: 0
   tag: conference
 
 - title: "Definition, Semantics, and Analysis of Multirate Synchronous AADL"
   authors: Kyungmin Bae, Peter Olveczky, and José Meseguer
   venue: International Symposium on Formal Methods (FM)
   year: 2014
-  image: 
-  description: 
-  link:
-  highlight: 0
   tag: conference
 
 - title: "Formal Patterns for Multirate Distributed Real-Time Systems (extended version)"
   authors: Kyungmin Bae, José Meseguer, and Peter Olveczky
   venue: Science of Computer Programming 91, Part A
   year: 2014
-  image: 
-  description: 
-  link:
-  highlight: 0
   tag: journal
 
 - title: "Infinite-State Model Checking of LTLR Formulas Unsing Narrowing"
   authors: Kyungmin Bae and José Meseguer
   venue: International Workshop on Rewriting Logic and its Applications
   year: 2014
-  image: 
-  description: 
-  link:
-  highlight: 0
   tag: conference
 
 - title: "Rewriting-based model checking methods"
   authors: Kyungmin Bae
   venue: PhD Dissertation, Department of Computer Science, University of Illinois at Urbana-Champaign, USA
   year: 2014
-  image: 
-  description: 
-  link:
-  highlight: 0
   tag: dissertation
+
 
 # 2013
 
@@ -597,11 +461,8 @@
   authors: Kyungmin Bae, Santiago Escobar and José Meseguer
   venue: International Conference on Rewriting Techniques and Applications (RTA)
   year: 2013
-  image: 
-  description: 
-  link:
-  highlight: 0
   tag: conference
+
 
 # 2012
 
@@ -609,51 +470,32 @@
   authors: Kyungmin Bae, Peter Olveczky, José Meseguer, and Abdullah Al-Nayeem
   venue: International Conference on Fundamental Approaches to Software Engineering (FASE)
   year: 2012
-  image: 
-  description: 
-  link:
-  highlight: 0
   tag: conference
 
 - title: "Formal Patterns for Multi-Rate Distributed Real-Time Systems"
   authors: Kyungmin Bae, José Meseguer, and Peter Olveczky
   venue: International Symposium on Formal Aspects of Component Software (FACS)
   year: 2012
-  image: 
-  description: 
-  link:
-  highlight: 0
   tag: conference
 
 - title: "Verifying Hierarchical Ptolemy II Discrete-Event Models using Real-Time Maude"
   authors: Kyungmin Bae, Peter C. Olveczky, Thomas H. Feng, Edward A. Lee and Stavros Tripakis
   venue: Science of Computer Programming 77(12)
   year: 2012
-  image: 
-  description: 
-  link:
-  highlight: 0
   tag: journal
 
 - title: "PALS-Based Analysis of an Airplane Multirate Control System in Real-Time Maude"
   authors: Kyungmin Bae, Josh Krisiloff, José Meseguer, and Peter Olveczky
   venue: International Workshop on Formal Techniques for Safety-Critical Systems
   year: 2012
-  image: 
-  description: 
-  link:
-  highlight: 0
   tag: conference
 
 - title: "Model Checking LTLR Formulas under Localized Fairness"
   authors: Kyungmin Bae and José Meseguer
   venue: International Workshop on Rewriting Logic and its Applications
   year: 2012
-  image: 
-  description: 
-  link:
-  highlight: 0
   tag: conference
+
 
 # 2011
 
@@ -661,21 +503,14 @@
   authors: Kyungmin Bae and José Meseguer
   venue: International Conference on Computer Aided Verification (CAV)
   year: 2011
-  image: 
-  description: 
-  link:
-  highlight: 0
   tag: conference
 
 - title: "Synchronous AADL and its Formal Analysis in Real-Time Maude"
   authors: Kyungmin Bae, Peter Olveczky, Abdullah Al-Nayeem and José Meseguer
   venue: International Conference on Formal Engineering Methods (ICFEM)
   year: 2011
-  image: 
-  description: 
-  link:
-  highlight: 0
   tag: conference
+
 
 # 2010
 
@@ -683,21 +518,14 @@
   authors: Kyungmin Bae and Peter C. Olveczky
   venue: nternational Workshop on Rewriting Techniques for Real-Time Systems
   year: 2010
-  image: 
-  description: 
-  link:
-  highlight: 0
   tag: conference
 
 - title: "The Linear Temporal Logic of Rewriting Maude Model Checker"
   authors: Kyungmin Bae and José Meseguer
   venue: International Workshop on Rewriting Logic and its Applications
   year: 2010
-  image: 
-  description: 
-  link:
-  highlight: 0
   tag: conference
+
 
 # 2009
 
@@ -705,11 +533,8 @@
   authors: Kyungmin Bae, Peter C. Olveczky, Thomas H. Feng and Stavros Tripakis
   venue: International Conference on Formal Engineering Methods (ICFEM)
   year: 2009
-  image: 
-  description: 
-  link:
-  highlight: 0
   tag: conference
+
 
 # 2008
 
@@ -717,8 +542,4 @@
   authors: Kyungmin Bae and José Meseguer
   venue: International Workshop on Rule-Based Programming
   year: 2008
-  image: 
-  description: 
-  link:
-  highlight: 0
   tag: conference
