@@ -126,5 +126,4 @@ For small N, DQN is slower due to neural network inference overhead. However, fo
 ### Contact
 
 - Hyeyoon Kang <a href="mailto:hyoonk@postech.ac.kr">hyoonk (at) postech.ac.kr</a>
-
 - Byoungho Son <a href="mailto:byhoson@postech.ac.kr">byhoson (at) postech.ac.kr</a>
