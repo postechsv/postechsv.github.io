@@ -209,7 +209,8 @@
 - title: "Abstractions for Verifying DNN"
   authors: Jueun Yeon
   venue: MS Dissertation, Department of Computer Science, POSTECH
-  year: 2022  tag: dissertation
+  year: 2022
+  tag: dissertation
   link: http://www.dcollection.net/handler/postech/200000632492
   
 - title: "STLmc: Robust STL Model Checking of Hybrid Systems using SMT"
