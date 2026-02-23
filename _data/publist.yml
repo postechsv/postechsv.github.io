@@ -44,6 +44,13 @@
   tag: conference
   link: https://link.springer.com/chapter/10.1007/978-3-032-07106-4_14
 
+- title: "Maude를 활용한 웹 어셈블리 프로그램 모델 체킹"
+  authors: 장혁순, 배경민
+  venue: 한국정보과학회 학술발표논문집
+  year: 2025
+  tag: domestic
+  link: https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12318652
+
 - title: "Modeling and Analyzing Real-Time Systems in Rewriting Logic"
   authors: Kyungmin Bae, Carlos Olarte, and Peter Ölveczky
   venue: Gul Agha Festschrift Symposium
@@ -102,6 +109,20 @@
   year: 2024
   tag: journal
   link: https://www.sciencedirect.com/science/article/abs/pii/S0167642324000200
+
+- title: "Formal Specification and Model Checking of TLS Software Security Requirements using Maude"
+  authors: 이재훈, 배경민
+  venue: Journal of KIISE Vol.51 No.5
+  year: 2024
+  tag: domestic
+  link: https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11791075
+
+- title: "신호시제논리 성질의 모델검증"
+  authors: 배경민
+  venue: 정보과학회지 제42권 제5호(통권 제420호)
+  year: 2024
+  tag: domestic
+  link: https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11765839
 
 - title: "A Flexible Framework for Integrating Maude and SMT Solvers Using Python"
   authors: Geunyeol Yu and Kyungmin Bae
@@ -187,7 +208,7 @@
   
 - title: "심층 신경망의 효과적인 정형 검증을 위한 계층별 요약 기법"
   authors: 연주은, 채승현, 배경민
-  venue: 정보과학회논문지
+  venue: Journal of KIISE Vol.49 No.11
   year: 2022
   tag: domestic
   link: https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11158124
@@ -220,6 +241,13 @@
   tag: conference
   link: https://link.springer.com/chapter/10.1007/978-3-031-13185-1_26
 
+- title: "Maude를 활용한 OSEK/VDX OS API 정형 명세 및 검증"
+  authors: 김상기, 배경민
+  venue: 한국정보과학회 한국컴퓨터종합학술대회 논문집
+  year: 2022
+  tag: domestic
+  link: https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11113290
+
 - title: "Rewriting Logic and Its Applications - 14th International Workshop, WRLA@ETAPS 2022, Munich, Germany, April 2-3, 2022, Revised Selected Papers"
   authors: Kyungmin Bae
   venue: Lecture Notes in Computer Science 13252, Springer
@@ -239,7 +267,7 @@
 
 - title: "계층별 요약을 이용한 심층 신경망 정형 검증 기법"
   authors: 연주은, 채승현, 배경민
-  venue: 한국정보과학회 학술발표논문집
+  venue: 한국정보과학회 한국소프트웨어종합학술대회 논문집
   year: 2021
   tag: domestic
   link: https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11035647
@@ -267,7 +295,7 @@
 
 - title: "구조적 성질을 활용한 심층신경망의 SMT 기반 정형검증 기법"
   authors: 정문현, 배경민
-  venue: 정보과학회논문지
+  venue: Journal of KIISE Vol.48 No.9
   year: 2021
   tag: domestic
   link: https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE10604355
@@ -287,6 +315,7 @@
   venue: International Workshop on Rewriting Logic and its Applications
   year: 2020
   tag: conference
+  link: https://wrla2020.webs.upv.es/pre-proceedings.pdf#page=227
 
 - title: "FormaliSE@ICSE 2020: 8th International Conference on Formal Methods in Software Engineering, Seoul, Republic of Korea, July 13, 2020"
   authors: Kyungmin Bae, Domenico Bianculli, Stefania Gnesi, and Nico Plat
@@ -296,22 +325,24 @@
 
 - title: "구조적 성질을 활용한 심층신경망의 정형검증 기법"
   authors: 정문현, 배경민
-  venue: 한국정보과학회 학술발표논문집
+  venue: 한국정보과학회 한국컴퓨터종합학술대회 논문집
   year: 2020
   tag: domestic
+  link: https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE09874400
 
 - title: "심층신경망의 정형검증 기법 소개"
   authors: 배경민
-  venue: 정보과학회지
+  venue: 정보과학회지 제38권 제4호(통권 제371호)
   year: 2020
   tag: domestic
+  link: https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE09325030
 
 - title: "HybridSynchAADL: Modeling and Formal Analysis of Virtually Synchronous Cyber-Physical Systems in AADL"
   authors: Sharon Kim
   venue: MS Dissertation, Department of Computer Science, POSTECH
   year: 2020
-  link: http://www.dcollection.net/handler/postech/200000287492
   tag: dissertation
+  link: http://www.dcollection.net/handler/postech/200000287492
 
 ####################################################################################################
 

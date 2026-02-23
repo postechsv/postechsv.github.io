@@ -89,11 +89,11 @@ layout: members
 
 ### Former Members
 - Jaeseo Lee:      Ph.D., February 2026
-- Jia Lee:         Ph.D., December 2024 (now in Hyundai Rotem)
-- Hyuksoon Chang:  MS, February 2026
-- Sangki Kim:      MS, August 2022
-- Moonhyeon Chung: MS, February 2021
-- Sharon Kim:      MS, February 2020 (now in HD KSOE)
+- Jia Lee:         Ph.D., February 2025 (now in Hyundai Rotem)
+- Hyuksoon Chang:  M.S., February 2026
+- Sangki Kim:      M.S., August 2022
+- Moonhyeon Chung: M.S., February 2021
+- Sharon Kim:      M.S., February 2020 (now in HD KSOE)
 - Byeongjee Kang:  Undergraduate Intern, 2022 (now in CMU)
 - Jungeun Lee:     Undergraduate Intern, Fall 2020
 - Kanghee Park:    Undergraduate Intern, 2018 (now in UW-Madison)
