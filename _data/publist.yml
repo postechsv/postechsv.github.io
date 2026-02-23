@@ -344,7 +344,6 @@
   tag: dissertation
   link: http://www.dcollection.net/handler/postech/200000287492
 
-####################################################################################################
 
 # 2019
 
@@ -352,26 +351,29 @@
   authors: Kyungmin Bae and Jia Lee
   venue: ACM SIGPLAN Symposium on Principles of Programming Languages (POPL)
   year: 2019
-  link: https://dl.acm.org/doi/10.1145/3290364
   tag: conference
+  link: https://dl.acm.org/doi/abs/10.1145/3290364
 
 - title: "Symbolic State Space Reduction with Guarded Terms for Rewriting Modulo SMT"
   authors: Kyungmin Bae and Camilo Rocha
   venue: "Science of Computer Programming 178: 20-42"
   year: 2019
   tag: journal
-
-- title: "CPI 보안 강화 코드 변환의 실용적인 동등성 검사 기법"
-  authors: 이재서, 최태형, 이규호, 유재관, 배경민
-  venue: 정보과학회논문지
-  year: 2019
-  tag: domestic
+  link: https://www.sciencedirect.com/science/article/pii/S0167642318301187
 
 - title: "Maude를 통한 분산 드론 시스템의 정형 분석"
   authors: 김사론, 배경민
-  venue: 한국정보과학회 학술발표논문집
+  venue: 한국정보과학회 한국소프트웨어종합학술대회 논문집
   year: 2019
   tag: domestic
+  link: https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE09301566
+
+- title: "CPI 보안 강화 코드 변환의 실용적인 동등성 검사 기법"
+  authors: 이재서, 최태형, 이규호, 유재관, 배경민
+  venue: Journal of KIISE Vol.46 No.12
+  year: 2019
+  tag: domestic
+  link: https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE09277404
 
 
 # 2018
@@ -381,6 +383,7 @@
   venue: Lecture Notes in Computer Science 11222, Springer
   year: 2018
   tag: book
+  link: https://link.springer.com/content/pdf/10.1007/978-3-030-02146-7.pdf
 
 
 # 2017
@@ -390,39 +393,45 @@
   venue: International Conference on Formal Methods in Computer-Aided Design (FMCAD)
   year: 2017
   tag: conference
+  link: https://ieeexplore.ieee.org/abstract/document/8102258
 
 - title: "Guarded Terms for Rewriting modulo SMT"
   authors: Kyungmin Bae and Camilo Rocha
   venue: International Conference on Formal Aspects of Component Software (FACS)
   year: 2017
   tag: conference
+  link: https://link.springer.com/chapter/10.1007/978-3-319-68034-7_5
 
 
 # 2016
-
-- title: "SMT-Based Analysis of Virtually Synchronous Distributed Hybrid Systems"
-  authors: Kyungmin Bae, Peter Olveczky, Soonho Kong, Sicun Gao, and Edmund M. Clarke
-  venue: "ACM International Conference on Hybrid Systems: Computation and Control (HSCC)"
-  year: 2016
-  tag: conference
-
-- title: "A Hybrid Architecture for Correct-by-Construction Hybrid Planning and Control"
-  authors: Robert P. Goldman, Daniel Bryce, Michael J. S. Pelican, David J. Musliner, and Kyungmin Bae
-  venue: International Symposium on NASA Formal Methods (NFM)
-  year: 2016
-  tag: conference
 
 - title: "A Term Rewriting Approach to Analyze High Level Petri Nets"
   authors: Xudong He, Reng Zeng, Su Liu, Zhuo Sun, and Kyungmin Bae
   venue: International Symposium on Theoretical Aspects of Software Engineering (TASE)
   year: 2016
   tag: conference
+  link: https://ieeexplore.ieee.org/abstract/document/7541893
+
+- title: "A Hybrid Architecture for Correct-by-Construction Hybrid Planning and Control"
+  authors: Robert P. Goldman, Daniel Bryce, Michael J. S. Pelican, David J. Musliner, and Kyungmin Bae
+  venue: International Symposium on NASA Formal Methods (NFM)
+  year: 2016
+  tag: conference
+  link: https://link.springer.com/chapter/10.1007/978-3-319-40648-0_29
+
+- title: "SMT-Based Analysis of Virtually Synchronous Distributed Hybrid Systems"
+  authors: Kyungmin Bae, Peter Olveczky, Soonho Kong, Sicun Gao, and Edmund M. Clarke
+  venue: "ACM International Conference on Hybrid Systems: Computation and Control (HSCC)"
+  year: 2016
+  tag: conference
+  link: https://dl.acm.org/doi/abs/10.1145/2883817.2883849
 
 - title: "An Architecture for Hybrid Planning and Execution"
   authors: Robert P. Goldman, Dan Bryce, Michael J. S. Pelican, David J. Musliner, and Kyungmin Bae
   venue: AAAI-16 Workshop on Planning for Hybrid Systems
   year: 2016
-  tag: conference
+  tag: conference #workshop
+  link: https://cdn.aaai.org/ocs/ws/ws0207/12622-57495-1-PB.pdf
 
 ####################################################################################################
 
