@@ -10,7 +10,7 @@
 
 - name: Geunyeol Yu
   photo: gyyu.jpg
-  info: Ph.D. Student
+  info: Ph.D. student
   email: rgyen@postech.ac.kr
   page: https://rgyen.github.io
   additional: ""
@@ -18,7 +18,7 @@
 
 - name: Jueun Yeon
   photo: jeyeon.jpg
-  info: Ph.D. Student
+  info: Ph.D. student
   email: jeyeon@postech.ac.kr
   # page: https://gyyu.github.io 
   additional: ""
@@ -26,7 +26,7 @@
 
 - name: Jaehun Lee
   photo: jhlee.jpg
-  info: Ph.D. Student
+  info: Ph.D. student
   email: thkighie1224@postech.ac.kr
   github: https://github.com/gsojc234
   page: https://gsojc234.github.io/
@@ -35,7 +35,7 @@
 
 - name: Seunghyun Chae
   photo: shchae.jpg
-  info: Ph.D. Student
+  info: Ph.D. student
   email: shchae7@postech.ac.kr
   page: https://shchae7.github.io/
   additional: ""
@@ -43,7 +43,7 @@
 
 - name: Byoungho Son
   photo: bhson.jpg
-  info: Ph.D. Student
+  info: Ph.D. student
   email: byhoson@postech.ac.kr
   page: https://byhoson.github.io
   additional: ""
@@ -51,7 +51,7 @@
 
 - name: Kyunwoo Kim
   photo: kwkim.jpg
-  info: Ph.D. Student
+  info: Ph.D. student
   email: kkw423@postech.ac.kr
   # page: https://gyyu.github.io 
   additional: ""
@@ -59,8 +59,16 @@
 
 - name: Hyeyoon Kang
   photo: hykang.jpg
-  info: Ph.D. Student
+  info: Ph.D. student
   email: hyoonk@postech.ac.kr
+  # page: 
+  additional: ""
+  number_educ: 0
+
+- name: Seeun Kim
+  photo: sekim.png
+  info: M.S. student
+  email: seeunkim@postech.ac.kr
   # page: 
   additional: ""
   number_educ: 0
