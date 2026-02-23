@@ -4,7 +4,7 @@ permalink: /members
 layout: members
 ---
 ### Faculty
-<div style="margin-bottom: 20px;" class='container'>
+<div class="section-block container">
 
 {% assign number_printed = 0 %}
 {% for member in site.data.faculty %}
@@ -16,16 +16,7 @@ layout: members
 <div class="row" >
 {% endif %}
 
-<div class="col clearfix member-profile">
-  <img src="/images/teampic/{{ member.photo }}" class="shadow p-3 mb-5 bg-white rounded" width="50%" style="float: left" />
-  <h3 class="member-name" >{{ member.name }}</h3>
-  <div class="member-info"> {{ member.info }} <br></div>
-  <div class="member-link"><a href="mailto:{{ member.email }}">{{member.email}}</a></div>
-  <div style="margin-bottom:7px;"></div>
-  
-{% include member-links.html member=member %}
-
-</div>
+{% include member-card.html member=member role="faculty" %}
 
 {% assign number_printed = number_printed | plus: 1 %}
 
@@ -46,30 +37,19 @@ layout: members
 
 ### Graduate Students
 
-<div style="margin-bottom: 20px;" class='container'>
-<div class="row" style="flex-wrap: wrap; display: flex;">
+<div class="section-block container">
+<div class="row student-row">
 
 {% for member in site.data.students %}
 
-  <div class="col member-profile student" >
-    <img src="/images/teampic/{{ member.photo }}" class="shadow p-3 mb-5 bg-white rounded"/>
-    <h4 class="member-name">{{ member.name }}    
-    {% include member-links.html member=member %}</h4>
-
-
-    <div class="member-info">{{ member.info }} <br></div>
-    <div class="member-link"><a href="mailto:{{ member.email }}">{{member.email}}</a></div>
-    <div style="margin-bottom:7px;"></div>
-
-  </div>
-
+  {% include member-card.html member=member role="student" %}
 
 {% endfor %}
 </div>
 </div>
 <hr />
 
-<div style="margin-bottom: 20px;"></div>
+<div class="section-block"></div>
 
 ### Former Members
 <ul>

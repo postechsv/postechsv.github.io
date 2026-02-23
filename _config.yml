@@ -11,6 +11,13 @@ permalink: /:year/:month/:day/:title.html
 permalink: /:year/:month/:day/:title.html
 research_imgs: "/images/research"
 
+# Footer
+footer:
+  department: "Software Verification Laboratory, Department of Computer Science of Engineering, POSTECH"
+  address: "77 Cheongam Rd, Nam-gu, Pohang, Gyeongbuk, 37673 Korea."
+  copyright_year: 2025
+  privacy_policy_url: "https://www.postech.ac.kr/kor/usage-guide/privacy_policy.do"
+
 # Markdown
 markdown: kramdown
 

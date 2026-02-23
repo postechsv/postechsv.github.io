@@ -1,0 +1,22 @@
+{% assign role = include.role | default: "student" %}
+
+{% if role == "faculty" %}
+<div class="col clearfix member-profile">
+  <img src="/images/teampic/{{ include.member.photo }}" class="shadow p-3 mb-5 bg-white rounded member-photo-faculty" />
+  <h3 class="member-name">{{ include.member.name }}</h3>
+  <div class="member-info">{{ include.member.info }}<br></div>
+  <div class="member-link"><a href="mailto:{{ include.member.email }}">{{ include.member.email }}</a></div>
+  <div class="member-spacer"></div>
+  {% include member-links.html member=include.member %}
+</div>
+
+{% else %}
+<div class="col member-profile student">
+  <img src="/images/teampic/{{ include.member.photo }}" class="shadow p-3 mb-5 bg-white rounded" />
+  <h4 class="member-name">{{ include.member.name }}
+    {% include member-links.html member=include.member %}</h4>
+  <div class="member-info">{{ include.member.info }}<br></div>
+  <div class="member-link"><a href="mailto:{{ include.member.email }}">{{ include.member.email }}</a></div>
+  <div class="member-spacer"></div>
+</div>
+{% endif %}
