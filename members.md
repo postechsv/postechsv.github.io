@@ -23,15 +23,7 @@ layout: members
   <div class="member-link"><a href="mailto:{{ member.email }}">{{member.email}}</a></div>
   <div style="margin-bottom:7px;"></div>
   
-{% if member.page %}
-  <a href="{{ member.page }}"><span class="icon-home"></span></a>
-{% endif %}
-{% if member.git %}
-  <a href="{{ member.git }}"><span class="icon-git"></span></a>
-{% endif %}
-{% if member.linkedin %}
-  <a href="{{ member.linkedin }}"><span class="icon-linkedin"></span></a>
-{% endif %}
+{% include member-links.html member=member %}
 
 </div>
 
@@ -62,15 +54,7 @@ layout: members
   <div class="col member-profile student" >
     <img src="/images/teampic/{{ member.photo }}" class="shadow p-3 mb-5 bg-white rounded"/>
     <h4 class="member-name">{{ member.name }}    
-    {% if member.page %}
-      <a href="{{ member.page }}"><span class="icon-home"></span></a>
-    {% endif %}
-    {% if member.github %}
-      <a href="{{ member.github }}"><span class="icon-git"></span></a>
-    {% endif %}
-    {% if member.linkedin %}
-      <a href="{{ member.linkedin }}"><span class="icon-linkedin"></span></a>
-    {% endif %}</h4>
+    {% include member-links.html member=member %}</h4>
 
 
     <div class="member-info">{{ member.info }} <br></div>
@@ -88,16 +72,10 @@ layout: members
 <div style="margin-bottom: 20px;"></div>
 
 ### Former Members
-- Jaeseo Lee:      Ph.D., February 2026
-- Jia Lee:         Ph.D., February 2025 (now in Hyundai Rotem)
-- Hyuksoon Chang:  M.S., February 2026
-- Sangki Kim:      M.S., August 2022
-- Moonhyeon Chung: M.S., February 2021
-- Sharon Kim:      M.S., February 2020 (now in HD KSOE)
-- Byeongjee Kang:  Undergraduate Intern, 2022 (now in CMU)
-- Jungeun Lee:     Undergraduate Intern, Fall 2020
-- Kanghee Park:    Undergraduate Intern, 2018 (now in UW-Madison)
-- Woochang Jeong:  Undergraduate Intern, Spring 2018
-- Minseok Kang
+<ul>
+{% for member in site.data.alumni %}
+<li>{{ member.name }}{% if member.degree or member.date %}:{% endif %}{% if member.degree %} {{ member.degree }}{% endif %}{% if member.date %}, {{ member.date }}{% endif %}{% if member.affiliation %} (now in {{ member.affiliation }}){% endif %}</li>
+{% endfor %}
+</ul>
 
-<br/> 
+<br/>
