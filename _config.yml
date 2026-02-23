@@ -71,8 +71,5 @@ collections:
   researchtopics:
     output: true
     permalink: /research/:title.html
-  pubpage:
-    output: true
-    permalink: /pubpage/:title.html
   home:
     output: true
