@@ -31,35 +31,35 @@ an infinite-state concurrent system.
 
 PROMELA is the input modeling language for the SPIN model checker and is widely used to analyze distributed and concurrent systems.
 PROMELA’s official documentation (https://spinroot.com) defines its syntax and informal semantics, but it does not provide a machine-readable, formal specification.
-{: .text-justify}
+
 
 ### The K Framework
 
 The K Framework (https://kframework.org/) is an executable semantic framework where languages, type systems, and analysis tools are specified via configurations and rewrite rules. K excels at defining control-intensive features such as abrupt termination, exceptions, and continuations.
-{: .text-justify}
+
 
 ### PROMELA Semantics in K
 
 We aim to make our PROMELA semantics in K:
 
 - **Executable**: Runs directly under the K toolchain without a separate interpreter. This enables easy testing and random simulation of PROMELA models.
-{: .text-justify}
+
 - **Modular**: Defines each semantic feature independently, so one can add or modify one feature without reworking the entire semantics. This modularity is crucial for handling PROMELA’s rich control primitives.
-{: .text-justify}
+
 
 ## Load-and-Fire: Modular Semantics for Control Effects
 
 PROMELA provides advanced control primitives—executability conditions, nondeterminism, and atomic blocks—that interact in subtle ways. 
 We use a generic semantic pattern based on two fundamental rule types, 
 **loading** and **firing**, to integrate each control primitive naturally and modularly.
-{: .text-justify}
+
 
 
 - **Loading Rules:**
   The loading rules restructures the computation without side-effects, 
   by lifting the linear-shaped K continuation into a **multiset** of nondeterministic continuations.
   This way, `if`/`do` statements are flattened, and each local branch are setup to be fired by the firing rules "upto" associativity and commutativity.
-  {: .text-justify}
+  
 
 <img src="{{site.baseurl}}/images/research/promela/load.png" width="100%"/>
 
@@ -77,12 +77,12 @@ We use a generic semantic pattern based on two fundamental rule types,
 We use K’s all-path reachability logic to perform deductive verification of PROMELA code against pre/post-conditions.
 This approach enables deductive verification of distributed systems with infinitely many states,
 for which SPIN-an explicit model checker-fails to verify.
-{: .text-justify}
+
 
 Our case study includes a nontrivial example of verifying mutual exclusion of 
 <a href="https://en.wikipedia.org/wiki/Lamport%27s_bakery_algorithm"> Lamport's Bakery Algorithm </a>
 with two concurrent processes:
-{: .text-justify}
+
 <img src="{{site.baseurl}}/images/research/promela/bakery.png" width="100%"/>
 
 The specification shown below is an excerpt of the main all-path reachability claim for mutual exclusion.

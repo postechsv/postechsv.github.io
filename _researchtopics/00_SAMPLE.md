@@ -16,8 +16,6 @@
     - 파일 위치: /images/research/<topic>/<filename>
     - 삽입 방법: {{ site.research_imgs }}/<topic>/<filename>
     - 캡션 포함 시 figure 태그 사용.
-
-  텍스트 정렬: 문단 아래 줄에 {: .text-justify} 를 추가하면 양쪽 정렬 적용.
 ============================================================ -->
 
 <!--
@@ -35,44 +33,34 @@ hidden: true
 -->
 
 ### Introduction
-{: .rpost-subject}
 
 연구 배경 및 동기
-{: .text-justify}
 
 ---
 
 ### Problem
-{: .rpost-subject}
 
 해결하려는 문제
-{: .text-justify}
 
 ---
 
 ### Approach
-{: .rpost-subject}
 
 접근 방식
-{: .text-justify}
 
 ---
 
 ### Results
-{: .rpost-subject}
 
 실험 결과 및 주요 성과
-{: .text-justify}
 
 ---
 
 ### Contacts
-{: .rpost-subject}
 
 - Name <a href="mailto:id@postech.ac.kr">id (at) postech.ac.kr</a>
 
 ### References
-{: .rpost-subject}
 
 1. Author(s). *Paper Title*. Venue, Year. \[[paper](URL)\]
 
