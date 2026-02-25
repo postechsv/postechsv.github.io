@@ -5,8 +5,7 @@
 
 // style.scss overrides
 html {
-  font-family: "Open Sans", "Source Sans Pro", "Helvetica Neue", Helvetica,
-    Arial, sans-serif;
+  font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: 18px;
   font-weight: 300;
   line-height: 1.6;
@@ -24,8 +23,8 @@ h5,
 h6 {
   margin-top: 0;
   margin-bottom: 0.5rem;
-  font-weight: 600;
-  font-family: "Open Sans", "Source Sans Pro";
+  font-weight: 700;
+  font-family: "Lato", sans-serif;
   line-height: 1.1;
   color: #333;
   letter-spacing: -0.025rem;
@@ -136,7 +135,7 @@ tbody tr:nth-child(odd) th {
 .navbar,
 .navbar-nav > li > a {
   background-color: white;
-  font-family: "Open Sans";
+  font-family: "Lato", sans-serif;
   text-transform: uppercase;
   font-weight: 400;
   font-size: 120%;
@@ -161,7 +160,6 @@ tbody tr:nth-child(odd) th {
 
 .member-profile{
   padding-right: 5%;
-  font-family: "Open Sans";
   margin-bottom: 5%;
 }
 
@@ -224,10 +222,6 @@ tbody tr:nth-child(odd) th {
 
 .navbar a {
   height: 70px;
-}
-
-.member-link{
-  font-family: "Open Sans";
 }
 
 .btn-since{
@@ -338,6 +332,7 @@ hr.dot{
 .member-photo-faculty {
   width: 50%;
   float: left;
+  margin-right: 1rem;
 }
 
 .member-spacer {
