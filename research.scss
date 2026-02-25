@@ -177,7 +177,11 @@ tbody tr:nth-child(odd) th {
 }
 
 // change font for navbar
-.navbar,
+.navbar {
+  background-color: white;
+  font-family: "Lato", sans-serif;
+}
+
 .navbar-nav > li > a {
   background-color: white;
   font-family: "Lato", sans-serif;
