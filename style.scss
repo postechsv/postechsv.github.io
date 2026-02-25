@@ -323,6 +323,19 @@ hr.dot{
   margin-bottom: 20px;
 }
 
+/* Research topic list rows */
+.topic-row {
+  display: flex;
+  align-items: center;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.topic-img {
+  box-shadow: 3px 3px 8px rgba(100, 100, 100, 0.4);
+  margin: 0;
+}
+
 /* Member cards */
 .member-photo {
   border-radius: 10%;
