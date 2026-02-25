@@ -22,7 +22,7 @@ h4,
 h5,
 h6 {
   margin-top: 0;
-  margin-bottom: 0.5rem;
+  margin-bottom: 15px;
   font-weight: 700;
   font-family: "Lato", sans-serif;
   line-height: 1.1;
@@ -388,12 +388,21 @@ hr.dot{
 .text-center {
   text-align: center;
 }
+.text-center p {
+  text-align: center;
+}
 
 .text-right {
   text-align: right;
 }
+.text-right p {
+  text-align: right;
+}
 
 .text-left {
+  text-align: left;
+}
+.text-left p {
   text-align: left;
 }
 
