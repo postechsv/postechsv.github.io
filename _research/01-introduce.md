@@ -1,6 +1,6 @@
 ---
 ---   
-<h2>Research </h2>
+<h2> Research </h2>
 <h3> Overview </h3>
 
 #### Logic and Algorithms for Software Verification.
