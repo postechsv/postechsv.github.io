@@ -142,7 +142,9 @@ tbody tr:nth-child(odd) th {
   font-family: "Lato", sans-serif;
   text-transform: uppercase;
   font-weight: 400;
-  font-size: 120%;
+  font-size: 100%;
+  margin-left: 8px;
+  padding-top: 25px;
 }
 
 // active tab text color highlight
@@ -151,11 +153,6 @@ tbody tr:nth-child(odd) th {
 .navbar-default .navbar-nav > li.active > a:focus {
   color: #6184a6;
   background-color: transparent;
-}
-
-.navbar-nav > li > a {
-  margin-left: 15px;
-  padding-top: 25px;
 }
 
 .navbar-right {
