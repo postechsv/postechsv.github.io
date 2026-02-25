@@ -8,17 +8,7 @@
     </title>
     <link
       rel="stylesheet"
-      href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,600"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="//fonts.googleapis.com/css?family=Roboto"
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,600|Open+Sans:300,400,400italic|Roboto"
     />
     <link
       rel="stylesheet"
@@ -94,6 +84,9 @@
 
   <body id="page-top" style="padding-top: 3em; " >
     {{ content }}
+    {% if page.url contains '/publications' %}
+    <script src="{{ site.baseurl }}/js/publication-filter.js"></script>
+    {% endif %}
     <script
       src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
       integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"

@@ -58,4 +58,3 @@ permalink: /publications
     {% endfor %}
 </div>
 
-<script src="{{ site.baseurl }}/js/publication-filter.js"></script>

@@ -329,6 +329,12 @@ hr.dot{
 }
 
 /* Member cards */
+.member-photo {
+  border-radius: 10%;
+  box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.2), 0 3px 15px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 1rem;
+}
+
 .member-photo-faculty {
   width: 50%;
   float: left;
@@ -376,4 +382,25 @@ hr.dot{
 /* About */
 .text-center {
   text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.comm {
+  text-align: justify;
+  white-space: pre-wrap;
+}
+
+.nnl {
+  white-space: nowrap;
+}
+
+.emph {
+  font-weight: 600;
 }

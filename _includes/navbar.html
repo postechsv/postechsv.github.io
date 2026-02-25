@@ -20,17 +20,15 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
-        <ul class="nav navbar-nav navbar-right fixed-bottom">
-          <li {% if page.url == '/' %}class="active"{% endif %}>
-            <a class="name" href="/">HOME</a>
-          </li>
+        <li {% if page.url == '/' %}class="active"{% endif %}>
+          <a class="name" href="/">HOME</a>
+        </li>
 
-          {% for nav in site.nav %}
-          <li {% if page.url contains nav.href %}class="active"{% endif %}>
-            <a class="name" href="{{ nav.href }}">{{ nav.name }}</a>
-          </li>
-          {% endfor %}
-        </ul>
+        {% for nav in site.nav %}
+        <li {% if page.url contains nav.href %}class="active"{% endif %}>
+          <a class="name" href="{{ nav.href }}">{{ nav.name }}</a>
+        </li>
+        {% endfor %}
       </ul>
     </div>
     <!-- /.navbar-collapse -->
