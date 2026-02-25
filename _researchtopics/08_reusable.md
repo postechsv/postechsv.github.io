@@ -19,6 +19,7 @@ While directly reusing previously explored state spaces is challenging due to st
 In this work, we focus on falsification of safety properties, particularly deadlock detection in concurrent systems.
 {: .text-justify}
 
+---
 
 ### Approach
 {: .rpost-subject}
@@ -58,6 +59,7 @@ $$\hat{V}(s) = \max_a \hat{Q}(\alpha(s), a)$$
 States with higher V-values are prioritized during exploration, directing the search toward potential error states.
 {: .text-justify}
 
+---
 
 ### Experiments
 {: .rpost-subject}
@@ -146,12 +148,14 @@ DQN overcomes this limitation through neural network generalization, predicting 
 For small N, DQN is slower due to neural network inference overhead. However, for N ≥ 8, the reduction in explored states outweighs the inference cost. At N=10, DQN completes in under 1 second while Random requires ~28 seconds.
 {: .text-justify}
 
+---
 
 ### Publications
 {: .rpost-subject}
 
 - H. Kang, B. Son, and K. Bae, "RL-based Heuristic Learning for Model Checking," Korea Conference on Software Engineering (KCSE), 2026.
 
+---
 
 ### Contact
 {: .rpost-subject}

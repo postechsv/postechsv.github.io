@@ -35,6 +35,7 @@ hidden: true
 -->
 
 ### Introduction
+{: .rpost-subject}
 
 연구 배경 및 동기
 {: .text-justify}
@@ -42,6 +43,7 @@ hidden: true
 ---
 
 ### Problem
+{: .rpost-subject}
 
 해결하려는 문제
 {: .text-justify}
@@ -49,6 +51,7 @@ hidden: true
 ---
 
 ### Approach
+{: .rpost-subject}
 
 접근 방식
 {: .text-justify}
@@ -56,6 +59,7 @@ hidden: true
 ---
 
 ### Results
+{: .rpost-subject}
 
 실험 결과 및 주요 성과
 {: .text-justify}
@@ -63,10 +67,12 @@ hidden: true
 ---
 
 ### Contacts
+{: .rpost-subject}
 
 - Name <a href="mailto:id@postech.ac.kr">id (at) postech.ac.kr</a>
 
 ### References
+{: .rpost-subject}
 
 1. Author(s). *Paper Title*. Venue, Year. \[[paper](URL)\]
 

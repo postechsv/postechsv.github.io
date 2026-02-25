@@ -22,12 +22,5 @@
 {% endif %}
 {% endfor %}
 <div class="text-right">
-    <button class="btn btn-primary p-0" type="button"
-            data-toggle="collapse"
-            data-target="#hidden-projects"
-            aria-expanded="false"
-            aria-controls="hidden-projects"
-            onclick="location.href='{{ site.baseurl }}/topics'">
-        More…
-    </button>
+    <a href="{{ site.baseurl }}/topics" class="btn btn-sm btn-default more-btn">More…</a>
 </div>
