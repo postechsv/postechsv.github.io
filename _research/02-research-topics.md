@@ -4,7 +4,7 @@
 
 {% for proj in site.researchtopics %}
 {% if proj.hidden == false %}
-<a href="{{ proj.url }}"><h4>{{ proj.title }}</h4></a>
+<div><a href="{{ proj.url }}"><h4>{{ proj.title }}</h4></a></div>
 <div class="row topic-row">
 <div class="col-md-4">
 <a href="{{ proj.url }}">
