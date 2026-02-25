@@ -10,10 +10,13 @@ hidden: false
 Many cyber-physical systems (CPSs) are *virtually synchornous* networks of hybrid components with continuous behaviors combined with sophisticated controllers.
 They should logically behave as if they were synchronous -- in each iteration of the system, all components, in lockstep, read inputs and perform transitions which generate outputs for the next iteration -- but have to be realized in a distributed setting, which clock skew and message passing communication. Examples of such CPSs include avionics and automotive systems, networked medical devices, and other distributed control systems, where the underlying infrastructure often guarantee bounds on clock skews, network delays, and local execution times.
 
+
 The combination of large "discrete" state spaces, caused by interleaving due to asynchronous communication, and continuous behaviors, taking into account clock skews, network delays, and sampling/actuation times (based on imprecise clocks) makes direct automatic model checking analysis infeasible. To dramatically reduce both the modeling complexity and the state space caused by asynchronous communication, we use Hybrid PALS equivalence, which says that the underlying **synchronous** design -- where all components execute in lockstep, and there is no asynchronous message passing -- satisfies the same properties as the asynchronous distributed system.
+
 
 To enable formal analysis to a large user base, the modling language for such CPSs, with complex control programs, and different frequences, should bee well-known for CPSs developers, and should be integrated into mature modeling environments.
 The MH-SynchAADL modeling language is a subset of the avionics modeling standard AADL and its behavioral annex to model control programs, and captures a synchronous subset of AADL with continuous behaviors. We have also integrated modeling and formal analysis of MH-SynchAADL models into the OSATE modeling environment for AADL.
+
 
 ## The MH-SynchAADL Modeling Language
 MH-SynchAADL is a behavioral subset of AADL extended with the following property set MH_SynchAADL.
@@ -130,6 +133,7 @@ The time frame of the environment is *shifted to the left* from the global time 
 </center>
 
 
+
 ## MH-SynchAADL Tool
 MH-SynchAADL seamlessly integrates modeling and formal analysis into OSATE. The tool can statically check the syntactic constraints of MH-SynchAADL. The tool’s property specification language can specify invariant and reachability properties. The tool synthesizes the corresponding Maude model from a MH-SynchAADL model and invokes Maude with SMT solving to perform various formal analyses, including randomized simulation (using the concrete semantics), symbolic reachability analysis (using the symbolic semantics), and portfolio analysis (running both methods in parallel with multithreading). The tool is available at https://hybridsynchaadl.github.io.
 
@@ -137,9 +141,11 @@ MH-SynchAADL seamlessly integrates modeling and formal analysis into OSATE. The 
 <img src="{{ site.research_imgs }}/aadl/tool.png" alt="Virtually Synchronous CPSs" width="50%"/>
 </center>
 
+
 ## Formal Semantics of MH-SynchAADL 
 We define formal semantics of MH-SynchAADL in Maude and SMT. Maude is a language and tool for specifying and analyzing distributed systems. 
 We define both a symbolic semantics for the synchronous composition of the components, capturing continuous behaviors and timing uncertainties using SMT, and a concrete semantics, for simulation, in rewriting logic, in a dmodular way to ensure consistency between these two semantics.
+
 
 ## CaseStudy: A Multirate Packet Delivery System
 We perform the design and analysis of a collection of drones for packet
@@ -178,6 +184,7 @@ invariant [func]: ?init ==> (not clock.time >= 240) or ?hover in time 240 ms;
 proposition [hover]: drone[2].subC.subProc.subThrd @ hover;
 ```
 
+
 ### 3. Inductive Verification
 We also verify that an invariant of the drone control logic
 is satisfied for an unbounded time horizon. The approach is to verify an invariant
@@ -189,6 +196,7 @@ invariant [inductive]: ?indInv ==> ?indInv in time 120ms;
 
 proposition [indInv]: ((not ?sendHalt) or ?close) and ?stationary;
 ```
+
 
 ## Formal Analysis of MH-SynchAADL
 We evaluates the MH-SynchAADL tool by addressing the following questions
@@ -222,10 +230,13 @@ a timeout of 3 hours.
 
 
 
+
+
 ## Ongoing
 We are actively pursuing a range of research directions aimed at improving the modeling language, formal semantics, and analysis tools. Current ongoing efforts include:
 * We are defining formal symbolic and concrete semantics for connections with $M$ environments and $N$ discrete controllers.
 * We are extending the tool functionality to support checking constraints about MSYNC in our MH-SynchAADL tools.
+
 
 
 ## Contact

@@ -2,23 +2,29 @@ document.addEventListener('DOMContentLoaded', function() {
     const allElements = document.querySelectorAll('.element-item');
     const oldElements = document.querySelectorAll('.element-item.old');
     const newElements = document.querySelectorAll('.element-item.new');
+
     // Hide elements with 'old' class initially
     oldElements.forEach(element => {
         element.style.display = 'none';
     });
+
     // Hide elements with 'new' class initially
     newElements.forEach(element => {
         element.style.display = 'none';
     });
+
     // Set default selected buttons
     document.querySelector('#select-conference').classList.add('btn-primary');
     document.querySelector('#select-journal').classList.add('btn-primary');
+
     // Filter elements based on default selected buttons
     filterElements();
+
     document.querySelectorAll('.filter-button-group .btn').forEach(button => {
         button.addEventListener('click', function() {
             const filter = this.id.replace('select-', '');
             const isAllButton = filter === 'all';
+
             // Toggle 'btn-primary' class
             if (this.classList.contains('btn-primary')) {
                 this.classList.remove('btn-primary');
@@ -36,16 +42,20 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
                 this.classList.add('btn-primary');
             }
+
             // Filter elements
             filterElements();
         });
     });
+
     function filterElements() {
         const activeFilters = Array.from(document.querySelectorAll('.filter-button-group .btn.btn-primary'))
             .map(btn => btn.id.replace('select-', ''));
+
         const isBeforeSelected = activeFilters.includes('before');
         const isAfterSelected = activeFilters.includes('after');
         const otherFilters = activeFilters.filter(filter => filter !== 'before' && filter !== 'after');
+
         if (activeFilters.includes('all')) {
             allElements.forEach(element => {
                 const elementClasses = Array.from(element.classList);

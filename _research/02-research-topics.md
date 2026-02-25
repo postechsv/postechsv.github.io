@@ -1,6 +1,7 @@
 ---
 ---   
 <h3> Current Research </h3>
+
 {% for proj in site.researchtopics %}
 {% if proj.hidden == false %}
 <div><a href="{{ proj.url }}"><h4>{{ proj.title }}</h4></a></div>

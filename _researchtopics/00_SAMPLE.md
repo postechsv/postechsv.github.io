@@ -1,6 +1,8 @@
 <!-- ==================== SAMPLE PAGE USAGE ====================
   페이지 작성 후, 아래 front matter 블록의 주석을 해제.
+
   파일명 규칙: NN_topicname.md
+
   이미지 삽입 규칙:
   
         <figure style="text-align: center; margin: 2em 0;">
@@ -10,10 +12,12 @@
                 <strong>Figure 1.</strong> Caption text here.
             </figcaption>
         </figure>
+
     - 파일 위치: /images/research/<topic>/<filename>
     - 삽입 방법: {{ site.research_imgs }}/<topic>/<filename>
     - 캡션 포함 시 figure 태그 사용.
 ============================================================ -->
+
 <!--
 ---
 layout: researchpage
@@ -27,21 +31,38 @@ img-url: "/your-topic/your-image.png"
 hidden: true
 ---
 -->
+
 ### Introduction
+
 연구 배경 및 동기
+
 ---
+
 ### Problem
+
 해결하려는 문제
+
 ---
+
 ### Approach
+
 접근 방식
+
 ---
+
 ### Results
+
 실험 결과 및 주요 성과
+
 ---
+
 ### Contacts
+
 - Name <a href="mailto:id@postech.ac.kr">id (at) postech.ac.kr</a>
+
 ### References
+
 1. Author(s). *Paper Title*. Venue, Year. \[[paper](URL)\]
+
 ---
 Last modified: YYYY/MM/DD (Name)

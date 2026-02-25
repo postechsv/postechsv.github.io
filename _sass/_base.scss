@@ -2,38 +2,46 @@
 // Base: shared reset, typography, and utility styles
 // Imported by both style.scss and research.scss
 // ==========================================================================
+
 // Box-sizing reset
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+
 html,
 body {
   margin: 0;
   padding: 0;
 }
+
 body {
   color: #515151;
   background-color: #fff;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
+
 .MathJax_Display {
   font-size: 80%;
 }
+
 .right {
   font-size: 150%;
   text-align: right;
 }
+
 a {
   color: #268bd2;
   text-decoration: none;
+
   &:hover,
   &:focus {
     text-decoration: underline;
   }
 }
+
 // Typography
 p {
   font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -42,6 +50,7 @@ p {
   font-size: 0.8rem;
   text-align: justify;
 }
+
 ul,
 ol,
 dl {
@@ -51,44 +60,55 @@ dl {
   margin-top: 0;
   margin-bottom: 1rem;
 }
+
 li > ul > li {
   margin-left: 1rem;
 }
+
 dt {
   font-weight: bold;
 }
+
 dd {
   margin-bottom: 0.5rem;
 }
+
 ul {
   font-size: 0.8rem;
   list-style: inside circle;
   padding-left: 0;
+
   li {
     margin-bottom: 0.25rem;
   }
+
   ul,
   ol {
     margin-top: 0.25rem;
     margin-bottom: 0.5rem;
   }
 }
+
 ul.share-buttons {
   list-style: none;
   padding: 0;
 }
+
 ol {
   list-style: inside decimal;
   padding-left: 0;
+
   li {
     margin-bottom: 0.25rem;
   }
+
   ul,
   ol {
     margin-top: 0.25rem;
     margin-bottom: 0.5rem;
   }
 }
+
 p + h1,
 p + h2,
 p + h3,
@@ -100,39 +120,47 @@ ol + h2,
 ol + h3 {
   margin-top: 1.5rem;
 }
+
 hr {
   border: 0;
   border-top: 0.5px solid #eee;
   border-bottom: 0.5px solid #eee;
   margin: 1.5rem auto;
 }
+
 strong {
   color: #333;
   font-weight: 700;
 }
+
 abbr {
   font-size: 80%;
   font-weight: bold;
   color: #555;
   text-transform: uppercase;
 }
+
 abbr[title] {
   cursor: help;
   border-bottom: 1px dotted #e5e5e5;
 }
+
 blockquote {
   padding: 0 0 0 1.5rem;
   margin: 0 2rem 1rem 0;
   border-left: 0.5rem;
+
   p:last-child {
     margin-bottom: 0;
   }
 }
+
 // Code & preformatted text
 code,
 pre {
   font-family: Monaco, "Courier New", monospace;
 }
+
 code {
   padding: 0.25em 0.5em;
   font-size: 80%;
@@ -140,6 +168,7 @@ code {
   background-color: #f9f9f9;
   border-radius: 3px;
 }
+
 pre {
   display: block;
   margin-top: 0;
@@ -151,79 +180,98 @@ pre {
   white-space: pre-wrap;
   word-break: break-all;
 }
+
 pre code {
   padding: 0;
   font-size: 80%;
   color: inherit;
   background-color: transparent;
 }
+
 .highlight {
   margin-bottom: 1rem;
   border-radius: 4px;
   border: none;
 }
+
 .highlight pre {
   margin-bottom: 0;
 }
+
 // Gist styles
 .gist .gist-file {
   font-family: Monaco, "Courier New", monospace !important;
 }
+
 .gist .markdown-body {
   padding: 15px;
 }
+
 .gist pre {
   padding: 0;
   background-color: transparent;
 }
+
 .gist .gist-file .gist-data {
   font-size: 0.8rem !important;
   line-height: 1.4;
 }
+
 .gist code {
   padding: 0;
   color: inherit;
   background-color: transparent;
   border-radius: 0;
 }
+
 .lead {
   font-size: 1.25rem;
 }
+
 .container {
   max-width: 45rem;
   margin-left: auto;
   margin-right: auto;
 }
+
 // Layout patterns
 .masthead {
   &-title {
     font-weight: 300;
+
     a {
       color: #333;
+
       &:hover,
       &:focus {
         text-decoration: none;
       }
     }
+
     span {
       color: #ddd;
     }
   }
+
   &-title--small {
     margin-bottom: 0.75rem;
     font-size: 0.75rem;
     font-weight: 600;
     text-transform: uppercase;
+
     a {
       color: #333;
+
       &:hover,
       &:focus {
         text-decoration: none;
       }
     }
   }
+
   .masthead-nav {
     margin-bottom: 2rem;
+
     a {
       color: #aaa;
       font-weight: 300;
@@ -231,22 +279,26 @@ pre code {
       -webkit-transition: all 0.2s ease;
       -moz-transition: all 0.2s ease;
       transition: all 0.2s ease;
+
       &:hover,
       &:focus {
         color: #333;
         text-decoration: none;
       }
+
       + a {
         margin-left: 0.25rem;
       }
     }
   }
 }
+
 .page {
   &-title {
     margin-bottom: 2rem;
   }
 }
+
 .post {
   &-title {
     margin-bottom: 0.25rem;
@@ -257,11 +309,14 @@ pre code {
     text-transform: uppercase;
   }
 }
+
 .list {
   &-post-title {
     margin-bottom: 0.25rem;
+
     a {
       color: #333;
+
       &:hover,
       &:focus {
         text-decoration: none;
@@ -274,11 +329,13 @@ pre code {
     text-transform: uppercase;
   }
 }
+
 .projects-list {
   a {
     color: #333;
   }
 }
+
 .profile-thumbnail {
   object-fit: cover;
   object-position: center top;

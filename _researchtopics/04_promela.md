@@ -32,9 +32,11 @@ an infinite-state concurrent system.
 PROMELA is the input modeling language for the SPIN model checker and is widely used to analyze distributed and concurrent systems.
 PROMELA’s official documentation (https://spinroot.com) defines its syntax and informal semantics, but it does not provide a machine-readable, formal specification.
 
+
 ### The K Framework
 
 The K Framework (https://kframework.org/) is an executable semantic framework where languages, type systems, and analysis tools are specified via configurations and rewrite rules. K excels at defining control-intensive features such as abrupt termination, exceptions, and continuations.
+
 
 ### PROMELA Semantics in K
 
@@ -44,11 +46,13 @@ We aim to make our PROMELA semantics in K:
 
 - **Modular**: Defines each semantic feature independently, so one can add or modify one feature without reworking the entire semantics. This modularity is crucial for handling PROMELA’s rich control primitives.
 
+
 ## Load-and-Fire: Modular Semantics for Control Effects
 
 PROMELA provides advanced control primitives—executability conditions, nondeterminism, and atomic blocks—that interact in subtle ways. 
 We use a generic semantic pattern based on two fundamental rule types, 
 **loading** and **firing**, to integrate each control primitive naturally and modularly.
+
 
 
 - **Loading Rules:**
@@ -68,10 +72,12 @@ We use a generic semantic pattern based on two fundamental rule types,
 <img src="{{site.baseurl}}/images/research/promela/fire.png" width="100%"/>
 
 
+
 ## Case Study: Mutual Exclusion of Lamport's Bakery Algorithm
 We use K’s all-path reachability logic to perform deductive verification of PROMELA code against pre/post-conditions.
 This approach enables deductive verification of distributed systems with infinitely many states,
 for which SPIN-an explicit model checker-fails to verify.
+
 
 Our case study includes a nontrivial example of verifying mutual exclusion of 
 <a href="https://en.wikipedia.org/wiki/Lamport%27s_bakery_algorithm"> Lamport's Bakery Algorithm </a>

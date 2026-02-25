@@ -20,6 +20,7 @@
   tag: conference
   link: https://link.springer.com/chapter/10.1007/978-3-032-15700-3_16
 
+
 # 2025
 
 - title: "MR-HybridSynchAADL: formal modeling and analysis of multirate CPSs with advanced control programs and continuous dynamics"
@@ -77,6 +78,7 @@
   year: 2025
   tag: dissertation
   link: http://www.dcollection.net/handler/postech/200000859272
+
 
 # 2024
 
@@ -305,6 +307,7 @@
   tag: dissertation
   link: http://www.dcollection.net/handler/postech/200000506246
 
+
 # 2020
 
 - title: "Maude-SE: a Tight Integration of Maude and SMT Solvers"
@@ -341,6 +344,7 @@
   tag: dissertation
   link: http://www.dcollection.net/handler/postech/200000287492
 
+
 # 2019
 
 - title: "Bounded Model Checking of Signal Temporal Logic Properties Using Syntactic Separation"
@@ -371,6 +375,7 @@
   tag: domestic
   link: https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE09277404
 
+
 # 2018
 
 - title: "Formal Aspects of Component Software - 15th International Conference, FACS 2018, Pohang, South Korea, October 10-12, 2018, Proceedings"
@@ -379,6 +384,7 @@
   year: 2018
   tag: book
   link: https://link.springer.com/content/pdf/10.1007/978-3-030-02146-7.pdf
+
 
 # 2017
 
@@ -395,6 +401,7 @@
   year: 2017
   tag: conference
   link: https://link.springer.com/chapter/10.1007/978-3-319-68034-7_5
+
 
 # 2016
 
@@ -455,6 +462,7 @@
   link: https://link.springer.com/chapter/10.1007/978-3-319-23165-5_5
   tag: conference
 
+
 # 2014
 
 - title: "Predicate Abstraction of Rewrite Theories"
@@ -487,6 +495,7 @@
   year: 2014
   tag: dissertation
 
+
 # 2013
 
 - title: "Abstract Logical Model Checking of Infinite-State Systems Using Narrowing"
@@ -494,6 +503,7 @@
   venue: International Conference on Rewriting Techniques and Applications (RTA)
   year: 2013
   tag: conference
+
 
 # 2012
 
@@ -527,6 +537,7 @@
   year: 2012
   tag: conference
 
+
 # 2011
 
 - title: "State/Event-based LTL Model Checking under Parametric Generalized Fairness"
@@ -540,6 +551,7 @@
   venue: International Conference on Formal Engineering Methods (ICFEM)
   year: 2011
   tag: conference
+
 
 # 2010
 
@@ -555,6 +567,7 @@
   year: 2010
   tag: conference
 
+
 # 2009
 
 - title: "Verifying Ptolemy II Discrete-Event Models using Real-Time Maude"
@@ -562,6 +575,7 @@
   venue: International Conference on Formal Engineering Methods (ICFEM)
   year: 2009
   tag: conference
+
 
 # 2008
 
