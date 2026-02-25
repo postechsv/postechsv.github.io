@@ -22,10 +22,14 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
         <ul class="nav navbar-nav navbar-right fixed-bottom">
-          <li><a class="name" href="/" style="color: #6184a6">HOME</a></li>
+          <li {% if page.url == '/' %}class="active"{% endif %}>
+            <a class="name" href="/">HOME</a>
+          </li>
 
           {% for nav in site.nav %}
-          <li><a class="name" href="{{ nav.href }}">{{ nav.name }}</a></li>
+          <li {% if page.url contains nav.href %}class="active"{% endif %}>
+            <a class="name" href="{{ nav.href }}">{{ nav.name }}</a>
+          </li>
           {% endfor %}
         </ul>
       </ul>
