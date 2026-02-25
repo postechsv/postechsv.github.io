@@ -142,10 +142,10 @@ tbody tr:nth-child(odd) th {
   font-size: 120%;
 }
 
-// active tab highlight
-.navbar-nav > li.active > a,
-.navbar-nav > li.active > a:hover,
-.navbar-nav > li.active > a:focus {
+// active tab text color highlight
+.navbar-default .navbar-nav > li.active > a,
+.navbar-default .navbar-nav > li.active > a:hover,
+.navbar-default .navbar-nav > li.active > a:focus {
   color: #6184a6;
   background-color: transparent;
 }
