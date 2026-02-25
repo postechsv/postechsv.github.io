@@ -13,12 +13,12 @@ To address this challenge, our research focuses on **pattern-based symbolic mode
 
 ## Background: The Maude LTL Logical Model Checker (LMC)
 
-<img src="{{site.baseurl}}/images/respic/lmc-arch.png" width="100%">
+<img src="{{site.baseurl}}/images/research/infinite/lmc-arch.png" width="100%">
 <p align="center">Figure 1: High-level architecture of the pattern-based Logical Model Checker (LMC).</p>
 
 A concurrent system can be specified as a rewrite theory, where states are represented by terms and transitions are defined by rewrite rules. The Logical Model Checker (LMC) is a tool for verifying LTL properties of such systems. It uses a symbolic model checking method based on narrowing to analyze the system's behavior. This allows for the representation of a system's state space using terms with logical variables. Folding is an abstraction technique that can approximate an infinite logical state space into a finite one.
 
-<img src="{{site.baseurl}}/images/respic/lmc-smc.png" width="100%">
+<img src="{{site.baseurl}}/images/research/infinite/lmc-smc.png" width="100%">
 <p align="center">Figure 2: The core idea of infinite-state model checking is to symbolically summarize an infinite number of concrete states into a finite number of abstract patterns.</p>
 
 ## Motivation: Current Limitations
@@ -51,14 +51,14 @@ Even with symbolic methods, the abstract state space can still be too large or c
 
 The core challenge is ensuring that these user-provided rules are **sound**—that is, the simplified system must be behaviorally equivalent to the original. The theoretical foundation for this soundness guarantee is **Bisimulation**.
 
-<img src="{{site.baseurl}}/images/respic/lmc-bisim.png" width="100%">
+<img src="{{site.baseurl}}/images/research/infinite/lmc-bisim.png" width="100%">
 <p align="center">Figure 3: The Principle of Bisimulation. A reduction is sound if for every transition in the original system (from p to p'), there is a corresponding transition in the reduced system (from q to q') such that the resulting states (p' and q') are still related.</p>
 
 A reduction rule is considered sound if the reduced system maintains a bisimulation relation with the original system. This guarantees that any property verified on the smaller, simpler system also holds true for the original, complex one. This allows a user to leverage domain-specific knowledge to simplify the verification problem without compromising correctness.
 
 A critical component of our framework is the ability to automatically verify that a reduction rule supplied by a user is indeed sound. Manually proving bisimulation is tedious and error-prone. Therefore, we developed an algorithm to automate this soundness check.
 
-<img src="{{site.baseurl}}/images/respic/lmc-simplify.png" width="100%">
+<img src="{{site.baseurl}}/images/research/infinite/lmc-simplify.png" width="100%">
 <p align="center">Figure 4: The automated workflow for verifying and applying user-defined reduction rules.</p>
 
 Our proposed algorithm works as follows:
