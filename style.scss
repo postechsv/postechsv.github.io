@@ -1,6 +1,6 @@
 ---
 ---
-:root {} // scss-parser-reset
+:root { --scss-reset: 0; } // Jekyll front matter parser reset
 @import "base";
 
 // style.scss overrides
