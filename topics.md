@@ -3,11 +3,8 @@ layout: page
 sitemap: false
 permalink: /research/topics/
 ---
-
 <h3> Research Topics </h3>
-
 {% for proj in site.researchtopics %}
-
 <div><a href="{{ proj.url }}"><h4>{{ proj.title }}</h4></a></div>
 <div class="row topic-row">
 <div class="col-md-4">
@@ -22,5 +19,4 @@ permalink: /research/topics/
 <hr class="dot">
 {% endunless %}
 {% endfor %}
-
 <br>

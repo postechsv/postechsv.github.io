@@ -13,7 +13,6 @@ WebAssembly (WASM) is a binary standard designed to execute high-performance pro
 
 However, the unique characteristics of the WASM language can give rise to security vulnerabilities that are not typically present in native languages. Although various verification techniques such as fuzzing, symbolic execution, and formal verification have been employed to analyze WASM programs, challenges remain—especially regarding properties related to concurrency and parallelism. In this study, we propose a model checking approach for WASM programs that leverages the Maude framework based on rewriting logic, specifically targeting these challenging security properties.
 
-
 ## Wasm Operational Semantics
 <img src="{{ site.research_imgs }}/wasmc/semantics.png" width="100%">
 This research is dedicated to formalizing the semantic structure of WebAssembly by employing a rewriting logic-based Maude language framework grounded in the official WebAssembly specification. By developing a precise Maude model, the project establishes a robust foundation for executing WebAssembly programs and systematically exploring their state spaces, thereby enabling rigorous analysis of program behavior and underlying computational semantics.
@@ -36,7 +35,6 @@ Because the mapping is machine-synthesized, any evolution of the IL spec transpa
 
 The next step is to verify the distributed properties of Wasm modules. Because the core Wasm semantics lacks system-level definitions, we must first implement system call functionality at the Maude level. This approach also allows us to simulate multiple concurrent workers, enabling us to formally verify distributed Wasm applications.
 
-
 ## Experiment
 ### Execution WASM Program
 <img src="{{ site.research_imgs }}/wasmc/fig4.png" width="40%">
@@ -45,7 +43,6 @@ Leveraging the formal Maude specification of WebAssembly, we executed elementary
 ### LTL Model Checking Example
 <img src="{{ site.research_imgs }}/wasmc/ex-mc.png" width="50%">
 Once we finished testing the Wasm module, we moved on to model checking it. For this Fibonacci example, we set up an atomic proposition to verify the module's states. We wanted to confirm the property that "whenever the Wasm program finishes, the result is a correct Fibonacci number." To do this, we built the LTL property you see in the picture. Then, using Maude's model-check command, we successfully verified this liveness property for our simple Wasm program.
-
 
 <!-- ## Reference
 To be added.

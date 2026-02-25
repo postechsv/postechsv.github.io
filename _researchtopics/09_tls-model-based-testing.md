@@ -13,7 +13,6 @@ Transport Layer Security (TLS) is a core protocol that ensures secure communicat
 Previous research has employed formal verification, fuzzing, combinatorial testing, and differential testing to analyze the security of TLS. While effective to some extent, these approaches fail to bridge the gap between specification and implementation or to capture complex attack scenarios such as man-in-the-middle (MITM) attacks.
 Our research combines Maude-based formal modeling with model-based testing (MBT). We build a formal model of TLS and automatically generate test scenarios that are executed against real TLS libraries, ensuring compliance with protocol specifications.
 
-
 ## TLS Protocols
 TLS establishes an encrypted and authenticated channel between a client and a server through a handshake process that negotiates cryptographic parameters. Libraries such as OpenSSL and WolfSSL implement TLS based on specifications like RFC 5246 (TLS 1.2) and RFC 8446 (TLS 1.3). Many vulnerabilities are caused by deviations from these specifications, making rigorous testing essential.
 
@@ -26,10 +25,8 @@ TLS establishes an encrypted and authenticated channel between a client and a se
 There has been a great deal of work conducted in the complementary analysis spheres pertinent to TLS 1.3.
 There is a work offering a symbolic model and accompanying analysis of draft 10 of the TLS 1.3 specification, using the Tamarin prover. The ProVerif models on draft 18 presented by Bhargavan et al include most TLS 1.3 modes, and cover rich threat models by considering downgrade attacks (both with weak crypto and downgrade to TSL 1.2). However they do not consider all modes, as they do not consider the post-handhsake client authentication mode. Their analysis did not uncover the potential mismatch between clienet and server view.
 
-
 ### Testing TLS implementations
 Some prior work extended the stateful fuzzing approach and use input/output Finite State Machines (FSM) as a behavioral abstraction of the PUT and use *differential fuzzing* to detect potential bugs or manually inspect the inferred FSM. They are tailored to capture bypass authentication attacks or other violations of the intended state machine flows. Since the FSM is not specifically designed for security, the security policy violations detected by FSM-based techniques are not necessarily security attacks and require manual inspection, those techniques thus also inherit the detection problem.
-
 
 ## Model-based Testing
 Model-based testing (MBT) is a software testing methodology where a formal or abstract model of the system’s behavior is used to automatically generate test cases. In this approach, a model describes the system in terms of states, transitions, and input/output actions, reflecting its expected behavior and requirements. Test cases are systematically derived by exploring different paths through the model, ensuring broad coverage of possible system behaviors. Since the model is closely tied to the system’s specifications, MBT provides strong traceability to requirements and helps validate both functional and security properties. Moreover, MBT enables high levels of automation, as the test generation and execution processes can be driven entirely by the model without extensive manual effort.
@@ -37,7 +34,6 @@ Model-based testing (MBT) is a software testing methodology where a formal or ab
 <center>
 <img src="{{ site.research_imgs }}/tls/model-based-testing.png" alt="TLS Protocols" width="30%"/>
 </center>
-
 
 ## Maude Model
 We model TLS clients and servers as Maude objects with attributes such as protocol version, cipher suites, keys, and message buffers.
@@ -70,7 +66,6 @@ if validVersion(PV, MSG)
 /\ validExtension(EXT, MSG) .
 
 ```
-
 
 
 ## Scenario Generation
@@ -125,7 +120,6 @@ assert(v3.alertLevel == fatal);
 assert(v3.alertDesc == handshake-failure);
 close(CI);
 ```
-
 
 ## Scenario Execution
 TLS-Attacker Library: We use the TLS-Attacker framework to execute the generated test scenarios. TLS-Attacker allows flexible message construction and dynamic modification during the handshake process. The scenarios derived from Maude are translated into TLS-Attacker scripts, which interact with real TLS libraries (e.g., OpenSSL) to verify compliance with protocol requirements.

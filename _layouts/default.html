@@ -27,7 +27,6 @@
     <link href="{{ site.url }}/css/zoom.css" rel="stylesheet" />
     <script src="{{ site.url }}/js/zoom.js"></script>
     <script src="{{ site.url }}/js/transition.js"></script>
-
     <link rel="stylesheet" href="{{ site.baseurl }}/style.css" />
     <!-- favicon -->
     <link rel="shortcut icon" href="{{ site.url }}/favicon.ico" />
@@ -51,9 +50,7 @@
       sizes="144x144"
       href="{{ site.url }}/images/logo/apple-touch-icon-144x144-precomposed.png"
     />
-
     <!-- open graph -->
-
     {% capture canonical %}{{ site.url }}{% if site.permalink contains '.html'
     %}{{ page.url }}{% else %}{{ page.url | remove:'index.html' | strip_slash
     }}{% endif %}{% endcapture %} {% capture description %}{% if
@@ -81,7 +78,6 @@
     {% endif %}
   </head>
   {% include navbar.html %}
-
   <body id="page-top" style="padding-top: 3em; " >
     {{ content }}
     {% if page.url contains '/publications' %}
@@ -94,5 +90,4 @@
     ></script>
   </body>
   {% include footer.html %}    
-
 </html>

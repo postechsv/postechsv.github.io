@@ -18,7 +18,6 @@ permalink: /publications
     <button type="button" class="btn btn-since" id="select-before">Before 2016</button>
 </div>
 
-
 <div class="pub-spacer"></div>
 
 <!--Display Research Publications-->

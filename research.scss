@@ -2,19 +2,16 @@
 ---
 :root { --scss-reset: 0; } // Jekyll front matter parser reset
 @import "base";
-
 // research.scss overrides
 html {
   font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 1.6;
-
   @media (min-width: 38em) {
     font-size: 20px;
   }
 }
-
 h1,
 h2,
 h3,
@@ -28,30 +25,24 @@ h6 {
   color: #333;
   letter-spacing: -0.025rem;
 }
-
 h1 {
   font-size: 2rem;
 }
-
 h2 {
   font-size: 1.6rem;
 }
-
 h3 {
   font-size: 1.3rem;
 }
-
 pre {
   background-color: transparent;
 }
-
 img {
   display: block;
   max-width: 100%;
   height: auto;
   margin: auto;
 }
-
 // Research-specific: transparent table borders
 table {
   background-color: transparent;
@@ -61,26 +52,22 @@ table {
   border-color: transparent;
   border-collapse: collapse;
 }
-
 td,
 th {
   padding: 0.25rem 0.5rem;
   font-size: 140%;
   border-color: transparent;
 }
-
 tbody tr:nth-child(odd) td,
 tbody tr:nth-child(odd) th {
   background-color: transparent;
   border-color: transparent;
 }
-
 // Publication styles
 .publications-list {
   list-style-type: none;
   padding: 0;
 }
-
 .publication-item {
   background: #f9f9f9;
   margin: 10px 0;
@@ -89,99 +76,79 @@ tbody tr:nth-child(odd) th {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: background 0.3s;
 }
-
 .publication-item:hover {
   background: #e9e9e9;
 }
-
 .publication-title {
   font-weight: bold;
   font-size: 1.1em;
 }
-
 .publication-authors {
   color: #555;
 }
-
 .publication-year {
   color: #999;
   font-size: 0.9em;
 }
-
 .material > li {
   min-width: 80px;
   max-width: 100px;
 }
-
 .material > li > a {
   font-weight: 400;
 }
-
 .material > li > a > img {
   max-width: fit-content;
   margin-left: auto;
   margin-right: auto;
   height: 60px;
 }
-
 @import "syntax";
-
 // customization
 .pos_header {
   margin-left: 2rem;
 }
-
 .people {
   margin: auto;
   text-align: center;
   margin-top: 0.75em;
 }
-
 .list-item-people {
   display: inline-block;
   padding-right: 1em;
 }
-
 .list-post-title img {
   margin-bottom: 0.75em;
   margin-top: 1.25em;
 }
-
 .list-post-title .name {
   font-size: 18px;
 }
-
 .list-post-title {
   color: black;
 }
-
 .list-detail {
   font-size: 15px;
   color: #838383;
 }
-
 .list-item a:hover,
 .list-post-title:hover .name,
 .list-post-title .name:hover {
   color: #c42929;
 }
-
 .page-title {
   margin-bottom: 0.6em;
 }
-
 .navbar-brand {
   content: url("/images/logo/logo.png");
   display: inline-block;
   position: relative;
 }
-
 // change font for navbar
 .navbar {
   background-color: white;
   font-family: "Lato", sans-serif;
 }
-
 .navbar-nav > li > a {
   background-color: white;
   font-family: "Lato", sans-serif;
@@ -191,53 +158,43 @@ tbody tr:nth-child(odd) th {
   margin-left: 6px;
   padding-top: 25px;
 }
-
 .navbar-right {
   margin-right: -15px;
 }
-
 // fix menu bar spacing for mobile
 @media (max-width: 62em) {
   .navbar-brand {
     content: url("/images/logo/logo_mobile.png");
   }
-
   .navbar-nav > li > a {
     padding: 0.75em 0 0.5em 2.5em;
     font-size: 15px;
   }
-
   // fix menu scroll along x axis
   .navbar-nav {
     margin-right: -15px;
   }
 }
-
 // fix spacing
 .navbar-nav > li {
   margin-bottom: 0;
 }
-
 // fix menu button for mobile
 .navbar-toggle,
 .navbar-default .navbar-toggle:hover {
   border: none;
   background-color: #fff;
 }
-
 .navbar a {
   height: 70px;
 }
-
 // researchpage: justify body text
 p {
   text-align: justify;
 }
-
 .text-justify {
   text-align: justify;
 }
-
 // used in research topic pages
 .rpost-subject {
   margin: 0 0 15px;

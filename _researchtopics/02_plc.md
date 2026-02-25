@@ -13,7 +13,6 @@ Programmable Logic Controllers (PLCs) are widely used in industrial control syst
 
 This research aims to develop a unified and realistic formal semantics that captures the complete behavior of PLC systems. Our approach covers the formalization of the ST programming language, support for symbolic and bounded model checking, semantics for preemptive multitasking with state space reduction, and integration of continuous environment dynamics and networked communication. Through executable semantics, tool support, and scalable verification techniques, our framework offers a foundation for analyzing real-world PLC systems in industrial settings.
 
-
 ## Semantics of PLC ST
 
 We define K semantics of PLC ST. K is a rewriting-based framework for defining the semantics of programming languages. In K, program states are specified as multisets of nested cells, called configurations. Each cell represents a component of the program state, such as environments and stores. The cell structure for PLC ST is shown below.
@@ -26,7 +25,6 @@ PLCs exhibit cyclic behavior where a 'scan cycle' consists of input, execution, 
 Another important distinction from previous work is that we do not assume specific input values. At this point, we do not know what values can be read from the environment; we virtually assume that 'any' values of a specified range can be read. This necessitates the need for a symbolic semantics with SMT variables as program values. To include these behaviors in our semantics, we extend the cell structures with the following cells.
 <img src="{{ site.research_imgs }}/plc/cell2.jpg" width="80%">
 
-
 ## Bounded Symbolic Model Checking and STbmc Tool
 
 We employ rewriting modulo SMT to symbolically examine LTL properties of ST programs concerning sequences of inputs and outputs. A model checking problem is encoded into reachability to an error state. LTL properties are 'flatten' to a propositional formula over the input and output stream elements. The following shows a Maude search command to verify the LTL property φ.
@@ -34,7 +32,6 @@ We employ rewriting modulo SMT to symbolically examine LTL properties of ST prog
 
 We develop 'stbmc' tool that takes PLC programs and specification files and performs model checking. The following shows the specification file format and the command line output of the tool. If the given LTL property holds, 'test succeeded' is printed. If not, it shows a counterexample.
 <img src="{{ site.research_imgs }}/plc/stbmc.jpg" width="80%">
-
 
 ## Semantics and Analysis of Multitask PLC
 
@@ -47,7 +44,6 @@ The following cells are added or modified to the cells originally proposed. (1) 
 
 To resolve state explosion, we propose 'time-abstraction' and 'partial order reduction' techniques. The main idea of time-abstraction is to express time abstractly with a time interval that represents an infinite number of time points. We have adopted the classic ample set based partial order reduction approach to our system. The graph below shows the time comparison of state space exploration time before and after time abstraction. The points at 3600 represent timeout. 
 <img src="{{ site.research_imgs }}/plc/g1.jpg" width="50%">
-
 
 ## Physical Dynamics and Communication of PLCs
 Existing formal verification techniques focus on individual PLC programs in isolation, often neglecting interactions with physical environments and network communication between controllers. We present a unified formal framework that integrates discrete PLC semantics, networked communication, and continuous physical behaviors. 
@@ -63,7 +59,6 @@ Using this integrated semantics, we can verify properties of well-defined networ
 
 ## Ongoing Work
 This ongoing work is motivated by the observation that multitask PLC semantics and the semantics for physical dynamics and inter-controller communication are largely orthogonal. Our goal is to develop a unified semantics that incorporates both preemptive multitasking and cyber-physical interaction within a single framework. As part of this effort, we are conducting a case study involving PLC-controlled vehicles that must avoid collisions while navigating toward designated destinations.
-
 
 ## Contact
 *   Jaeseo Lee sean96@postech.ac.kr

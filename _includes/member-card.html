@@ -1,5 +1,4 @@
 {% assign role = include.role | default: "student" %}
-
 {% if role == "faculty" %}
 <div class="col clearfix member-profile">
   <img src="/images/teampic/{{ include.member.photo }}" class="member-photo member-photo-faculty" />
@@ -9,7 +8,6 @@
   <div class="member-spacer"></div>
   {% include member-links.html member=include.member %}
 </div>
-
 {% else %}
 <div class="col member-profile student">
   <img src="/images/teampic/{{ include.member.photo }}" class="member-photo" />
