@@ -346,8 +346,17 @@ hr.dot{
 }
 
 /* News */
-.news-heading-inline {
-  display: inline;
+.news-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 0.4rem;
+}
+
+.news-more-btn {
+  font-family: "Lato", sans-serif;
+  font-size: 0.8rem;
+  white-space: nowrap;
 }
 
 .news-section {

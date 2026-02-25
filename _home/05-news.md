@@ -2,7 +2,10 @@
 title: "News"
 ---
 
-<h2 class="news-heading-inline">Recent News </h2>  <div class="right"><a href="/news">....more</a></div>
+<div class="news-header">
+  <h2>Recent News</h2>
+  <a href="/news" class="btn btn-sm btn-default news-more-btn">...more</a>
+</div>
 
 <div class="news-section">
     <div class="news">
