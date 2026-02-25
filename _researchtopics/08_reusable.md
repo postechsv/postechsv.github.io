@@ -8,6 +8,7 @@ hidden: True
 <img src="{{site.baseurl}}/images/research/reusable/reusable.png" width="80%"/>
 
 ### Introduction
+{: .rpost-subject}
 
 Model checking is a formal verification technique that exhaustively explores the state space of a system to verify whether it satisfies a given property. However, in practical verification scenarios—such as debugging cycles where errors are fixed and re-verified, or regression testing after system modifications—running full verification from scratch each time is highly inefficient.
 {: .text-justify}
@@ -20,8 +21,10 @@ In this work, we focus on falsification of safety properties, particularly deadl
 
 
 ### Approach
+{: .rpost-subject}
 
 #### Predicate Abstraction for Feature Extraction
+{: .rpost-subject}
 
 Predicate abstraction maps concrete states to fixed-dimensional Boolean vectors based on the satisfaction of predefined predicates. Given n predicates, each concrete state is abstracted to an n-dimensional Boolean vector:
 {: .text-justify}
@@ -34,6 +37,7 @@ This abstraction provides two key benefits:
 {: .text-justify}
 
 #### Heuristic Learning with Reinforcement Learning
+{: .rpost-subject}
 
 We train a Q-function Q(s, a) on the abstracted state space to estimate the likelihood of reaching an error state. The reward function assigns 1 for error states and 0 otherwise. The learned Q-values indicate how promising each state-action pair is for finding violations.
 {: .text-justify}
@@ -44,6 +48,7 @@ We employ two learning approaches:
 {: .text-justify}
 
 #### Heuristic-Guided Search
+{: .rpost-subject}
 
 The learned Q-function is integrated into a best-first search framework. The state value function is defined as:
 {: .text-justify}
@@ -55,13 +60,16 @@ States with higher V-values are prioritized during exploration, directing the se
 
 
 ### Experiments
+{: .rpost-subject}
 
 #### Benchmark: Dining Philosophers
+{: .rpost-subject}
 
 The Dining Philosophers problem is a classic concurrency benchmark where N philosophers sit around a circular table with forks between adjacent philosophers. Each philosopher cycles through states: think → hungry → wait → eat. The verification goal is to detect deadlock states where all philosophers hold one fork and wait indefinitely for the other.
 {: .text-justify}
 
 #### Predicate Design
+{: .rpost-subject}
 
 We define 13 predicates based on the system's transition rules:
 - 4 transition rules × 3 application targets (philosopher 0, philosopher 1, any other philosopher) = 12 predicates
@@ -72,6 +80,7 @@ This design ensures that instances of any size N are represented as 13-dimension
 {: .text-justify}
 
 #### Experimental Setup
+{: .rpost-subject}
 
 | Parameter | Value |
 |-----------|-------|
@@ -88,6 +97,7 @@ Baselines:
 {: .text-justify}
 
 #### Results: Search Efficiency
+{: .rpost-subject}
 
 | N | BFS | Random | Q-table | DQN |
 |---|-----|--------|---------|-----|
@@ -108,6 +118,7 @@ Baselines:
 {: .text-justify}
 
 #### Results: Q-table Hit Ratio
+{: .rpost-subject}
 
 | N | Hit Ratio |
 |---|-----------|
@@ -122,6 +133,7 @@ DQN overcomes this limitation through neural network generalization, predicting 
 {: .text-justify}
 
 #### Results: Search Time
+{: .rpost-subject}
 
 | N | BFS | Random | Q-table | DQN |
 |---|-----|--------|---------|-----|
@@ -136,14 +148,16 @@ For small N, DQN is slower due to neural network inference overhead. However, fo
 
 
 ### Publications
+{: .rpost-subject}
 
 - H. Kang, B. Son, and K. Bae, "RL-based Heuristic Learning for Model Checking," Korea Conference on Software Engineering (KCSE), 2026.
 
 
 ### Contact
+{: .rpost-subject}
 
 - Hyeyoon Kang <a href="mailto:hyoonk@postech.ac.kr">hyoonk (at) postech.ac.kr</a>
 - Byoungho Son <a href="mailto:byhoson@postech.ac.kr">byhoson (at) postech.ac.kr</a>
 
 ---
-Last modified: 2026/02/13 (Hyeyoon Kang)
+Last modified: 2026/02/25 (Hyeyoon Kang)
