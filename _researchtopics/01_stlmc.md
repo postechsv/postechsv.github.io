@@ -9,7 +9,6 @@ hidden: false
 ### Introduction
 
 
-
 Signal temporal logic (STL) is a temporal logic used to specify properties of continuous signals. STL has been widely applied in specifying, monitoring, and testing properties of hybrid systems that exhibit both discrete and continuous behavior. However, model checking techniques for hybrid systems have primarily been limited to invariant and reachability properties. In this work, we present a novel logical foundation for STL, introduce bounded model checking algorithms and a tool for general STL properties of hybrid systems. With this new foundation, the robust STL
 model checking problem can be reduced to the satisfiability of a first-order logic formula. This allows us to develop the first model checking algorithm for STL that can guarantee the correctness of STL up to given bounds. We demonstrate the eﬀectiveness of STLmc on various hybrid system case studies.
 
@@ -44,7 +43,6 @@ Despite these advances, the underlying Boolean semantics limits the applicabilit
 ---
 
 ### Experiments
-
 
 
 We conducted two experiments: one evaluates the results of robust STL model checking, and the other compares the performance of STLmc for invariant properties with existing reachability analysis tools for hybrid automata.

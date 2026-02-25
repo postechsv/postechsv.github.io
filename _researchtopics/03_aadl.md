@@ -133,7 +133,6 @@ The time frame of the environment is *shifted to the left* from the global time 
 </center>
 
 
-
 ## MH-SynchAADL Tool
 MH-SynchAADL seamlessly integrates modeling and formal analysis into OSATE. The tool can statically check the syntactic constraints of MH-SynchAADL. The tool’s property specification language can specify invariant and reachability properties. The tool synthesizes the corresponding Maude model from a MH-SynchAADL model and invokes Maude with SMT solving to perform various formal analyses, including randomized simulation (using the concrete semantics), symbolic reachability analysis (using the symbolic semantics), and portfolio analysis (running both methods in parallel with multithreading). The tool is available at https://hybridsynchaadl.github.io.
 
@@ -231,12 +230,10 @@ a timeout of 3 hours.
 
 
 
-
 ## Ongoing
 We are actively pursuing a range of research directions aimed at improving the modeling language, formal semantics, and analysis tools. Current ongoing efforts include:
 * We are defining formal symbolic and concrete semantics for connections with $M$ environments and $N$ discrete controllers.
 * We are extending the tool functionality to support checking constraints about MSYNC in our MH-SynchAADL tools.
-
 
 
 ## Contact

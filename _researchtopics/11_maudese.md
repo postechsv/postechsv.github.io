@@ -10,7 +10,6 @@ hidden: true
 ### Introduction
 
 
-
 Rewriting modulo SMT integrates term rewriting with SMT solving to enable symbolic analysis of infinite-state systems. In this framework, states are terms constrained by SMT formulas, and transitions are defined via conditional rewrite rules. While Maude supports this through the Maude-SMT interface, the current implementation has several limitations: it lacks support for satisfying assignments and formula simplification, only handles linear arithmetic, excludes uninterpreted functions, does not support folding reduction, and is difficult to customize due to its dependence on Maude's internal C++ code.
 
 
@@ -37,7 +36,6 @@ To achieve both flexibility and efficiency, Maude-SE introduces two abstract Pyt
 Developing such abstract connectors is challenging. Although the Maude Python binding allows user-defined Python functions to be invoked directly from within Maude, it requires an understanding of Maude's internal data structures. To address this, Maude-SE delegates performance-critical tasks—such as term manipulation and search graph construction—to the C++ level, while keeping SMT solver interactions at the Python level.
 
 
-
 **Implementation.** Our framework has been implemented to enjoy the best of both worlds: flexible capability of SMT solving using each SMT solver's Python API, and eﬃcient exploration of symbolic search space using Maude. Our abstract connector hides details about Maude's internal implementation, so users only need to undestand the Python API for the target SMT solver. The main routine for symbolic reachability analysis and folding are implemented at the C++ level and use the maude library to invoke user-defined Python functions for SMT solving.
 
 
@@ -55,7 +53,6 @@ for the last search result. Given a module M, a Boolean formula ψ, and an (opti
 ---
 
 ### Case Study
-
 
 
 We demonstrate the flexibility of our interface with a case study on connecting a Z3 solver. We first show a simple implementation for the two Python components *CmdAdapter* and *Converter*, and then explain how to customize the implementation of *CmdAdapter* for diﬀerent purposes.

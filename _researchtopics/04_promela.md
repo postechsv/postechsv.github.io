@@ -54,7 +54,6 @@ We use a generic semantic pattern based on two fundamental rule types,
 **loading** and **firing**, to integrate each control primitive naturally and modularly.
 
 
-
 - **Loading Rules:**
   The loading rules restructures the computation without side-effects, 
   by lifting the linear-shaped K continuation into a **multiset** of nondeterministic continuations.
@@ -70,7 +69,6 @@ We use a generic semantic pattern based on two fundamental rule types,
   - **Atomicity:** Acquires a lock to enforce atomic execution.
 
 <img src="{{site.baseurl}}/images/research/promela/fire.png" width="100%"/>
-
 
 
 ## Case Study: Mutual Exclusion of Lamport's Bakery Algorithm

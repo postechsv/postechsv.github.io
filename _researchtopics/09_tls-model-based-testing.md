@@ -72,7 +72,6 @@ if validVersion(PV, MSG)
 ```
 
 
-
 ## Scenario Generation
 RFC 5246 and RFC 8446 specify many MUST statements (e.g., “A client receiving an unsupported cipher suite MUST abort the handshake”). We encode these requirements into Maude-based formal properties, which are used to generate targeted test scenarios.
 
