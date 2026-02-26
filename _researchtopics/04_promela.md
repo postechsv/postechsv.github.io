@@ -41,12 +41,10 @@ We aim to make our PROMELA semantics in K:
 #### Load-and-Fire: Modular Semantics for Control Effects
 
 PROMELA provides advanced control primitives—executability conditions, nondeterminism, and atomic blocks—that interact in subtle ways. 
-We use a generic semantic pattern based on two fundamental rule types, 
-**loading** and **firing**, to integrate each control primitive naturally and modularly.
+We use a generic semantic pattern based on two fundamental rule types, **loading** and **firing**, to integrate each control primitive naturally and modularly.
 
 - **Loading Rules:**
-  The loading rules restructures the computation without side-effects, 
-  by lifting the linear-shaped K continuation into a **multiset** of nondeterministic continuations.
+  The loading rules restructures the computation without side-effects, by lifting the linear-shaped K continuation into a **multiset** of nondeterministic continuations.
   This way, `if`/`do` statements are flattened, and each local branch are setup to be fired by the firing rules "upto" associativity and commutativity.
   
 <img src="{{site.baseurl}}/images/research/promela/load.png" width="100%"/>

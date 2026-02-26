@@ -17,6 +17,7 @@ Previous research has employed formal verification, fuzzing, combinatorial testi
 ---
 
 #### TLS Protocols
+
 TLS establishes an encrypted and authenticated channel between a client and a server through a handshake process that negotiates cryptographic parameters. Libraries such as OpenSSL and WolfSSL implement TLS based on specifications like RFC 5246 (TLS 1.2) and RFC 8446 (TLS 1.3). Many vulnerabilities are caused by deviations from these specifications, making rigorous testing essential.
 
 <img src="{{ site.research_imgs }}/tls/tls_protocol.png" alt="TLS Protocols" width="30%"/>

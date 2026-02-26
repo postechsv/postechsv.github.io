@@ -6,7 +6,7 @@ img-url: "/reusable/reusable.png"
 hidden: True
 ---
 
-<img src="{{site.baseurl}}/images/research/reusable/reusable.png" width="80%"/>
+<img src="{{site.baseurl}}/images/research/reusable/reusable.png" width="50%"/>
 
 #### Introduction
 
@@ -86,7 +86,6 @@ Baselines:
 
 ##### Results: Search Efficiency
 
-
 | N | BFS | Random | Q-table | DQN |
 |---|-----|--------|---------|-----|
 | 4 | 341 | 185 | 70 | 58 |
@@ -107,7 +106,6 @@ Baselines:
 
 ##### Results: Q-table Hit Ratio
 
-
 | N | Hit Ratio |
 |---|-----------|
 | 4 | 38% |
@@ -120,7 +118,6 @@ DQN overcomes this limitation through neural network generalization, predicting 
 
 
 ##### Results: Search Time
-
 
 | N | BFS | Random | Q-table | DQN |
 |---|-----|--------|---------|-----|

@@ -1,16 +1,13 @@
 <!-- ==================== SAMPLE PAGE USAGE ====================
   페이지 작성 후, 아래 front matter 블록의 주석을 해제.
 
-  파일명 규칙: NN_topicname.md
+  파일명: NN_topicname.md
 
-  이미지 삽입 규칙: <img src="{{ site.research_imgs }}/<topic>/<filename>.svg" width="100%" alt="Alt text.">
-
-    - 파일 위치: /images/research/<topic>/<filename>
-    - 삽입 방법: {{ site.research_imgs }}/<topic>/<filename>
+  이미지: <img src="{{ site.research_imgs }}/<topic>/<filename>.svg" width="100%" alt="Alt text.">
 
   테이블 캡션: <p class="table-caption"><strong>Table.</strong> Table description.</p>
 
-  그림 캡션: <figcaption><strong>Figure.</strong> Figure description.</figcaption>
+  이미지 캡션: <figcaption><strong>Figure.</strong> Figure description.</figcaption>
 ============================================================ -->
 
 <!--

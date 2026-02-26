@@ -92,7 +92,7 @@ This ongoing work is motivated by the observation that multitask PLC semantics a
 
 #### Contact
 
-- Jaeseo Lee <a href="mailto:sean96@postech.ac.kr">sean96 (at) postech.ac.kr</a>
+Jaeseo Lee <a href="mailto:sean96@postech.ac.kr">sean96 (at) postech.ac.kr</a>
 
 
 ---
