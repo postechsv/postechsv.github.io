@@ -18,12 +18,8 @@ Rewriting modulo SMT integrates term rewriting with SMT solving to enable symbol
 
 We present a new SMT extension of Maude, called Maude-SE, which extends the existing Maude-SMT wrapper interface with additional capabilities, including folding, support for uninterpreted functions, and concrete witness generation. A key feature of Maude-SE is an abstract Python connector that allows users to integrate Maude with SMT solvers and customize functionality entirely at the Python level—without requiring any knowledge of Maude's internal implementation or recompilation of its source code.
 
-<figure id="fig-maude-se" style="text-align: center; margin: 2em 0;">
-  <img src="{{ site.research_imgs }}/maude-se/maude-se-arch.svg" width="95%" alt="The architecture of Maude-SE.">
-  <figcaption>
-    <strong>Figure 1.</strong> The architecture of Maude-SE.
-  </figcaption>
-</figure>
+<img src="{{ site.research_imgs }}/maude-se/maude-se-arch.svg" width="95%" alt="The architecture of Maude-SE.">
+<figcaption><strong>Figure 1.</strong> The architecture of Maude-SE.</figcaption>
 
 **Design.** The architecture of Maude-SE is illustrated in <a href="#fig-maude-se">Figure 1</a>. The original Maude-SMT wrapper interface provides basic functions such as *checkSat*, for checking satisfiability, and *maude2smt*, for translating Maude terms into SMT solver-compatible data structures. Maude-SE extends this interface by introducing new functionalities, including *genAssn*, which retrieves satisfying assignments, and *addSmtSymbs*, which supports additional SMT theory symbols.
 

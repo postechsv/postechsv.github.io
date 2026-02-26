@@ -17,21 +17,13 @@ To address this challenge, our research focuses on **pattern-based symbolic mode
 
 #### Background: The Maude LTL Logical Model Checker (LMC)
 
-<figure style="text-align: center; margin: 2em 0;">
-    <img src="{{site.baseurl}}/images/research/infinite/lmc-arch.png" width="100%" alt="Figure description">
-    <figcaption>
-        <strong>Figure 1:</strong> High-level architecture of the pattern-based Logical Model Checker (LMC).
-    </figcaption>
-</figure>
+<img src="{{site.baseurl}}/images/research/infinite/lmc-arch.png" width="100%">
+<figcaption><strong>Figure 1:</strong> High-level architecture of the pattern-based Logical Model Checker (LMC).</figcaption>
 
 A concurrent system can be specified as a rewrite theory, where states are represented by terms and transitions are defined by rewrite rules. The Logical Model Checker (LMC) is a tool for verifying LTL properties of such systems. It uses a symbolic model checking method based on narrowing to analyze the system's behavior. This allows for the representation of a system's state space using terms with logical variables. Folding is an abstraction technique that can approximate an infinite logical state space into a finite one.
 
-<figure style="text-align: center; margin: 2em 0;">
-    <img src="{{site.baseurl}}/images/research/infinite/lmc-smc.png" width="100%" alt="Figure description">
-    <figcaption>
-        <strong>Figure 2:</strong> The core idea of infinite-state model checking is to symbolically summarize an infinite number of concrete states into a finite number of abstract patterns.
-    </figcaption>
-</figure>
+<img src="{{site.baseurl}}/images/research/infinite/lmc-smc.png" width="100%">
+<figcaption><strong>Figure 2:</strong> The core idea of infinite-state model checking is to symbolically summarize an infinite number of concrete states into a finite number of abstract patterns.</figcaption>
 
 
 ---
@@ -72,23 +64,15 @@ Even with symbolic methods, the abstract state space can still be too large or c
 
 The core challenge is ensuring that these user-provided rules are **sound**—that is, the simplified system must be behaviorally equivalent to the original. The theoretical foundation for this soundness guarantee is **Bisimulation**.
 
-<figure style="text-align: center; margin: 2em 0;">
-    <img src="{{site.baseurl}}/images/research/infinite/lmc-bisim.png" width="100%" alt="Figure description">
-    <figcaption>
-        <strong>Figure 3:</strong> The Principle of Bisimulation. A reduction is sound if for every transition in the original system (from p to p'), there is a corresponding transition in the reduced system (from q to q') such that the resulting states (p' and q') are still related.
-    </figcaption>
-</figure>
+<img src="{{site.baseurl}}/images/research/infinite/lmc-bisim.png" width="100%">
+<figcaption><strong>Figure 3:</strong> The Principle of Bisimulation. A reduction is sound if for every transition in the original system (from p to p'), there is a corresponding transition in the reduced system (from q to q') such that the resulting states (p' and q') are still related.</figcaption>
 
 A reduction rule is considered sound if the reduced system maintains a bisimulation relation with the original system. This guarantees that any property verified on the smaller, simpler system also holds true for the original, complex one. This allows a user to leverage domain-specific knowledge to simplify the verification problem without compromising correctness.
 
 A critical component of our framework is the ability to automatically verify that a reduction rule supplied by a user is indeed sound. Manually proving bisimulation is tedious and error-prone. Therefore, we developed an algorithm to automate this soundness check.
 
-<figure style="text-align: center; margin: 2em 0;">
-    <img src="{{site.baseurl}}/images/research/infinite/lmc-simplify.png" width="100%" alt="Figure description">
-    <figcaption>
-        <strong>Figure 4:</strong> The automated workflow for verifying and applying user-defined reduction rules.
-    </figcaption>
-</figure>
+<img src="{{site.baseurl}}/images/research/infinite/lmc-simplify.png" width="100%">
+<figcaption> <strong>Figure 4:</strong> The automated workflow for verifying and applying user-defined reduction rules.</figcaption>
 
 Our proposed algorithm works as follows:
 1.  **Input:** A user-defined reduction rule, which equates a complex pattern with a simpler one.

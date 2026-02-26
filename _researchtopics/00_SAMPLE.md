@@ -3,19 +3,14 @@
 
   파일명 규칙: NN_topicname.md
 
-  이미지 삽입 규칙:
-  
-        <figure style="text-align: center; margin: 2em 0;">
-            <img src="{{ site.research_imgs }}/your-topic/your-image.png" width="80%"
-                alt="Figure description">
-            <figcaption>
-                <strong>Figure 1.</strong> Caption text here.
-            </figcaption>
-        </figure>
+  이미지 삽입 규칙: <img src="{{ site.research_imgs }}/<topic>/<filename>.svg" width="100%" alt="Alt text.">
 
     - 파일 위치: /images/research/<topic>/<filename>
     - 삽입 방법: {{ site.research_imgs }}/<topic>/<filename>
-    - 캡션 포함 시 figure 태그 사용.
+
+  테이블 캡션: <p class="table-caption"><strong>Table.</strong> Table description.</p>
+
+  그림 캡션: <figcaption><strong>Figure.</strong> Figure description.</figcaption>
 ============================================================ -->
 
 <!--

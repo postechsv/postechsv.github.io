@@ -18,12 +18,8 @@ model checking problem can be reduced to the satisfiability of a first-order log
 
 We have developed a novel logical foundation for STL and SMT-based bounded robust model checking algorithms on this foundation [<a href="#ref-1">1</a>,<a href="#ref-2">2</a>,<a href="#ref-3">3</a>]. Our logical foundation includes: (i) syntactic separation, decomposing an STL formula into components, with each component depending exclusively on separate segments of a signal; (ii) signal discretization, ensuring a complete abstraction of a signal through a set of discrete elements; and (iii) &#949;-strengthening, reducing robust STL model checking to Boolean STL model checking. We combine these foundational techniques to develop the algorithms, which are refutation-complete, meaning that they can guarantee correctness up to given bounds. Based on these algorithms, we implement a framework shown in <a href="#fig-stlmc">Figure 1</a>, called [STLmc](https://stlmc.github.io).
 
-<figure id="fig-stlmc" style="text-align: center; margin: 2em 0;">
-  <img src="{{ site.research_imgs  }}/stlmc/stlmc-arch3.svg" width="95%" alt="An SMT-based robust bounded STL model checking framework.">
-  <figcaption>
-    <strong>Figure 1.</strong> An SMT-based robust bounded STL model checking framework.
-  </figcaption>
-</figure>
+<img src="{{ site.research_imgs }}/stlmc/stlmc-arch3.svg" width="95%" alt="An SMT-based robust bounded STL model checking framework.">
+<figcaption><strong>Figure 1.</strong> An SMT-based robust bounded STL model checking framework.</figcaption>
 
 **Logical foundations.** A temporal logic formula &#x1D711; is called syntactically separated if &#x1D711; is a Boolean combination of formulas, each of which depends only on a disjoint part of the underlying time domain (such as the past, present, or future). This decomposition is well-known for LTL. However, it becomes more challenging for logics with temporal operators constrained by time intervals, such as MTL and STL; no generic method has been proposed for separating such formulas into disjoint parts. In [<a href="#ref-1">1</a>], we address this problem and generalize the STL syntax by adding extra time constraints, called STL with global time (STL-GT), and propose a syntactic separation procedure based on the Boolean semantics of STL. 
 
@@ -45,23 +41,15 @@ We conducted two experiments: one evaluates the results of robust STL model chec
 The experimental results are summarized in Table 1, where &#120591; denotes the time bound, 𝑁 denoted the discrete bound, and |&#936;|
 denotes the size of the SMT encoding &#936; (in thousands). For the model checking results, &#x22A4; indicates that no counterexample was found up to bound 𝑁, and &#x22A5; indicates that a counterexample was found at some 𝑘 &le; 𝑁. As shown in the table, our tool can perform robust model checking of nontrivial STL formulas for hybrid systems with various continuous dynamics. ODE models generally require more time than linear and polynomial models due to the high computational costs of handling nonlinear constraints.
 
-<figure style="text-align: center; margin: 2em 0;">
-  <figcaption style="margin-bottom: 0.5em; font-size: 1.1em;">
-    <strong>Table 1.</strong> Experimental results for robust STL model checking.
-  </figcaption>
-  <img src="{{ site.research_imgs }}/stlmc/stlmc-exp1.svg" width="95%" alt="Experimental results for robust STL model checking.">
-</figure>
+<p class="table-caption"><strong>Table 1.</strong> Experimental results for robust STL model checking.</p>
+<img src="{{ site.research_imgs }}/stlmc/stlmc-exp1.svg" width="95%" alt="Experimental results for robust STL model checking.">
 
 **Comparison with reachability analysis tools.** We compare the performance of STLmc in verifying invariant properties against four hybrid automata reachability analysis tools: HyComp, SpaceEx, Flow*, and dReach. For each model, we consider a true invariant property so that reachability analysis explores all possible behaviors up to given bounds. We measure the execution times (in seconds) for analyzing the invariant properties up to a given bound with a timeout of 60 minutes. Since each tool has a diﬀerent notion of bounds, we use the number of discrete jumps 𝑁 and the maximum time horizon 𝜏 as the common bound parameters, which are "encoded" in the models if needed. We use the same settings for the discrete bound 𝑁 and time horizon 𝜏 as in the previous experiment. 
 
 The experimental results are summarized in Table 2, with execution times in seconds. T/O denotes a timeout. Because HyComp only supports linear models, it is not included in the results for polynomial and ODE models. Similarly, SpaceEx supports only linear ODEs and is therefore not applicable (N/A) for models with nonlinear ODEs (Car, Rail, and Wat). As shown in the table, our tool has comparable performance to the other tools for the invariant properties. For example, for the autonomous car system with ODE dynamics (Car-N), both STLmc and dReach verify the invariant property within 1 minute, whereas Flow* times out. This is because the systems’s dynamics are complex, involving trigonometric dynamic. For linear models, dReach cannot solve some problems in time. This problem is because dReach enumerate all possible paths and there are too many scenarios with a larger discrete bound 𝑁. STLmc can solve all the problems in time, including linear models with large discrete bounds.
 
-<figure style="text-align: center; margin: 2em 0;">
-  <figcaption style="margin-bottom: 0.5em; font-size: 1.1em;">
-    <strong>Table 2.</strong> Execution time for analyzing invariant properties (in seconds).
-  </figcaption>
-  <img src="{{ site.research_imgs }}/stlmc/stlmc-exp2.svg" width="70%" alt="Execution time for analyzing invariant properties (in seconds).">
-</figure>
+<p class="table-caption"><strong>Table 2.</strong> Execution time for analyzing invariant properties (in seconds).</p>
+<img src="{{ site.research_imgs }}/stlmc/stlmc-exp2.svg" width="70%" alt="Execution time for analyzing invariant properties (in seconds).">
 
 
 ---
