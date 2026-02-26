@@ -58,4 +58,4 @@ layout: members
 {% endfor %}
 </ul>
 
-<br/>
+<br>

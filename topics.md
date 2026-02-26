@@ -6,8 +6,7 @@ permalink: /research/topics/
 
 <h3>Research Topics</h3>
 
-{% assign visible_topics = site.researchtopics | where: "hidden", false %}
-{% for proj in visible_topics %}
+{% for proj in site.researchtopics %}
 
 <div><a href="{{ proj.url }}"><h4>{{ proj.title }}</h4></a></div>
 <div class="row topic-row">
