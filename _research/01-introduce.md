@@ -12,3 +12,5 @@ Autonomous cyber-physical agent systems, such as self-driving cars and drones, m
 
 #### Automated Analysis of Safety-Critical AI Software. 
 AI-based technologies such as deep neural networks are being applied to safety-critical applications, e.g., self-driving cars and air traffic control systems. The subject of this research is to develop new techniques to prove the safety requirements of AI-based systems, to prevent accidents or security problems caused by software errors.
+
+<br>
