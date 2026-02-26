@@ -161,18 +161,22 @@ tbody tr:nth-child(odd) th {
   margin-bottom: 5%;
 }
 
-.member-profile > img{
+.member-profile > img {
     width: 30%;
     float: left;
+}
+
+.member-profile > h3 {
+  margin-bottom: 15px;
 }
 
 .student {
   display:flex;
   flex-direction: column;
-  width:30%;
+  width:33.3%;
 }
 
-.student > img{
+.student > img {
   width: 100%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
