@@ -354,12 +354,17 @@ hr.dot{
   display: flex;
 }
 
-/* News */
+/* News / Section headers with inline More button */
 .news-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 0.4rem;
+}
+
+.news-header h2,
+.news-header h3 {
+  margin-bottom: 0;
 }
 
 .more-btn {
@@ -385,7 +390,7 @@ hr.dot{
 
 /* Publications */
 .pub-spacer {
-  height: 10px;
+  height: 15px;
 }
 
 /* Index */

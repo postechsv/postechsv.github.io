@@ -1,9 +1,12 @@
 ---
----   
-<h3> Current Research </h3>
+---
+<div class="news-header">
+  <h3>Current Research</h3>
+  <a href="{{ site.baseurl }}/research/topics" class="btn btn-sm btn-default more-btn">More…</a>
+</div>
 
-{% for proj in site.researchtopics %}
-{% if proj.hidden == false %}
+{% assign visible_topics = site.researchtopics | where: "hidden", false %}
+{% for proj in visible_topics %}
 <div><a href="{{ proj.url }}"><h4>{{ proj.title }}</h4></a></div>
 <div class="row topic-row">
 <div class="col-md-4">
@@ -17,8 +20,4 @@
 {% unless forloop.last %}
 <hr class="dot">
 {% endunless %}
-{% endif %}
 {% endfor %}
-<div class="text-right">
-    <a href="{{ site.baseurl }}/research/topics" class="btn btn-sm btn-default more-btn">More…</a>
-</div>
