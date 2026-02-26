@@ -7,7 +7,7 @@ img-url: "/maude-se/maude-se-arch.svg"
 hidden: true
 ---
 
-### Introduction
+#### Introduction
 
 
 Rewriting modulo SMT integrates term rewriting with SMT solving to enable symbolic analysis of infinite-state systems. In this framework, states are terms constrained by SMT formulas, and transitions are defined via conditional rewrite rules. While Maude supports this through the Maude-SMT interface, the current implementation has several limitations: it lacks support for satisfying assignments and formula simplification, only handles linear arithmetic, excludes uninterpreted functions, does not support folding reduction, and is difficult to customize due to its dependence on Maude's internal C++ code.
@@ -15,7 +15,7 @@ Rewriting modulo SMT integrates term rewriting with SMT solving to enable symbol
 
 ---
 
-### Framework Design and Implementation
+#### Framework Design and Implementation
 
 We present a new SMT extension of Maude, called Maude-SE, which extends the existing Maude-SMT wrapper interface with additional capabilities, including folding, support for uninterpreted functions, and concrete witness generation. A key feature of Maude-SE is an abstract Python connector that allows users to integrate Maude with SMT solvers and customize functionality entirely at the Python level—without requiring any knowledge of Maude's internal implementation or recompilation of its source code.
 
@@ -44,7 +44,7 @@ In addition, Maude-SE introduces several enhanced modeling and analysis capabili
 
 <!-- ---
 
-### Analysis Commands
+#### Analysis Commands
 
 Maude-SE provides various analysis commands, including *check*, *show model*, *smt-search*, and *show smt-path*. The *check* command determines the satisfiability of Boolean formulas. The *show model* command returns the satisfying assignment, if any, for the last check command. The *smt-search* command performs symbolic reachability analysis, potentially with folding. Finally, the *show smt-path* command displays a path
 for the last search result. Given a module M, a Boolean formula ψ, and an (optional) SMT theory Th, the check command determines the satisfiability of ψ under the theory Th:
@@ -52,7 +52,7 @@ for the last search result. Given a module M, a Boolean formula ψ, and an (opti
 
 ---
 
-### Case Study
+#### Case Study
 
 
 We demonstrate the flexibility of our interface with a case study on connecting a Z3 solver. We first show a simple implementation for the two Python components *CmdAdapter* and *Converter*, and then explain how to customize the implementation of *CmdAdapter* for diﬀerent purposes.
@@ -116,7 +116,7 @@ applies Gaussian elimination before checking the satisfiability of a formula.
 
 ---
 
-### References
+#### References
 
 1. <span id="ref-2">G. Yu, K. Bae, <em>A Flexible Framework for Integrating Maude and SMT Solvers Using Python</em>, in: International Workshop on Rewriting Logic and its Applications, 2024, <a href="https://doi.org/10.1007/978-3-031-65941-6_10">https://doi.org/10.1007/978-3-031-65941-6_10</a>.</span>
 1. <span id="ref-1">G Yu., J. Lee, K. Bae. <em>Maude-SE: a Tight Integration of Maude and SMT solvers</em>, in: International Workshop on Rewriting Logic and its Applications, 2024, <a href="https://wrla2020.webs.upv.es/pre-proceedings.pdf#page=2270">https://wrla2020.webs.upv.es/pre-proceedings.pdf#page=227</a>.</span>

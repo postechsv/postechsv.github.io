@@ -6,7 +6,7 @@ img-url: "/aadl/cps.png"
 hidden: false
 ---
 
-## Introduction
+#### Introduction
 Many cyber-physical systems (CPSs) are *virtually synchornous* networks of hybrid components with continuous behaviors combined with sophisticated controllers.
 They should logically behave as if they were synchronous -- in each iteration of the system, all components, in lockstep, read inputs and perform transitions which generate outputs for the next iteration -- but have to be realized in a distributed setting, which clock skew and message passing communication. Examples of such CPSs include avionics and automotive systems, networked medical devices, and other distributed control systems, where the underlying infrastructure often guarantee bounds on clock skews, network delays, and local execution times.
 
@@ -18,7 +18,7 @@ To enable formal analysis to a large user base, the modling language for such CP
 The MH-SynchAADL modeling language is a subset of the avionics modeling standard AADL and its behavioral annex to model control programs, and captures a synchronous subset of AADL with continuous behaviors. We have also integrated modeling and formal analysis of MH-SynchAADL models into the OSATE modeling environment for AADL.
 
 
-## The MH-SynchAADL Modeling Language
+#### The MH-SynchAADL Modeling Language
 MH-SynchAADL is a behavioral subset of AADL extended with the following property set MH_SynchAADL.
 ```
 property set MH_SynchAADL is
@@ -32,7 +32,7 @@ property set MH_SynchAADL is
 end MH_SynchAADL
 ```
 
-### Discrete Controller Components
+##### Discrete Controller Components
 
 Discrete controllers are standard software components in the Multirate Synchronous AADL subset.
 It includes system, process, and thread components; data components; composite data types; subprograms; ports and connections; and thread behaviors defined in the behavior annex language. 
@@ -71,7 +71,7 @@ thread implementation ThermostatThread.impl
 end ThermostatThread.impl;
 ```
 
-### Environment Components
+##### Environment Components
 An environment component models real-valued state variables that continuously change over time.
 The values of these state variables change according to their continuous dynamics, declared using
 AADL constructs with the property set *ContinuousDynamics*, while *discretely* interacting with its controllers according to the sampling and actuating times.
@@ -133,7 +133,7 @@ The time frame of the environment is *shifted to the left* from the global time 
 </center>
 
 
-## MH-SynchAADL Tool
+#### MH-SynchAADL Tool
 MH-SynchAADL seamlessly integrates modeling and formal analysis into OSATE. The tool can statically check the syntactic constraints of MH-SynchAADL. The tool’s property specification language can specify invariant and reachability properties. The tool synthesizes the corresponding Maude model from a MH-SynchAADL model and invokes Maude with SMT solving to perform various formal analyses, including randomized simulation (using the concrete semantics), symbolic reachability analysis (using the symbolic semantics), and portfolio analysis (running both methods in parallel with multithreading). The tool is available at https://hybridsynchaadl.github.io.
 
 <center>
@@ -141,12 +141,12 @@ MH-SynchAADL seamlessly integrates modeling and formal analysis into OSATE. The 
 </center>
 
 
-## Formal Semantics of MH-SynchAADL 
+#### Formal Semantics of MH-SynchAADL 
 We define formal semantics of MH-SynchAADL in Maude and SMT. Maude is a language and tool for specifying and analyzing distributed systems. 
 We define both a symbolic semantics for the synchronous composition of the components, capturing continuous behaviors and timing uncertainties using SMT, and a concrete semantics, for simulation, in rewriting logic, in a dmodular way to ensure consistency between these two semantics.
 
 
-## CaseStudy: A Multirate Packet Delivery System
+#### CaseStudy: A Multirate Packet Delivery System
 We perform the design and analysis of a collection of drones for packet
 delivery using MH-SynchAADL. Each drone contains two controllers operating at diﬀerent periods, and diﬀerent drones can have diﬀerent periods. We use the combination of symbolic and concrete semantics to analyze overall system behavior and to verify individual controller logic. 
 
@@ -162,7 +162,7 @@ In the flight control logic, it calculates a new velocity or determin drone's st
 <img src="{{ site.research_imgs }}/aadl/control_logic.png" alt="Control Logic" width="50%"/>
 </center>
 
-### 1. Randomized Simulation
+##### 1. Randomized Simulation
 
 We analyze whether all drones can complete their tasks within a given time bound **τ**. We analyze the invariant property complete by randomized simulation with the concrete semantics. For τ = 9,000 ms, a counterexample is found within one minute, which shows that 9,000 ms is not enough to deliver all packets. For τ = 12,000 ms, no counterexample is found for 12 hours, which seems to indicate that τ = 12,000 ms is enough for delivering all packets.
 
@@ -172,7 +172,7 @@ invariant [complete]: ?init ==> (not clock.time >= 9000) or ?done in time 9000 m
 proposition [done]: forall i in {1..7}. drone[i].mainC.mainProc.mainThrd @ done;
 ```
 
-### 2. Functional Verification
+##### 2. Functional Verification
 We verify the following functional property of the drone
 control logic: if another drone is nearby, the drone must hover within a time
 bound τ to avoid a collision. We verify that no counterexample exists by symbolic reachability
@@ -184,7 +184,7 @@ proposition [hover]: drone[2].subC.subProc.subThrd @ hover;
 ```
 
 
-### 3. Inductive Verification
+##### 3. Inductive Verification
 We also verify that an invariant of the drone control logic
 is satisfied for an unbounded time horizon. The approach is to verify an invariant
 property of the following form for one synchronous step, which ensures that the
@@ -197,7 +197,7 @@ proposition [indInv]: ((not ?sendHalt) or ?close) and ?stationary;
 ```
 
 
-## Formal Analysis of MH-SynchAADL
+#### Formal Analysis of MH-SynchAADL
 We evaluates the MH-SynchAADL tool by addressing the following questions
 1. How effective is our symbolic analysis method compared to other state-of-the-art formal analysis tools for CPSs?
 2. How effective is our portfolio analysis method for finding bugs?
@@ -230,16 +230,16 @@ a timeout of 3 hours.
 
 
 
-## Ongoing
+#### Ongoing
 We are actively pursuing a range of research directions aimed at improving the modeling language, formal semantics, and analysis tools. Current ongoing efforts include:
 * We are defining formal symbolic and concrete semantics for connections with $M$ environments and $N$ discrete controllers.
 * We are extending the tool functionality to support checking constraints about MSYNC in our MH-SynchAADL tools.
 
 
-## Contact
+#### Contact
 Jaehun Lee <a src="thkighie1224@postech.ac.kr">thkighie1224 (at) postech.ac.kr</a>
 
-## References
+#### References
 * Rigorous Model Engineering of Hierarchical Multirate CPSs in Multirate HybridSynchAADL (ISOLA2024)
 * Modeling and Formal Analysis of Virtually Synchronous Cyber-Physical Systems in AADL (STTT2022)
 * An Extension of HybridSynchAADL and Its Application to Collaborating Autonomous UAVs (ISOLA2022)

@@ -6,7 +6,7 @@ img-url: "/stlmc/stlmc-arch3.svg"
 hidden: false
 ---
 
-### Introduction
+#### Introduction
 
 
 Signal temporal logic (STL) is a temporal logic used to specify properties of continuous signals. STL has been widely applied in specifying, monitoring, and testing properties of hybrid systems that exhibit both discrete and continuous behavior. However, model checking techniques for hybrid systems have primarily been limited to invariant and reachability properties. In this work, we present a novel logical foundation for STL, introduce bounded model checking algorithms and a tool for general STL properties of hybrid systems. With this new foundation, the robust STL
@@ -15,7 +15,7 @@ model checking problem can be reduced to the satisfiability of a first-order log
 
 ---
 
-### Logical Foundations and Algorithms
+#### Logical Foundations and Algorithms
 
 We have developed a novel logical foundation for STL and SMT-based bounded robust model checking algorithms on this foundation [<a href="#ref-1">1</a>,<a href="#ref-2">2</a>,<a href="#ref-3">3</a>]. Our logical foundation includes: (i) syntactic separation, decomposing an STL formula into components, with each component depending exclusively on separate segments of a signal; (ii) signal discretization, ensuring a complete abstraction of a signal through a set of discrete elements; and (iii) &#949;-strengthening, reducing robust STL model checking to Boolean STL model checking. We combine these foundational techniques to develop the algorithms, which are refutation-complete, meaning that they can guarantee correctness up to given bounds. Based on these algorithms, we implement a framework shown in <a href="#fig-stlmc">Figure 1</a>, called [STLmc](https://stlmc.github.io).
 
@@ -42,7 +42,7 @@ Despite these advances, the underlying Boolean semantics limits the applicabilit
 
 ---
 
-### Experiments
+#### Experiments
 
 
 We conducted two experiments: one evaluates the results of robust STL model checking, and the other compares the performance of STLmc for invariant properties with existing reachability analysis tools for hybrid automata.
@@ -77,7 +77,7 @@ The experimental results are summarized in Table 2, with execution times in seco
 
 ---
 
-### References
+#### References
 
 1. <span id="ref-1">K. Bae, J. Lee, <em>Bounded model checking of signal temporal logic properties using syntactic separation</em>, Proc. ACM Program. Lang. 3 (POPL) (2019) 51:1–51:30, <a href="https://doi.org/10.1145/3290364">https://doi.org/10.1145/3290364</a>.</span>
 1. <span id="ref-2">J. Lee, G. Yu, K. Bae, <em>Efficient SMT-based model checking for signal temporal logic</em>, in: IEEE/ACM International Conference on Automated Software Engineering, IEEE, 2021, pp. 343–354, <a href="https://ieeexplore.ieee.org/document/9678719">https://ieeexplore.ieee.org/document/9678719</a>.</span>

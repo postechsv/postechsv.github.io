@@ -32,35 +32,35 @@ hidden: true
 ---
 -->
 
-### Introduction
+#### Introduction
 
 연구 배경 및 동기
 
 ---
 
-### Problem
+#### Problem
 
 해결하려는 문제
 
 ---
 
-### Approach
+#### Approach
 
 접근 방식
 
 ---
 
-### Results
+#### Results
 
 실험 결과 및 주요 성과
 
 ---
 
-### Contacts
+#### Contacts
 
 - Name <a href="mailto:id@postech.ac.kr">id (at) postech.ac.kr</a>
 
-### References
+#### References
 
 1. Author(s). *Paper Title*. Venue, Year. \[[paper](URL)\]
 
