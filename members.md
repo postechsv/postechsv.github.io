@@ -4,6 +4,7 @@ permalink: /members
 layout: members
 ---
 ### Faculty
+
 <div class="section-block container">
 
   {% assign number_printed = 0 %}
@@ -14,6 +15,7 @@ layout: members
   {% if even_odd == 0 %}
 
   <div class="row">
+
     {% endif %}
 
     {% include member-card.html member=member role="faculty" %}
@@ -23,6 +25,7 @@ layout: members
     {% if even_odd == 1 %}
 
   </div>
+
   {% endif %}
 
   {% endfor %}
@@ -31,13 +34,16 @@ layout: members
   {% if even_odd == 1 %}
 
   </div>
+
   {% endif %}
+
 </div>
 <hr>
 
 ### Graduate Students
 
 <div class="section-block container">
+
   <div class="row student-row">
 
   {% for member in site.data.students %}
@@ -45,7 +51,9 @@ layout: members
     {% include member-card.html member=member role="student" %}
 
   {% endfor %}
+  
   </div>
+
 </div>
 <hr>
 

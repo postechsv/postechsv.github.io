@@ -133,6 +133,7 @@ tbody tr:nth-child(odd) th {
 // change font for navbar
 .navbar {
   background-color: white;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.15), 0 5px 20px 0 rgba(0, 0, 0, 0.05);
   font-family: "Lato", sans-serif;
 }
 
@@ -348,11 +349,6 @@ hr.dot{
   text-decoration: none;
 }
 
-/* Section blocks */
-.section-block {
-  margin-bottom: 20px;
-}
-
 /* Research topic intro: clickable, inherits text color, underline on hover */
 .topic-intro-link {
   color: inherit;
@@ -380,7 +376,7 @@ hr.dot{
 /* Member cards */
 .member-photo {
   border-radius: 10%;
-  box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.2), 0 3px 15px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.15), 0 5px 20px 0 rgba(0, 0, 0, 0.15);
   margin-bottom: 1rem;
 }
 
@@ -480,6 +476,7 @@ div.element-item {
 
 /* Index */
 .banner-img {
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.15), 0 5px 20px 0 rgba(0, 0, 0, 0.15);
   object-fit: cover;
 }
 

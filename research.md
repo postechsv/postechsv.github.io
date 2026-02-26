@@ -5,13 +5,10 @@ layout: page
 ---
 
 {% for content in site.research %}
-  <div class="section-block container">
-    {{content}}
-  </div>
+  {{content}}
+{% unless forloop.last %}
 
-  {% unless forloop.last %}
-  
-  <hr>
-  {% endunless %}
+<hr>
+{% endunless %}
 {% endfor %}
 <br>
