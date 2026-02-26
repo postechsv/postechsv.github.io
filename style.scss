@@ -1,9 +1,8 @@
 ---
 ---
-:root { --scss-reset: 0; } // Jekyll front matter parser reset
+:root { --scss-reset: 0; }
 @import "base";
 
-// style.scss overrides
 html {
   font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: 20px;
@@ -80,57 +79,12 @@ tbody tr:nth-child(odd) th {
 
 @import "syntax";
 
-// customization
-.pos_header {
-  margin-left: 2rem;
-}
-
-.people {
-  margin: auto;
-  text-align: center;
-  margin-top: 0.75em;
-}
-
-.list-item-people {
-  display: inline-block;
-  padding-right: 1em;
-}
-
-.list-post-title img {
-  margin-bottom: 0.75em;
-  margin-top: 1.25em;
-}
-
-.list-post-title .name {
-  font-size: 18px;
-}
-
-.list-post-title {
-  color: black;
-}
-
-.list-detail {
-  font-size: 16px;
-  color: #838383;
-}
-
-.list-item a:hover,
-.list-post-title:hover .name,
-.list-post-title .name:hover {
-  color: #c42929;
-}
-
-.page-title {
-  margin-bottom: 0.6em;
-}
-
 .navbar-brand {
   content: url("/images/logo/logo.png");
   display: inline-block;
   position: relative;
 }
 
-// change font for navbar
 .navbar {
   background-color: white;
   box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.15), 0 5px 10px 0 rgba(0, 0, 0, 0.05);
@@ -147,7 +101,6 @@ tbody tr:nth-child(odd) th {
   padding-top: 25px;
 }
 
-// active tab text color highlight
 .navbar-default .navbar-nav > li.active > a,
 .navbar-default .navbar-nav > li.active > a:hover,
 .navbar-default .navbar-nav > li.active > a:focus {
@@ -155,7 +108,6 @@ tbody tr:nth-child(odd) th {
   background-color: transparent;
 }
 
-/* Member info/email: explicit size (Bootstrap default would be 14px) */
 .member-info,
 .member-link {
   font-size: 16px;
@@ -191,7 +143,6 @@ tbody tr:nth-child(odd) th {
   object-fit: cover;
 }
 
-// fix menu bar spacing for mobile
 @media (max-width: 62em) {
   .navbar-brand {
     content: url("/images/logo/logo_mobile.png");
@@ -219,7 +170,6 @@ tbody tr:nth-child(odd) th {
   }
 }
 
-// hamburger mode: center toggle with brand, fix dropdown styling
 @media (max-width: 767px) {
   .navbar-toggle {
     margin-top: 19px;
@@ -235,12 +185,10 @@ tbody tr:nth-child(odd) th {
   }
 }
 
-// fix spacing
 .navbar-nav > li {
   margin-bottom: 0;
 }
 
-// fix menu button for mobile
 .navbar-toggle,
 .navbar-default .navbar-toggle:hover {
   border: none;
@@ -316,20 +264,6 @@ span.icon-linkedin {
     }
 }
 
-hr.section-hr {
-  margin: 2rem 0;
-}
-
-hr.dot{
-  border: none;
-  border-top: 2px dotted rgba(192, 192, 192, 0.596);
-  color: #fff;
-  background-color: #fff;
-  height: 1px;
-  width: 50%;
-}
-
-/* Footer */
 .footer {
   background-color: rgb(53, 53, 53);
 }
@@ -360,7 +294,6 @@ hr.dot{
   }
 }
 
-/* Research topic list rows */
 .topic-row {
   display: flex;
   align-items: center;
@@ -373,7 +306,6 @@ hr.dot{
   margin: 0;
 }
 
-/* Member cards */
 .member-photo {
   border-radius: 10%;
   box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.5), 0 5px 10px 0 rgba(0, 0, 0, 0.25);
@@ -410,7 +342,6 @@ hr.dot{
   text-align: left;
 }
 
-/* News / Section headers with inline More button */
 .news {
   text-align: justify;
 }
@@ -458,29 +389,24 @@ hr.dot{
   text-align: left;
 }
 
-/* Publications */
 .pub-spacer {
   height: 25px;
 }
 
-/* Publication entry: title link, authors (em), venue text (div only — h4 year headings excluded) */
 div.element-item {
   font-size: 16px;
 }
 
-/* Publication filter buttons: Lato font, 1.1x size */
 .filter-button-group .btn {
   font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: 16px;
 }
 
-/* Index */
 .banner-img {
   box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.15), 0 5px 10px 0 rgba(0, 0, 0, 0.05);
   object-fit: cover;
 }
 
-/* About */
 .text-center {
   text-align: center;
   font-size: 120%;
