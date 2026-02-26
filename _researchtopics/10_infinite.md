@@ -72,7 +72,7 @@ A reduction rule is considered sound if the reduced system maintains a bisimulat
 A critical component of our framework is the ability to automatically verify that a reduction rule supplied by a user is indeed sound. Manually proving bisimulation is tedious and error-prone. Therefore, we developed an algorithm to automate this soundness check.
 
 <img src="{{site.baseurl}}/images/research/infinite/lmc-simplify.png" width="100%">
-<figcaption> <strong>Figure 4:</strong> The automated workflow for verifying and applying user-defined reduction rules.</figcaption>
+<figcaption><strong>Figure 4:</strong> The automated workflow for verifying and applying user-defined reduction rules.</figcaption>
 
 Our proposed algorithm works as follows:
 1.  **Input:** A user-defined reduction rule, which equates a complex pattern with a simpler one.
