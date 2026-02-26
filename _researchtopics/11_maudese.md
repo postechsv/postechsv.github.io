@@ -48,39 +48,27 @@ We demonstrate the flexibility of our interface with a case study on connecting 
 
 **Implementing CmdAdapter.** The following class Z3CmdAdapter implements the base abstract `class CmdAdapter`. A Z3 solver object, assigned to `self.solver`, is used to check the satisfiability of the input formulas (`checkSat`) and to build a satisfying assignment (`getModel`). We store an SMT formula in the state space as is (`mkConst`).
 
-<figure style="text-align: center; margin: 2em 0;">
-  <img src="{{ site.research_imgs }}/maude-se/maude-se-case-study1.svg" width="70%">
-</figure>
+<img src="{{ site.research_imgs }}/maude-se/maude-se-case-study1.svg" width="70%">
 
 **Implementing Converter.** The following class Z3Converter implements the base abstract `class Converter`. In the constructor, we initialize four Python maps: `_symb_map` and `_const_map` are used to translate Maude symbols, and `_sort_map` and `_u_sort` store Maude's sort information for translation.
 
-<figure style="text-align: center; margin: 2em 0;">
-  <img src="{{ site.research_imgs }}/maude-se/maude-se-case-study2.svg" width="70%">
-</figure>
+<img src="{{ site.research_imgs }}/maude-se/maude-se-case-study2.svg" width="70%">
 
 The `dag2term` function recursively builds a Z3 data structure from a Maude term representing an SMT formula, using two auxiliary functions `_declSort` and `_declFunc`. The `dag2term` function takes an additional argument *special*, which contains the theory name and sorts of each uninterpreted function symbol. 
 
-<figure style="text-align: center; margin: 2em 0;">
-  <img src="{{ site.research_imgs }}/maude-se/maude-se-case-study3.svg" width="70%">
-</figure>
+<img src="{{ site.research_imgs }}/maude-se/maude-se-case-study3.svg" width="70%">
 
 The `term2dag` function converts a Z3 data structure representing an SMT formula into a Maude term. We use the `parseTerm` function from the maude Python binding, which parses a string and builds a Maude term. For this purpose, the auxiliary function `toString` creates a string from a Z3 data structure.
 
-<figure style="text-align: center; margin: 2em 0;">
-  <img src="{{ site.research_imgs }}/maude-se/maude-se-case-study4.svg" width="70%">
-</figure>
+<img src="{{ site.research_imgs }}/maude-se/maude-se-case-study4.svg" width="70%">
 
 **Customizing CmdAdapter.** The following shows three variations of the `mkConst` function implemented using diﬀerent Z3 tactics. The first function uses rewriting to obtain a simplified formula. The other functions use a syntactic/semantic equality check to remove subformulas that are subsumed by context.
 
-<figure style="text-align: center; margin: 2em 0;">
-  <img src="{{ site.research_imgs }}/maude-se/maude-se-case-study5.svg" width="70%">
-</figure>
+<img src="{{ site.research_imgs }}/maude-se/maude-se-case-study5.svg" width="70%">
 
 The following shows two variants of the `checkSat` function implemented using the Z3 tactics. The first function simplifies an input formula and checks if the formula reduces to true. The other function first applies Gaussian elimination before checking the satisfiability of a formula.
 
-<figure style="text-align: center; margin: 2em 0;">
-  <img src="{{ site.research_imgs }}/maude-se/maude-se-case-study6.svg" width="70%">
-</figure>
+<img src="{{ site.research_imgs }}/maude-se/maude-se-case-study6.svg" width="70%">
 
 
 ---
