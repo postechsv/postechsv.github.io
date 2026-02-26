@@ -9,10 +9,9 @@ permalink: /news
 
 <div class="news-container">
     <div class="news-section">
-    <div class="news">
-        {% include news-list.html %}
-    </div>
+        <div class="news">
+            {% include news-list.html %}
+        </div>
     </div>
 </div>
-<br>
 <br>

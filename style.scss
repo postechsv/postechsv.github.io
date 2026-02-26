@@ -401,6 +401,10 @@ hr.dot{
 }
 
 /* News / Section headers with inline More button */
+.news {
+  text-align: justify;
+}
+
 .news-header {
   display: flex;
   align-items: center;
@@ -433,7 +437,7 @@ hr.dot{
 }
 
 .news-container {
-  padding: 25px;
+  padding: 15px;
   border-radius: 10px;
   border: 1px solid rgba(0, 0, 0, 0.08);
 }
@@ -480,17 +484,4 @@ div.element-item {
 }
 .text-left p {
   text-align: left;
-}
-
-.comm {
-  text-align: justify;
-  white-space: pre-wrap;
-}
-
-.nnl {
-  white-space: nowrap;
-}
-
-.emph {
-  font-weight: 700;
 }
