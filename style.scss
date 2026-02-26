@@ -355,21 +355,21 @@ hr.dot{
   text-align: left;
 }
 
-.news {
-  text-align: justify;
-}
-
 .news-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 0;
+}
+
+.news {
+  text-align: justify;
 }
 
 .more-btn {
   font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: 0.8rem;
   white-space: nowrap;
+  margin-top: -0.75rem;
 }
 
 .news-section {
@@ -429,23 +429,15 @@ div.element-item {
 }
 
 .text-center {
+  font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   text-align: center;
-  font-size: 120%;
-}
-.text-center p {
-  text-align: center;
+  font-size: 0.8rem;
 }
 
 .text-right {
   text-align: right;
 }
-.text-right p {
-  text-align: right;
-}
 
 .text-left {
-  text-align: left;
-}
-.text-left p {
   text-align: left;
 }

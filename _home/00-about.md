@@ -1,7 +1,7 @@
 ---
 # title: "About us"
 ---   
-### About us
+## About us
 
 We study automated techniques to verify the reliability, security, and safety of computer systems. Our research spans various domains, including cyber-physical systems, trustworthy AI, and logical foundations and algorithms. Please see our <a class="label label-default" href="{{site.url}}/research">RESEARCH</a> page for details on our current projects.
 

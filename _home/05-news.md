@@ -3,7 +3,7 @@ title: "News"
 ---
 
 <div class="news-header">
-  <h3>Recent News</h3>
+  <h2>Recent News</h2>
   <a href="/news" class="btn btn-sm btn-default more-btn">...more</a>
 </div>
 
