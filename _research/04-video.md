@@ -1,6 +1,6 @@
 ---
 ---
-<h3>Labcumentary</h3>
+<h3>LabCumentary</h3>
 
 <div style="text-align: center;">
   <iframe
