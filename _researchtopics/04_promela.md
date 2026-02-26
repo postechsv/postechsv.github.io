@@ -26,7 +26,7 @@ PROMELA is the input modeling language for the SPIN model checker and is widely 
 
 ##### The K Framework
 
-The K Framework (https://kframework.org/) is an executable semantic framework where languages, type systems, and analysis tools are specified via configurations and rewrite rules. K excels at defining control-intensive features such as abrupt termination, exceptions, and continuations.
+The K Framework ([https://kframework.org/](https://kframework.org/)) is an executable semantic framework where languages, type systems, and analysis tools are specified via configurations and rewrite rules. K excels at defining control-intensive features such as abrupt termination, exceptions, and continuations.
 
 
 ##### PROMELA Semantics in K

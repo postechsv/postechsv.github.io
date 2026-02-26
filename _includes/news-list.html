@@ -3,13 +3,23 @@
 {% for new in news %}
   {% if include.limit %}
     {% if forloop.index0 < include.limit %}
-    <li>
-        <span><b>[{{ new.date | date: '%Y.%m' }}]</b> {{ new.details }}</span>
+    <li class="news-item">
+        <span class="news-date">
+            <b>[{{ new.date | date: '%Y.%m' }}]</b>
+        </span>
+        <span class="news-content">
+            {{ new.details }}
+        </span>
     </li>
     {% endif %}
   {% else %}
-    <li>
-        <span><b>[{{ new.date | date: '%Y.%m' }}]</b> {{ new.details }}</span>
+    <li class="news-item">
+        <span class="news-date">
+            <b>[{{ new.date | date: '%Y.%m' }}]</b>
+        </span>
+        <span class="news-content">
+            {{ new.details }}
+        </span>
     </li>
   {% endif %}
 {% endfor %}
