@@ -31,6 +31,7 @@ Building upon the constructed Maude model, the work further focuses on verifying
 #### SPEC2MAUDE: Automated Converting Wasm-DSL to Maude
 
 <img src="{{ site.research_imgs }}/wasmc/converting.png" width="100%">
+
 SPEC2MAUDE builds on the formal language WASM-DSL, which transforms the informal descriptions of the official WebAssembly specification into a precise and formal representation. This formalization facilitates the automatic generation of critical tools, including documentation renderers, interpreters, and testing frameworks, thus ensuring that the evolving specification is consistently and accurately represented across various applications.
 
 In this work, the structure and semantics of WASM-DSL are thoroughly analyzed to derive transformation rules that map its constructs to corresponding elements in the Maude language. The developed tool automates this conversion process, enabling seamless updates in response to changes in the WebAssembly specification. Consequently, model checking of WebAssembly programs written in the latest syntax becomes an immediate and efficient process, reflecting the current state of the standard.
