@@ -86,6 +86,8 @@ Baselines:
 
 ##### Results: Search Efficiency
 
+<p class="table-caption"><strong>Table.</strong> Number of states explored before finding deadlock.</p>
+
 | N | BFS | Random | Q-table | DQN |
 |---|-----|--------|---------|-----|
 | 4 | 341 | 185 | 70 | 58 |
@@ -95,8 +97,6 @@ Baselines:
 | 8 | 112,309 | 30,244 | 2,765 | 519 |
 | 9 | 479,765 | 61,448 | 7,174 | 892 |
 | 10 | 1,853,449 | 93,459 | 16,783 | 1,939 |
-
-<p class="table-caption"><strong>Table.</strong> Number of states explored before finding deadlock.</p>
 
 **Key findings (N=10):**
 - DQN explores 48× fewer states than Random
@@ -119,13 +119,13 @@ DQN overcomes this limitation through neural network generalization, predicting 
 
 ##### Results: Search Time
 
+<p class="table-caption"><strong>Table.</strong> Time to find deadlock (milliseconds).</p>
+
 | N | BFS | Random | Q-table | DQN |
 |---|-----|--------|---------|-----|
 | 4 | 5 ms | 6 ms | 7 ms | 66 ms |
 | 7 | 147 ms | 207 ms | 111 ms | 235 ms |
 | 10 | 560,908 ms | 28,191 ms | 11,016 ms | 691 ms |
-
-<p class="table-caption"><strong>Table.</strong> Time to find deadlock (milliseconds).</p>
 
 For small N, DQN is slower due to neural network inference overhead. However, for N ≥ 8, the reduction in explored states outweighs the inference cost. At N=10, DQN completes in under 1 second while Random requires ~28 seconds.
 
