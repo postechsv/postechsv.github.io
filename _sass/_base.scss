@@ -112,6 +112,7 @@ ol {
 p + h1,
 p + h2,
 p + h3,
+h2 + h3,
 ul + h1,
 ul + h2,
 ul + h3,
@@ -119,6 +120,12 @@ ol + h1,
 ol + h2,
 ol + h3 {
   margin-top: 1.5rem;
+}
+
+p + h4,
+ul + h4,
+ol + h4 {
+  margin-top: 1.25rem;
 }
 
 hr {
