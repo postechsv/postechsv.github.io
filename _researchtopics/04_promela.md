@@ -9,28 +9,17 @@ hidden: false
 ---
 
 #### Introduction
-PROMELA, the modeling language of SPIN, is widely used to
-specify and model check finite-state concurrent systems but lacks support
-for deductive verification. Our work establishes a faithful, executable
-semantics of PROMELA in the K framework that enables code-level
-deductive verification. To address the nontrivial interactions between
-guarded nondeterminism and concurrency, we introduce Load-and-Fire,
-an elegant semantic pattern that yields a modular, uniform treatment
-of guarded nondeterminism, cross-process interference, and atomicity
-in K. Our semantics enables the full suite of analyses provided by K,
-including deductive verification of PROMELA programs with infinite
-state spaces, a capability previously unavailable for PROMELA models.
-We illustrate the approach with a case study in deductive verification of
-an infinite-state concurrent system.
+
+PROMELA, the modeling language of SPIN, is widely used to specify and model check finite-state concurrent systems but lacks support for deductive verification. Our work establishes a faithful, executable semantics of PROMELA in the K framework that enables code-level deductive verification. To address the nontrivial interactions between guarded nondeterminism and concurrency, we introduce Load-and-Fire, an elegant semantic pattern that yields a modular, uniform treatment of guarded nondeterminism, cross-process interference, and atomicity in K. Our semantics enables the full suite of analyses provided by K, including deductive verification of PROMELA programs with infinite state spaces, a capability previously unavailable for PROMELA models. We illustrate the approach with a case study in deductive verification of an infinite-state concurrent system.
 
 <img src="{{site.baseurl}}/images/research/promela/overview.png" width="80%"/>
+
 
 #### Operational Semantics of PROMELA in K
 
 ##### The PROMELA Language
 
-PROMELA is the input modeling language for the SPIN model checker and is widely used to analyze distributed and concurrent systems.
-PROMELA’s official documentation (https://spinroot.com) defines its syntax and informal semantics, but it does not provide a machine-readable, formal specification.
+PROMELA is the input modeling language for the SPIN model checker and is widely used to analyze distributed and concurrent systems. PROMELA’s official documentation (https://spinroot.com) defines its syntax and informal semantics, but it does not provide a machine-readable, formal specification.
 
 
 ##### The K Framework
@@ -41,11 +30,11 @@ The K Framework (https://kframework.org/) is an executable semantic framework wh
 ##### PROMELA Semantics in K
 
 We aim to make our PROMELA semantics in K:
+* **Executable**: Runs directly under the K toolchain without a separate interpreter. This enables easy testing and random simulation of PROMELA models.
+* **Modular**: Defines each semantic feature independently, so one can add or modify one feature without reworking the entire semantics. This modularity is crucial for handling PROMELA’s rich control primitives.
 
-- **Executable**: Runs directly under the K toolchain without a separate interpreter. This enables easy testing and random simulation of PROMELA models.
 
-- **Modular**: Defines each semantic feature independently, so one can add or modify one feature without reworking the entire semantics. This modularity is crucial for handling PROMELA’s rich control primitives.
-
+---
 
 #### Load-and-Fire: Modular Semantics for Control Effects
 
@@ -53,13 +42,11 @@ PROMELA provides advanced control primitives—executability conditions, nondete
 We use a generic semantic pattern based on two fundamental rule types, 
 **loading** and **firing**, to integrate each control primitive naturally and modularly.
 
-
 - **Loading Rules:**
   The loading rules restructures the computation without side-effects, 
   by lifting the linear-shaped K continuation into a **multiset** of nondeterministic continuations.
   This way, `if`/`do` statements are flattened, and each local branch are setup to be fired by the firing rules "upto" associativity and commutativity.
   
-
 <img src="{{site.baseurl}}/images/research/promela/load.png" width="100%"/>
 
 - **Firing Rules:**
@@ -71,30 +58,39 @@ We use a generic semantic pattern based on two fundamental rule types,
 <img src="{{site.baseurl}}/images/research/promela/fire.png" width="100%"/>
 
 
+---
+
 #### Case Study: Mutual Exclusion of Lamport's Bakery Algorithm
-We use K’s all-path reachability logic to perform deductive verification of PROMELA code against pre/post-conditions.
-This approach enables deductive verification of distributed systems with infinitely many states,
-for which SPIN-an explicit model checker-fails to verify.
 
+We use K’s all-path reachability logic to perform deductive verification of PROMELA code against pre/post-conditions. This approach enables deductive verification of distributed systems with infinitely many states, for which SPIN-an explicit model checker-fails to verify.
 
-Our case study includes a nontrivial example of verifying mutual exclusion of 
-<a href="https://en.wikipedia.org/wiki/Lamport%27s_bakery_algorithm"> Lamport's Bakery Algorithm </a>
-with two concurrent processes:
+Our case study includes a nontrivial example of verifying mutual exclusion of <a href="https://en.wikipedia.org/wiki/Lamport%27s_bakery_algorithm"> Lamport's Bakery Algorithm </a> with two concurrent processes:
 
 <img src="{{site.baseurl}}/images/research/promela/bakery.png" width="100%"/>
 
-The specification shown below is an excerpt of the main all-path reachability claim for mutual exclusion.
-With three other auxiliary claims,
-The K Framework's deductive verifier is able to automatically discharge this main claim in approximately 5 minutes.
+The specification shown below is an excerpt of the main all-path reachability claim for mutual exclusion. With three other auxiliary claims, The K Framework's deductive verifier is able to automatically discharge this main claim in approximately 5 minutes.
+
 <img src="{{site.baseurl}}/images/research/promela/bakery-k.png" width="50%"/>
 
+
+---
+
 #### Reference
+
 Byoungho Son, Kyungmin Bae. <em>A Formal Executable Semantics of PROMELA.</em> VMCAI 2026. (to appear)
 
+
+---
+
 #### Artifact
-https://doi.org/10.5281/zenodo.17183744
+
+[https://doi.org/10.5281/zenodo.17183744](https://doi.org/10.5281/zenodo.17183744)
+
+
+---
 
 #### Contact
+
 Byoungho Son <a href="mailto:byhoson@postech.ac.kr">byhoson (at) postech.ac.kr</a>
 
 ---

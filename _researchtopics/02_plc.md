@@ -7,12 +7,15 @@ hidden: false
 ---
 
 #### Introduction
+
 <img src="{{ site.research_imgs }}/plc/plc.jpg" width="100%">
 
 Programmable Logic Controllers (PLCs) are widely used in industrial control systems to interface with physical environments through sensors and actuators. Given their role in safety-critical domains, the correctness of PLC software is crucial, and formal verification becomes essential. However, the behavior of a complete PLC system involves several complex components: cyclic execution of Structured Text (ST) programs, real-time interaction with physical environments, task preemption under multitasking settings, and communication between networked controllers. 
 
 This research aims to develop a unified and realistic formal semantics that captures the complete behavior of PLC systems. Our approach covers the formalization of the ST programming language, support for symbolic and bounded model checking, semantics for preemptive multitasking with state space reduction, and integration of continuous environment dynamics and networked communication. Through executable semantics, tool support, and scalable verification techniques, our framework offers a foundation for analyzing real-world PLC systems in industrial settings.
 
+
+---
 
 #### Semantics of PLC ST
 
@@ -27,6 +30,8 @@ Another important distinction from previous work is that we do not assume specif
 <img src="{{ site.research_imgs }}/plc/cell2.jpg" width="80%">
 
 
+---
+
 #### Bounded Symbolic Model Checking and STbmc Tool
 
 We employ rewriting modulo SMT to symbolically examine LTL properties of ST programs concerning sequences of inputs and outputs. A model checking problem is encoded into reachability to an error state. LTL properties are 'flatten' to a propositional formula over the input and output stream elements. The following shows a Maude search command to verify the LTL property φ.
@@ -35,6 +40,8 @@ We employ rewriting modulo SMT to symbolically examine LTL properties of ST prog
 We develop 'stbmc' tool that takes PLC programs and specification files and performs model checking. The following shows the specification file format and the command line output of the tool. If the given LTL property holds, 'test succeeded' is printed. If not, it shows a counterexample.
 <img src="{{ site.research_imgs }}/plc/stbmc.jpg" width="80%">
 
+
+---
 
 #### Semantics and Analysis of Multitask PLC
 
@@ -49,7 +56,10 @@ To resolve state explosion, we propose 'time-abstraction' and 'partial order red
 <img src="{{ site.research_imgs }}/plc/g1.jpg" width="50%">
 
 
+---
+
 #### Physical Dynamics and Communication of PLCs
+
 Existing formal verification techniques focus on individual PLC programs in isolation, often neglecting interactions with physical environments and network communication between controllers. We present a unified formal framework that integrates discrete PLC semantics, networked communication, and continuous physical behaviors. 
 <img src="{{ site.research_imgs }}/plc/environment.jpg" width="60%">
 
@@ -61,12 +71,21 @@ PLC supports several function blocks that conduct inter-PLC communication, which
 
 Using this integrated semantics, we can verify properties of well-defined networked industrial control systems such as chemical plants with water tanks, railed vehicle controllers, and so on.
 
+
+---
+
 #### Ongoing Work
+
 This ongoing work is motivated by the observation that multitask PLC semantics and the semantics for physical dynamics and inter-controller communication are largely orthogonal. Our goal is to develop a unified semantics that incorporates both preemptive multitasking and cyber-physical interaction within a single framework. As part of this effort, we are conducting a case study involving PLC-controlled vehicles that must avoid collisions while navigating toward designated destinations.
 
 
+---
+
 #### Contact
-*   Jaeseo Lee sean96@postech.ac.kr
+- Jaeseo Lee <a href="mailto:sean96@postech.ac.kr">sean96 (at) postech.ac.kr</a>
+
+
+---
 
 #### References
 
