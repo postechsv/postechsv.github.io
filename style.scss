@@ -24,10 +24,9 @@ h6 {
   margin-top: 0;
   margin-bottom: 15px;
   font-weight: 700;
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   line-height: 1.1;
   color: #333;
-  letter-spacing: -0.025rem;
 }
 
 h1 {
@@ -143,7 +142,7 @@ tbody tr:nth-child(odd) th {
   font-family: "Lato", sans-serif;
   text-transform: uppercase;
   font-weight: 400;
-  font-size: 120%;
+  font-size: 0.9rem;
   margin-left: 6px;
   padding-top: 25px;
 }
@@ -154,6 +153,12 @@ tbody tr:nth-child(odd) th {
 .navbar-default .navbar-nav > li.active > a:focus {
   color: #6184a6;
   background-color: transparent;
+}
+
+/* Member info/email: explicit size (Bootstrap default would be 14px) */
+.member-info,
+.member-link {
+  font-size: 15px;
 }
 
 .member-profile{
@@ -211,6 +216,22 @@ tbody tr:nth-child(odd) th {
   .footer-logo {
     max-width: 70%;
     margin:auto;
+  }
+}
+
+// hamburger mode: center toggle with brand, fix dropdown styling
+@media (max-width: 767px) {
+  .navbar-toggle {
+    margin-top: 19px;
+    margin-bottom: 0;
+  }
+
+  .navbar-nav > li > a {
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    margin-left: 0;
   }
 }
 
@@ -315,6 +336,7 @@ hr.dot{
 
 .footer-content {
   color: rgba(255, 255, 255, 0.767);
+  font-size: 15px;
 }
 
 .footer-spacer {
@@ -330,6 +352,17 @@ hr.dot{
 /* Section blocks */
 .section-block {
   margin-bottom: 20px;
+}
+
+/* Research topic intro: clickable, inherits text color, underline on hover */
+.topic-intro-link {
+  color: inherit;
+  text-decoration: none;
+
+  &:hover {
+    color: inherit;
+    text-decoration: underline;
+  }
 }
 
 /* Research topic list rows */
@@ -408,6 +441,17 @@ hr.dot{
 /* Publications */
 .pub-spacer {
   height: 15px;
+}
+
+/* Publication entry: title link, authors (em), venue text (div only — h4 year headings excluded) */
+div.element-item {
+  font-size: 15px;
+}
+
+/* Publication filter buttons: Lato font, 1.1x size */
+.filter-button-group .btn {
+  font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 15px;
 }
 
 /* Index */

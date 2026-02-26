@@ -71,6 +71,7 @@ Below is a diagram of the overall design of our proposed framework, along with a
 ---
 
 #### Ongoing Work
+
 The following aspects of the framework are under active research and development.
 
 **Generalization of Activation Property** While the formal definition and meaning of (generalized) activation properties and how they can be safely and soundly be applied in subsequent BaB processes have been established, the practical process of generalization and how they can be done efficiently is being worked on. 

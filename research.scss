@@ -24,10 +24,9 @@ h6 {
   margin-top: 0;
   margin-bottom: 15px;
   font-weight: 700;
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   line-height: 1.1;
   color: #333;
-  letter-spacing: -0.025rem;
 }
 
 h1 {
@@ -198,7 +197,7 @@ th {
   font-family: "Lato", sans-serif;
   text-transform: uppercase;
   font-weight: 400;
-  font-size: 120%;
+  font-size: 0.9rem;
   margin-left: 6px;
   padding-top: 25px;
 }
@@ -213,14 +212,25 @@ th {
     content: url("/images/logo/logo_mobile.png");
   }
 
-  .navbar-nav > li > a {
-    padding: 0.75em 0 0.5em 2.5em;
-    font-size: 15px;
-  }
-
   // fix menu scroll along x axis
   .navbar-nav {
     margin-right: -15px;
+  }
+}
+
+// hamburger mode: center toggle with brand, fix dropdown styling
+@media (max-width: 767px) {
+  .navbar-toggle {
+    margin-top: 19px;
+    margin-bottom: 0;
+  }
+
+  .navbar-nav > li > a {
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    margin-left: 0;
   }
 }
 
@@ -252,4 +262,13 @@ p {
 // used in research topic pages
 .rpost-subject {
   margin: 0 0 15px;
+}
+
+figcaption,
+.table-caption {
+  font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.75rem !important;
+  color: #555;
+  margin-top: 0;
+  text-align: center;
 }

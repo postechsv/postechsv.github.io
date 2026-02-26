@@ -15,6 +15,7 @@ Trusted execution environments (TEEs) have emerged as a key technology in the cy
 
 Our research addresses this challenge by leveraging a very expressive modeling language, called Maude, which supports powerful object-oriented specification to present a comprehensive formal model of TEE APIs that is explicitly designed for the formal analysis of TEE applications.
 
+
 ---
 
 #### Problem
@@ -27,6 +28,7 @@ However, the GlobalPlatform standard is inherently informal and the architecture
 ---
 
 #### Formal Specification of TEE APIs
+
 We focus on Trusted Storage API and Cryptographic Operations API, which are foundational to mobile and IoT applications. Since TEE API is mainly specified using objects and their interactions, we use Maude's object-oriented specification to naturally specify the architecture as a collection of objects and the behavior as rewrite rules. Below is an overview of the formal specification.
 
 <img src="{{ site.research_imgs }}/tee/spec-overview.png" width="75%">
@@ -78,6 +80,8 @@ cases for real-world validation using our formal specification.
 - Geunyeol Yu <a href="mailto:rgyen@postech.ac.kr">rgyen (at) postech.ac.kr</a>
 - Seunghyun Chae <a href="mailto:shchae7@postech.ac.kr">shchae7 (at) postech.ac.kr</a>
 
+
+---
 
 #### References
 

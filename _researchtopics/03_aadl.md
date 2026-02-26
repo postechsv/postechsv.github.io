@@ -77,18 +77,9 @@ end ThermostatThread.impl;
 
 ##### Environment Components
 
-An environment component models real-valued state variables that continuously change over time.
-The values of these state variables change according to their continuous dynamics, declared using
-AADL constructs with the property set *ContinuousDynamics*, while *discretely* interacting with its controllers according to the sampling and actuating times.
+An environment component models real-valued state variables that continuously change over time. The values of these state variables change according to their continuous dynamics, declared using AADL constructs with the property set *ContinuousDynamics*, while *discretely* interacting with its controllers according to the sampling and actuating times.
 
-The below AADL code shows an environment component.
-It has data output port *temp*, data input port *power*, and event input ports
-*on_ctrl* and *off_ctrl*. The implementation has two data subcomponents *x* and *p*, denoting the temperature of the room and the heater's power, respectively, to represent the state variables with the specified initial values. 
-The value of *x* is sent to the controller thorugh the output port *temp*, using the connection 
-$x \rightarrow temp&. When a discrete controller sends an actuation command through the input 
-ports *power*, *on_ctrl*, and *off_ctrl*, the mode changes according to the mode transitions,
-and the value of *p* can be updated with the value of the input port *power*, declared by
-$power \rightarrow p$.
+The below AADL code shows an environment component. It has data output port *temp*, data input port *power*, and event input ports *on_ctrl* and *off_ctrl*. The implementation has two data subcomponents *x* and *p*, denoting the temperature of the room and the heater's power, respectively, to represent the state variables with the specified initial values. The value of *x* is sent to the controller thorugh the output port *temp*, using the connection $x \rightarrow temp&. When a discrete controller sends an actuation command through the input ports *power*, *on_ctrl*, and *off_ctrl*, the mode changes ccording to the mode transitions, and the value of *p* can be updated with the value of the input port *power*, declared by $power \rightarrow p$.
 
 ```
 system RoomEnv
@@ -153,8 +144,7 @@ We define both a symbolic semantics for the synchronous composition of the compo
 
 #### CaseStudy: A Multirate Packet Delivery System
 
-We perform the design and analysis of a collection of drones for packet
-delivery using MH-SynchAADL. Each drone contains two controllers operating at diﬀerent periods, and diﬀerent drones can have diﬀerent periods. We use the combination of symbolic and concrete semantics to analyze overall system behavior and to verify individual controller logic. 
+We perform the design and analysis of a collection of drones for packet delivery using MH-SynchAADL. Each drone contains two controllers operating at diﬀerent periods, and diﬀerent drones can have diﬀerent periods. We use the combination of symbolic and concrete semantics to analyze overall system behavior and to verify individual controller logic. 
 
 <img src="{{ site.research_imgs }}/aadl/system_description.png" alt="Packet Delivery Systems" width="50%"/>
 
@@ -178,10 +168,8 @@ proposition [done]: forall i in {1..7}. drone[i].mainC.mainProc.mainThrd @ done;
 
 ##### 2. Functional Verification
 
-We verify the following functional property of the drone
-control logic: if another drone is nearby, the drone must hover within a time
-bound τ to avoid a collision. We verify that no counterexample exists by symbolic reachability
-analysis, which takes about 50 minutes.
+We verify the following functional property of the drone control logic: if another drone is nearby, the drone must hover within a time bound τ to avoid a collision. We verify that no counterexample exists by symbolic reachability analysis, which takes about 50 minutes.
+
 ```
 invariant [func]: ?init ==> (not clock.time >= 240) or ?hover in time 240 ms;
 
@@ -191,11 +179,8 @@ proposition [hover]: drone[2].subC.subProc.subThrd @ hover;
 
 ##### 3. Inductive Verification
 
-We also verify that an invariant of the drone control logic
-is satisfied for an unbounded time horizon. The approach is to verify an invariant
-property of the following form for one synchronous step, which ensures that the
-proposition indInv is an inductive invariant. We verify that no counterexample exists by symbolic reach-
-ability analysis which takes about 2 seconds.
+We also verify that an invariant of the drone control logic is satisfied for an unbounded time horizon. The approach is to verify an invariant property of the following form for one synchronous step, which ensures that the proposition indInv is an inductive invariant. We verify that no counterexample exists by symbolic reachability analysis which takes about 2 seconds.
+
 ```
 invariant [inductive]: ?indInv ==> ?indInv in time 120ms;
 
@@ -216,17 +201,11 @@ We first compare our symbolic reachability anlaysis method with four reachabilit
 
 <img src="{{ site.research_imgs }}/aadl/table1.png" alt="A MH-SynchAADL model" width="50%"/>
 
-We evaluate the power of MH-SynchAADL for analyzing invariant properties.
-We measure the time taken to find counterexamples in "faulty" models obtained by modifying the 
-sampling and actuating times using three analysis functions. We use different time bounds for observing
-analysis results with varying time bounds. 
+We evaluate the power of MH-SynchAADL for analyzing invariant properties. We measure the time taken to find counterexamples in "faulty" models obtained by modifying the sampling and actuating times using three analysis functions. We use different time bounds for observing analysis results with varying time bounds. 
 
 <img src="{{ site.research_imgs }}/aadl/table2.png" alt="A MH-SynchAADL model" width="50%"/>
 
-We have performed symbolic analysis to generate all reachable symbolic states up to given bounds,
-with and without state merging. We measure the time (seconds) the size of accumultated SMT formulas (thousands),
-the number of calls to the SMT solver, and the number of reachable symbolic states, with 
-a timeout of 3 hours.
+We have performed symbolic analysis to generate all reachable symbolic states up to given bounds, with and without state merging. We measure the time (seconds) the size of accumultated SMT formulas (thousands), the number of calls to the SMT solver, and the number of reachable symbolic states, with a timeout of 3 hours.
 
 <img src="{{ site.research_imgs }}/aadl/table3.png" alt="A MH-SynchAADL model" width="50%"/>
 

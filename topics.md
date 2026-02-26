@@ -15,7 +15,7 @@ permalink: /research/topics/
 <img src="{{ site.research_imgs }}/{{ proj.img-url }}" alt="" class="topic-img"></a>
 </div>
 <div class="col-md-8">
-    <p>{{ proj.intro }}</p>
+    <p><a class="topic-intro-link" href="{{ proj.url }}">{{ proj.intro }}</a></p>
 </div>
 </div>
 {% unless forloop.last %}

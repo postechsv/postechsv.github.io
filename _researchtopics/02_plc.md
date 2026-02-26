@@ -20,6 +20,7 @@ This research aims to develop a unified and realistic formal semantics that capt
 #### Semantics of PLC ST
 
 We define K semantics of PLC ST. K is a rewriting-based framework for defining the semantics of programming languages. In K, program states are specified as multisets of nested cells, called configurations. Each cell represents a component of the program state, such as environments and stores. The cell structure for PLC ST is shown below.
+
 <img src="{{ site.research_imgs }}/plc/cell1.jpg" width="80%">
 
 PLCs exhibit cyclic behavior where a 'scan cycle' consists of input, execution, and output stages. During the input stage, it reads values from sensors (e.g., temperature, water level) and stores them in the program variables. Based on these values, the programs are executed in the execution stage. Finally, the output variables' values are reflected in the actuators (e.g., motor speed, pump switch). We formalize this cyclic behavior and integrate it into the LTL model checking analysis procedure, whereas formal studies focus on the single execution of PLC programs.
@@ -27,6 +28,7 @@ PLCs exhibit cyclic behavior where a 'scan cycle' consists of input, execution, 
 <img src="{{ site.research_imgs }}/plc/scancycle.jpg" width="70%">
 
 Another important distinction from previous work is that we do not assume specific input values. At this point, we do not know what values can be read from the environment; we virtually assume that 'any' values of a specified range can be read. This necessitates the need for a symbolic semantics with SMT variables as program values. To include these behaviors in our semantics, we extend the cell structures with the following cells.
+
 <img src="{{ site.research_imgs }}/plc/cell2.jpg" width="80%">
 
 
@@ -35,9 +37,11 @@ Another important distinction from previous work is that we do not assume specif
 #### Bounded Symbolic Model Checking and STbmc Tool
 
 We employ rewriting modulo SMT to symbolically examine LTL properties of ST programs concerning sequences of inputs and outputs. A model checking problem is encoded into reachability to an error state. LTL properties are 'flatten' to a propositional formula over the input and output stream elements. The following shows a Maude search command to verify the LTL property φ.
+
 <img src="{{ site.research_imgs }}/plc/search.jpg" width="80%">
 
 We develop 'stbmc' tool that takes PLC programs and specification files and performs model checking. The following shows the specification file format and the command line output of the tool. If the given LTL property holds, 'test succeeded' is printed. If not, it shows a counterexample.
+
 <img src="{{ site.research_imgs }}/plc/stbmc.jpg" width="80%">
 
 
@@ -48,11 +52,15 @@ We develop 'stbmc' tool that takes PLC programs and specification files and perf
 This project introduces executable semantics for PLC ST that supports preemptive multitasking. The formal analysis of multitasking programs, however, faces the challenge of state explosion. To address this issue, this project also presents state space reduction techniques to enhance the model checking of multitasking PLC ST programs. 
 
 Under multitask PLC setting, various scenarios can occur from the same initial state. The following diagram shows two possible scenarios (among many) that may have different outcome. Our semantics is meant to capture all possible scenarios.
+
 <img src="{{ site.research_imgs }}/plc/scenario.jpg" width="80%">
+
 The following cells are added or modified to the cells originally proposed. (1) time denotes the current time; (2) active denotes the identifier of the currently running program; (3) interval has a map from program identifiers to their intervals; (4) pQueue contains a priority queue of tasks that are ready to run according to time and interval; and (5) futureTS contains tasks that are not ready. By moving task objects from pQueue and futureTS back and forth, we can naturally define the multitask PLC behaviors.
+
 <img src="{{ site.research_imgs }}/plc/cell3.jpg" width="80%">
 
 To resolve state explosion, we propose 'time-abstraction' and 'partial order reduction' techniques. The main idea of time-abstraction is to express time abstractly with a time interval that represents an infinite number of time points. We have adopted the classic ample set based partial order reduction approach to our system. The graph below shows the time comparison of state space exploration time before and after time abstraction. The points at 3600 represent timeout. 
+
 <img src="{{ site.research_imgs }}/plc/g1.jpg" width="50%">
 
 
@@ -61,6 +69,7 @@ To resolve state explosion, we propose 'time-abstraction' and 'partial order red
 #### Physical Dynamics and Communication of PLCs
 
 Existing formal verification techniques focus on individual PLC programs in isolation, often neglecting interactions with physical environments and network communication between controllers. We present a unified formal framework that integrates discrete PLC semantics, networked communication, and continuous physical behaviors. 
+
 <img src="{{ site.research_imgs }}/plc/environment.jpg" width="60%">
 
 The environment interacts with the programs by sensing and actuation at the beginning of every scan cycle. The environmental state, such as temperature and switch position, is included in each PLC's attributes. We define 'tick' rule that rules the time evolution of the system, which updates the environmental states.
@@ -82,6 +91,7 @@ This ongoing work is motivated by the observation that multitask PLC semantics a
 ---
 
 #### Contact
+
 - Jaeseo Lee <a href="mailto:sean96@postech.ac.kr">sean96 (at) postech.ac.kr</a>
 
 

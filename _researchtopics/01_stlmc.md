@@ -20,7 +20,7 @@ We have developed a novel logical foundation for STL and SMT-based bounded robus
 
 <figure id="fig-stlmc" style="text-align: center; margin: 2em 0;">
   <img src="{{ site.research_imgs  }}/stlmc/stlmc-arch3.svg" width="95%" alt="An SMT-based robust bounded STL model checking framework.">
-  <figcaption style="margin-top: 0.5em; font-size: 1.1em;">
+  <figcaption>
     <strong>Figure 1.</strong> An SMT-based robust bounded STL model checking framework.
   </figcaption>
 </figure>

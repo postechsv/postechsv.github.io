@@ -8,7 +8,7 @@
         <figure style="text-align: center; margin: 2em 0;">
             <img src="{{ site.research_imgs }}/your-topic/your-image.png" width="80%"
                 alt="Figure description">
-            <figcaption style="margin-top: 0.5em; font-size: 1.1em;">
+            <figcaption>
                 <strong>Figure 1.</strong> Caption text here.
             </figcaption>
         </figure>
@@ -36,11 +36,13 @@ hidden: true
 
 연구 배경 및 동기
 
+
 ---
 
 #### Problem
 
 해결하려는 문제
+
 
 ---
 
@@ -48,11 +50,13 @@ hidden: true
 
 접근 방식
 
+
 ---
 
 #### Results
 
 실험 결과 및 주요 성과
+
 
 ---
 
@@ -60,9 +64,13 @@ hidden: true
 
 - Name <a href="mailto:id@postech.ac.kr">id (at) postech.ac.kr</a>
 
+
+---
+
 #### References
 
 1. Author(s). *Paper Title*. Venue, Year. \[[paper](URL)\]
+
 
 ---
 Last modified: YYYY/MM/DD (Name)

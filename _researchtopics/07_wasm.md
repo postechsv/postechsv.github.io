@@ -15,6 +15,8 @@ WebAssembly (WASM) is a binary standard designed to execute high-performance pro
 However, the unique characteristics of the WASM language can give rise to security vulnerabilities that are not typically present in native languages. Although various verification techniques such as fuzzing, symbolic execution, and formal verification have been employed to analyze WASM programs, challenges remain—especially regarding properties related to concurrency and parallelism. In this study, we propose a model checking approach for WASM programs that leverages the Maude framework based on rewriting logic, specifically targeting these challenging security properties.
 
 
+---
+
 #### Wasm Operational Semantics
 
 <img src="{{ site.research_imgs }}/wasmc/semantics.png" width="100%">
@@ -23,6 +25,8 @@ This research is dedicated to formalizing the semantic structure of WebAssembly 
 
 Building upon the constructed Maude model, the work further focuses on verifying the security properties of WebAssembly programs. To achieve this, an efficient model checking algorithm tailored specifically for WebAssembly is proposed and implemented. Advanced techniques such as partial order reduction are incorporated to mitigate challenges like state space explosion during the verification process, ensuring both scalability and accuracy in the model checking endeavors.
 
+
+---
 
 #### SPEC2MAUDE: Automated Converting Wasm-DSL to Maude
 
@@ -37,12 +41,16 @@ In this work, the structure and semantics of WASM-DSL are thoroughly analyzed to
 IL2MAUDE ingests the formally stated Intermediate Language (IL)—a DSL already distilled from WebAssembly—and parses its grammars and deduction rules. It then automatically generates one-to-one Maude sorts, operators, and conditional rewrite rules, preserving typing judgments and evaluation contexts. Because the mapping is machine-synthesized, any evolution of the IL spec transparently yields a fresh, executable Maude module, guaranteeing continuous alignment between theory and runnable code.
 
 
+---
+
 #### Wasm Application Model Checking
 
 <img src="{{ site.research_imgs }}/wasmc/application.png" width="100%">
 
 The next step is to verify the distributed properties of Wasm modules. Because the core Wasm semantics lacks system-level definitions, we must first implement system call functionality at the Maude level. This approach also allows us to simulate multiple concurrent workers, enabling us to formally verify distributed Wasm applications.
 
+
+---
 
 #### Experiment
 
@@ -59,6 +67,8 @@ Leveraging the formal Maude specification of WebAssembly, we executed elementary
 
 Once we finished testing the Wasm module, we moved on to model checking it. For this Fibonacci example, we set up an atomic proposition to verify the module's states. We wanted to confirm the property that "whenever the Wasm program finishes, the result is a correct Fibonacci number." To do this, we built the LTL property you see in the picture. Then, using Maude's model-check command, we successfully verified this liveness property for our simple Wasm program.
 
+
+---
 
 #### Members / Contact
 

@@ -15,6 +15,8 @@ PROMELA, the modeling language of SPIN, is widely used to specify and model chec
 <img src="{{site.baseurl}}/images/research/promela/overview.png" width="80%"/>
 
 
+---
+
 #### Operational Semantics of PROMELA in K
 
 ##### The PROMELA Language
@@ -92,6 +94,7 @@ Byoungho Son, Kyungmin Bae. <em>A Formal Executable Semantics of PROMELA.</em> V
 #### Contact
 
 Byoungho Son <a href="mailto:byhoson@postech.ac.kr">byhoson (at) postech.ac.kr</a>
+
 
 ---
 Last modified: 2025/11/16 02:40:42 (Byoungho Son)
