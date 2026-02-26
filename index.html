@@ -14,7 +14,7 @@ permalink: /
   {% for content in site.home %}
     {{content}}
     <br>
-    <hr>
+    {% unless forloop.last %}<hr>{% endunless %}
   {% endfor %}
 </div>
 

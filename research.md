@@ -4,13 +4,9 @@ permalink: /research
 layout: page
 ---
 
-<div class="container">
-  {% for content in site.research %}
-    {{content}}
+{% for content in site.research %}
+  {{content}}
   {% unless forloop.last %}
-    <hr>
+  <hr>
   {% endunless %}
-    <br>
-  {% endfor %}
-  <br>
-</div>
+{% endfor %}
