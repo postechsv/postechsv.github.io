@@ -30,6 +30,10 @@ nav:
   - name: "research"
     href: "/research"
 
+# Include _pages/ in build (underscore dirs are excluded by default)
+include:
+  - _pages
+
 # Sass
 sass:
   style: :compressed
