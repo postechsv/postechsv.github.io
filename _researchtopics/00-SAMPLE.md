@@ -1,7 +1,7 @@
 <!-- ==================== SAMPLE PAGE USAGE ====================
   페이지 작성 후, 아래 front matter 블록의 주석을 해제.
 
-  파일명: NN_topicname.md
+  파일명: NN-topicname.md
 
   이미지: <img src="{{ site.research_imgs }}/<topic>/<filename>.svg" width="100%" alt="Alt text.">
 

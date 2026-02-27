@@ -6,8 +6,6 @@ description: "Software Verification Lab"
 # URL
 url: https://sv.postech.ac.kr
 baseurl:
-#baseurl:            "" #For Root Domain
-permalink: /:year/:month/:day/:title.html
 research_imgs: "/images/research"
 
 # Footer
@@ -20,24 +18,17 @@ footer:
 # Markdown
 markdown: kramdown
 
-
 # Highlighter
 highlighter: rouge
 
 # Navigation
 nav:
-  # - name:           "home"
-  #   href:           "/"
-  # - name: "news"
-  #   href: "/news"
   - name: "publications"
     href: "/publications"
   - name: "members"
     href: "/members"
   - name: "research"
     href: "/research"
-  #   - name:           "abstracts"
-  #     href:           "/abstracts"
 
 # Sass
 sass:
@@ -50,11 +41,7 @@ defaults:
       type: "pages"
     values:
       layout: "page"
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
+
 collections:
   research:
     output: true

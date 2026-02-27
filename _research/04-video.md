@@ -2,7 +2,7 @@
 ---
 <h3>LabCumentary</h3>
 
-<div style="text-align: center;">
+<div class="video-container">
   <iframe
     width="70%"
     height="350px"
