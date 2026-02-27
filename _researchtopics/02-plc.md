@@ -2,13 +2,11 @@
 layout: researchpage
 title: "Formal Semantics and Analysis of PLC Systems"
 intro: "This research focuses on defining the behavior of the whole PLC behavior including the PLC ST, multitask, external environment, and communication features."
-img-url: "/plc/plc.jpg"
+img-url: "/plc/plc.png"
 hidden: false
 ---
 
 #### Introduction
-
-<img src="{{ site.research_imgs }}/plc/plc.jpg" width="100%">
 
 Programmable Logic Controllers (PLCs) are widely used in industrial control systems to interface with physical environments through sensors and actuators. Given their role in safety-critical domains, the correctness of PLC software is crucial, and formal verification becomes essential. However, the behavior of a complete PLC system involves several complex components: cyclic execution of Structured Text (ST) programs, real-time interaction with physical environments, task preemption under multitasking settings, and communication between networked controllers. 
 
