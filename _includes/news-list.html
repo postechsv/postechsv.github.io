@@ -1,10 +1,26 @@
 {% assign news = site.data.news | sort: 'date' | reverse %}
-{% if include.limit %}{% assign news = news | slice: 0, include.limit %}{% endif %}
 <ul class="news-list">
 {% for new in news %}
-  <li class="news-item">
-    <span class="news-date"><b>[{{ new.date | date: '%Y.%m' }}]</b></span>
-    <span class="news-content">{{ new.details }}</span>
-  </li>
+  {% if include.limit %}
+    {% if forloop.index0 < include.limit %}
+    <li class="news-item">
+        <span class="news-date">
+            <b>[{{ new.date | date: '%Y.%m' }}]</b>
+        </span>
+        <span class="news-content">
+            {{ new.details }}
+        </span>
+    </li>
+    {% endif %}
+  {% else %}
+    <li class="news-item">
+        <span class="news-date">
+            <b>[{{ new.date | date: '%Y.%m' }}]</b>
+        </span>
+        <span class="news-content">
+            {{ new.details }}
+        </span>
+    </li>
+  {% endif %}
 {% endfor %}
 </ul>
