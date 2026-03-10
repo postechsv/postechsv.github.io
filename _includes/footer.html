@@ -1,21 +1,20 @@
 <footer>
     <div class="footer">
-        <div class="container text-right footer-content">
-            <br>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3">
-                        <img class="footer-logo" src="{{site.baseurl}}/images/logo/footer.png" alt="Logo" />
-                    </div>
-                    <div class="col-md-9 text-right">
-                        {{ site.footer.department }}<br>
-                        {{ site.footer.address }}<br>
-                        COPYRIGHT {{ site.footer.copyright_year }} POSTECH. All rights reserved.<br>
-                        <span class="footer-spacer"></span>
-                        <a href="{{ site.footer.privacy_policy_url }}"
-                            class="footer-privacy-link">개인정보취급방침</a>
-                        <span class="footer-spacer"></span>
-                    </div>
+        <div class="container footer-content">
+            <div class="row footer-row">
+                <div class="col-xs-12 col-md-3 footer-logo-col">
+                    <img class="footer-logo" src="{{site.baseurl}}/images/logo/footer.png" alt="Logo" />
+                </div>
+                <div class="col-xs-12 col-md-9 footer-text-col">
+                    {{ site.footer.name }}<br>
+                    {{ site.footer.department }}<br>
+                    {{ site.footer.room }}<br>
+                    {{ site.footer.address }}<br>
+                    COPYRIGHT {{ site.footer.copyright_year }} POSTECH. All rights reserved.<br>
+                    <span class="footer-spacer"></span>
+                    <a href="{{ site.footer.privacy_policy_url }}"
+                        class="footer-privacy-link">Personal Information Policy</a>
+                    <span class="footer-spacer"></span>
                 </div>
             </div>
         </div>

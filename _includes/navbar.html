@@ -20,7 +20,7 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
-        <li {% if page.url == '/' %}class="active"{% endif %}>
+        <li {% if page.url == '/' or page.url contains '/news' %}class="active"{% endif %}>
           <a class="name" href="/">HOME</a>
         </li>
 

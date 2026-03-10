@@ -57,6 +57,23 @@ layout: members
 </div>
 <hr>
 
+### Interns
+
+<div class="section-block container">
+
+  <div class="row student-row">
+
+  {% for member in site.data.interns %}
+
+    {% include member-card.html member=member role="student" %}
+
+  {% endfor %}
+
+  </div>
+
+</div>
+<hr>
+
 ### Former Members
 
 <ul class="former-list">
