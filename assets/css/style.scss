@@ -170,6 +170,7 @@ tbody tr:nth-child(odd) th {
     max-width: 25%;
     margin: auto;
   }
+
 }
 
 .member-links-block {
@@ -200,7 +201,7 @@ tbody tr:nth-child(odd) th {
   }
 
   .footer-logo {
-    max-width: 40%;
+    max-width: 25%;
     margin: 0.5rem auto;
   }
 
@@ -330,6 +331,10 @@ hr.dot {
 
 .footer-text-col {
   text-align: justify;
+
+  @media (max-width: 62em) {
+    text-align: center;
+  }
 }
 
 .footer-spacer {
@@ -425,7 +430,7 @@ h4.member-name {
     align-items: flex-start;
 
     &::before {
-      content: "○";
+      content: "•";
       flex-shrink: 0;
       margin-right: 0.4em;
     }
