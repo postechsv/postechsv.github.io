@@ -10,11 +10,15 @@ research_imgs: "/images/research"
 
 # Footer
 footer:
-  name: "Software Verification Laboratory"
-  affiliation: "E2 Room 204, Dept. of CSE, POSTECH"
-  address1: "77 Cheongam-ro, Nam-gu"
-  address2: "Pohang-si, Gyeongsangbuk-do"
-  address3: "37673, Republic of Korea"
+  name:         "Software Verification Laboratory"
+  department:   "Department of Computer Science and Engineering"
+  affiliation1: "Pohang University of Science and Technology"
+  affiliation2: "(POSTECH)"
+  building1:    "Engineering Building 2"
+  building2:    "Room 204"
+  address1:     "77 Cheongam-ro, Nam-gu"
+  address2:     "Pohang-si, Gyeongsangbuk-do"
+  address3:     "37673, Republic of Korea"
   copyright_year: 2026
   privacy_policy_url: "https://www.postech.ac.kr/kor/usage-guide/privacy_policy.do"
 
