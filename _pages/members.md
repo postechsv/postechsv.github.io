@@ -86,7 +86,7 @@ layout: members
       <span class="former-info">
         {% if member.degree %} {{ member.degree }}{% endif %}
         {% if member.date %}, {{ member.date }}{% endif %}
-        {% if member.affiliation %} (now in {{ member.affiliation }}){% endif %}
+        {% if member.affiliation %} <span class="former-affiliation">(now in {{ member.affiliation }})</span>{% endif %}
       </span>
     </span>
   </li>
