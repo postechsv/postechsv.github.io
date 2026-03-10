@@ -8,6 +8,7 @@ layout: members
 <div class="section-block container">
 
   {% assign number_printed = 0 %}
+
   {% for member in site.data.faculty %}
 
   {% assign even_odd = number_printed | modulo: 2 %}
@@ -31,6 +32,7 @@ layout: members
   {% endfor %}
 
   {% assign even_odd = number_printed | modulo: 2 %}
+
   {% if even_odd == 1 %}
 
   </div>
@@ -38,6 +40,7 @@ layout: members
   {% endif %}
 
 </div>
+
 <hr>
 
 ### Graduate Students
@@ -72,25 +75,41 @@ layout: members
   </div>
 
 </div>
+
 <hr>
 
 ### Former Members
 
 <ul class="former-list">
+
 {% for member in site.data.alumni %}
+
   <li>
+
     <span class="former-item">
+
       <span class="former-name">
+
         <b>{{ member.name }}</b>
+
       </span>
+
       <span class="former-info">
+
         {% if member.degree %} {{ member.degree }}{% endif %}
+
         {% if member.date %}, {{ member.date }}{% endif %}
+
         {% if member.affiliation %} <span class="former-affiliation">(now in {{ member.affiliation }})</span>{% endif %}
+
       </span>
+
     </span>
+
   </li>
+
 {% endfor %}
+
 </ul>
 
 <br>
