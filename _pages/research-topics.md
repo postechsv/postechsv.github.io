@@ -8,17 +8,21 @@ permalink: /research/topics/
 
 <div class="section-block container">
     {% for proj in site.researchtopics %}
-
-    <div><a href="{{ proj.url }}"><h4>{{ proj.title }}</h4></a></div>
-    <div class="row topic-row">
-    <div class="col-sm-4 col-md-4">
-    <a href="{{ proj.url }}">
-    <img src="{{ site.research_imgs }}/{{ proj.img-url }}" alt="" class="topic-img"></a>
-    </div>
-    <div class="col-sm-8 col-md-8">
-        <p><a class="topic-intro-link" href="{{ proj.url }}">{{ proj.intro }}</a></p>
-    </div>
-    </div>
+    
+    <a href="{{ proj.url }}" class="topic-group-link">
+        <div class="topic-card">
+            <h4>{{ proj.title }}</h4>
+            <div class="row topic-row">
+                <div class="col-sm-4 col-md-4">
+                    <img src="{{ site.research_imgs }}/{{ proj.img-url }}" alt="" class="topic-img">
+                </div>
+                <div class="col-sm-8 col-md-8">
+                    <p class="topic-intro">{{ proj.intro }}</p>
+                </div>
+            </div>
+        </div>
+    </a>
+    
     {% unless forloop.last %}
     <hr class="dot">
     {% endunless %}

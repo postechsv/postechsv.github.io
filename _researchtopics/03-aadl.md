@@ -230,9 +230,9 @@ Jaehun Lee <a src="thkighie1224@postech.ac.kr">thkighie1224 (at) postech.ac.kr</
 
 #### References
 
-* Rigorous Model Engineering of Hierarchical Multirate CPSs in Multirate HybridSynchAADL (ISOLA2024)
+* Rigorous Model Engineering of Hierarchical Multirate CPSs in Multirate HybridSynchAADL (ISoLA2024)
 * Modeling and Formal Analysis of Virtually Synchronous Cyber-Physical Systems in AADL (STTT2022)
-* An Extension of HybridSynchAADL and Its Application to Collaborating Autonomous UAVs (ISOLA2022)
+* An Extension of HybridSynchAADL and Its Application to Collaborating Autonomous UAVs (ISoLA2022)
 * HybridSynchAADL: Modeling and Formal Analysis of Virtually Synchronous CPSs in AADL (CAV2021)
 
 
