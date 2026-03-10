@@ -136,7 +136,7 @@ tbody tr:nth-child(odd) th {
 }
 
 .student {
-  display:flex;
+  display: flex;
   flex-direction: column;
   width:33.3%;
 }
@@ -168,10 +168,9 @@ tbody tr:nth-child(odd) th {
 
   .footer-logo {
     height: auto;
-    max-width: 25%;
+    max-width: 40%;
     margin: 0 auto 0.5rem;
   }
-
 }
 
 .member-links-block {
@@ -199,18 +198,6 @@ tbody tr:nth-child(odd) th {
 
   .topic-row > [class*="col-"] {
     width: 100%;
-  }
-
-  .footer-logo {
-    height: auto;
-    max-width: 25%;
-    margin: 0.5rem auto;
-  }
-
-  .footer-text-col {
-    text-align: center;
-    font-size: 14px;
-    margin-top: 0.5rem;
   }
 
   .member-links-inline {
@@ -323,20 +310,29 @@ hr.dot {
 
 .footer-row {
   display: flex;
+  text-align: justify;
   align-items: center;
   flex-wrap: wrap;
 }
 
 .footer-logo-col {
-  text-align: center;
+  @media (max-width: 767px) {
+    height: auto;
+  }
 }
 
 .footer-text-col {
-  text-align: justify;
-
   @media (max-width: 62em) {
     text-align: center;
   }
+}
+
+.footer-address {
+  white-space: nowrap;
+}
+
+.footer-copyright {
+  white-space: nowrap;
 }
 
 .footer-spacer {

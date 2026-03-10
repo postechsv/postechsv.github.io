@@ -8,8 +8,11 @@
                 <div class="col-xs-12 col-md-9 footer-text-col">
                     {{ site.footer.name }}<br>
                     {{ site.footer.affiliation }}<br>
-                    {{ site.footer.address }}<br>
-                    COPYRIGHT {{ site.footer.copyright_year }} POSTECH. All rights reserved.<br>
+                    {{ site.footer.address1 }}, 
+                    <span class="footer-address">{{ site.footer.address2 }}, </span>
+                    <span class="footer-address">{{ site.footer.address3 }}</span><br>
+                    COPYRIGHT {{ site.footer.copyright_year }} POSTECH. 
+                    <span class="footer-copyright">All rights reserved.</span><br>
                     <span class="footer-spacer"></span>
                     <a href="{{ site.footer.privacy_policy_url }}"
                         class="footer-privacy-link">Personal Information Policy</a>
