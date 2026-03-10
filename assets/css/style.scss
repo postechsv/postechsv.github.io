@@ -182,7 +182,7 @@ tbody tr:nth-child(odd) th {
   display: none;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .navbar-toggle {
     margin-top: 19px;
     margin-bottom: 0;
@@ -322,7 +322,7 @@ hr.dot {
 }
 
 .footer-logo-col {
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
     height: auto;
   }
 }
