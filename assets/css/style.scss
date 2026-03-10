@@ -44,36 +44,41 @@ h3 {
   font-size: 1.3rem;
 }
 
-h4,
+h4 {
+  font-size: 1.1rem;
+}
+
 h5,
 h6 {
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 pre {
-  background-color: #f9f9f9;
+  background-color: transparent;
 }
 
 img {
   display: block;
   max-width: 100%;
   height: auto;
-  margin: 0 0 1rem;
+  margin: auto;
 }
 
 table {
+  background-color: transparent;
   margin-bottom: 1rem;
   width: 100%;
+  font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: 70%;
-  border: 1px solid #e5e5e5;
+  border: 1px solid rgba(0, 0, 0, 0.08);
   border-collapse: collapse;
 }
 
 td,
 th {
   padding: 0.25rem 0.5rem;
-  border: 1px solid #e5e5e5;
   font-size: 140%;
+  border: 1px solid rgba(0, 0, 0, 0.08);
 }
 
 tbody tr:nth-child(odd) td,
@@ -303,6 +308,7 @@ hr.dot {
 .footer-content {
   color: rgba(255, 255, 255, 0.767);
   font-size: 16px;
+  line-height: 1.6;
   font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -360,7 +366,6 @@ hr.dot {
   }
 }
 
-/* Page layout */
 .content.page {
   padding-top: 3.8em;
   min-height: 800px;
@@ -370,13 +375,11 @@ hr.dot {
   padding-top: 0.8rem;
 }
 
-/* Member name heading */
 h4.member-name {
   font-size: 1.15rem;
   line-height: 1.1;
 }
 
-/* Video embed wrapper */
 .video-container {
   text-align: center;
 }

@@ -183,3 +183,76 @@ figcaption {
   margin-top: 0.5rem;
   margin-bottom: 0.15rem;
 }
+
+.footer {
+  background-color: rgba(51, 51, 51, 0.88);
+}
+
+.footer-content {
+  color: rgba(255, 255, 255, 0.767);
+  font-size: 16px;
+  line-height: 1.6;
+  font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.footer-row {
+  display: flex;
+  text-align: justify;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-logo-col {
+  @media (max-width: 767px) {
+    height: auto;
+  }
+}
+
+.footer-text-col {
+  @media (max-width: 62em) {
+    text-align: center;
+  }
+}
+
+.footer-affiliation,
+.footer-building,
+.footer-address,
+.footer-copyright {
+  white-space: nowrap;
+}
+
+.footer-spacer {
+  display: block;
+  margin-bottom: 2em;
+}
+
+.footer-privacy-link {
+  color: white;
+  text-decoration: none;
+}
+
+@media (min-width: 993px) {
+  .footer-logo-col {
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 2rem;
+  }
+
+  .footer-logo {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+@media (max-width: 62em) {
+  .footer-logo {
+    height: auto;
+    max-width: 35%;
+    margin: 0 auto 0.5rem;
+  }
+}
