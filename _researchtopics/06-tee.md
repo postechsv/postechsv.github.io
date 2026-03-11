@@ -85,7 +85,7 @@ cases for real-world validation using our formal specification.
 
 #### References
 
-- Geunyeol Yu, Seunghyun Chae, Kyungmin Bae, and Sungkun Moon. Formal Specification of Trusted Execution Environment APIs. International Conference on Fundamental Approaches to Software Engineering (FASE), 2024. [[paper](https://link.springer.com/chapter/10.1007/978-3-031-57259-3_5), [github](https://github.com/postechsv/tee-formal-analysis)]
+1. Geunyeol Yu, Seunghyun Chae, Kyungmin Bae, and Sungkun Moon. <em>Formal Specification of Trusted Execution Environment APIs</em>. International Conference on Fundamental Approaches to Software Engineering (FASE), 2024. [[paper](https://link.springer.com/chapter/10.1007/978-3-031-57259-3_5), [github](https://github.com/postechsv/tee-formal-analysis)]
 
 
 ---

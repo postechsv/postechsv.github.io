@@ -98,7 +98,6 @@ Jaeseo Lee <a href="mailto:sean96@postech.ac.kr">sean96 (at) postech.ac.kr</a>
 #### References
 
 The following items show the publication from this project:
-* [Formal Analysis of Networked PLC Controllers Interacting with Physical Environments](https://dl.acm.org/doi/10.1007/978-3-032-07106-4_14), Jaeseo Lee, Kyungmin Bae, SAS, 2025
-* [Formal Semantics and Analysis of Multitask PLC ST Programs with Preemption](https://link.springer.com/chapter/10.1007/978-3-031-71162-6_22), Jaeseo Lee, Kyungmin Bae, FM, 2024
-* [Bounded Model Checking of PLC ST Programs using Rewriting Modulo SMT](https://dl.acm.org/doi/10.1145/3563822.3568016), Jaeseo Lee, Sangki Kim, Kyungmin Bae, FTSCS, 2022
-
+1. Jaeseo Lee and Kyungmin Bae. <em>Formal Analysis of Networked PLC Controllers Interacting with Physical Environments</em>, SAS, 2025. [[paper](https://dl.acm.org/doi/10.1007/978-3-032-07106-4_14)]
+2. Jaeseo Lee and Kyungmin Bae. <em>Formal Semantics and Analysis of Multitask PLC ST Programs with Preemption</em>, FM, 2024. [[paper](https://link.springer.com/chapter/10.1007/978-3-031-71162-6_22)]
+3. Jaeseo Lee, Sangki Kim and Kyungmin Bae. <em>Bounded Model Checking of PLC ST Programs using Rewriting Modulo SMT</em>, FTSCS, 2022. [[paper](https://dl.acm.org/doi/10.1145/3563822.3568016)]

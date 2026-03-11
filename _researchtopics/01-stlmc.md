@@ -54,7 +54,7 @@ The experimental results are summarized in Table 2, with execution times in seco
 
 #### References
 
-1. <span id="ref-1">K. Bae, J. Lee, <em>Bounded model checking of signal temporal logic properties using syntactic separation</em>, Proc. ACM Program. Lang. 3 (POPL) (2019) 51:1–51:30, <a href="https://doi.org/10.1145/3290364">https://doi.org/10.1145/3290364</a>.</span>
-2. <span id="ref-2">J. Lee, G. Yu, K. Bae, <em>Efficient SMT-based model checking for signal temporal logic</em>, in: IEEE/ACM International Conference on Automated Software Engineering, IEEE, 2021, pp. 343–354, <a href="https://ieeexplore.ieee.org/document/9678719">https://ieeexplore.ieee.org/document/9678719</a>.</span>
-3. <span id="ref-3">G Yu., J. Lee, K. Bae. <em>STLmc: Robust STL model checking of hybrid systems using SMT</em>, in: International Conference on Computer Aided Verification, Springer, 2022, Volume 13371, <a href="https://doi.org/10.1007/978-3-031-13185-1_26">https://doi.org/10.1007/978-3-031-13185-1_26</a>.</span>
-4. <span id="ref-4">J. Lee, G Yu., K. Bae. <em>SMT-based robust model checking for signal temporal logic</em>, Science of Computer Programming, 2025, Volume 246, <a href="https://doi.org/10.1016/j.scico.2025.103332">https://doi.org/10.1016/j.scico.2025.103332</a>.</span>
+1. <span id="ref-1">K. Bae and J. Lee. <em>Bounded model checking of signal temporal logic properties using syntactic separation</em>, Proc. ACM Program. Lang. 3 (POPL) (2019) 51:1–51:30. [[paper](https://doi.org/10.1145/3290364)]</span>
+2. <span id="ref-2">J. Lee, G. Yu and K. Bae. <em>Efficient SMT-based model checking for signal temporal logic</em>, in: IEEE/ACM International Conference on Automated Software Engineering, IEEE, 2021, pp. 343–354. [[paper](https://ieeexplore.ieee.org/document/9678719)]</span>
+3. <span id="ref-3">G. Yu, J. Lee and K. Bae. <em>STLmc: Robust STL model checking of hybrid systems using SMT</em>, in: International Conference on Computer Aided Verification, Springer, 2022, Volume 13371. [[paper](https://doi.org/10.1007/978-3-031-13185-1_26)]</span>
+4. <span id="ref-4">J. Lee, G. Yu and K. Bae. <em>SMT-based robust model checking for signal temporal logic</em>, Science of Computer Programming, 2025, Volume 246. [[paper](https://doi.org/10.1016/j.scico.2025.103332)]</span>

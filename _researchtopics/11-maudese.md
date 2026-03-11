@@ -75,5 +75,5 @@ The following shows two variants of the `checkSat` function implemented using th
 
 #### References
 
-1. <span id="ref-2">G. Yu, K. Bae, <em>A Flexible Framework for Integrating Maude and SMT Solvers Using Python</em>, in: International Workshop on Rewriting Logic and its Applications, 2024, <a href="https://doi.org/10.1007/978-3-031-65941-6_10">https://doi.org/10.1007/978-3-031-65941-6_10</a>.</span>
-1. <span id="ref-1">G Yu., J. Lee, K. Bae. <em>Maude-SE: a Tight Integration of Maude and SMT solvers</em>, in: International Workshop on Rewriting Logic and its Applications, 2024, <a href="https://wrla2020.webs.upv.es/pre-proceedings.pdf#page=2270">https://wrla2020.webs.upv.es/pre-proceedings.pdf#page=227</a>.</span>
+1. <span id="ref-1">G. Yu, J. Lee and K. Bae. <em>Maude-SE: a Tight Integration of Maude and SMT solvers</em>, in: International Workshop on Rewriting Logic and its Applications, 2024. [[paper](https://wrla2020.webs.upv.es/pre-proceedings.pdf#page=227)]</span>
+2. <span id="ref-2">G. Yu and K. Bae, <em>A Flexible Framework for Integrating Maude and SMT Solvers Using Python</em>, in: International Workshop on Rewriting Logic and its Applications, 2024. [[paper](https://doi.org/10.1007/978-3-031-65941-6_10)]</span>
