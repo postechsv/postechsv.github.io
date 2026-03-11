@@ -18,26 +18,15 @@ permalink: /publications
     <button type="button" class="btn btn-since" id="select-before">Before 2016</button>
 </div>
 
-
 <div class="pub-spacer"></div>
 
-<!--Display Research Publications-->
 <div class="pb">
     {% assign grouped_items = site.data.publist | sort: 'year' | reverse | group_by: 'year' %}
-
     {% for item in grouped_items %}
         {% assign sorted_pubs = item.items | sort: 'month' | reverse %}
-        {% capture alltags %}
-            {% for tag in site.data.pubtypes %}
-                {{ tag.slug }}
-            {% endfor %}
-        {% endcapture %}
-
         {% assign matchingpubs = site.data.publist | where: "year", item.name %}
         {% capture matchingtags %}
-            {% for pub in matchingpubs %}
-                {{ pub.tag }}
-            {% endfor %}
+            {% for pub in matchingpubs %}{{ pub.tag }} {% endfor %}
         {% endcapture %}
         {% assign matchingtags = matchingtags | split: ' ' | uniq | join: ' ' %}
 
@@ -47,10 +36,9 @@ permalink: /publications
         {% for publi in sorted_pubs %}
             <div class="element-item {{ publi.tag }}
             {% if publi.year >= 2016 %}new{% endif %}
-            {% if publi.year <  2016 %}old{% endif %}
-            ">
+            {% if publi.year < 2016 %}old{% endif %}">
                 <a href="{{ publi.link }}">{{ publi.title }}</a><br>
-                <em>{{ publi.authors }} </em><br>
+                <em>{{ publi.authors }}</em><br>
                 {{ publi.venue }}, {{ publi.year }}
                 <br><br>
             </div>

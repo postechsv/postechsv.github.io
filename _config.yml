@@ -1,14 +1,11 @@
-# Basic
 name: "Software Verification Lab"
 title: "Software Verification Lab at POSTECH"
 description: "Software Verification Lab"
 
-# URL
 url: https://sv.postech.ac.kr
 baseurl:
 research_imgs: "/images/research"
 
-# Footer
 footer:
   name:         "Software Verification Laboratory"
   department:   "Department of Computer Science and Engineering"
@@ -22,13 +19,9 @@ footer:
   copyright_year: 2026
   privacy_policy_url: "https://www.postech.ac.kr/kor/usage-guide/privacy_policy.do"
 
-# Markdown
 markdown: kramdown
-
-# Highlighter
 highlighter: rouge
 
-# Navigation
 nav:
   - name: "publications"
     href: "/publications"
@@ -37,15 +30,12 @@ nav:
   - name: "research"
     href: "/research"
 
-# Include _pages/ in build (underscore dirs are excluded by default)
 include:
   - _pages
 
-# Sass
 sass:
   style: :compressed
 
-# Scopes
 defaults:
   - scope:
       path: ""
@@ -55,9 +45,9 @@ defaults:
 
 collections:
   research:
-    output: true
+    output: false
   researchtopics:
     output: true
     permalink: /research/:title.html
   home:
-    output: true
+    output: false

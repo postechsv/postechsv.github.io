@@ -1,11 +1,10 @@
 ---
-# title: "About us"
----   
+---
 <h2>About us</h2>
 
 We study automated techniques to verify the reliability, security, and safety of computer systems. Our research spans various domains, including cyber-physical systems, trustworthy AI, and logical foundations and algorithms. Please see our <a class="label label-default" href="{{site.url}}/research">RESEARCH</a> page for details on our current projects.
 
-<div class="alert alert-info text-center" role="alert"> 
+<div class="alert alert-info text-center" role="alert">
     <b>We are looking for motivated students at all levels (graduate or undergraduate).<br>
-    For more details, please contact Prof. Kyungmin Bae </b>(<a href="mailto:kmbae@postech.ac.kr">kmbae at postech.ac.kr</a>).  
+    For more details, please contact Prof. Kyungmin Bae </b>(<a href="mailto:kmbae@postech.ac.kr">kmbae at postech.ac.kr</a>).
 </div>

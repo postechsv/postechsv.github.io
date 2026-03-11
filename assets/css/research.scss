@@ -1,161 +1,14 @@
 ---
 ---
 :root { --scss-reset: 0; }
-@import "base";
-
-body {
-  padding-top: 3em;
-}
-
-html {
-  font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  font-size: 19px;
-  font-weight: 300;
-  line-height: 1.6;
-
-  @media (min-width: 38em) {
-    font-size: 21px;
-  }
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin-top: 0.25em;
-  margin-bottom: 1em;
-  font-weight: 700;
-  font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  line-height: 1.1;
-  color: #333;
-}
-
-h1 {
-  font-size: 2rem;
-}
-
-h2 {
-  font-size: 1.6rem;
-}
-
-h3 {
-  font-size: 1.3rem;
-}
-
-h4 {
-  font-size: 1.1rem;
-}
-
-h5,
-h6 {
-  font-size: 0.9rem;
-}
-
-pre {
-  background-color: transparent;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  margin: auto;
-}
-
-table {
-  background-color: transparent;
-  margin-bottom: 1rem;
-  width: 100%;
-  font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  font-size: 70%;
-  border: 1px solid rgba(0, 0, 0, 0.08);
-  border-collapse: collapse;
-}
 
 tbody tr:nth-child(odd) td,
 tbody tr:nth-child(odd) th {
   background-color: transparent;
-  border: 1px solid rgba(0, 0, 0, 0.08);
-}
-
-td,
-th {
-  padding: 0.25rem 0.5rem;
-  font-size: 140%;
-  border: 1px solid rgba(0, 0, 0, 0.08);
-}
-
-@import "syntax";
-
-.navbar-brand {
-  content: url("/images/logo/logo.png");
-  display: inline-block;
-  position: relative;
-}
-
-.navbar {
-  background-color: white;
-  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.15), 0 5px 10px 0 rgba(0, 0, 0, 0.05);
-  font-family: "Lato", sans-serif;
-}
-
-.navbar-nav > li > a {
-  background-color: white;
-  font-family: "Lato", sans-serif;
-  text-transform: uppercase;
-  font-weight: 400;
-  font-size: 0.9rem;
-  margin-left: 6px;
-  padding-top: 25px;
 }
 
 .navbar-right {
   margin-right: -15px;
-}
-
-@media (max-width: 62em) {
-  .navbar-brand {
-    content: url("/images/logo/logo_mobile.png");
-  }
-
-  .navbar-nav {
-    margin-right: -15px;
-  }
-}
-
-@media (max-width: 768px) {
-  .navbar-toggle {
-    margin-top: 19px;
-    margin-bottom: 0;
-  }
-
-  .navbar-nav > li > a {
-    height: auto;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    margin-left: 0;
-  }
-}
-
-.navbar-nav > li {
-  margin-bottom: 0;
-}
-
-.navbar-toggle,
-.navbar-default .navbar-toggle:hover {
-  border: none;
-  background-color: #fff;
-}
-
-.navbar a {
-  height: 70px;
-}
-
-p {
-  text-align: justify;
 }
 
 .text-justify {
@@ -168,7 +21,6 @@ p {
 
 figcaption,
 .table-caption {
-  font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: 0.75rem !important;
   color: #555;
   text-align: center;
@@ -182,77 +34,4 @@ figcaption {
 .table-caption {
   margin-top: 0.5rem;
   margin-bottom: 0.15rem;
-}
-
-.footer {
-  background-color: rgba(51, 51, 51, 0.88);
-}
-
-.footer-content {
-  color: rgba(255, 255, 255, 0.767);
-  font-size: 16px;
-  line-height: 1.6;
-  font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-.footer-row {
-  display: flex;
-  text-align: justify;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.footer-logo-col {
-  @media (max-width: 768px) {
-    height: auto;
-  }
-}
-
-.footer-text-col {
-  @media (max-width: 62em) {
-    text-align: center;
-  }
-}
-
-.footer-affiliation,
-.footer-building,
-.footer-address,
-.footer-copyright {
-  white-space: nowrap;
-}
-
-.footer-spacer {
-  display: block;
-  margin-bottom: 2em;
-}
-
-.footer-privacy-link {
-  color: white;
-  text-decoration: none;
-}
-
-@media (min-width: 993px) {
-  .footer-logo-col {
-    align-self: stretch;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-right: 2rem;
-  }
-
-  .footer-logo {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-  }
-}
-
-@media (max-width: 62em) {
-  .footer-logo {
-    height: auto;
-    max-width: 35%;
-    margin: 0 auto 0.5rem;
-  }
 }
