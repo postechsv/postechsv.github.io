@@ -44,11 +44,11 @@ $text-alert:   #2a4a62;
   --text-alert:       #{$text-alert};
 
   // Footer
-  --footer-bg:        var(--gray-700);
-  --footer-border:    rgba(var(--accent-rgb), 0.45);
-  --footer-text:      rgba(var(--white-rgb), 0.72);
-  --footer-text-dim:  rgba(var(--white-rgb), 0.45);
-  --footer-link:      rgba(var(--white-rgb), 0.60);
+  --footer-bg:        var(--white-rgb);
+  --footer-border:    rgba(var(--accent-rgb), 0.5);
+  --footer-text:      rgba(var(--black-rgb), 0.75);
+  --footer-text-dim:  rgba(var(--black-rgb), 0.7);
+  --footer-link:      rgba(var(--black-rgb), 0.70);
 }
 
 @import "base";
@@ -173,7 +173,7 @@ tbody tr:nth-child(odd) th {
 
 .navbar {
   background-color: white;
-  box-shadow: 0 0 0 0 rgba(var(--black-rgb), 0.15), 0 5px 10px 0 rgba(var(--black-rgb), 0.05);
+  box-shadow: 0 0 0 0 rgba(var(--black-rgb), 0.15), 0 2.5px 5px 0 rgba(var(--black-rgb), 0.05);
   font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   transition: box-shadow 0.3s ease;
 
@@ -249,16 +249,20 @@ tbody tr:nth-child(odd) th {
 
 .footer {
   background-color: var(--footer-bg);
-  border-top: 2px solid var(--footer-border);
+  position: relative;
+  border-top: 0.5px solid #eee;
+  margin: 1.5rem auto;
 }
 
 .footer-content {
   color: var(--footer-text);
-  font-size: 0.7rem;
+  font-size: 0.5rem;
   line-height: 1.75;
   font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  padding-top: 1.4rem;
-  padding-bottom: 1.4rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.5rem;
 }
 
 .footer-row {
@@ -274,7 +278,7 @@ tbody tr:nth-child(odd) th {
     align-items: center;
     justify-content: center;
     padding-right: 2rem;
-    border-right: 1px solid rgba(var(--white-rgb), 0.10);
+    border-right: 1px solid rgba(var(--black-rgb), 0.10);
   }
 
   @media (max-width: 992px) {
@@ -305,21 +309,29 @@ tbody tr:nth-child(odd) th {
 }
 
 .footer-logo-sv {
-  height: 42px;
+  height: 30px;
   width: auto;
-  filter: brightness(0) invert(1);
-  opacity: 0.66;
+  filter: brightness(0) invert(0);
+  opacity: 0.5;
+  
+  &:hover {
+    opacity: 0.75;
+  }
 }
 
 .footer-logo-postech {
-  height: 21px;
+  height: 15px;
   width: auto;
-  filter: brightness(0) invert(1);
-  opacity: 0.66;
+  filter: brightness(0) invert(0);
+  opacity: 0.5;
+
+  &:hover {
+    opacity: 0.75;
+  }
 }
 
 .footer-text-col {
-  line-height: 0.95rem;
+  line-height: 0.75rem;
 
   @media (min-width: 993px) {
     padding-left: 2rem;
@@ -339,25 +351,25 @@ tbody tr:nth-child(odd) th {
 
 .footer-copyright {
   color: var(--footer-text-dim);
-  font-size: 0.66rem;
+  font-size: 0.45rem;
 }
 
 .footer-spacer {
   display: block;
-  height: 1px;
-  background: rgba(var(--white-rgb), 0.10);
+  height: 0.5px;
+  background: rgba(var(--black-rgb), 0.10);
   margin: 0.5rem 0;
 }
 
 .footer-privacy-link {
   color: var(--footer-link);
-  font-size: 0.66rem;
+  font-size: 0.45rem;
   text-decoration: none;
   transition: color 0.2s ease;
 
   &:hover,
   &:focus {
-    color: white;
+    color: black;
     text-decoration: underline;
   }
 }
@@ -952,7 +964,7 @@ figcaption {
   display: flex;
   align-items: flex-start;
   gap: 12px;
-  padding: 10px 10px;
+  padding: 7.5px 10px;
   transition: background-color 0.15s ease;
 
   & + & { border-top: 1px solid rgba(var(--black-rgb), 0.06); }
@@ -1068,14 +1080,14 @@ div.element-item {
 
 .home-container > p {
   font-size: 0.92rem;
-  line-height: 1.72;
+  line-height: 1.6;
   color: var(--text-body);
   text-align: justify;
   margin-bottom: 1.1rem;
 }
 
-.home-container h2,
-.content.page h2,
+// .home-container h2,
+// .content.page h2,
 .content.page h3 {
   margin-bottom: 1.1rem;
 }
