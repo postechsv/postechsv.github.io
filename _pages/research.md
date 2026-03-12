@@ -34,7 +34,7 @@ layout: page
   {% for proj in visible_topics %}
   <a href="{{ proj.url }}" class="topic-group-link">
     <div class="topic-card">
-      <h4>{{ proj.title }}</h4>
+      <p class="topic-title">{{ proj.title }}</p>
       <div class="row topic-row">
         <div class="col-sm-4 col-md-4">
           <img src="{{ site.research_imgs }}/{{ proj.img-url }}" alt="" class="topic-img">

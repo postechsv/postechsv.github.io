@@ -552,6 +552,14 @@ hr.dot {
   display: none;
 }
 
+.topic-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1.25;
+  color: var(--text-heading);
+  margin: 0 0 0.75rem;
+}
+
 @media (max-width: 768px) {
   .topic-row {
     flex-direction: column;
@@ -834,7 +842,7 @@ a:hover > span.icon-linkedin {
   position: relative;
   text-decoration: none;
   color: inherit;
-  padding: 15px 40px 15px 20px;
+  padding: 20px 40px 15px 25px;
   border-radius: 8px;
   border: 1px solid rgba(var(--black-rgb), 0.06);
   background: #fff;
