@@ -1,7 +1,7 @@
 # 2026
 
 - title: "Efficient Verification of Lingua Franca Programs"
-  authors: Peter Olveczky, Mario Reja, Mikheil Rukhaia, Kyungmin Bae, and Mircea Marin
+  authors: Peter Ölveczky, Mario Reja, Mikheil Rukhaia, Kyungmin Bae, and Mircea Marin
   venue: International Conference on Tools and Algorithms for the Construction and Analysis of Systems (TACAS) (to appear)
   year: 2026
   month: 4
@@ -75,7 +75,7 @@
   link: https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12318652
   
 - title: "Semantics and formal analysis of Lingua Franca CPS specifications in rewriting logic"
-  authors: Mircea Marin, Peter Olveczky, Mario Reja, Mikheil Rukhaia, and Kyungmin Bae
+  authors: Mircea Marin, Peter Ölveczky, Mario Reja, Mikheil Rukhaia, and Kyungmin Bae
   venue: Marjan Festschrift at FSEN
   year: 2025
   month: 3
@@ -94,7 +94,7 @@
 # 2024
 
 - title: "Rigorous Model Engineering of Hierarchical Multirate CPSs in MR-HybridSynchAADL"
-  authors: Jaehun Lee, Kyungmin Bae and Peter Olveczky
+  authors: Jaehun Lee, Kyungmin Bae, and Peter Ölveczky
   venue: International Symposium on Leveraging Applications of Formal Methods (ISoLA)
   year: 2024
   month: 10
@@ -166,7 +166,7 @@
   link: https://link.springer.com/chapter/10.1007/978-3-031-57259-3_5
 
 - title: "Symbolic Analysis and Parameter Synthesis for Networks of Parametric Timed Automata with Global Variables Using Maude and SMT Solving"
-  authors: Jaime Arias, Kyungmin Bae, Carlos Olarte, Peter Csaba Olveczky, Laure Petrucci, and Fredrik Romming
+  authors: Jaime Arias, Kyungmin Bae, Carlos Olarte, Peter Csaba Ölveczky, Laure Petrucci, and Fredrik Romming
   venue: Science of Computer Programming 233, 103074
   year: 2024
   month: 3
@@ -177,7 +177,7 @@
 # 2023
 
 - title: "Formal Model Engineering of Synchronous CPS Designs in AADL"
-  authors: Kyungmin Bae and Peter Olveczky
+  authors: Kyungmin Bae and Peter Ölveczky
   venue: "2nd ADEPT workshop: AADL by its practitioners (ADEPT)"
   year: 2023
   month: 12
@@ -185,7 +185,7 @@
   link: https://dl.acm.org/doi/abs/10.1145/3706601.3706604
 
 - title: "Formal Model Engineering of Distributed CPSs Using AADL: From Behavioral AADL Models to Multirate Hybrid Synchronous AADL"
-  authors: Kyungmin Bae and Peter Olveczky
+  authors: Kyungmin Bae and Peter Ölveczky
   venue: International Conference on Formal Aspects of Component Software (FACS)
   year: 2023
   month: 10
@@ -204,7 +204,7 @@
 # 2022
   
 - title: "Modeling and formal analysis of virtually synchronous cyber-physical systems in AADL"
-  authors: Jaehun Lee, Kyungmin Bae, Peter Olveczky, Sharon Kim, and Minseok Kang
+  authors: Jaehun Lee, Kyungmin Bae, Peter Ölveczky, Sharon Kim, and Minseok Kang
   venue: Software Tools for Technology Transfer (STTT)
   year: 2022
   tag: journal
@@ -239,7 +239,7 @@
   link: https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11158124
 
 - title: "An Extension of HybridSynchAADL and Its Application to Collaborating Autonomous UAVs"
-  authors: Jaehun Lee, Kyungmin Bae and Peter Olveczky
+  authors: Jaehun Lee, Kyungmin Bae, and Peter Ölveczky
   venue: International Symposium On Leveraging Applications of Formal Methods (ISoLA)
   year: 2022
   tag: conference
@@ -305,14 +305,14 @@
   link: https://ieeexplore.ieee.org/abstract/document/9678719
 
 - title: "MSYNC: A Generalized Formal Design Pattern for Virtually Synchronous Multirate Cyber-Physical Systems"
-  authors: Kyungmin Bae and Peter Olveczky
+  authors: Kyungmin Bae and Peter Ölveczky
   venue: International Conference on Embedded Software (EMSOFT)
   year: 2021
   tag: conference
   link: https://dl.acm.org/doi/abs/10.1145/3477036
 
 - title: "HybridSynchAADL: Modeling and Formal Analysis of Virtually Synchronous CPSs in AADL"
-  authors: Jaehun Lee, Sharon Kim, Kyungmin Bae and Peter Olveczky
+  authors: Jaehun Lee, Sharon Kim, Kyungmin Bae, and Peter Ölveczky
   venue: International Conference on Computer Aided Verification (CAV)
   year: 2021
   tag: conference
@@ -337,7 +337,7 @@
 
 - title: "Maude-SE: a Tight Integration of Maude and SMT Solvers"
   authors: Geunyeol Yu and Kyungmin Bae
-  venue: International Workshop on Rewriting Logic and its Applications
+  venue: International Workshop on Rewriting Logic and its Applications (WRLA)
   year: 2020
   tag: conference
   link: https://wrla2020.webs.upv.es/pre-proceedings.pdf#page=227
@@ -404,7 +404,7 @@
 # 2018
 
 - title: "Formal Aspects of Component Software - 15th International Conference, FACS 2018, Pohang, South Korea, October 10-12, 2018, Proceedings"
-  authors: Kyungmin Bae and Peter Olveczky
+  authors: Kyungmin Bae and Peter Ölveczky
   venue: Lecture Notes in Computer Science 11222, Springer
   year: 2018
   tag: book
@@ -445,7 +445,7 @@
   link: https://link.springer.com/chapter/10.1007/978-3-319-40648-0_29
 
 - title: "SMT-Based Analysis of Virtually Synchronous Distributed Hybrid Systems"
-  authors: Kyungmin Bae, Peter Olveczky, Soonho Kong, Sicun Gao, and Edmund M. Clarke
+  authors: Kyungmin Bae, Peter Ölveczky, Soonho Kong, Sicun Gao, and Edmund M. Clarke
   venue: "ACM International Conference on Hybrid Systems: Computation and Control (HSCC)"
   year: 2016
   tag: conference
@@ -458,148 +458,184 @@
   tag: conference #workshop
   link: https://cdn.aaai.org/ocs/ws/ws0207/12622-57495-1-PB.pdf
 
-####################################################################################################
 
 # 2015
 
-- title: "Designing and Verifying Distributed Cyber-Physical Systems using Multirate PALS: An Airplane Turning Control System Case Study"
-  authors: Kyungmin Bae, Josh Krisiloff, José Meseguer, and Peter Olveczky
-  venue: "Science of Computer Programming 103:13-50"
-  year: 2015
-  tag: journal
-
-- title: "Model Checking Linear Temporal Logic of Rewriting Formulas under Localized Fairness"
-  authors: Kyungmin Bae, and José Meseguer
-  venue: Science of Computer Programming 99
-  year: 2015
-  tag: journal
-
 - title: "SMT Encoding of Hybrid Systems in dReal"
   authors: Kyungmin Bae, Soonho Kong, and Sicun Gao
-  venue: International Workshop on Applied veRification for Continuous and Hybrid Systems
+  venue: International Workshop on Applied veRification for Continuous and Hybrid Systems (ARCH)
   year: 2015
+  month: 12
   tag: conference
+  link: https://easychair.org/publications/paper/4Qr/open
 
 - title: "Hybrid Multirate PALS"
-  authors: Kyungmin Bae and Peter C. Olveczky
+  authors: Kyungmin Bae and Peter C. Ölveczky
   venue: Logic, Rewriting, and Concurrency
   year: 2015
+  month: 8
+  tag: conference #workshop
   link: https://link.springer.com/chapter/10.1007/978-3-319-23165-5_5
-  tag: conference
+
+- title: "Designing and Verifying Distributed Cyber-Physical Systems using Multirate PALS: An Airplane Turning Control System Case Study"
+  authors: Kyungmin Bae, Josh Krisiloff, José Meseguer, and Peter Ölveczky
+  venue: "Science of Computer Programming 103:13-50"
+  year: 2015
+  month: 6
+  tag: journal
+  link: https://www.sciencedirect.com/science/article/pii/S0167642314004109
+
+- title: "Model Checking Linear Temporal Logic of Rewriting Formulas under Localized Fairness"
+  authors: Kyungmin Bae and José Meseguer
+  venue: Science of Computer Programming 99
+  year: 2015
+  month: 3
+  tag: journal
+  link: https://www.sciencedirect.com/science/article/pii/S0167642314000471
 
 
 # 2014
+
+- title: "Formal Patterns for Multirate Distributed Real-Time Systems (extended version)"
+  authors: Kyungmin Bae, José Meseguer, and Peter Ölveczky
+  venue: Science of Computer Programming 91, Part A
+  year: 2014
+  month: 10
+  tag: journal
+  link: https://www.sciencedirect.com/science/article/pii/S0167642313002396
 
 - title: "Predicate Abstraction of Rewrite Theories"
   authors: Kyungmin Bae and José Meseguer
   venue: Joint International Conference on Rewriting and Typed Lambda Calculi (RTA-TLCA)
   year: 2014
+  month: 7
   tag: conference
+  link: https://link.springer.com/chapter/10.1007/978-3-319-08918-8_5
 
 - title: "Definition, Semantics, and Analysis of Multirate Synchronous AADL"
-  authors: Kyungmin Bae, Peter Olveczky, and José Meseguer
+  authors: Kyungmin Bae, Peter Ölveczky, and José Meseguer
   venue: International Symposium on Formal Methods (FM)
   year: 2014
+  month: 5
   tag: conference
-
-- title: "Formal Patterns for Multirate Distributed Real-Time Systems (extended version)"
-  authors: Kyungmin Bae, José Meseguer, and Peter Olveczky
-  venue: Science of Computer Programming 91, Part A
-  year: 2014
-  tag: journal
+  link: https://link.springer.com/chapter/10.1007/978-3-319-06410-9_7
 
 - title: "Infinite-State Model Checking of LTLR Formulas Unsing Narrowing"
   authors: Kyungmin Bae and José Meseguer
-  venue: International Workshop on Rewriting Logic and its Applications
+  venue: International Workshop on Rewriting Logic and its Applications (WRLA)
   year: 2014
-  tag: conference
+  month: 4
+  tag: conference #workshop
+  link: https://link.springer.com/chapter/10.1007/978-3-319-12904-4_6
 
 - title: "Rewriting-based model checking methods"
   authors: Kyungmin Bae
   venue: PhD Dissertation, Department of Computer Science, University of Illinois at Urbana-Champaign, USA
   year: 2014
   tag: dissertation
+  link: https://www.proquest.com/openview/9451a12a2dad40776b7c058eedf56496/1?cbl=18750&pq-origsite=gscholar
 
 
 # 2013
 
 - title: "Abstract Logical Model Checking of Infinite-State Systems Using Narrowing"
-  authors: Kyungmin Bae, Santiago Escobar and José Meseguer
+  authors: Kyungmin Bae, Santiago Escobar, and José Meseguer
   venue: International Conference on Rewriting Techniques and Applications (RTA)
   year: 2013
+  month: 1
   tag: conference
+  link: https://d1wqtxts1xzle7.cloudfront.net/89525402/8-libre.pdf?1660302631=&response-content-disposition=inline%3B+filename%3DAbstract_Logical_Model_Checking_of_Infin.pdf&Expires=1773337997&Signature=Xor6jnyGiuB~4LJuCovOON1EwtoCYr4jFe81Ci6IAJE-5LVQUhx8yCJKDSnIVlLvobOCLCsDNoWAxf3a16OlCNN4Yfei~PRqa-BF6wI3Do1C7jx61Po18v7Gq5uFqLRpM~UunyTZfKDBQQkt7rwe5tR4InYFuEXTofMBB9wF5AVkkrbmaNOaJCbO0E-Qo0rT5rbkhcVDOZ2kcodtsvjMu4M0iJ8kloAXT2ZL~mA6TN9YmFPNGZjrRVpM3Dp1f4k8miaKAbQqDJXFCml~jl5nsclujOoVs7VInm6dpMJzXoP5lrYyrU~AsCnQgVWU25HwIs8ARU8kC96uVGJwOS61vw__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA
 
 
 # 2012
 
-- title: "The SynchAADL2Maude Tool"
-  authors: Kyungmin Bae, Peter Olveczky, José Meseguer, and Abdullah Al-Nayeem
-  venue: International Conference on Fundamental Approaches to Software Engineering (FASE)
-  year: 2012
-  tag: conference
-
-- title: "Formal Patterns for Multi-Rate Distributed Real-Time Systems"
-  authors: Kyungmin Bae, José Meseguer, and Peter Olveczky
-  venue: International Symposium on Formal Aspects of Component Software (FACS)
-  year: 2012
-  tag: conference
-
 - title: "Verifying Hierarchical Ptolemy II Discrete-Event Models using Real-Time Maude"
-  authors: Kyungmin Bae, Peter C. Olveczky, Thomas H. Feng, Edward A. Lee and Stavros Tripakis
+  authors: Kyungmin Bae, Peter C. Ölveczky, Thomas H. Feng, Edward A. Lee, and Stavros Tripakis
   venue: Science of Computer Programming 77(12)
   year: 2012
+  month: 10
   tag: journal
+  link: https://www.sciencedirect.com/science/article/pii/S0167642310001863
+
+- title: "Formal Patterns for Multi-Rate Distributed Real-Time Systems"
+  authors: Kyungmin Bae, José Meseguer, and Peter Ölveczky
+  venue: International Symposium on Formal Aspects of Component Software (FACS)
+  year: 2012
+  month: 9
+  tag: conference
+  link: https://link.springer.com/chapter/10.1007/978-3-642-35861-6_1
 
 - title: "PALS-Based Analysis of an Airplane Multirate Control System in Real-Time Maude"
-  authors: Kyungmin Bae, Josh Krisiloff, José Meseguer, and Peter Olveczky
-  venue: International Workshop on Formal Techniques for Safety-Critical Systems
+  authors: Kyungmin Bae, Josh Krisiloff, José Meseguer, and Peter Ölveczky
+  venue: International Workshop on Formal Techniques for Safety-Critical Systems (FTSCS)
   year: 2012
+  tag: conference #workshop
+  link: https://arxiv.org/pdf/1301.0038
+
+- title: "The SynchAADL2Maude Tool"
+  authors: Kyungmin Bae, Peter Ölveczky, José Meseguer, and Abdullah Al-Nayeem
+  venue: International Conference on Fundamental Approaches to Software Engineering (FASE)
+  year: 2012
+  month: 4
   tag: conference
+  link: https://link.springer.com/chapter/10.1007/978-3-642-28872-2_4
 
 - title: "Model Checking LTLR Formulas under Localized Fairness"
   authors: Kyungmin Bae and José Meseguer
-  venue: International Workshop on Rewriting Logic and its Applications
+  venue: International Workshop on Rewriting Logic and its Applications (WRLA)
   year: 2012
+  month: 3
   tag: conference
+  link: https://link.springer.com/chapter/10.1007/978-3-642-34005-5_6
 
 
 # 2011
+
+- title: "Synchronous AADL and its Formal Analysis in Real-Time Maude"
+  authors: Kyungmin Bae, Peter Ölveczky, Abdullah Al-Nayeem, and José Meseguer
+  venue: International Conference on Formal Engineering Methods (ICFEM)
+  year: 2011
+  month: 10
+  tag: conference
+  link: https://link.springer.com/chapter/10.1007/978-3-642-24559-6_43
 
 - title: "State/Event-based LTL Model Checking under Parametric Generalized Fairness"
   authors: Kyungmin Bae and José Meseguer
   venue: International Conference on Computer Aided Verification (CAV)
   year: 2011
+  month: 7
   tag: conference
-
-- title: "Synchronous AADL and its Formal Analysis in Real-Time Maude"
-  authors: Kyungmin Bae, Peter Olveczky, Abdullah Al-Nayeem and José Meseguer
-  venue: International Conference on Formal Engineering Methods (ICFEM)
-  year: 2011
-  tag: conference
+  link: https://link.springer.com/chapter/10.1007/978-3-642-22110-1_11
 
 
 # 2010
 
 - title: "Extending the Real-Time Maude Semantics of Ptolemy to Hierarchical DE Models"
-  authors: Kyungmin Bae and Peter C. Olveczky
-  venue: nternational Workshop on Rewriting Techniques for Real-Time Systems
+  authors: Kyungmin Bae and Peter C. Ölveczky
+  venue: International Workshop on Rewriting Techniques for Real-Time Systems (RTRTS)
   year: 2010
-  tag: conference
+  month: 9
+  tag: conference #workshop
+  link: https://arxiv.org/pdf/1009.4261
 
 - title: "The Linear Temporal Logic of Rewriting Maude Model Checker"
   authors: Kyungmin Bae and José Meseguer
-  venue: International Workshop on Rewriting Logic and its Applications
+  venue: International Workshop on Rewriting Logic and its Applications (WRLA)
   year: 2010
-  tag: conference
+  month: 3
+  tag: conference #workshop
+  link: https://link.springer.com/chapter/10.1007/978-3-642-16310-4_14
 
 
 # 2009
 
 - title: "Verifying Ptolemy II Discrete-Event Models using Real-Time Maude"
-  authors: Kyungmin Bae, Peter C. Olveczky, Thomas H. Feng and Stavros Tripakis
+  authors: Kyungmin Bae, Peter C. Ölveczky, Thomas H. Feng, and Stavros Tripakis
   venue: International Conference on Formal Engineering Methods (ICFEM)
   year: 2009
+  month: 12
   tag: conference
+  link: https://link.springer.com/chapter/10.1007/978-3-642-10373-5_37
 
 
 # 2008
@@ -608,4 +644,4 @@
   authors: Kyungmin Bae and José Meseguer
   venue: International Workshop on Rule-Based Programming
   year: 2008
-  tag: conference
+  tag: conference #workshop

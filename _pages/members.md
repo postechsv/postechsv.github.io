@@ -52,9 +52,9 @@ layout: page
     <span class="former-item">
       <span class="former-name"><b>{{ member.name }}</b></span>
       <span class="former-info">
-        {% if member.degree %} {{ member.degree }}{% endif %}
-        {% if member.date %}, <span class="former-date">{{ member.date }}</span>{% endif %}
-        {% if member.affiliation %} <span class="former-affiliation">(now in {{ member.affiliation }})</span>{% endif %}
+        {% if member.degree %}<span class="former-degree">{{ member.degree }}</span>{% endif %}
+        {% if member.date %}<span class="former-date">{{ member.date }}</span>{% endif %}
+        {% if member.affiliation %}<span class="former-affiliation">→ {{ member.affiliation }}</span>{% endif %}
       </span>
     </span>
   </li>

@@ -134,7 +134,7 @@ For small N, DQN is slower due to neural network inference overhead. However, fo
 
 #### Publications
 
-- H. Kang, B. Son, and K. Bae, "RL-based Heuristic Learning for Model Checking," Korea Conference on Software Engineering (KCSE), 2026.
+1. H. Kang, B. Son, and K. Bae, <em>RL-based Heuristic Learning for Model Checking.</em> Korea Conference on Software Engineering (KCSE). 2026.
 
 
 ---

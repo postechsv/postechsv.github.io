@@ -96,10 +96,16 @@
             if (e.isIntersecting) { e.target.classList.add('in-view'); io.unobserve(e.target); }
           });
         }, { threshold: 0.08 });
-        document.querySelectorAll('.section-block, .news-container, .video-container').forEach(function (el, i) {
-          el.classList.add('scroll-animate');
-          el.style.transitionDelay = (i * 0.07) + 's';
-          io.observe(el);
+        var loadIdx = 0;
+        document.querySelectorAll('.section-block, .news-container, .video-container').forEach(function (el) {
+          var r = el.getBoundingClientRect();
+          if (r.top < window.innerHeight && r.bottom > 0) {
+            el.style.animation = 'fadeUp 0.45s ease ' + (loadIdx * 0.08) + 's both';
+            loadIdx++;
+          } else {
+            el.classList.add('scroll-animate');
+            io.observe(el);
+          }
         });
       })();
     </script>

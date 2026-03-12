@@ -1,8 +1,88 @@
 ---
-layout: page
+layout: default
 ---
-<h3>{{ page.title }}</h3>
+<div class="container rpage-container">
+  <div class="rpage-content">
+    <h3>{{ page.title }}</h3>
+    {{ content }}
+    <br>
+  </div>
+</div>
 
-{{ content }}
+<nav class="rpage-toc-fixed hidden-xs hidden-sm hidden-md" aria-label="Page contents">
+  <div class="toc-inner" id="toc-list"></div>
+</nav>
 
-<br>
+<script>
+(function () {
+  var tocFixed = document.querySelector('.rpage-toc-fixed');
+  var tocInner = document.getElementById('toc-list');
+  var content  = document.querySelector('.rpage-content');
+  if (!tocFixed || !tocInner || !content) return;
+
+  var headings = Array.from(content.querySelectorAll('h4, h5'));
+  if (headings.length < 2) {
+    tocFixed.style.display = 'none';
+    return;
+  }
+
+  var items = [];
+  var forcedIdx = -1;
+  var forcedTimer = null;
+
+  headings.forEach(function (h, i) {
+    if (!h.id) h.id = 'toc-' + i;
+
+    var div = document.createElement('div');
+    div.className = h.tagName === 'H5' ? 'toc-item toc-h5' : 'toc-item';
+
+    var a = document.createElement('a');
+    a.className = 'toc-link';
+    a.href = '#' + h.id;
+    a.setAttribute('data-target', h.id);
+    a.addEventListener('click', function (e) {
+      e.preventDefault();
+      var target = document.getElementById(this.getAttribute('data-target'));
+      if (!target) return;
+      var top = target.getBoundingClientRect().top + window.scrollY - 80;
+      window.scrollTo({ top: top, behavior: 'smooth' });
+      forcedIdx = i;
+      if (forcedTimer) clearTimeout(forcedTimer);
+      forcedTimer = setTimeout(function () { forcedIdx = -1; }, 1000);
+      updateActive();
+    });
+
+    var textEl = document.createElement('span');
+    textEl.className = 'toc-text-el';
+    textEl.textContent = h.textContent.trim();
+
+    var lineEl = document.createElement('span');
+    lineEl.className = 'toc-line-el';
+
+    a.appendChild(textEl);
+    a.appendChild(lineEl);
+    div.appendChild(a);
+    tocInner.appendChild(div);
+    items.push(div);
+  });
+
+  function updateActive() {
+    if (forcedIdx >= 0) {
+      items.forEach(function (div, i) { div.classList.toggle('active', i === forcedIdx); });
+      return;
+    }
+    var scrollY = window.scrollY + 110;
+    var activeIdx = -1;
+    headings.forEach(function (h, i) {
+      if (h.getBoundingClientRect().top + window.scrollY <= scrollY) activeIdx = i;
+    });
+    var atBottom = window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 10;
+    if (atBottom && headings.length > 0) activeIdx = headings.length - 1;
+    items.forEach(function (div, i) {
+      div.classList.toggle('active', i === activeIdx);
+    });
+  }
+  window.addEventListener('scroll', updateActive, { passive: true });
+  updateActive();
+})();
+</script>

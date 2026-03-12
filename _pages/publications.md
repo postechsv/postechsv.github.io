@@ -40,7 +40,6 @@ permalink: /publications
                 <a href="{{ publi.link }}">{{ publi.title }}</a><br>
                 <em>{{ publi.authors }}</em><br>
                 {{ publi.venue }}, {{ publi.year }}
-                <br><br>
             </div>
         {% endfor %}
     {% endfor %}

@@ -6,14 +6,20 @@ layout: page
 
 ### Overview
 
-#### Logic and Algorithms for Software Verification.
-Software is everywhere, but it can be buggy, unpredictable, and vulnerable to attacks. The goal of software verification is to ensure the reliability, security, and safety of software. In this research, we study automated algorithms for software verification, based model checking, computational logic, and satisfiability modulo theories (SMT).
+<div class="overview-topic">
+<h4>Logic and Algorithms for Software Verification</h4>
+<p>Software is everywhere, but it can be buggy, unpredictable, and vulnerable to attacks. The goal of software verification is to ensure the reliability, security, and safety of software. In this research, we study automated algorithms for software verification, based model checking, computational logic, and satisfiability modulo theories (SMT).</p>
+</div>
 
-#### Modeling and Verification of Autonomous Cyber-Physical Agents.
-Autonomous cyber-physical agent systems, such as self-driving cars and drones, must meet strong safety requirements. The goal of this study is to develop techniques to model and verify these systems before actual implementation, which can avoid possible accidents during prototype testing.
+<div class="overview-topic">
+<h4>Modeling and Verification of Autonomous Cyber-Physical Agents</h4>
+<p>Autonomous cyber-physical agent systems, such as self-driving cars and drones, must meet strong safety requirements. The goal of this study is to develop techniques to model and verify these systems before actual implementation, which can avoid possible accidents during prototype testing.</p>
+</div>
 
-#### Automated Analysis of Safety-Critical AI Software.
-AI-based technologies such as deep neural networks are being applied to safety-critical applications, e.g., self-driving cars and air traffic control systems. The subject of this research is to develop new techniques to prove the safety requirements of AI-based systems, to prevent accidents or security problems caused by software errors.
+<div class="overview-topic">
+<h4>Automated Analysis of Safety-Critical AI Software</h4>
+<p>AI-based technologies such as deep neural networks are being applied to safety-critical applications, e.g., self-driving cars and air traffic control systems. The subject of this research is to develop new techniques to prove the safety requirements of AI-based systems, to prevent accidents or security problems caused by software errors.</p>
+</div>
 
 <hr>
 
@@ -39,9 +45,6 @@ AI-based technologies such as deep neural networks are being applied to safety-c
       </div>
     </div>
   </a>
-  {% unless forloop.last %}
-  <hr class="dot">
-  {% endunless %}
   {% endfor %}
 </div>
 

@@ -23,9 +23,6 @@ permalink: /research/topics/
         </div>
     </a>
     
-    {% unless forloop.last %}
-    <hr class="dot">
-    {% endunless %}
     {% endfor %}
 </div>
 

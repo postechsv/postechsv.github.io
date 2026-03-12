@@ -3,7 +3,7 @@
 {% if role == "faculty" %}
 <div class="col clearfix member-profile">
   <img src="/images/teampic/{{ include.member.photo }}" class="member-photo member-photo-faculty" />
-  <h4 class="member-name">{{ include.member.name }}</h4>
+  <p class="member-name">{{ include.member.name }}</p>
   <div class="member-info">{{ include.member.info }}<br></div>
   <div class="member-link"><a href="mailto:{{ include.member.email }}">{{ include.member.email }}</a></div>
   <div class="member-spacer"></div>
@@ -13,7 +13,7 @@
 {% else %}
 <div class="col member-profile student">
   <img src="/images/teampic/{{ include.member.photo }}" class="member-photo" />
-  <h4 class="member-name">{{ include.member.name }}<span class="member-links-inline">{% include member-links.html member=include.member %}</span></h4>
+  <p class="member-name">{{ include.member.name }}<span class="member-links-inline">{% include member-links.html member=include.member %}</span></p>
   <div class="member-info">{{ include.member.info }}<br></div>
   <div class="member-link"><a href="mailto:{{ include.member.email }}">{{ include.member.email }}</a></div>
   <div class="member-spacer"></div>
