@@ -83,5 +83,25 @@
       crossorigin="anonymous"
     ></script>
     {% include footer.html %}
+    <script>
+      (function () {
+        var navbar = document.querySelector('.navbar');
+        if (navbar) {
+          window.addEventListener('scroll', function () {
+            navbar.classList.toggle('navbar-scrolled', window.scrollY > 30);
+          }, { passive: true });
+        }
+        var io = new IntersectionObserver(function (entries) {
+          entries.forEach(function (e) {
+            if (e.isIntersecting) { e.target.classList.add('in-view'); io.unobserve(e.target); }
+          });
+        }, { threshold: 0.08 });
+        document.querySelectorAll('.section-block, .news-container, .video-container').forEach(function (el, i) {
+          el.classList.add('scroll-animate');
+          el.style.transitionDelay = (i * 0.07) + 's';
+          io.observe(el);
+        });
+      })();
+    </script>
   </body>
 </html>
