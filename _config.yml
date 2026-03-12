@@ -44,10 +44,6 @@ defaults:
       layout: "page"
 
 collections:
-  research:
-    output: false
   researchtopics:
     output: true
     permalink: /research/:title.html
-  home:
-    output: false

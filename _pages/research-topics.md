@@ -4,7 +4,7 @@ sitemap: false
 permalink: /research/topics/
 ---
 
-<h3>Research Topics</h3>
+### Research Topics
 
 <div class="section-block container">
     {% for proj in site.researchtopics %}

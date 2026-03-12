@@ -11,9 +11,28 @@ permalink: /
 />
 
 <div class="container home-container">
-  {% for content in site.home %}
-    {{content}}
-    <br>
-    {% unless forloop.last %}<hr>{% endunless %}
-  {% endfor %}
+  <h2>About us</h2>
+
+  <p>We study automated techniques to verify the reliability, security, and safety of computer systems. Our research spans various domains, including cyber-physical systems, trustworthy AI, and logical foundations and algorithms. Please see our <a class="label label-default" href="{{site.url}}/research">RESEARCH</a> page for details on our current projects.</p>
+
+  <div class="alert alert-info text-center" role="alert">
+    <b>We are looking for motivated students at all levels (graduate or undergraduate).<br>
+    For more details, please contact Prof. Kyungmin Bae </b>(<a href="mailto:kmbae@postech.ac.kr">kmbae at postech.ac.kr</a>).
+  </div>
+
+  <br>
+  <hr>
+
+  <div class="news-header">
+    <h2>Recent News</h2>
+    <a href="/news" class="btn btn-sm btn-default more-btn">More...</a>
+  </div>
+
+  <div class="news-section">
+    <div class="news">
+      {% include news-list.html limit=8 %}
+    </div>
+  </div>
+
+  <br>
 </div>
