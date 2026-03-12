@@ -77,14 +77,7 @@ The specification shown below is an excerpt of the main all-path reachability cl
 
 #### Reference
 
-1. Byoungho Son and Kyungmin Bae. <em>A Formal Executable Semantics of PROMELA.</em> VMCAI 2026. [[paper](https://link.springer.com/chapter/10.1007/978-3-032-15700-3_16)]
-
-
----
-
-#### Artifact
-
-[https://doi.org/10.5281/zenodo.17183744](https://doi.org/10.5281/zenodo.17183744)
+1. Byoungho Son and Kyungmin Bae. <em>A Formal Executable Semantics of PROMELA.</em> VMCAI 2026. [[paper](https://link.springer.com/chapter/10.1007/978-3-032-15700-3_16), [Artifact](https://doi.org/10.5281/zenodo.17183744)]
 
 
 ---

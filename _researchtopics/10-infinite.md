@@ -121,4 +121,4 @@ Kyunwoo Kim <a href="mailto:kkw423@postech.ac.kr">kkw423 (at) postech.ac.kr</a>
 #### References
 
 This research extends the following foundational research:
-* Kyungmin Bae, Santiago Escobar , José Meseguer: Abstract Logical Model Checking of Infinite-State Systems Using Narrowing. RTA 2013: 81-96.
+* Kyungmin Bae, Santiago Escobar, José Meseguer: Abstract Logical Model Checking of Infinite-State Systems Using Narrowing. RTA 2013: 81-96.
