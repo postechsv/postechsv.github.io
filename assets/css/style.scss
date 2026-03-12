@@ -44,6 +44,7 @@ $text-alert:   #2a4a62;
   --text-alert:       #{$text-alert};
 
   // Footer
+  --footer-bg:        var(--gray-700);
   --footer-border:    rgba(var(--accent-rgb), 0.45);
   --footer-text:      rgba(var(--white-rgb), 0.72);
   --footer-text-dim:  rgba(var(--white-rgb), 0.45);
@@ -247,13 +248,13 @@ tbody tr:nth-child(odd) th {
 }
 
 .footer {
-  background-color: var(--gray-700);
+  background-color: var(--footer-bg);
   border-top: 2px solid var(--footer-border);
 }
 
 .footer-content {
   color: var(--footer-text);
-  font-size: 0.6rem;
+  font-size: 0.7rem;
   line-height: 1.75;
   font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   padding-top: 1.4rem;
@@ -286,7 +287,7 @@ tbody tr:nth-child(odd) th {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 21px;
+  gap: 24px;
 
   @media (max-width: 992px) {
     flex-direction: row;
@@ -304,21 +305,21 @@ tbody tr:nth-child(odd) th {
 }
 
 .footer-logo-sv {
-  height: 36px;
+  height: 42px;
   width: auto;
   filter: brightness(0) invert(1);
-  opacity: 0.85;
+  opacity: 0.66;
 }
 
 .footer-logo-postech {
-  height: 23px;
+  height: 21px;
   width: auto;
   filter: brightness(0) invert(1);
-  opacity: 0.78;
+  opacity: 0.66;
 }
 
 .footer-text-col {
-  line-height: 0.9rem;
+  line-height: 0.95rem;
 
   @media (min-width: 993px) {
     padding-left: 2rem;
@@ -338,19 +339,19 @@ tbody tr:nth-child(odd) th {
 
 .footer-copyright {
   color: var(--footer-text-dim);
-  font-size: 0.55rem;
+  font-size: 0.66rem;
 }
 
 .footer-spacer {
   display: block;
   height: 1px;
   background: rgba(var(--white-rgb), 0.10);
-  margin: 0.4rem 0;
+  margin: 0.5rem 0;
 }
 
 .footer-privacy-link {
   color: var(--footer-link);
-  font-size: 0.55rem;
+  font-size: 0.66rem;
   text-decoration: none;
   transition: color 0.2s ease;
 
