@@ -108,6 +108,27 @@
           }
         });
       })();
+      document.addEventListener("DOMContentLoaded", function() {
+        const emailElements = document.querySelectorAll(".email-protect");
+        
+        emailElements.forEach(function(el) {
+          const user = el.getAttribute("data-user");
+          const domain = el.getAttribute("data-domain");
+          
+          if (user && domain) {
+            const email = user + "@" + domain;
+            const link = document.createElement("a");
+            
+            link.href = "mailto:" + email;
+            link.textContent = email;
+            
+            el.appendChild(link);
+            
+            el.removeAttribute("data-user");
+            el.removeAttribute("data-domain");
+          }
+        });
+      });
     </script>
   </body>
 </html>
