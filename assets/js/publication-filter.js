@@ -15,26 +15,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
   document.querySelectorAll('.filter-button-group .btn').forEach(button => {
     button.addEventListener('click', function() {
-      const filter = this.id.replace('select-', '');
-      const isAllButton = filter === 'all';
-
       if (this.classList.contains('btn-primary')) {
         this.classList.remove('btn-primary');
       } else {
-        if (isAllButton) {
-          document.querySelectorAll('.filter-button-group .btn').forEach(btn => {
-            if (!btn.classList.contains('btn-since')) {
-              btn.classList.remove('btn-primary');
-            }
-          });
-        } else {
-          if (!(filter === 'before' || filter === 'after')) {
-            document.querySelector('#select-all').classList.remove('btn-primary');
-          }
-        }
         this.classList.add('btn-primary');
       }
-
       filterElements();
     });
   });
@@ -80,31 +65,20 @@ document.addEventListener('DOMContentLoaded', function() {
     const isAfterSelected = activeFilters.includes('after');
     const otherFilters = activeFilters.filter(filter => filter !== 'before' && filter !== 'after');
 
-    if (activeFilters.includes('all')) {
-      allElements.forEach(element => {
-        const elementClasses = Array.from(element.classList);
-        const isOld = elementClasses.includes('old');
-        const isNew = elementClasses.includes('new');
-        const shouldShow = (isOld && isBeforeSelected) || (isNew && isAfterSelected);
-        if (shouldShow && element.style.display === 'none') showElement(element);
-        else if (!shouldShow && element.style.display !== 'none') hideElement(element);
-      });
-    } else if (activeFilters.length === 0) {
-      allElements.forEach(element => {
-        if (element.style.display !== 'none') hideElement(element);
-      });
-    } else {
-      allElements.forEach(element => {
-        const elementClasses = Array.from(element.classList);
-        const isOld = elementClasses.includes('old');
-        const isNew = elementClasses.includes('new');
-        const shouldShow = otherFilters.some(filter => elementClasses.includes(filter));
-        const showOld = isOld && isBeforeSelected && shouldShow;
-        const showNew = isNew && isAfterSelected && shouldShow;
-        const visible = (shouldShow && !isOld && !isNew) || showOld || showNew;
-        if (visible && element.style.display === 'none') showElement(element);
-        else if (!visible && element.style.display !== 'none') hideElement(element);
-      });
-    }
+    allElements.forEach(element => {
+      const elementClasses = Array.from(element.classList);
+      const isOld = elementClasses.includes('old');
+      const isNew = elementClasses.includes('new');
+
+      const categoryMatch = otherFilters.some(filter => elementClasses.includes(filter));
+      const timeMatch = (isOld && isBeforeSelected) || (isNew && isAfterSelected) || (!isOld && !isNew);
+      const shouldShow = categoryMatch && timeMatch;
+
+      if (shouldShow && element.style.display === 'none') {
+        showElement(element);
+      } else if (!shouldShow && element.style.display !== 'none') {
+        hideElement(element);
+      }
+    });
   }
 });

@@ -84,10 +84,10 @@
 
 - title: "Model Checking of Signal Temporal Logic"
   authors: Jia Lee
-  venue: Ph.D Dissertation, Department of Computer Science, POSTECH
+  venue: Doctoral Dissertation, Department of Computer Science and Engineering, POSTECH
   year: 2025
   month: 2
-  tag: dissertation
+  tag: thesis
   link: http://www.dcollection.net/handler/postech/200000859272
 
 
@@ -247,16 +247,16 @@
 
 - title: "Formal Specification and Analysis of PLC and OSEK/VDX OS using Maude"
   authors: Sangki Kim
-  venue: MS Dissertation, Department of Computer Science, POSTECH
+  venue: Master's Thesis, Department of Computer Science and Engineering, POSTECH
   year: 2022
-  tag: dissertation
+  tag: thesis
   link: http://www.dcollection.net/handler/postech/200000632060
 
 - title: "Abstractions for Verifying DNN"
   authors: Jueun Yeon
-  venue: MS Dissertation, Department of Computer Science, POSTECH
+  venue: Master's Thesis, Department of Computer Science and Engineering, POSTECH
   year: 2022
-  tag: dissertation
+  tag: thesis
   link: http://www.dcollection.net/handler/postech/200000632492
   
 - title: "STLmc: Robust STL Model Checking of Hybrid Systems using SMT"
@@ -282,9 +282,9 @@
   
 - title: "Extending the HybridSynchAADL Modeling Language and Tool"
   authors: Jaehun Lee
-  venue: MS Dissertation, Department of Computer Science, POSTECH
+  venue: Master's Thesis, Department of Computer Science and Engineering, POSTECH
   year: 2022
-  tag: dissertation
+  tag: thesis
   link: http://www.dcollection.net/handler/postech/200000600467
   
 
@@ -327,9 +327,9 @@
 
 - title: "Formal Verification of Deep Neural Networks using Structural Properties"
   authors: Moonhyeon Chung
-  venue: MS Dissertation, Department of Computer Science, POSTECH
+  venue: Master's Thesis, Department of Computer Science and Engineering, POSTECH
   year: 2021
-  tag: dissertation
+  tag: thesis
   link: http://www.dcollection.net/handler/postech/200000506246
 
 
@@ -364,9 +364,9 @@
 
 - title: "HybridSynchAADL: Modeling and Formal Analysis of Virtually Synchronous Cyber-Physical Systems in AADL"
   authors: Sharon Kim
-  venue: MS Dissertation, Department of Computer Science, POSTECH
+  venue: Master's Thesis, Department of Computer Science and Engineering, POSTECH
   year: 2020
-  tag: dissertation
+  tag: thesis
   link: http://www.dcollection.net/handler/postech/200000287492
 
 
@@ -530,9 +530,9 @@
 
 - title: "Rewriting-based model checking methods"
   authors: Kyungmin Bae
-  venue: PhD Dissertation, Department of Computer Science, University of Illinois at Urbana-Champaign, USA
+  venue: Doctoral Dissertation, Department of Computer Science, University of Illinois at Urbana-Champaign
   year: 2014
-  tag: dissertation
+  tag: thesis
   link: https://www.proquest.com/openview/9451a12a2dad40776b7c058eedf56496/1?cbl=18750&pq-origsite=gscholar
 
 

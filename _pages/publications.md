@@ -6,12 +6,11 @@ permalink: /publications
 ### Publications
 
 <div class="btn-group filter-button-group" role="group">
-    <button type="button" class="btn" id="select-all">All</button>
     <button type="button" class="btn btn-primary" id="select-conference">Conference</button>
     <button type="button" class="btn btn-primary" id="select-journal">Journal</button>
     <button type="button" class="btn" id="select-domestic">Domestic</button>
     <button type="button" class="btn" id="select-book">Book</button>
-    <button type="button" class="btn" id="select-dissertation">Dissertation</button>
+    <button type="button" class="btn" id="select-thesis">Thesis</button>
 </div>
 <div class="btn-group filter-button-group" role="group">
     <button type="button" class="btn btn-primary btn-since" id="select-after">Since 2016</button>
