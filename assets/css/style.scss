@@ -52,7 +52,7 @@ $text-alert:   #2a4a62;
   --footer-link:      rgba(var(--black-rgb), 0.70);
 
   // Banner hero
-  --banner-overlay:   rgba(var(--accent-rgb), 0.5);
+  --banner-overlay:   rgba(var(--accent-rgb), 0.25);
 }
 
 @import "base";
@@ -1271,7 +1271,7 @@ div.element-item {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 5px 10px rgba(var(--black-rgb), 0.18);
+  box-shadow: inset 0 10px 25px rgba(var(--black-rgb), 0.25);
   padding-top: 10px;
 
   @media (max-width: 62em) {
@@ -1308,11 +1308,11 @@ div.element-item {
   text-align: center;
   font-family: "Lato", sans-serif;
   font-weight: 700;
-  font-size: 1.85rem;
+  font-size: 1.5rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.88);
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(0, 0, 0, 0.4);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4), 0 4px 8px rgba(0, 0, 0, 0.2);
   line-height: 1.35;
   user-select: none;
   padding: 0 1rem;
