@@ -1,12 +1,9 @@
 ---
 ---
 
-// ── Accent ───────────────────────────────────────────────────────
 $accent:       #6184a6;
-$accent-dark:  #4a6d8a;
 $accent-rgb:   97, 132, 166;
 
-// ── Gray scale ───────────────────────────────────────────────────
 $gray-800:     #333;
 $gray-700:     #444;
 $gray-600:     #555;
@@ -14,21 +11,15 @@ $gray-500:     #666;
 $gray-400:     #888;
 $gray-100:     #f9f9f9;
 
-// ── Semantic one-offs ────────────────────────────────────────────
-$text-alert:   #2a4a62;
-
 :root {
-  // Accent
   --accent:           #{$accent};
   --accent-rgb:       #{$accent-rgb};
-  --accent-dark:      #{$accent-dark};
+  --accent-dark:      color-mix(in srgb, var(--accent) 80%, black);
   --accent-light:     color-mix(in srgb, var(--accent) 55%, white);
 
-  // Opacity helpers
   --black-rgb:        0, 0, 0;
   --white-rgb:        255, 255, 255;
 
-  // Gray scale
   --gray-800:         #{$gray-800};
   --gray-700:         #{$gray-700};
   --gray-600:         #{$gray-600};
@@ -36,22 +27,19 @@ $text-alert:   #2a4a62;
   --gray-400:         #{$gray-400};
   --gray-100:         #{$gray-100};
 
-  // Semantic text aliases
   --text-heading:     var(--gray-800);
   --text-body:        var(--gray-700);
   --text-secondary:   var(--gray-600);
   --text-muted:       var(--gray-500);
   --text-faint:       var(--gray-400);
-  --text-alert:       #{$text-alert};
+  --text-alert:       color-mix(in srgb, var(--accent), var(--gray-800));
 
-  // Footer
   --footer-bg:        var(--gray-100);
   --footer-border:    rgba(var(--accent-rgb), 0.5);
   --footer-text:      rgba(var(--black-rgb), 0.75);
   --footer-text-dim:  rgba(var(--black-rgb), 0.7);
   --footer-link:      rgba(var(--black-rgb), 0.70);
 
-  // Banner hero
   --banner-overlay:   var(--white-rgb);
 }
 
