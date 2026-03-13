@@ -1286,7 +1286,7 @@ div.element-item {
     position: absolute;
     inset: -12px;
     // background-image: url('/images/banner.png');
-    background: linear-gradient(150deg, rgba(var(--accent-rgb), 0.78) 0%, rgba(var(--accent-rgb), 0.06) 100%);
+    background: linear-gradient(30deg, rgba(var(--accent-rgb), 0.25) 25%, rgba(var(--accent-rgb), 0.75) 75%);
     // background-color: rgba(var(--accent-rgb), 0.12);
     background-size: cover;
     background-position: center;
@@ -1311,7 +1311,7 @@ div.element-item {
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.88);
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.15), 0 4px 16px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2), 0 4px 16px rgba(0, 0, 0, 0.4);
   line-height: 1.35;
   user-select: none;
   padding: 0 1rem;
