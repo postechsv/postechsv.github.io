@@ -53,7 +53,7 @@ body {
 }
 
 html {
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Cambria", serif;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: 18px;
   font-weight: 300;
   line-height: 1.6;
@@ -107,7 +107,7 @@ h6 {
   margin-top: 0.25em;
   margin-bottom: 1em;
   font-weight: 700;
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Cambria", serif;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   line-height: 1.1;
   color: var(--text-heading);
 }
@@ -133,7 +133,7 @@ table {
   background-color: transparent;
   margin-bottom: 1rem;
   width: 100%;
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Cambria", serif;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: 70%;
   border: 1px solid rgba(var(--black-rgb), 0.08);
   border-collapse: collapse;
@@ -156,7 +156,7 @@ tbody tr:nth-child(odd) th {
 .lab-logo {
   display: inline-flex;
   align-items: baseline;
-  font-family: "Montserrat", serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   line-height: 1;
   text-decoration: none;
@@ -228,7 +228,7 @@ tbody tr:nth-child(odd) th {
 .navbar {
   background-color: white;
   box-shadow: 0 0 0 0 rgba(var(--black-rgb), 0.15), 0 2.5px 5px 0 rgba(var(--black-rgb), 0.05);
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Cambria", serif;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   transition: box-shadow 0.3s ease;
 
   &.navbar-scrolled {
@@ -238,7 +238,7 @@ tbody tr:nth-child(odd) th {
 
 .navbar-nav > li > a {
   background-color: white;
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Cambria", serif;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.06em;
   font-weight: 400;
@@ -338,7 +338,7 @@ tbody tr:nth-child(odd) th {
   color: var(--footer-text);
   font-size: 0.72rem;
   line-height: 1.44;
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Cambria", serif;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
@@ -514,7 +514,7 @@ tbody tr:nth-child(odd) th {
   }
 
   .toc-text-el {
-    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Cambria", serif;
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     font-size: 0.8rem;
     font-weight: 400;
     line-height: 1.35;
@@ -671,7 +671,7 @@ tbody tr:nth-child(odd) th {
 
 .member-info,
 .member-link {
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Cambria", serif;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: 0.78rem;
   color: var(--text-secondary);
 }
@@ -974,7 +974,7 @@ a:hover > span.icon-linkedin {
 
 figcaption,
 .table-caption {
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Cambria", serif;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: 0.75rem !important;
   font-weight: 400;
   color: var(--text-secondary);
@@ -1005,7 +1005,7 @@ figcaption {
 }
 
 .more-btn {
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Cambria", serif;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: 0.76rem;
   white-space: nowrap;
   border-radius: 14px;
@@ -1101,7 +1101,7 @@ div.element-item {
 }
 
 .filter-button-group .btn {
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Cambria", serif;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: 0.82rem;
   border-radius: 16px;
   padding: 4px 14px;
@@ -1130,7 +1130,7 @@ div.element-item {
 }
 
 .pb {
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Cambria", serif;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
 .pb > div.element-item {
@@ -1271,8 +1271,8 @@ div.element-item {
     position: absolute;
     inset: -12px;
     // background-image: url('/images/banner.png');
-    // background: linear-gradient(120deg, rgba(var(--accent-rgb), 0.75) 0%, rgba(var(--accent-rgb), 0.5) 100%);
-    background-color: rgba(var(--accent-rgb), 0.5);
+    background: linear-gradient(250deg, rgba(var(--accent-rgb), 0.75) 0%, rgba(var(--accent-rgb), 0.5) 100%);
+    // background-color: rgba(var(--accent-rgb), 0.5);
     background-size: cover;
     background-position: center;
     // filter: blur(3px);
@@ -1290,7 +1290,7 @@ div.element-item {
   position: relative;
   z-index: 1;
   text-align: center;
-  font-family: "Montserrat", serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 1.25rem;
   letter-spacing: 0.3em;
@@ -1321,7 +1321,7 @@ div.element-item {
 }
 
 .text-center {
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Cambria", serif;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   text-align: center;
   font-size: 0.8rem;
 }
@@ -1335,5 +1335,5 @@ div.element-item {
 }
 
 #notfound {
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Cambria", serif;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
