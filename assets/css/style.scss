@@ -12,13 +12,13 @@ $gray-400:     #888;
 $gray-100:     #f9f9f9;
 
 :root {
-  --accent:           #{$accent};
-  --accent-rgb:       #{$accent-rgb};
-  --accent-dark:      color-mix(in srgb, var(--accent) 80%, black);
-  --accent-light:     color-mix(in srgb, var(--accent) 55%, white);
-
   --black-rgb:        0, 0, 0;
   --white-rgb:        255, 255, 255;
+
+  --accent:           #{$accent};
+  --accent-rgb:       #{$accent-rgb};
+  --accent-dark:      color-mix(in srgb, var(--accent) 80%, var(--black-rgb));
+  --accent-light:     color-mix(in srgb, var(--accent) 55%, var(--white-rgb));
 
   --gray-800:         #{$gray-800};
   --gray-700:         #{$gray-700};
@@ -39,8 +39,6 @@ $gray-100:     #f9f9f9;
   --footer-text:      rgba(var(--black-rgb), 0.75);
   --footer-text-dim:  rgba(var(--black-rgb), 0.7);
   --footer-link:      rgba(var(--black-rgb), 0.70);
-
-  --banner-overlay:   var(--white-rgb);
 }
 
 @import "base";
@@ -58,13 +56,13 @@ body {
 
 html {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Cambria", serif;
-  font-size: 19px;
+  font-size: 18px;
   font-weight: 300;
   line-height: 1.6;
   scroll-behavior: smooth;
 
   @media (min-width: 38em) {
-    font-size: 21px;
+    font-size: 20px;
   }
 }
 
@@ -390,8 +388,8 @@ tbody tr:nth-child(odd) th {
   height: 108px;
   width: auto;
   filter: brightness(0)
-          drop-shadow(0 1px 0 rgba(255, 255, 255, 0.85))
-          drop-shadow(0 -1px 1px rgba(0, 0, 0, 0.18));
+          drop-shadow(0 1px 0 rgba(var(--white-rgb), 0.85))
+          drop-shadow(0 -1px 1px rgba(var(--black-rgb), 0.18));
 }
 
 .footer-logo-postech {
@@ -399,8 +397,8 @@ tbody tr:nth-child(odd) th {
   padding-top: 4px;
   width: auto;
   filter: brightness(0)
-          drop-shadow(0 1px 0 rgba(255, 255, 255, 0.85))
-          drop-shadow(0 -1px 1px rgba(0, 0, 0, 0.18));
+          drop-shadow(0 1px 0 rgba(var(--white-rgb), 0.85))
+          drop-shadow(0 -1px 1px rgba(var(--black-rgb), 0.18));
   opacity: 0.52;
 }
 
@@ -430,7 +428,7 @@ tbody tr:nth-child(odd) th {
   display: block;
   height: 1px;
   background: linear-gradient(to right, transparent, rgba(var(--black-rgb), 0.12), transparent);
-  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.7);
+  box-shadow: 0 1px 0 rgba(var(--white-rgb), 0.7);
   margin: 0.6rem 0;
 }
 
@@ -455,7 +453,7 @@ tbody tr:nth-child(odd) th {
 }
 
 .home-container {
-  padding-top: 2rem;
+  margin-top: 2rem;
   padding-bottom: 2rem;
   animation: fadeUp 0.35s ease both;
 }
@@ -674,15 +672,6 @@ tbody tr:nth-child(odd) th {
   }
 }
 
-.col.clearfix.member-profile {
-  .member-name {
-    font-size: 1.0rem;
-    font-weight: 700;
-    color: var(--text-body);
-  }
-  margin-bottom: 6%;
-}
-
 .member-info,
 .member-link {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Cambria", serif;
@@ -690,10 +679,10 @@ tbody tr:nth-child(odd) th {
   color: var(--text-secondary);
 }
 
-.student .member-name,
-.student .member-info,
-.student .member-link,
-.student .member-links-block {
+.member-name,
+.member-info,
+.member-link,
+.member-links-block {
   padding-left: 5%;
 }
 
@@ -1239,7 +1228,6 @@ div.element-item {
 .alert.alert-info {
   background: rgba(var(--accent-rgb), 0.07);
   border: 1px solid rgba(var(--accent-rgb), 0.22);
-  border-left: 5px solid var(--accent);
   border-radius: 6px;
   color: var(--text-alert);
   padding: 1rem 1.4rem;
@@ -1265,20 +1253,22 @@ div.element-item {
   width: 100%;
   max-width: 45rem;
   margin: 0 auto;
+  margin-top: 1em;
   position: relative;
   overflow: hidden;
   height: 220px;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: inset 0 5px 5px rgba(var(--accent-rgb), 0.25);
-  padding-top: 10px;
+  // box-shadow: inset 0 5px 5px rgba(var(--accent-rgb), 0.25);
 
   @media (max-width: 62em) {
+    margin-top: 0.5em;
     height: 170px;
   }
 
   @media (max-width: 480px) {
+    margin-top: 0.5em;
     height: 140px;
   }
 
@@ -1298,7 +1288,7 @@ div.element-item {
     content: '';
     position: absolute;
     inset: 0;
-    background: var(--banner-overlay);
+    background: var(--white-rgb);
   }
 }
 
@@ -1309,10 +1299,10 @@ div.element-item {
   font-family: "Montserrat", serif;
   font-weight: 700;
   font-size: 1.25rem;
-  letter-spacing: 0.35em;
+  letter-spacing: 0.25em;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.88);
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3), 0 4px 8px rgba(0, 0, 0, 0.15);
+  color: rgba(var(--white-rgb), 0.88);
+  text-shadow: 0 2px 4px var(--gray-400);
   line-height: 1.35;
   user-select: none;
   padding: 0 1rem;

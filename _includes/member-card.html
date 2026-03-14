@@ -4,13 +4,13 @@
 {% if role == "faculty" %}
 <div class="col clearfix member-profile">
   <img src="/images/teampic/{{ include.member.photo }}" class="member-photo member-photo-faculty" />
-  <p class="member-name">{{ include.member.name }}</p>
+  <p class="member-name">{{ include.member.name }}<span class="member-links-inline">{% include member-links.html member=include.member %}</span></p>
   <div class="member-info">{{ include.member.info }}<br></div>
   <div class="member-link">
     <span class="email-protect" data-user="{{ email_parts[0] }}" data-domain="{{ email_parts[1] }}"></span>
   </div>
   <div class="member-spacer"></div>
-  {% include member-links.html member=include.member %}
+  <span class="member-links-block">{% include member-links.html member=include.member %}</span>
 </div>
 
 {% else %}
