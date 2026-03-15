@@ -79,7 +79,7 @@ end ThermostatThread.impl;
 
 An environment component models real-valued state variables that continuously change over time. The values of these state variables change according to their continuous dynamics, declared using AADL constructs with the property set *ContinuousDynamics*, while *discretely* interacting with its controllers according to the sampling and actuating times.
 
-The below AADL code shows an environment component. It has data output port *temp*, data input port *power*, and event input ports *on_ctrl* and *off_ctrl*. The implementation has two data subcomponents *x* and *p*, denoting the temperature of the room and the heater's power, respectively, to represent the state variables with the specified initial values. The value of *x* is sent to the controller thorugh the output port *temp*, using the connection $x \rightarrow temp&. When a discrete controller sends an actuation command through the input ports *power*, *on_ctrl*, and *off_ctrl*, the mode changes ccording to the mode transitions, and the value of *p* can be updated with the value of the input port *power*, declared by $power \rightarrow p$.
+The below AADL code shows an environment component. It has data output port *temp*, data input port *power*, and event input ports *on_ctrl* and *off_ctrl*. The implementation has two data subcomponents *x* and *p*, denoting the temperature of the room and the heater's power, respectively, to represent the state variables with the specified initial values. The value of *x* is sent to the controller thorugh the output port *temp*, using the connection $x \rightarrow temp$. When a discrete controller sends an actuation command through the input ports *power*, *on_ctrl*, and *off_ctrl*, the mode changes ccording to the mode transitions, and the value of *p* can be updated with the value of the input port *power*, declared by $power \rightarrow p$.
 
 ```
 system RoomEnv
@@ -127,7 +127,7 @@ The time frame of the environment is *shifted to the left* from the global time 
 
 #### MH-SynchAADL Tool
 
-MH-SynchAADL seamlessly integrates modeling and formal analysis into OSATE. The tool can statically check the syntactic constraints of MH-SynchAADL. The tool’s property specification language can specify invariant and reachability properties. The tool synthesizes the corresponding Maude model from a MH-SynchAADL model and invokes Maude with SMT solving to perform various formal analyses, including randomized simulation (using the concrete semantics), symbolic reachability analysis (using the symbolic semantics), and portfolio analysis (running both methods in parallel with multithreading). The tool is available at https://hybridsynchaadl.github.io.
+MH-SynchAADL seamlessly integrates modeling and formal analysis into OSATE. The tool can statically check the syntactic constraints of MH-SynchAADL. The tool’s property specification language can specify invariant and reachability properties. The tool synthesizes the corresponding Maude model from a MH-SynchAADL model and invokes Maude with SMT solving to perform various formal analyses, including randomized simulation (using the concrete semantics), symbolic reachability analysis (using the symbolic semantics), and portfolio analysis (running both methods in parallel with multithreading). The tool is available at <a href="https://hybridsynchaadl.github.io">https://hybridsynchaadl.github.io</a>.
 
 <img src="{{ site.research_imgs }}/aadl/tool.png" alt="Virtually Synchronous CPSs" width="50%"/>
 
