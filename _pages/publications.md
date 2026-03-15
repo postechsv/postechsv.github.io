@@ -38,7 +38,7 @@ permalink: /publications
             {% if publi.year < 2016 %}old{% endif %}">
                 <a href="{{ publi.link }}">{{ publi.title }}</a><br>
                 <em>{{ publi.authors }}</em><br>
-                {{ publi.venue }}, {{ publi.year }}
+                {{ publi.venue }}
             </div>
         {% endfor %}
     {% endfor %}
