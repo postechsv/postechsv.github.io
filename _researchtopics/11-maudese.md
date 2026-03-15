@@ -27,7 +27,7 @@ To achieve both flexibility and efficiency, Maude-SE introduces two abstract Pyt
 
 Developing such abstract connectors is challenging. Although the Maude Python binding allows user-defined Python functions to be invoked directly from within Maude, it requires an understanding of Maude's internal data structures. To address this, Maude-SE delegates performance-critical tasks—such as term manipulation and search graph construction—to the C++ level, while keeping SMT solver interactions at the Python level.
 
-**Implementation.** Our framework has been implemented to enjoy the best of both worlds: flexible capability of SMT solving using each SMT solver's Python API, and eﬃcient exploration of symbolic search space using Maude. Our abstract connector hides details about Maude's internal implementation, so users only need to undestand the Python API for the target SMT solver. The main routine for symbolic reachability analysis and folding are implemented at the C++ level and use the maude library to invoke user-defined Python functions for SMT solving.
+**Implementation.** Our framework has been implemented to enjoy the best of both worlds: flexible capability of SMT solving using each SMT solver's Python API, and efficient exploration of symbolic search space using Maude. Our abstract connector hides details about Maude's internal implementation, so users only need to undestand the Python API for the target SMT solver. The main routine for symbolic reachability analysis and folding are implemented at the C++ level and use the maude library to invoke user-defined Python functions for SMT solving.
 
 In addition, Maude-SE introduces several enhanced modeling and analysis capabilities: (i) integration with four widely used SMT solvers: CVC4 [9], CVC5 [8], Yices2 [16], and Z3 [13], whereas the original Maude implementation supports only CVC4 and Yices2; (ii) support for the theory of equality and uninterpreted functions, which were not available originally. This includes a Maude-level interface for declaring arbitrary free symbols as SMT-level symbols.
 
@@ -44,7 +44,7 @@ Maude-SE provides various analysis commands, including *check*, *show model*, *s
 
 #### Case Study
 
-We demonstrate the flexibility of our interface with a case study on connecting a Z3 solver. We first show a simple implementation for the two Python components *CmdAdapter* and *Converter*, and then explain how to customize the implementation of *CmdAdapter* for diﬀerent purposes.
+We demonstrate the flexibility of our interface with a case study on connecting a Z3 solver. We first show a simple implementation for the two Python components *CmdAdapter* and *Converter*, and then explain how to customize the implementation of *CmdAdapter* for different purposes.
 
 **Implementing CmdAdapter.** The following class Z3CmdAdapter implements the base abstract `class CmdAdapter`. A Z3 solver object, assigned to `self.solver`, is used to check the satisfiability of the input formulas (`checkSat`) and to build a satisfying assignment (`getModel`). We store an SMT formula in the state space as is (`mkConst`).
 
@@ -62,7 +62,7 @@ The `term2dag` function converts a Z3 data structure representing an SMT formula
 
 <img src="{{ site.research_imgs }}/maude-se/maude-se-case-study4.svg" width="70%">
 
-**Customizing CmdAdapter.** The following shows three variations of the `mkConst` function implemented using diﬀerent Z3 tactics. The first function uses rewriting to obtain a simplified formula. The other functions use a syntactic/semantic equality check to remove subformulas that are subsumed by context.
+**Customizing CmdAdapter.** The following shows three variations of the `mkConst` function implemented using different Z3 tactics. The first function uses rewriting to obtain a simplified formula. The other functions use a syntactic/semantic equality check to remove subformulas that are subsumed by context.
 
 <img src="{{ site.research_imgs }}/maude-se/maude-se-case-study5.svg" width="70%">
 

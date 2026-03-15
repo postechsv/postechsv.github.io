@@ -75,9 +75,7 @@
   <body id="page-top">
     {% include navbar.html %}
     {{ content }}
-    {% if page.url contains '/publications' %}
-    <script src="{{ site.baseurl }}/assets/js/publication-filter.js"></script>
-    {% endif %}
+    <button class="back-to-top" aria-label="Back to top">↑</button>
     <script
       src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
       integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
@@ -107,6 +105,16 @@
             el.classList.add('scroll-animate');
             io.observe(el);
           }
+        });
+      })();
+      (function() {
+        var btn = document.querySelector('.back-to-top');
+        if (!btn) return;
+        window.addEventListener('scroll', function() {
+          btn.classList.toggle('visible', window.scrollY > 300);
+        }, { passive: true });
+        btn.addEventListener('click', function() {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
         });
       })();
       document.addEventListener("DOMContentLoaded", function() {

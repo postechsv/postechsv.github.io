@@ -144,7 +144,7 @@ We define both a symbolic semantics for the synchronous composition of the compo
 
 #### CaseStudy: A Multirate Packet Delivery System
 
-We perform the design and analysis of a collection of drones for packet delivery using MH-SynchAADL. Each drone contains two controllers operating at diﬀerent periods, and diﬀerent drones can have diﬀerent periods. We use the combination of symbolic and concrete semantics to analyze overall system behavior and to verify individual controller logic. 
+We perform the design and analysis of a collection of drones for packet delivery using MH-SynchAADL. Each drone contains two controllers operating at different periods, and different drones can have different periods. We use the combination of symbolic and concrete semantics to analyze overall system behavior and to verify individual controller logic. 
 
 <img src="{{ site.research_imgs }}/aadl/system_description.png" alt="Packet Delivery Systems" width="50%"/>
 
