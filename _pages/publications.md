@@ -1,6 +1,7 @@
 ---
-title: "POSTECH SV Lab - Publications"
+title: "Publications"
 permalink: /publications
+layout: page
 ---
 
 ### Publications

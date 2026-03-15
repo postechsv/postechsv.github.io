@@ -1,7 +1,8 @@
 ---
+title: "Research Topics"
+permalink: /research/topics/
 layout: page
 sitemap: false
-permalink: /research/topics/
 ---
 
 ### Research Topics

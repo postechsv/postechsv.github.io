@@ -1,8 +1,8 @@
 ---
 title: "News"
-excerpt: "POSTECH SV Lab"
-sitemap: false
 permalink: /news
+sitemap: false
+layout: page
 ---
 
 ### News

@@ -1,5 +1,5 @@
 ---
-title: "POSTECH SV Lab - Research"
+title: "Research"
 permalink: /research
 layout: page
 ---

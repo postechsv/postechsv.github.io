@@ -1,5 +1,5 @@
 ---
-title: "POSTECH SV Lab - Members"
+title: "Members"
 permalink: /members
 layout: page
 ---
