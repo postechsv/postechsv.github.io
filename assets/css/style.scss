@@ -196,6 +196,17 @@ tbody tr:nth-child(odd) th {
   .lab-logo-lab   { color: rgba(var(--black-rgb), 0.38); }
 }
 
+.navbar-default {
+  border-color: rgba(var(--black-rgb), 0.08);
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-collapse,
+  .navbar-default .navbar-form {
+    border-color: rgba(var(--black-rgb), 0.08);
+  }
+}
+
 .navbar-logos {
   display: flex;
   align-items: center;
@@ -289,8 +300,8 @@ tbody tr:nth-child(odd) th {
 
 .theme-toggle-btn {
   position: absolute;
-  top: 14px;
-  right: 52px;
+  top: 15px;
+  right: 70px;
   background: transparent;
   border: none;
   cursor: pointer;
@@ -1436,8 +1447,8 @@ div.element-item {
 html[data-theme="dark"] {
   --accent:           #6aade0;
   --accent-rgb:       106, 173, 224;
-  --accent-dark:      color-mix(in srgb, var(--accent) 80%, black);
-  --accent-light:     color-mix(in srgb, var(--accent) 60%, white);
+  --accent-dark:      color-mix(in srgb, var(--accent) 80%, var(--black-rgb));
+  --accent-light:     color-mix(in srgb, var(--accent) 60%, var(--white-rgb));
   --gray-800:         #e0e0e0;
   --gray-700:         #b8b8b8;
   --gray-600:         #888888;
@@ -1454,12 +1465,23 @@ html[data-theme="dark"] {
 @mixin dark-rules {
   body { background-color: var(--surface); }
 
-  .navbar-default .navbar-toggle .icon-bar { background-color: rgba(255, 255, 255, 0.65); }
+  .navbar-default {
+    border-color: rgba(var(--white-rgb), 0.07);
+  }
+
+  @media (max-width: 767px) {
+    .navbar-default .navbar-collapse,
+    .navbar-default .navbar-form {
+      border-color: rgba(var(--white-rgb), 0.07);
+    }
+  }
+
+  .navbar-default .navbar-toggle .icon-bar { background-color: rgba(var(--white-rgb), 0.65); }
 
   .lab-logo-footer {
     .lab-logo-sv,
-    .lab-logo-colon { color: rgba(255, 255, 255, 0.52); }
-    .lab-logo-lab   { color: rgba(255, 255, 255, 0.38); }
+    .lab-logo-colon { color: rgba(var(--white-rgb), 0.52); }
+    .lab-logo-lab   { color: rgba(var(--white-rgb), 0.38); }
   }
 
   .back-to-top {
@@ -1468,30 +1490,43 @@ html[data-theme="dark"] {
   }
 
   .news-container {
-    border-color: rgba(255, 255, 255, 0.07);
+    border-color: rgba(var(--white-rgb), 0.07);
     box-shadow: none;
   }
 
-  .news-item + .news-item { border-top-color: rgba(255, 255, 255, 0.05); }
-  .news-item:hover { background-color: rgba(255, 255, 255, 0.03); }
+  .news-item + .news-item { border-top-color: rgba(var(--white-rgb), 0.05); }
+  .news-item:hover { background-color: rgba(var(--white-rgb), 0.03); }
+
+  .former-date, 
+  .former-affiliation {
+    color: var(--text-muted);
+  }
 
   .topic-group-link {
-    border-color: rgba(255, 255, 255, 0.08);
+    border-color: rgba(var(--white-rgb), 0.08);
     &:hover, &:focus {
       background-color: rgba(var(--accent-rgb), 0.05);
-      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 3px 10px rgba(var(--black-rgb), 0.3);
     }
   }
 
   .topic-img { 
-    background-color: rgba(255, 255, 255, 0.9);
-    border-color: rgba(255, 255, 255, 0.06);
+    background-color: rgba(var(--white-rgb), 0.9);
+    border-color: rgba(var(--white-rgb), 0.06);
   }
 
-  .footer-logo-col { border-right-color: rgba(255, 255, 255, 0.07) !important; }
+  .toc-text-el {
+    color: var(--text-muted);
+  }
+
+  .toc-line-el {
+    background: rgba(var(--white-rgb), 0.15);
+  }
+
+  .footer-logo-col { border-right-color: rgba(var(--white-rgb), 0.07) !important; }
 
   .footer-spacer {
-    background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.08), transparent);
+    background: linear-gradient(to right, transparent, rgba(var(--white-rgb), 0.08), transparent);
     box-shadow: none;
   }
 
@@ -1501,7 +1536,7 @@ html[data-theme="dark"] {
   }
 
   .filter-button-group .btn:not(.btn-primary) {
-    background-color: rgba(255, 255, 255, 0.07);
+    background-color: rgba(var(--white-rgb), 0.07);
     color: var(--text-secondary);
     &:hover {
       background-color: rgba(var(--accent-rgb), 0.12);
@@ -1510,7 +1545,7 @@ html[data-theme="dark"] {
   }
 
   .rpage-content img {
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(var(--white-rgb), 0.9);
     border-radius: 3px;
     padding: 2px;
   }
