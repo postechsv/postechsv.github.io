@@ -264,7 +264,7 @@ tbody tr:nth-child(odd) th {
     transform: scaleX(0);
     transform-origin: center;
     transition: transform 0.25s ease;
-        pointer-events: none;
+    pointer-events: none;
   }
 
   &:hover::after {
