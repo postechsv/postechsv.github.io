@@ -257,17 +257,18 @@ tbody tr:nth-child(odd) th {
     content: '';
     position: absolute;
     bottom: 0;
-    left: 50%;
-    right: 50%;
+    left: 12%;
+    right: 12%;
     height: 2px;
     background-color: var(--accent);
-    transition: left 0.25s ease, right 0.25s ease;
-    pointer-events: none;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.25s ease;
+        pointer-events: none;
   }
 
   &:hover::after {
-    left: 12%;
-    right: 12%;
+    transform: scaleX(1);
   }
 }
 
@@ -278,8 +279,7 @@ tbody tr:nth-child(odd) th {
   background-color: transparent;
 
   &::after {
-    left: 12%;
-    right: 12%;
+    transform: scaleX(1);
   }
 }
 
@@ -1478,7 +1478,6 @@ html[data-theme="dark"] {
 
   .navbar-default .navbar-toggle .icon-bar { background-color: rgba(var(--white-rgb), 0.65); }
 
-  
   .navbar-nav > li > a {
     &:hover {
       color: var(--accent-light);
@@ -1493,6 +1492,10 @@ html[data-theme="dark"] {
   .back-to-top {
     background: rgba(28, 28, 28, 0.95);
     border-color: rgba(var(--accent-rgb), 0.35);
+  }
+
+  .news-header {
+    border-bottom: 1px solid rgba(var(--white-rgb), 0.11);
   }
 
   .news-container {
@@ -1556,6 +1559,11 @@ html[data-theme="dark"] {
     padding: 2px;
   }
 
+  .content.page > h3,
+  .home-container > h3 {
+    border-bottom: 1px solid rgba(var(--white-rgb), 0.11);
+  }
+  
   .highlight,
   pre {
     background-color: #f0f0f5;
