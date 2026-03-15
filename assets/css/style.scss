@@ -188,12 +188,6 @@ tbody tr:nth-child(odd) th {
   .lab-logo-lab   { color: rgba(var(--black-rgb), 0.38); }
 }
 
-.footer-logos .lab-logo {
-  .lab-logo-sv,
-  .lab-logo-colon { font-size: 1.75rem; }
-  .lab-logo-lab   { font-size: 1.75rem; }
-}
-
 .navbar-logo-sv-link {
   text-decoration: none !important;
   &:hover { text-decoration: none !important; }
@@ -376,15 +370,12 @@ tbody tr:nth-child(odd) th {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
     margin-bottom: 0.75rem;
   }
 }
 
 .footer-logo-sv {
-  padding-left: 0.5rem;
-  height: 108px;
-  width: auto;
   filter: brightness(0)
           drop-shadow(0 1px 0 rgba(var(--white-rgb), 0.85))
           drop-shadow(0 -1px 1px rgba(var(--black-rgb), 0.18));
@@ -1306,13 +1297,23 @@ div.element-item {
   }
 
   @media (max-width: 480px) {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     letter-spacing: 0.07em;
   }
 }
 
 .banner-accent {
   font-size: 1.5rem;
+
+  @media (max-width: 62em) {
+    font-size: 1.6rem;
+    letter-spacing: 0.09em;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 1.3rem;
+    letter-spacing: 0.07em;
+  }
 }
 
 .text-justify {
