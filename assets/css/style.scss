@@ -1478,6 +1478,12 @@ html[data-theme="dark"] {
 
   .navbar-default .navbar-toggle .icon-bar { background-color: rgba(var(--white-rgb), 0.65); }
 
+  
+  .navbar-nav > li > a {
+    &:hover {
+      color: var(--accent-light);
+    }
+  }
   .lab-logo-footer {
     .lab-logo-sv,
     .lab-logo-colon { color: rgba(var(--white-rgb), 0.52); }
