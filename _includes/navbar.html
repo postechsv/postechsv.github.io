@@ -1,8 +1,10 @@
-<link rel="stylesheet" href="{{ site.baseurl }}/style.css" />
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
-    <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header page-scroll">
+      <button type="button" class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle theme">
+        <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+      </button>
       <button
         type="button"
         class="navbar-toggle"
@@ -14,23 +16,28 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <!-- lab logo -->
-      <a class="navbar-brand page-scroll" href="/"></a>
+      <div class="navbar-brand nav-logos">
+        <a class="nav-site-link" href="/">
+          <span class="site-logo">
+            <span class="site-logo-abbr">SV</span><span class="site-logo-type">LAB</span><span class="site-logo-sep">:</span>
+          </span>
+        </a>
+        <a class="nav-postech-link" href="https://postech.ac.kr" target="_blank" rel="noopener noreferrer">
+          <img class="nav-postech-img" src="/images/logo/postech.png" alt="POSTECH" />
+        </a>
+      </div>
     </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
-        <ul class="nav navbar-nav navbar-right fixed-bottom">
-          <li><a class="name" href="/" style="color: #6184a6">HOME</a></li>
-
-          {% for nav in site.nav %}
-          <li><a class="name" href="{{ nav.href }}">{{ nav.name }}</a></li>
-          {% endfor %}
-        </ul>
+        <li {% if page.url == '/' or page.url contains '/news' %}class="active"{% endif %}>
+          <a class="name" href="/">HOME</a>
+        </li>
+        {% for nav in site.nav %}
+        <li {% if page.url contains nav.href %}class="active"{% endif %}>
+          <a class="name" href="{{ nav.href }}">{{ nav.name }}</a>
+        </li>
+        {% endfor %}
       </ul>
     </div>
-    <!-- /.navbar-collapse -->
   </div>
-  <!-- /.container-fluid -->
 </nav>

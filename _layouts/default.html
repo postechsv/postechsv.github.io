@@ -3,71 +3,34 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>html{opacity:0;}</style>
     <title>
       {% if page.title %}{{ page.title }}{% else %}{{ site.name }}{% endif %}
     </title>
+    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
     <link
       rel="stylesheet"
-      href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,600"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="//fonts.googleapis.com/css?family=Roboto"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
     />
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
     />
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> -->
     <link
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
       crossorigin="anonymous"
     />
-    
-    <script type="text/javascript" async
-    src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
-    </script>
-
-    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
-    <link href="{{ site.url }}/css/zoom.css" rel="stylesheet" />
-    <script src="{{ site.url }}/js/zoom.js"></script>
-    <script src="{{ site.url }}/js/transition.js"></script>
-
-    <link rel="stylesheet" href="{{ site.baseurl }}/style.css" />
-    <!-- favicon -->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <link href="{{ site.url }}/assets/vendor/zoom.css" rel="stylesheet" />
+    <script src="{{ site.url }}/assets/vendor/zoom.js"></script>
+    <script src="{{ site.url }}/assets/vendor/transition.js"></script>
+    <script>(function(){var t=localStorage.getItem('sv-theme')||(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',t);})();</script>
+    <link rel="stylesheet" href="{{ site.url }}/assets/css/style.css" />
     <link rel="shortcut icon" href="{{ site.url }}/favicon.ico" />
-    <link rel="shortcut icon" href="{{ site.url }}/favicon.png" />
-    <link
-      rel="apple-touch-icon-precomposed"
-      href="{{ site.url }}/images/logo/apple-touch-icon-precomposed.png"
-    />
-    <link
-      rel="apple-touch-icon-precomposed"
-      sizes="72x72"
-      href="{{ site.url }}/images/logo/apple-touch-icon-72x72-precomposed.png"
-    />
-    <link
-      rel="apple-touch-icon-precomposed"
-      sizes="114x114"
-      href="{{ site.url }}/images/logo/apple-touch-icon-114x114-precomposed.png"
-    />
-    <link
-      rel="apple-touch-icon-precomposed"
-      sizes="144x144"
-      href="{{ site.url }}/images/logo/apple-touch-icon-144x144-precomposed.png"
-    />
-
-    <!-- open graph -->
-
+    <link rel="shortcut icon" href="{{ site.url }}/images/logo/favicon-32x32.png" />
+    <link rel="shortcut icon" href="{{ site.url }}/images/logo/favicon-16x16.png" />
     {% capture canonical %}{{ site.url }}{% if site.permalink contains '.html'
     %}{{ page.url }}{% else %}{{ page.url | remove:'index.html' | strip_slash
     }}{% endif %}{% endcapture %} {% capture description %}{% if
@@ -81,26 +44,97 @@
       content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"
     />
     <meta property="og:site_name" content="{{ site.title }}" />
-    <!-- <meta
+    <meta
       property="og:description"
       content="{{ description | strip_html | condense_spaces | truncate:150 }}"
-    /> -->
-    <!-- <meta
+    />
+    <meta
       property="og:image"
-      content="{{ site.url }}/images/logo/logo_square.jpg"
-    /> -->
+      content="{{ site.url }}/images/logo/logo_square.png"
+    />
+    {% if page.layout == 'researchpage' %}
+    {% include mathjax.html %}
+    {% endif %}
+    <script>(function(){var _r=false;function _reveal(){if(_r)return;_r=true;document.documentElement.style.transition='opacity 0.22s ease';document.documentElement.style.opacity='1';}if(document.fonts&&document.fonts.ready){document.fonts.ready.then(_reveal);}else{_reveal();}setTimeout(_reveal,500);})();</script>
   </head>
-  {% include navbar.html %}
-
-  <body id="page-top" style="padding-top: 3em; " >
+  <body id="page-top">
+    {% include navbar.html %}
     {{ content }}
-    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <button class="back-to-top" aria-label="Back to top">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
+    </button>
     <script
       src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
       integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
       crossorigin="anonymous"
     ></script>
+    {% include footer.html %}
+    <script>
+      (function () {
+        var navbar = document.querySelector('.navbar');
+        if (navbar) {
+          window.addEventListener('scroll', function () {
+            navbar.classList.toggle('navbar-scrolled', window.scrollY > 30);
+          }, { passive: true });
+        }
+        var io = new IntersectionObserver(function (entries) {
+          entries.forEach(function (e) {
+            if (e.isIntersecting) { e.target.classList.add('in-view'); io.unobserve(e.target); }
+          });
+        }, { threshold: 0.08 });
+        var loadIdx = 0;
+        document.querySelectorAll('.section-block, .news-container, .video-container').forEach(function (el) {
+          var r = el.getBoundingClientRect();
+          if (r.top < window.innerHeight && r.bottom > 0) {
+            el.style.animation = 'fadeUp 0.45s ease ' + (loadIdx * 0.08) + 's both';
+            loadIdx++;
+          } else {
+            el.classList.add('scroll-animate');
+            io.observe(el);
+          }
+        });
+      })();
+      (function() {
+        var toggle = document.getElementById('theme-toggle');
+        if (toggle) {
+          toggle.addEventListener('click', function() {
+            var next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+            document.documentElement.setAttribute('data-theme', next);
+            localStorage.setItem('sv-theme', next);
+          });
+        }
+      })();
+      (function() {
+        var btn = document.querySelector('.back-to-top');
+        if (!btn) return;
+        window.addEventListener('scroll', function() {
+          btn.classList.toggle('visible', window.scrollY > 300);
+        }, { passive: true });
+        btn.addEventListener('click', function() {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+      })();
+      document.addEventListener("DOMContentLoaded", function() {
+        const emailElements = document.querySelectorAll(".email-protect");
+        
+        emailElements.forEach(function(el) {
+          const user = el.getAttribute("data-user");
+          const domain = el.getAttribute("data-domain");
+          
+          if (user && domain) {
+            const email = user + "@" + domain;
+            const link = document.createElement("a");
+            
+            link.href = "mailto:" + email;
+            link.textContent = email;
+            
+            el.appendChild(link);
+            
+            el.removeAttribute("data-user");
+            el.removeAttribute("data-domain");
+          }
+        });
+      });
+    </script>
   </body>
-  {% include footer.html %}    
-
 </html>

@@ -1,71 +1,50 @@
-# Basic
 name: "Software Verification Lab"
 title: "Software Verification Lab at POSTECH"
 description: "Software Verification Lab"
 
-# URL
 url: https://sv.postech.ac.kr
 baseurl:
-#baseurl:            "" #For Root Domain
-permalink: /:year/:month/:day/:title.html
-permalink: /:year/:month/:day/:title.html
 research_imgs: "/images/research"
 
-# Markdown
+footer:
+  name:         "Software Verification Laboratory"
+  department:   "Department of Computer Science and Engineering"
+  affiliation1: "Pohang University of Science and Technology"
+  affiliation2: "(POSTECH)"
+  building1:    "Engineering Building 2"
+  building2:    "Room 204"
+  address1:     "77 Cheongam-ro, Nam-gu"
+  address2:     "Pohang-si, Gyeongsangbuk-do"
+  address3:     "37673, Republic of Korea"
+  copyright_year: 2026
+  privacy_policy_url: "https://postech.ac.kr/eng/usage-guide/privacy_policy.do"
+  opt-out_of_commercial_ads_url: "https://postech.ac.kr/eng/usage-guide/opt-out_of_commercial_ads.do"
+
 markdown: kramdown
-
-
-# Highlighter
 highlighter: rouge
 
-# Navigation
 nav:
-  # - name:           "home"
-  #   href:           "/"
-  # - name: "news"
-  #   href: "/news"
   - name: "publications"
     href: "/publications"
   - name: "members"
     href: "/members"
   - name: "research"
     href: "/research"
-  #   - name:           "abstracts"
-  #     href:           "/abstracts"
 
-# Sass
+include:
+  - _pages
+
 sass:
   style: :compressed
 
-# Scopes
 defaults:
   - scope:
       path: ""
       type: "pages"
     values:
       layout: "page"
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-  - scope:
-      path: ""
-      type: "members"
-    values:
-      layout: "profile"
 
 collections:
-  members:
-    output: true
-    permalink: /members/:title/index.html
-  research:
-    output: true
   researchtopics:
     output: true
     permalink: /research/:title.html
-  pubpage:
-    output: true
-    permalink: /pubpage/:title.html
-  home:
-    output: true
