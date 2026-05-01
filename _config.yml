@@ -23,6 +23,9 @@ footer:
 markdown: kramdown
 highlighter: rouge
 
+plugins:
+  - jekyll-redirect-from
+
 nav:
   - name: "publications"
     href: "/publications"
