@@ -9,6 +9,14 @@
   <div class="member-link">
     <span class="email-protect" data-user="{{ email_parts[0] }}" data-domain="{{ email_parts[1] }}"></span>
   </div>
+  {% assign interest_list = include.member.interests | default: "" | split: ", " %}
+  {% if interest_list.size > 0 %}
+  <div class="member-interests">
+    {% for interest in interest_list %}
+      <span class="member-interest-tag">{{ interest }}</span>
+    {% endfor %}
+  </div>
+  {% endif %}
   <div class="member-spacer"></div>
   <span class="member-links-block">{% include member-links.html member=include.member %}</span>
 </div>
@@ -21,6 +29,14 @@
   <div class="member-link">
     <span class="email-protect" data-user="{{ email_parts[0] }}" data-domain="{{ email_parts[1] }}"></span>
   </div>
+  {% assign interest_list = include.member.interests | default: "" | split: ", " %}
+  {% if interest_list.size > 0 %}
+  <div class="member-interests">
+    {% for interest in interest_list %}
+      <span class="member-interest-tag">{{ interest }}</span>
+    {% endfor %}
+  </div>
+  {% endif %}
   <div class="member-spacer"></div>
   <span class="member-links-block">{% include member-links.html member=include.member %}</span>
 </div>

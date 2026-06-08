@@ -1,26 +1,19 @@
-{% assign news = site.data.news | sort: 'date' | reverse %}
+{% assign news = site.data.home.news | sort: 'date' | reverse %}
+{% if include.highlights %}
+  {% assign news = news | where_exp: "n", "n.type == 'award' or n.type == 'funding' or n.type == 'venue'" %}
+{% endif %}
 <ul class="news-list">
+{% assign shown = 0 %}
 {% for new in news %}
-  {% if include.limit %}
-    {% if forloop.index0 < include.limit %}
+  {% if include.limit and shown >= include.limit %}{% break %}{% endif %}
     <li class="news-item">
         <span class="news-date">
             <b>[{{ new.date | date: '%Y.%m' }}]</b>
         </span>
         <span class="news-content">
-            {{ new.details }}{% if new.link %} <a href="{{ new.link }}" class="news-link-icon" target="_blank" rel="noopener" aria-label="Read more"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>{% endif %}
+            {% case new.type %}{% when 'award' %}<span class="news-icon" aria-label="Award">🏆</span> {% when 'funding' %}<span class="news-icon" aria-label="Funding">🎉</span> {% when 'grant' %}<span class="news-icon" aria-label="Grant">🎓</span> {% when 'member' %}<span class="news-icon" aria-label="New member">👋</span> {% else %}<span class="news-icon" aria-label="Publication">📄</span> {% endcase %}{{ new.details }}{% if new.link %} <a href="{{ new.link }}" class="news-link-icon" target="_blank" rel="noopener" aria-label="Read more"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>{% endif %}
         </span>
     </li>
-    {% endif %}
-  {% else %}
-    <li class="news-item">
-        <span class="news-date">
-            <b>[{{ new.date | date: '%Y.%m' }}]</b>
-        </span>
-        <span class="news-content">
-            {{ new.details }}{% if new.link %} <a href="{{ new.link }}" class="news-link-icon" target="_blank" rel="noopener" aria-label="Read more"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>{% endif %}
-        </span>
-    </li>
-  {% endif %}
+  {% assign shown = shown | plus: 1 %}
 {% endfor %}
 </ul>
