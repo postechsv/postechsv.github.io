@@ -2,11 +2,12 @@
 
 - title: "Efficient Verification of Lingua Franca Programs"
   authors: Peter Ölveczky, Mario Reja, Mikheil Rukhaia, Kyungmin Bae, and Mircea Marin
-  venue: International Conference on Tools and Algorithms for the Construction and Analysis of Systems (TACAS) (to appear)
+  venue: International Conference on Tools and Algorithms for the Construction and Analysis of Systems (TACAS)
   year: 2026
   month: 4
   tag: conference
-  
+  link: https://link.springer.com/chapter/10.1007/978-3-032-22749-2_2
+
 - title: "모델체킹을 위한 강화학습 기반 휴리스틱 학습"
   authors: 강혜윤, 손병호, 배경민
   venue: 한국소프트웨어공학학술대회 논문집
@@ -22,6 +23,30 @@
   month: 1
   tag: conference
   link: https://link.springer.com/chapter/10.1007/978-3-032-15700-3_16
+
+- title: "Bounded Model Checking of Multitask PLC ST Programs with Preemption using Rewriting Modulo SMT"
+  authors: Jaeseo Lee and Kyungmin Bae
+  venue: Journal of Logical and Algebraic Methods in Programming 150
+  year: 2026
+  month: 1
+  tag: journal
+  link: https://www.sciencedirect.com/science/article/abs/pii/S2352220826000222
+
+- title: "Formal Semantics and Analysis of Multitask PLC with Physical Environments and Communication"
+  authors: Jaeseo Lee
+  venue: Doctoral Dissertation, Department of Computer Science and Engineering, POSTECH
+  year: 2026
+  month: 2
+  tag: thesis
+  link: https://postech.dcollection.net/srch/srchDetail/200000956665
+
+- title: "Rewriting Logic Semantics of WebAssembly Programs in Maude using WASM-DSL"
+  authors: Hyuksoon Chang
+  venue: Master's Thesis, Department of Computer Science and Engineering, POSTECH
+  year: 2026
+  month: 2
+  tag: thesis
+  link: https://postech.dcollection.net/srch/srchDetail/200000964042
 
 
 # 2025

@@ -44,13 +44,27 @@ layout: page
 
 <hr>
 
-### Former Members
+### Alumni
 
+<p class="former-subhead">Graduates</p>
 <ul class="former-list">
 {% for member in site.data.alumni %}
+  {% unless member.degree contains "Intern" %}
   <li class="former-item">
-    <span class="former-name">{{ member.name }}</span>{% if member.degree or member.date or member.affiliation %}<span class="former-info">{% if member.degree %}<span class="former-degree">{{ member.degree }}</span>{% endif %}{% if member.date %}<span class="former-date">{{ member.date }}</span>{% endif %}{% if member.affiliation %}<span class="former-affiliation">{{ member.affiliation }}</span>{% endif %}</span>{% endif %}
+    <span class="former-name">{{ member.name }}</span><span class="former-info">{% if member.degree %}<span class="former-degree">{{ member.degree }}</span>{% endif %}{% if member.date %}<span class="former-date">{{ member.date }}</span>{% endif %}{% if member.affiliation and member.affiliation != "POSTECH" %}<span class="former-affiliation">{{ member.affiliation }}</span>{% endif %}</span>
   </li>
+  {% endunless %}
+{% endfor %}
+</ul>
+
+<p class="former-subhead">Undergraduate Interns</p>
+<ul class="former-list">
+{% for member in site.data.alumni %}
+  {% if member.degree contains "Intern" %}
+  <li class="former-item">
+    <span class="former-name">{{ member.name }}</span><span class="former-info">{% if member.date %}<span class="former-date">{{ member.date }}</span>{% endif %}{% if member.affiliation and member.affiliation != "POSTECH" %}<span class="former-affiliation">{{ member.affiliation }}</span>{% endif %}</span>
+  </li>
+  {% endif %}
 {% endfor %}
 </ul>
 

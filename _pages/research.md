@@ -25,7 +25,7 @@ layout: page
 
 <div class="news-header">
   <h3>Current Research</h3>
-  <a href="{{ site.baseurl }}/research/topics" class="btn btn-sm btn-default more-btn">More…</a>
+  <a href="{{ '/research/topics' | relative_url }}" class="btn btn-sm btn-default more-btn">More…</a>
 </div>
 
 {% assign visible_topics = site.researchtopics | where: "hidden", false %}

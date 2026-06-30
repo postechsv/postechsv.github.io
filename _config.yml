@@ -1,13 +1,13 @@
-name: "Software Verification Lab"
-title: "Software Verification Lab at POSTECH"
-description: "Software Verification Lab"
+name: "Formal Reasoning & Verification Lab"
+title: "Formal Reasoning & Verification Lab at POSTECH"
+description: "Formal Reasoning & Verification Lab"
 
-url: https://sv.postech.ac.kr
+url: https://forever.postech.ac.kr
 baseurl:
 research_imgs: "/images/research"
 
 footer:
-  name:         "Software Verification Laboratory"
+  name:         "Formal Reasoning & Verification Laboratory"
   department:   "Department of Computer Science and Engineering"
   affiliation1: "Pohang University of Science and Technology"
   affiliation2: "(POSTECH)"
