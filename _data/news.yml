@@ -10,6 +10,9 @@
   type: venue
   details: "Our paper “LF-mc: An Efficient Verifier for Lingua Franca” has been accepted to QEST+FORMATS 2026."
 
+- date: 2026-04-03
+  details: "Our paper “An Activation Property-Based Framework for Efficient Neural Network Verification” has been accepted to the ICST 2026 Doctoral Symposium."
+
 - date: 2026-02-23
   type: member
   details: "Seeun joined our lab. Welcome!"
@@ -80,6 +83,10 @@
 - date: 2023-12-01
   type: award
   details: "Jueun received the KIISE Society Outstanding Paper Award. Congratulations!"
+
+- date: 2023-12-01
+  type: award
+  details: "Geunyeol received the POSTECH CSE Paper Award. Congratulations!"
 
 - date: 2023-09-01
   type: member
