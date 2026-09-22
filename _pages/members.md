@@ -32,6 +32,7 @@ layout: page
 
 <hr>
 
+{% if site.data.interns.size > 0 %}
 ### Interns
 
 <div class="section-block container">
@@ -43,6 +44,7 @@ layout: page
 </div>
 
 <hr>
+{% endif %}
 
 ### Alumni
 
