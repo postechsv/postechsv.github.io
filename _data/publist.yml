@@ -1,5 +1,26 @@
 # 2026
 
+- title: "LF-mc: An Efficient Verifier for Lingua Franca"
+  authors: Mario Reja, Mikheil Rukhaia, Kyungmin Bae, Mircea Marin, and Peter Ölveczky
+  venue: International Conference on Quantitative Evaluation of Systems and Formal Modeling and Analysis of Timed Systems (QEST+FORMATS)
+  year: 2026
+  month: 9
+  tag: conference
+  link: https://link.springer.com/chapter/10.1007/978-3-032-35298-9_17
+
+- title: "Formal Specification of Trusted Execution Environment APIs and Model Checking of Trusted Applications"
+  authors: Geunyeol Yu, Seunghyun Chae, Kyungmin Bae, Sungkun Moon, and Siheung Kim
+  venue: Formal Aspects of Computing
+  year: 2026
+  tag: journal
+
+- title: "Generating Invariants by Deductive Model Checking"
+  authors: Kyungmin Bae, Santiago Escobar, Raúl López-Rueda, José Meseguer, and Julia Sapiña
+  venue: International Workshop on Rewriting Logic and its Applications (WRLA)
+  year: 2026
+  month: 4
+  tag: conference #workshop
+
 - title: "Efficient Verification of Lingua Franca Programs"
   authors: Peter Ölveczky, Mario Reja, Mikheil Rukhaia, Kyungmin Bae, and Mircea Marin
   venue: International Conference on Tools and Algorithms for the Construction and Analysis of Systems (TACAS)

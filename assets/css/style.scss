@@ -8,7 +8,7 @@
 @function tag-dark-bg($c)     { @return rgba($c, 0.17); }
 @function btn-dark-active($c) { @return lighten($c, 10%); }
 
-$accent:            #6184a6;
+$accent:            #9b6882;
 $color-conference:  #3a6bbf;
 $color-journal:     #2a9d8f;
 $color-domestic:    #e09000;
@@ -281,27 +281,6 @@ strong {
   color: var(--text-heading);
 }
 
-@keyframes fadeUp {
-  from { opacity: 0; transform: translateY(10px); }
-  to   { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes fadeInLeft {
-  from { opacity: 0; transform: translateX(-18px); }
-  to   { opacity: 1; transform: translateX(0); }
-}
-
-.scroll-animate {
-  opacity: 0;
-  transform: translateY(14px);
-  transition: opacity 0.5s ease, transform 0.5s ease;
-
-  &.in-view {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 h1,
 h2,
 h3,
@@ -424,11 +403,6 @@ tbody tr:nth-child(odd) th {
   background-color: var(--surface);
   box-shadow: 0 0 0 0 rgba(var(--black-rgb), 0.15), 0 2.5px 5px 0 rgba(var(--black-rgb), 0.05);
   font-family: $font-body;
-  transition: box-shadow 0.3s ease;
-
-  &.navbar-scrolled {
-    box-shadow: 0 2px 16px rgba(var(--black-rgb), 0.13);
-  }
 }
 
 .navbar-nav > li > a {
@@ -671,19 +645,16 @@ html[data-theme="dark"] .theme-toggle-btn {
 .content.page {
   padding-top: 3.8em;
   min-height: 800px;
-  animation: fadeUp 0.35s ease both;
 }
 
 .home-container {
   margin-top: 2rem;
   padding-bottom: 2rem;
-  animation: fadeUp 0.35s ease both;
 }
 
 .rpage-container {
   padding-top: 3.8em;
   min-height: 800px;
-  animation: fadeUp 0.35s ease both;
 
   @media (min-width: 992px) and (max-width: 1199px) {
     padding-right: 38px;
@@ -1669,7 +1640,6 @@ div.element-item {
   padding: 1rem 1.4rem;
   font-size: 0.82rem;
   line-height: 1.65;
-  animation: fadeInLeft 0.55s ease 0.28s both;
 
   a {
     color: var(--accent-dark);
