@@ -1,3 +1,15 @@
+- date: 2026-09-07
+  type: member
+  details: "Minsung joined our lab. Welcome!"
+
+- date: 2026-09-04
+  type: award
+  details: "Our paper “LF-mc: An Efficient Verifier for Lingua Franca” received the Best Artifact Award at QEST+FORMATS 2026. Congratulations!"
+
+- date: 2026-05-28
+  type: venue
+  details: "Our paper “LF-mc: An Efficient Verifier for Lingua Franca” has been accepted to QEST+FORMATS 2026."
+
 - date: 2026-02-23
   type: member
   details: "Seeun joined our lab. Welcome!"
