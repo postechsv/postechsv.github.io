@@ -21,6 +21,13 @@
   month: 4
   tag: conference #workshop
 
+- title: "An Activation Property-Based Framework for Efficient Neural Network Verification"
+  authors: Seunghyun Chae
+  venue: International Conference on Software Testing, Verification, and Validation (ICST) Doctoral Symposium
+  year: 2026
+  month: 4
+  tag: conference #workshop
+
 - title: "Efficient Verification of Lingua Franca Programs"
   authors: Peter Ölveczky, Mario Reja, Mikheil Rukhaia, Kyungmin Bae, and Mircea Marin
   venue: International Conference on Tools and Algorithms for the Construction and Analysis of Systems (TACAS)
