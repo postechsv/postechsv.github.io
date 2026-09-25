@@ -359,6 +359,8 @@ tbody tr:nth-child(odd) th {
 }
 
 .site-logo-name {
+  position: relative;
+  top: -1px;
   font-family: $font-logo;
   font-size: 0.95rem;
   font-weight: 700;
@@ -742,7 +744,7 @@ html[data-theme="dark"] .theme-toggle-btn {
 }
 
 .member-photo {
-  border-radius: 4px;
+  border-radius: 6px;
   margin: 0 0 1rem;
 }
 
@@ -1030,7 +1032,7 @@ figcaption {
   font-weight: 700;
   color: var(--accent);
   background: rgba(var(--accent-rgb), 0.10);
-  border-radius: 4px;
+  border-radius: 8px;
   padding: 3px 9px;
   margin-top: 2px;
   white-space: nowrap;
@@ -1129,7 +1131,7 @@ div.element-item {
   color: var(--text-body);
   background-color: rgba(var(--black-rgb), 0.025);
   border: 1px solid rgba(var(--black-rgb), 0.13);
-  border-radius: 4px;
+  border-radius: 6px;
   padding: 7px 16px 7px 32px;
   outline: none;
   appearance: none;
@@ -1239,6 +1241,8 @@ div.element-item {
 
 .pub-title {
   display: block;
+  width: fit-content;
+  max-width: 100%;
   line-height: 1.4;
   font-weight: 400;
   color: var(--text-body);
@@ -1263,12 +1267,16 @@ div.element-item {
 }
 
 .pub-authors {
+  width: fit-content;
+  max-width: 100%;
   font-size: 0.75rem;
   color: var(--text-secondary);
   margin-bottom: 1px;
 }
 
 .pub-venue {
+  width: fit-content;
+  max-width: 100%;
   font-size: 0.73rem;
   color: var(--text-muted);
   font-style: italic;
@@ -1655,7 +1663,7 @@ html[data-theme="dark"] { @include dark-rules; }
 
 .research-area-card {
   border: 1px solid rgba(var(--black-rgb), 0.12);
-  border-radius: 4px;
+  border-radius: 8px;
   padding: 1.3rem 1.45rem;
   background: var(--surface);
 
@@ -1716,7 +1724,7 @@ html[data-theme="dark"] { @include dark-rules; }
   gap: 1rem;
   padding: 1rem 1.3rem;
   border: 1px solid rgba(var(--black-rgb), 0.07);
-  border-radius: 4px;
+  border-radius: 8px;
   margin-bottom: 0.7rem;
   background: var(--surface);
 }
