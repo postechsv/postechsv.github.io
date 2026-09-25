@@ -2019,3 +2019,14 @@ html[data-theme="dark"] { @include dark-rules; }
 .highlight .vg { color: #008080; }
 .highlight .vi { color: #008080; }
 .highlight .il { color: #009999; }
+
+a:focus,
+a:active,
+a:focus-visible,
+button:focus-visible,
+.btn:focus-visible,
+.navbar-nav > li > a:focus-visible,
+.topic-group-link:focus-visible {
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
