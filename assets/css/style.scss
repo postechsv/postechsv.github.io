@@ -354,6 +354,8 @@ tbody tr:nth-child(odd) th {
 }
 
 .site-logo-name {
+  position: relative;
+  top: -1px;
   font-family: $font-logo;
   font-size: 0.95rem;
   font-weight: 700;
@@ -841,7 +843,7 @@ html[data-theme="dark"] .theme-toggle-btn {
 }
 
 .member-photo {
-  border-radius: 4px;
+  border-radius: 6px;
   margin: 0 0 1rem;
 }
 
@@ -1055,7 +1057,7 @@ a:hover > span.icon-linkedin {
 .overview-topic {
   padding: 1rem 1.25rem;
   background: rgba(var(--accent-rgb), 0.03);
-  border-radius: 8px;
+  border-radius: 10px;
   margin-bottom: 0.9rem;
 
   h4 {
@@ -1095,7 +1097,7 @@ a:hover > span.icon-linkedin {
   text-decoration: none;
   color: inherit;
   padding: 19px 40px 17px 22px;
-  border-radius: 8px;
+  border-radius: 10px;
   border: 1px solid rgba(var(--black-rgb), 0.08);
   background: var(--surface);
   margin-bottom: 14px;
@@ -1268,7 +1270,6 @@ figcaption {
   align-items: flex-start;
   gap: 18px;
   padding: 10px 10px;
-  transition: background-color 0.15s ease;
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -1276,7 +1277,6 @@ figcaption {
   }
 
   & + & { border-top: 1px solid rgba(var(--black-rgb), 0.06); }
-  &:hover { background-color: rgba(var(--black-rgb), 0.025); }
 }
 
 .news-date {
@@ -1287,7 +1287,7 @@ figcaption {
   font-weight: 700;
   color: var(--accent);
   background: rgba(var(--accent-rgb), 0.10);
-  border-radius: 6px;
+  border-radius: 8px;
   padding: 3px 9px;
   margin-top: 2px;
   white-space: nowrap;
@@ -1391,7 +1391,7 @@ div.element-item {
   color: var(--text-body);
   background-color: rgba(var(--black-rgb), 0.025);
   border: 1px solid rgba(var(--black-rgb), 0.13);
-  border-radius: 4px;
+  border-radius: 6px;
   padding: 7px 16px 7px 32px;
   outline: none;
   appearance: none;
@@ -1501,6 +1501,8 @@ div.element-item {
 
 .pub-title {
   display: block;
+  width: fit-content;
+  max-width: 100%;
   line-height: 1.4;
   font-weight: 400;
   color: var(--text-body);
@@ -1525,12 +1527,16 @@ div.element-item {
 }
 
 .pub-authors {
+  width: fit-content;
+  max-width: 100%;
   font-size: 0.75rem;
   color: var(--text-secondary);
   margin-bottom: 1px;
 }
 
 .pub-venue {
+  width: fit-content;
+  max-width: 100%;
   font-size: 0.73rem;
   color: var(--text-muted);
   font-style: italic;
@@ -1630,7 +1636,7 @@ div.element-item {
 .alert.alert-info {
   background: rgba(var(--accent-rgb), 0.07);
   border: 1px solid rgba(var(--accent-rgb), 0.22);
-  border-radius: 8px;
+  border-radius: 10px;
   color: var(--text-alert);
   padding: 1.2rem 1.7rem;
   font-size: 0.82rem;
@@ -1842,7 +1848,6 @@ html[data-theme="dark"] { @include dark-theme-vars; }
   }
 
   .news-item + .news-item { border-top-color: rgba(var(--white-rgb), 0.05); }
-  .news-item:hover { background-color: rgba(var(--white-rgb), 0.03); }
 
   .former-date,
   .former-affiliation {
