@@ -774,8 +774,7 @@ html[data-theme="dark"] .theme-toggle-btn {
 
 .member-info,
 .member-link {
-  width: fit-content;
-  max-width: 100%;
+  display: table;
   font-family: $font-body;
   font-size: 0.78rem;
   color: var(--text-secondary);
