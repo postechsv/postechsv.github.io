@@ -831,6 +831,8 @@ html[data-theme="dark"] .theme-toggle-btn {
 
 .member-name {
   display: flex;
+  width: fit-content;
+  max-width: 100%;
   align-items: center;
   flex-wrap: wrap;
   gap: 0 4px;
@@ -871,6 +873,8 @@ html[data-theme="dark"] .theme-toggle-btn {
 
 .member-info,
 .member-link {
+  width: fit-content;
+  max-width: 100%;
   font-family: $font-body;
   font-size: 0.78rem;
   color: var(--text-secondary);
