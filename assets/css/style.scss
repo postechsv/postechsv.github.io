@@ -1896,3 +1896,14 @@ html[data-theme="dark"] {
   .join-mentor-card { border-color: rgba(var(--white-rgb), 0.13); }
   .rep-papers { border-top-color: rgba(var(--white-rgb), 0.09); }
 }
+
+a:focus,
+a:active,
+a:focus-visible,
+button:focus-visible,
+.btn:focus-visible,
+.navbar-nav > li > a:focus-visible,
+.topic-group-link:focus-visible {
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
