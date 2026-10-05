@@ -1,0 +1,13 @@
+<ul class="topic-list">
+  {% for proj in include.topics %}
+  <li class="topic-item">
+    <a href="{{ proj.url }}" class="topic-thumb" tabindex="-1" aria-hidden="true">
+      <img src="{{ site.research_imgs }}/{{ proj.img-url }}" alt="">
+    </a>
+    <div class="topic-body">
+      <a href="{{ proj.url }}" class="topic-title">{{ proj.title }}</a>
+      <p class="topic-intro">{{ proj.intro }}</p>
+    </div>
+  </li>
+  {% endfor %}
+</ul>

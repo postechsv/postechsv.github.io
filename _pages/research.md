@@ -25,28 +25,12 @@ layout: page
 
 <div class="news-header">
   <h3>Current Research</h3>
-  <a href="{{ '/research/topics' | relative_url }}" class="btn btn-sm btn-default more-btn">More…</a>
+  <a href="{{ '/research/topics' | relative_url }}" class="more-link">All topics →</a>
 </div>
 
 {% assign visible_topics = site.researchtopics | where: "hidden", false %}
 
-<div class="section-block container">
-  {% for proj in visible_topics %}
-  <a href="{{ proj.url }}" class="topic-group-link">
-    <div class="topic-card">
-      <p class="topic-title">{{ proj.title }}</p>
-      <div class="row topic-row">
-        <div class="col-sm-4 col-md-4">
-          <img src="{{ site.research_imgs }}/{{ proj.img-url }}" alt="" class="topic-img">
-        </div>
-        <div class="col-sm-8 col-md-8">
-          <p class="topic-intro">{{ proj.intro }}</p>
-        </div>
-      </div>
-    </div>
-  </a>
-  {% endfor %}
-</div>
+{% include topic-list.html topics=visible_topics %}
 
 <hr>
 
