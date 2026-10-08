@@ -38,6 +38,7 @@
     }}{% endif %}{% endcapture %} {% capture description %}{% if
     page.description %}{{ page.description }}{% else %}{{ content }}{% endif
     %}{% endcapture %}
+    <link rel="canonical" href="{{ canonical | strip }}" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="{{ canonical }}" />
