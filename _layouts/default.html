@@ -34,6 +34,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="{{ '/images/logo/apple-touch-icon.png' | relative_url }}" />
     {% capture canonical %}{{ site.url }}{{ page.url | remove: 'index.html' | strip_slash }}{% endcapture %}
     {% if page.description %}{% assign description = page.description %}{% else %}{% assign description = content | strip_html | normalize_whitespace %}{% endif %}
+    <link rel="canonical" href="{{ canonical | strip }}" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="{{ canonical }}" />
